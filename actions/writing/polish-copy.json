@@ -1,0 +1,19 @@
+{
+  "name": "Polish Copy",
+  "icon": "pencil.and.outline",
+  "author": "ClipboardXAI",
+  "version": "1.0.0",
+  "description": "Polish the selected text to read smoother, more professional, and more polished—while keeping the original meaning.",
+  "tags": [
+    "polish",
+    "rewrite",
+    "writing"
+  ],
+  "prompt": "Please polish the following text. Keep the original meaning but make it smoother, more professional, and more polished:\n\n{{content}}",
+  "appliesTo": [
+    "text",
+    "code"
+  ],
+  "outputMode": "copy",
+  "minAppVersion": "3.0.0"
+}

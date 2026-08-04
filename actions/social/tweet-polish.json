@@ -1,0 +1,17 @@
+{
+  "name": "Social Post Polish",
+  "icon": "megaphone",
+  "author": "ClipboardXAI",
+  "version": "1.0.0",
+  "description": "Rewrite an idea into a short, catchy social-media post.",
+  "tags": [
+    "social",
+    "copywriting"
+  ],
+  "prompt": "Rewrite the content below into a short, catchy post suitable for social platforms (e.g. X / Weibo), optionally adding 1-2 hashtags:\n\n{{content}}",
+  "appliesTo": [
+    "text"
+  ],
+  "outputMode": "copy",
+  "minAppVersion": "3.0.0"
+}

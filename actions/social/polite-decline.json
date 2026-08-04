@@ -1,0 +1,17 @@
+{
+  "name": "Polite Decline",
+  "icon": "hand.raised",
+  "author": "ClipboardXAI",
+  "version": "1.0.0",
+  "description": "Rewrite a blunt refusal into a polite, tactful expression.",
+  "tags": [
+    "decline",
+    "communication"
+  ],
+  "prompt": "Without changing the original intent, rewrite the refusal or disagreement below into a more polite and tactful phrasing:\n\n{{content}}",
+  "appliesTo": [
+    "text"
+  ],
+  "outputMode": "copy",
+  "minAppVersion": "3.0.0"
+}

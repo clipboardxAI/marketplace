@@ -1,0 +1,17 @@
+{
+  "name": "Generate Comments",
+  "icon": "text.bubble",
+  "author": "ClipboardXAI",
+  "version": "1.0.0",
+  "description": "Add clear, necessary comments to the code without changing its logic.",
+  "tags": [
+    "comments",
+    "docs"
+  ],
+  "prompt": "Without changing the code logic, add clear, necessary comments to the following code to help others understand it:\n\n{{content}}",
+  "appliesTo": [
+    "code"
+  ],
+  "outputMode": "copy",
+  "minAppVersion": "3.0.0"
+}

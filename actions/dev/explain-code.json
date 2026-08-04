@@ -1,0 +1,18 @@
+{
+  "name": "Explain Code",
+  "icon": "doc.plaintext",
+  "author": "ClipboardXAI",
+  "version": "1.0.0",
+  "description": "Explain in plain language what the code does, its key logic, and caveats.",
+  "tags": [
+    "code",
+    "explain"
+  ],
+  "prompt": "In plain language, explain what the following code does, its key logic, and possible things to watch out for:\n\n{{content}}",
+  "appliesTo": [
+    "code",
+    "json"
+  ],
+  "outputMode": "openPanel",
+  "minAppVersion": "3.0.0"
+}

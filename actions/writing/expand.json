@@ -1,0 +1,17 @@
+{
+  "name": "Expand",
+  "icon": "text.append",
+  "author": "ClipboardXAI",
+  "version": "1.0.0",
+  "description": "Expand the text with extra detail, background, and fitting examples to make it richer.",
+  "tags": [
+    "expand",
+    "creative"
+  ],
+  "prompt": "Without changing the original meaning, expand the following content by adding details, background, and fitting examples to make it richer:\n\n{{content}}",
+  "appliesTo": [
+    "text"
+  ],
+  "outputMode": "copy",
+  "minAppVersion": "3.0.0"
+}

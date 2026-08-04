@@ -1,0 +1,21 @@
+{
+  "name": "clipboardxai-marketplace",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Build & validate tooling for the Clipboard x AI Action Marketplace catalog.",
+  "type": "module",
+  "scripts": {
+    "build": "tsx src/index.ts build",
+    "validate": "tsx src/index.ts validate",
+    "split": "tsx src/index.ts split",
+    "typecheck": "tsc --noEmit"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.2",
+    "tsx": "^4.19.2",
+    "typescript": "^5.7.2"
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "name": "Debug & Fix",
+  "icon": "ant",
+  "author": "ClipboardXAI",
+  "version": "1.0.0",
+  "description": "Analyze possible bugs and their causes in the code, and suggest concrete fixes.",
+  "tags": [
+    "debug",
+    "fix"
+  ],
+  "prompt": "Analyze possible bugs and their causes in the following code, and give specific, actionable fix suggestions (if any):\n\n{{content}}",
+  "appliesTo": [
+    "code"
+  ],
+  "outputMode": "openPanel",
+  "minAppVersion": "3.0.0"
+}

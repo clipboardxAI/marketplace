@@ -1,0 +1,17 @@
+{
+  "name": "To-do Splitter",
+  "icon": "checkmark.circle",
+  "author": "ClipboardXAI",
+  "version": "1.0.0",
+  "description": "Break a goal or idea into a clear, actionable, prioritized to-do list.",
+  "tags": [
+    "todo",
+    "planning"
+  ],
+  "prompt": "Break the goal or idea below into a clear, actionable, prioritized to-do list:\n\n{{content}}",
+  "appliesTo": [
+    "text"
+  ],
+  "outputMode": "openPanel",
+  "minAppVersion": "3.0.0"
+}

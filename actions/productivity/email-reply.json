@@ -1,0 +1,17 @@
+{
+  "name": "Email Reply",
+  "icon": "envelope.open",
+  "author": "ClipboardXAI",
+  "version": "1.0.0",
+  "description": "Draft a polite, concise reply based on the email body.",
+  "tags": [
+    "email",
+    "communication"
+  ],
+  "prompt": "Based on the email content below, draft a proper, concise, and polite reply (give the reply body directly):\n\n{{content}}",
+  "appliesTo": [
+    "text"
+  ],
+  "outputMode": "copy",
+  "minAppVersion": "3.0.0"
+}

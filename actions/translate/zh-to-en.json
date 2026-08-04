@@ -1,0 +1,17 @@
+{
+  "name": "Chinese → English",
+  "icon": "character.book.closed",
+  "author": "ClipboardXAI",
+  "version": "1.0.0",
+  "description": "Translate Chinese text into natural, idiomatic English.",
+  "tags": [
+    "translate",
+    "ZH→EN"
+  ],
+  "prompt": "Translate the Chinese text below into natural, idiomatic English, preserving the original meaning and tone:\n\n{{content}}",
+  "appliesTo": [
+    "text"
+  ],
+  "outputMode": "copy",
+  "minAppVersion": "3.0.0"
+}

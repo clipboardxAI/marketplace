@@ -1,0 +1,17 @@
+{
+  "name": "Rewrite Tone",
+  "icon": "textformat",
+  "author": "ClipboardXAI",
+  "version": "1.0.0",
+  "description": "Rewrite the text in a natural, friendly, conversational tone while keeping the information intact.",
+  "tags": [
+    "tone",
+    "rewrite"
+  ],
+  "prompt": "Rewrite the following text into a more natural, friendly, conversational tone suited for everyday communication, keeping the information unchanged:\n\n{{content}}",
+  "appliesTo": [
+    "text"
+  ],
+  "outputMode": "copy",
+  "minAppVersion": "3.0.0"
+}

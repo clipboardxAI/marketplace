@@ -1,0 +1,17 @@
+{
+  "name": "English → Chinese",
+  "icon": "character",
+  "author": "ClipboardXAI",
+  "version": "1.0.0",
+  "description": "Translate English text into fluent, accurate Chinese.",
+  "tags": [
+    "translate",
+    "EN→ZH"
+  ],
+  "prompt": "Translate the English text below into fluent, accurate Chinese, preserving terminology and formatting:\n\n{{content}}",
+  "appliesTo": [
+    "text"
+  ],
+  "outputMode": "copy",
+  "minAppVersion": "3.0.0"
+}

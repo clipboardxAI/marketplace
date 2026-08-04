@@ -1,0 +1,17 @@
+{
+  "name": "Regex Generator",
+  "icon": "regex",
+  "author": "ClipboardXAI",
+  "version": "1.0.0",
+  "description": "Generate a working regular expression from a natural-language description.",
+  "tags": [
+    "regex",
+    "tool"
+  ],
+  "prompt": "Based on the requirement below, generate a correct regular expression and briefly explain what each part means, with a matching example:\n\nRequirement: {{content}}",
+  "appliesTo": [
+    "text"
+  ],
+  "outputMode": "copy",
+  "minAppVersion": "3.0.0"
+}

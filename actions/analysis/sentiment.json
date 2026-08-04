@@ -1,0 +1,17 @@
+{
+  "name": "Sentiment Analysis",
+  "icon": "face.smiling",
+  "author": "ClipboardXAI",
+  "version": "1.0.0",
+  "description": "Detect the sentiment of text and give a brief rationale.",
+  "tags": [
+    "sentiment",
+    "analysis"
+  ],
+  "prompt": "Determine the sentiment of the text below (positive / neutral / negative) and give a one-sentence rationale:\n\n{{content}}",
+  "appliesTo": [
+    "text"
+  ],
+  "outputMode": "openPanel",
+  "minAppVersion": "3.0.0"
+}

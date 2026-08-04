@@ -1,0 +1,17 @@
+{
+  "name": "Shorten & Summarize",
+  "icon": "scissors",
+  "author": "ClipboardXAI",
+  "version": "1.0.0",
+  "description": "Compress long text to its shortest form without losing key information.",
+  "tags": [
+    "shorten",
+    "summary"
+  ],
+  "prompt": "Without losing key information, shorten the following content to the bare minimum, keeping only the core:\n\n{{content}}",
+  "appliesTo": [
+    "text"
+  ],
+  "outputMode": "copy",
+  "minAppVersion": "3.0.0"
+}

@@ -1,0 +1,17 @@
+{
+  "name": "Extract Key Points",
+  "icon": "list.bullet",
+  "author": "ClipboardXAI",
+  "version": "1.0.0",
+  "description": "Extract 3-5 core points from a long text as a list.",
+  "tags": [
+    "key points",
+    "summary"
+  ],
+  "prompt": "Extract 3-5 core points from the content below and present them as a concise bullet list:\n\n{{content}}",
+  "appliesTo": [
+    "text"
+  ],
+  "outputMode": "openPanel",
+  "minAppVersion": "3.0.0"
+}

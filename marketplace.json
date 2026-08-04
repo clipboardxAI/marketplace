@@ -1,0 +1,674 @@
+{
+  "schemaVersion": 1,
+  "catalogVersion": "2026.08.05",
+  "updatedAt": "2026-08-04",
+  "categories": [
+    {
+      "id": "writing",
+      "name": "Writing",
+      "icon": "pencil.line",
+      "locales": {
+        "zh-CN": {
+          "name": "写作润色"
+        }
+      }
+    },
+    {
+      "id": "dev",
+      "name": "Developer",
+      "icon": "chevron.left.forwardslash.chevron.right",
+      "locales": {
+        "zh-CN": {
+          "name": "开发助手"
+        }
+      }
+    },
+    {
+      "id": "productivity",
+      "name": "Productivity",
+      "icon": "bolt",
+      "locales": {
+        "zh-CN": {
+          "name": "效率工具"
+        }
+      }
+    },
+    {
+      "id": "translate",
+      "name": "Translate",
+      "icon": "globe",
+      "locales": {
+        "zh-CN": {
+          "name": "翻译"
+        }
+      }
+    },
+    {
+      "id": "social",
+      "name": "Social",
+      "icon": "bubble.left.and.bubble.right",
+      "locales": {
+        "zh-CN": {
+          "name": "社交沟通"
+        }
+      }
+    },
+    {
+      "id": "analysis",
+      "name": "Analytics",
+      "icon": "chart.bar",
+      "locales": {
+        "zh-CN": {
+          "name": "分析洞察"
+        }
+      }
+    }
+  ],
+  "actions": [
+    {
+      "id": "expand",
+      "category": "writing",
+      "name": "Expand",
+      "icon": "text.append",
+      "author": "ClipboardXAI",
+      "version": "1.0.0",
+      "description": "Expand the text with extra detail, background, and fitting examples to make it richer.",
+      "tags": [
+        "expand",
+        "creative"
+      ],
+      "prompt": "Without changing the original meaning, expand the following content by adding details, background, and fitting examples to make it richer:\n\n{{content}}",
+      "appliesTo": [
+        "text"
+      ],
+      "outputMode": "copy",
+      "minAppVersion": "3.0.0",
+      "locales": {
+        "zh-CN": {
+          "name": "扩写丰富",
+          "description": "围绕主题扩写，补充细节与例子，让内容更丰满。",
+          "prompt": "请在不改变原意的基础上，对下面内容进行扩写，补充细节、背景和恰当的例子，使其更丰满：\n\n{{content}}",
+          "tags": [
+            "扩写",
+            "创作"
+          ]
+        }
+      }
+    },
+    {
+      "id": "polish-copy",
+      "category": "writing",
+      "name": "Polish Copy",
+      "icon": "pencil.and.outline",
+      "author": "ClipboardXAI",
+      "version": "1.0.0",
+      "description": "Polish the selected text to read smoother, more professional, and more polished—while keeping the original meaning.",
+      "tags": [
+        "polish",
+        "rewrite",
+        "writing"
+      ],
+      "prompt": "Please polish the following text. Keep the original meaning but make it smoother, more professional, and more polished:\n\n{{content}}",
+      "appliesTo": [
+        "text",
+        "code"
+      ],
+      "outputMode": "copy",
+      "minAppVersion": "3.0.0",
+      "locales": {
+        "zh-CN": {
+          "name": "润色文案",
+          "description": "润色选中的文本，使其更通顺、专业，保持原意。",
+          "prompt": "请润色以下文本，保持原意但表达更通顺、专业、得体：\n\n{{content}}",
+          "tags": [
+            "润色",
+            "改写",
+            "写作"
+          ]
+        }
+      }
+    },
+    {
+      "id": "rewrite-tone",
+      "category": "writing",
+      "name": "Rewrite Tone",
+      "icon": "textformat",
+      "author": "ClipboardXAI",
+      "version": "1.0.0",
+      "description": "Rewrite the text in a natural, friendly, conversational tone while keeping the information intact.",
+      "tags": [
+        "tone",
+        "rewrite"
+      ],
+      "prompt": "Rewrite the following text into a more natural, friendly, conversational tone suited for everyday communication, keeping the information unchanged:\n\n{{content}}",
+      "appliesTo": [
+        "text"
+      ],
+      "outputMode": "copy",
+      "minAppVersion": "3.0.0",
+      "locales": {
+        "zh-CN": {
+          "name": "改写语气",
+          "description": "将文本改写为更自然亲切的口语化语气，保持信息不变。",
+          "prompt": "请把下面这段文本改写成更适合日常沟通、自然亲切的口语化语气，保持信息不变：\n\n{{content}}",
+          "tags": [
+            "语气",
+            "改写"
+          ]
+        }
+      }
+    },
+    {
+      "id": "shorten",
+      "category": "writing",
+      "name": "Shorten & Summarize",
+      "icon": "scissors",
+      "author": "ClipboardXAI",
+      "version": "1.0.0",
+      "description": "Compress long text to its shortest form without losing key information.",
+      "tags": [
+        "shorten",
+        "summary"
+      ],
+      "prompt": "Without losing key information, shorten the following content to the bare minimum, keeping only the core:\n\n{{content}}",
+      "appliesTo": [
+        "text"
+      ],
+      "outputMode": "copy",
+      "minAppVersion": "3.0.0",
+      "locales": {
+        "zh-CN": {
+          "name": "精简摘要",
+          "description": "在不丢失关键信息的前提下，把冗长文本压缩到最短。",
+          "prompt": "请在不丢失关键信息的前提下，把下面内容精简到最短，只保留核心：\n\n{{content}}",
+          "tags": [
+            "精简",
+            "摘要"
+          ]
+        }
+      }
+    },
+    {
+      "id": "title-generator",
+      "category": "writing",
+      "name": "Title Generator",
+      "icon": "text.book.closed",
+      "author": "ClipboardXAI",
+      "version": "1.0.0",
+      "description": "Generate 5 catchy, varied titles for an article or paragraph.",
+      "tags": [
+        "title",
+        "ideas"
+      ],
+      "prompt": "Generate 5 concise, attractive titles in different styles for the following content, one per line:\n\n{{content}}",
+      "appliesTo": [
+        "text"
+      ],
+      "outputMode": "copy",
+      "minAppVersion": "3.0.0",
+      "locales": {
+        "zh-CN": {
+          "name": "标题生成",
+          "description": "为文章或段落生成 5 个吸引人的标题。",
+          "prompt": "请为下面内容生成 5 个简洁、有吸引力、风格不同的标题，每行一个：\n\n{{content}}",
+          "tags": [
+            "标题",
+            "灵感"
+          ]
+        }
+      }
+    },
+    {
+      "id": "code-review",
+      "category": "dev",
+      "name": "Code Review",
+      "icon": "checkmark.shield",
+      "author": "ClipboardXAI",
+      "version": "1.0.0",
+      "description": "Review code for readability, robustness, and performance, and suggest improvements.",
+      "tags": [
+        "review",
+        "quality"
+      ],
+      "prompt": "Act like a senior engineer and review the following code. Point out issues from the perspectives of readability, robustness, performance, and security, and give improvement suggestions:\n\n{{content}}",
+      "appliesTo": [
+        "code"
+      ],
+      "outputMode": "openPanel",
+      "minAppVersion": "3.0.0",
+      "locales": {
+        "zh-CN": {
+          "name": "代码审查",
+          "description": "从可读性、健壮性、性能角度审查代码并给出改进点。",
+          "prompt": "请像资深工程师一样审查下面代码，从可读性、健壮性、性能和安全性角度指出问题，并给出改进建议：\n\n{{content}}",
+          "tags": [
+            "审查",
+            "质量"
+          ]
+        }
+      }
+    },
+    {
+      "id": "debug-suggest",
+      "category": "dev",
+      "name": "Debug & Fix",
+      "icon": "ant",
+      "author": "ClipboardXAI",
+      "version": "1.0.0",
+      "description": "Analyze possible bugs and their causes in the code, and suggest concrete fixes.",
+      "tags": [
+        "debug",
+        "fix"
+      ],
+      "prompt": "Analyze possible bugs and their causes in the following code, and give specific, actionable fix suggestions (if any):\n\n{{content}}",
+      "appliesTo": [
+        "code"
+      ],
+      "outputMode": "openPanel",
+      "minAppVersion": "3.0.0",
+      "locales": {
+        "zh-CN": {
+          "name": "排查 Bug",
+          "description": "分析代码可能的 Bug 与原因，并给出修复建议。",
+          "prompt": "请分析下面代码可能存在的 Bug、原因，并给出具体、可执行的修复建议（如有）：\n\n{{content}}",
+          "tags": [
+            "调试",
+            "修复"
+          ]
+        }
+      }
+    },
+    {
+      "id": "explain-code",
+      "category": "dev",
+      "name": "Explain Code",
+      "icon": "doc.plaintext",
+      "author": "ClipboardXAI",
+      "version": "1.0.0",
+      "description": "Explain in plain language what the code does, its key logic, and caveats.",
+      "tags": [
+        "code",
+        "explain"
+      ],
+      "prompt": "In plain language, explain what the following code does, its key logic, and possible things to watch out for:\n\n{{content}}",
+      "appliesTo": [
+        "code",
+        "json"
+      ],
+      "outputMode": "openPanel",
+      "minAppVersion": "3.0.0",
+      "locales": {
+        "zh-CN": {
+          "name": "解释代码",
+          "description": "用通俗语言解释这段代码在做什么、关键逻辑是什么。",
+          "prompt": "请用通俗的语言解释下面这段代码的作用、关键逻辑和可能的注意事项：\n\n{{content}}",
+          "tags": [
+            "代码",
+            "解释"
+          ]
+        }
+      }
+    },
+    {
+      "id": "gen-comments",
+      "category": "dev",
+      "name": "Generate Comments",
+      "icon": "text.bubble",
+      "author": "ClipboardXAI",
+      "version": "1.0.0",
+      "description": "Add clear, necessary comments to the code without changing its logic.",
+      "tags": [
+        "comments",
+        "docs"
+      ],
+      "prompt": "Without changing the code logic, add clear, necessary comments to the following code to help others understand it:\n\n{{content}}",
+      "appliesTo": [
+        "code"
+      ],
+      "outputMode": "copy",
+      "minAppVersion": "3.0.0",
+      "locales": {
+        "zh-CN": {
+          "name": "生成注释",
+          "description": "为代码补充清晰的中文注释（不改逻辑）。",
+          "prompt": "请在不改动代码逻辑的前提下，为下面代码补充清晰、必要的中文注释，帮助他人理解：\n\n{{content}}",
+          "tags": [
+            "注释",
+            "文档"
+          ]
+        }
+      }
+    },
+    {
+      "id": "regex-gen",
+      "category": "dev",
+      "name": "Regex Generator",
+      "icon": "regex",
+      "author": "ClipboardXAI",
+      "version": "1.0.0",
+      "description": "Generate a working regular expression from a natural-language description.",
+      "tags": [
+        "regex",
+        "tool"
+      ],
+      "prompt": "Based on the requirement below, generate a correct regular expression and briefly explain what each part means, with a matching example:\n\nRequirement: {{content}}",
+      "appliesTo": [
+        "text"
+      ],
+      "outputMode": "copy",
+      "minAppVersion": "3.0.0",
+      "locales": {
+        "zh-CN": {
+          "name": "正则生成",
+          "description": "根据自然语言描述生成可用的正则表达式。",
+          "prompt": "请根据下面的需求生成一个正确的正则表达式，并简要说明每个部分的含义和匹配示例：\n\n需求：{{content}}",
+          "tags": [
+            "正则",
+            "工具"
+          ]
+        }
+      }
+    },
+    {
+      "id": "sql-optimize",
+      "category": "dev",
+      "name": "SQL Optimize",
+      "icon": "database",
+      "author": "ClipboardXAI",
+      "version": "1.0.0",
+      "description": "Analyze SQL and give actionable performance optimization advice.",
+      "tags": [
+        "SQL",
+        "database"
+      ],
+      "prompt": "Analyze the SQL statement below, point out performance bottlenecks, and give actionable optimization suggestions (indexes, rewrites, etc.):\n\n{{content}}",
+      "appliesTo": [
+        "text",
+        "code"
+      ],
+      "outputMode": "openPanel",
+      "minAppVersion": "3.0.0",
+      "locales": {
+        "zh-CN": {
+          "name": "SQL 优化",
+          "description": "分析 SQL 并给出性能优化建议。",
+          "prompt": "请分析下面的 SQL 语句，指出性能瓶颈，并给出可落地的优化建议（索引、改写等）：\n\n{{content}}",
+          "tags": [
+            "SQL",
+            "数据库"
+          ]
+        }
+      }
+    },
+    {
+      "id": "email-reply",
+      "category": "productivity",
+      "name": "Email Reply",
+      "icon": "envelope.open",
+      "author": "ClipboardXAI",
+      "version": "1.0.0",
+      "description": "Draft a polite, concise reply based on the email body.",
+      "tags": [
+        "email",
+        "communication"
+      ],
+      "prompt": "Based on the email content below, draft a proper, concise, and polite reply (give the reply body directly):\n\n{{content}}",
+      "appliesTo": [
+        "text"
+      ],
+      "outputMode": "copy",
+      "minAppVersion": "3.0.0",
+      "locales": {
+        "zh-CN": {
+          "name": "邮件回复",
+          "description": "根据邮件正文起草一封得体的回复。",
+          "prompt": "请根据下面的邮件内容，起草一封得体、简明、礼貌的回复（直接给出回复正文）：\n\n{{content}}",
+          "tags": [
+            "邮件",
+            "沟通"
+          ]
+        }
+      }
+    },
+    {
+      "id": "extract-key",
+      "category": "productivity",
+      "name": "Extract Key Points",
+      "icon": "list.bullet",
+      "author": "ClipboardXAI",
+      "version": "1.0.0",
+      "description": "Extract 3-5 core points from a long text as a list.",
+      "tags": [
+        "key points",
+        "summary"
+      ],
+      "prompt": "Extract 3-5 core points from the content below and present them as a concise bullet list:\n\n{{content}}",
+      "appliesTo": [
+        "text"
+      ],
+      "outputMode": "openPanel",
+      "minAppVersion": "3.0.0",
+      "locales": {
+        "zh-CN": {
+          "name": "提取要点",
+          "description": "从长文中提取 3-5 个核心要点，以列表呈现。",
+          "prompt": "请从下面内容中提取 3-5 个核心要点，用简洁的中文要点列表呈现：\n\n{{content}}",
+          "tags": [
+            "要点",
+            "总结"
+          ]
+        }
+      }
+    },
+    {
+      "id": "meeting-notes",
+      "category": "productivity",
+      "name": "Meeting Notes",
+      "icon": "calendar",
+      "author": "ClipboardXAI",
+      "version": "1.0.0",
+      "description": "Turn scattered meeting notes into a structured summary.",
+      "tags": [
+        "meeting",
+        "notes"
+      ],
+      "prompt": "Organize the meeting notes below into a structured summary with four sections: Conclusions / Action Items / Owner / Timeline:\n\n{{content}}",
+      "appliesTo": [
+        "text"
+      ],
+      "outputMode": "openPanel",
+      "minAppVersion": "3.0.0",
+      "locales": {
+        "zh-CN": {
+          "name": "会议纪要",
+          "description": "把零散的会议记录整理成结构化纪要。",
+          "prompt": "请把下面的会议记录整理成结构化纪要：包含「结论 / 待办 / 负责人 / 时间」四部分：\n\n{{content}}",
+          "tags": [
+            "会议",
+            "纪要"
+          ]
+        }
+      }
+    },
+    {
+      "id": "todo-split",
+      "category": "productivity",
+      "name": "To-do Splitter",
+      "icon": "checkmark.circle",
+      "author": "ClipboardXAI",
+      "version": "1.0.0",
+      "description": "Break a goal or idea into a clear, actionable, prioritized to-do list.",
+      "tags": [
+        "todo",
+        "planning"
+      ],
+      "prompt": "Break the goal or idea below into a clear, actionable, prioritized to-do list:\n\n{{content}}",
+      "appliesTo": [
+        "text"
+      ],
+      "outputMode": "openPanel",
+      "minAppVersion": "3.0.0",
+      "locales": {
+        "zh-CN": {
+          "name": "待办拆分",
+          "description": "把一段目标拆成可执行的待办清单。",
+          "prompt": "请把下面这段目标或想法，拆分成清晰、可执行、带优先级的待办清单：\n\n{{content}}",
+          "tags": [
+            "待办",
+            "计划"
+          ]
+        }
+      }
+    },
+    {
+      "id": "en-to-zh",
+      "category": "translate",
+      "name": "English → Chinese",
+      "icon": "character",
+      "author": "ClipboardXAI",
+      "version": "1.0.0",
+      "description": "Translate English text into fluent, accurate Chinese.",
+      "tags": [
+        "translate",
+        "EN→ZH"
+      ],
+      "prompt": "Translate the English text below into fluent, accurate Chinese, preserving terminology and formatting:\n\n{{content}}",
+      "appliesTo": [
+        "text"
+      ],
+      "outputMode": "copy",
+      "minAppVersion": "3.0.0",
+      "locales": {
+        "zh-CN": {
+          "name": "英译中",
+          "description": "将英文文本流畅翻译成中文。",
+          "prompt": "请将下面的英文流畅、准确地翻译成中文，保留术语与格式：\n\n{{content}}",
+          "tags": [
+            "翻译",
+            "英译中"
+          ]
+        }
+      }
+    },
+    {
+      "id": "zh-to-en",
+      "category": "translate",
+      "name": "Chinese → English",
+      "icon": "character.book.closed",
+      "author": "ClipboardXAI",
+      "version": "1.0.0",
+      "description": "Translate Chinese text into natural, idiomatic English.",
+      "tags": [
+        "translate",
+        "ZH→EN"
+      ],
+      "prompt": "Translate the Chinese text below into natural, idiomatic English, preserving the original meaning and tone:\n\n{{content}}",
+      "appliesTo": [
+        "text"
+      ],
+      "outputMode": "copy",
+      "minAppVersion": "3.0.0",
+      "locales": {
+        "zh-CN": {
+          "name": "中译英",
+          "description": "将中文文本翻译成地道英文。",
+          "prompt": "请将下面的中文翻译成地道、自然的英文，保留原意与语气：\n\n{{content}}",
+          "tags": [
+            "翻译",
+            "中译英"
+          ]
+        }
+      }
+    },
+    {
+      "id": "polite-decline",
+      "category": "social",
+      "name": "Polite Decline",
+      "icon": "hand.raised",
+      "author": "ClipboardXAI",
+      "version": "1.0.0",
+      "description": "Rewrite a blunt refusal into a polite, tactful expression.",
+      "tags": [
+        "decline",
+        "communication"
+      ],
+      "prompt": "Without changing the original intent, rewrite the refusal or disagreement below into a more polite and tactful phrasing:\n\n{{content}}",
+      "appliesTo": [
+        "text"
+      ],
+      "outputMode": "copy",
+      "minAppVersion": "3.0.0",
+      "locales": {
+        "zh-CN": {
+          "name": "礼貌拒绝",
+          "description": "把生硬的拒绝改写成礼貌得体的表达。",
+          "prompt": "请在不违背原意的前提下，把下面这段拒绝或不同意的表达，改写成更礼貌、得体的说法：\n\n{{content}}",
+          "tags": [
+            "拒绝",
+            "沟通"
+          ]
+        }
+      }
+    },
+    {
+      "id": "tweet-polish",
+      "category": "social",
+      "name": "Social Post Polish",
+      "icon": "megaphone",
+      "author": "ClipboardXAI",
+      "version": "1.0.0",
+      "description": "Rewrite an idea into a short, catchy social-media post.",
+      "tags": [
+        "social",
+        "copywriting"
+      ],
+      "prompt": "Rewrite the content below into a short, catchy post suitable for social platforms (e.g. X / Weibo), optionally adding 1-2 hashtags:\n\n{{content}}",
+      "appliesTo": [
+        "text"
+      ],
+      "outputMode": "copy",
+      "minAppVersion": "3.0.0",
+      "locales": {
+        "zh-CN": {
+          "name": "推文润色",
+          "description": "把想法改写成适合社交平台的简短文案。",
+          "prompt": "请把下面内容改写成适合发在社交平台（如 X / 微博）的简短、有吸引力的文案，可加 1-2 个话题标签：\n\n{{content}}",
+          "tags": [
+            "社媒",
+            "文案"
+          ]
+        }
+      }
+    },
+    {
+      "id": "sentiment",
+      "category": "analysis",
+      "name": "Sentiment Analysis",
+      "icon": "face.smiling",
+      "author": "ClipboardXAI",
+      "version": "1.0.0",
+      "description": "Detect the sentiment of text and give a brief rationale.",
+      "tags": [
+        "sentiment",
+        "analysis"
+      ],
+      "prompt": "Determine the sentiment of the text below (positive / neutral / negative) and give a one-sentence rationale:\n\n{{content}}",
+      "appliesTo": [
+        "text"
+      ],
+      "outputMode": "openPanel",
+      "minAppVersion": "3.0.0",
+      "locales": {
+        "zh-CN": {
+          "name": "情感分析",
+          "description": "判断文本情绪倾向并给出简要依据。",
+          "prompt": "请判断下面文本的情绪倾向（正面 / 中性 / 负面），并给出一句话依据：\n\n{{content}}",
+          "tags": [
+            "情感",
+            "分析"
+          ]
+        }
+      }
+    }
+  ]
+}

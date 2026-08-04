@@ -1,0 +1,17 @@
+{
+  "name": "Code Review",
+  "icon": "checkmark.shield",
+  "author": "ClipboardXAI",
+  "version": "1.0.0",
+  "description": "Review code for readability, robustness, and performance, and suggest improvements.",
+  "tags": [
+    "review",
+    "quality"
+  ],
+  "prompt": "Act like a senior engineer and review the following code. Point out issues from the perspectives of readability, robustness, performance, and security, and give improvement suggestions:\n\n{{content}}",
+  "appliesTo": [
+    "code"
+  ],
+  "outputMode": "openPanel",
+  "minAppVersion": "3.0.0"
+}

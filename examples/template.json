@@ -1,0 +1,12 @@
+{
+  "name": "Action Name",
+  "icon": "wand.and.stars",
+  "author": "your-github-name",
+  "version": "1.0.0",
+  "description": "One sentence describing the scenario this action solves.",
+  "tags": ["tag1", "tag2"],
+  "prompt": "Based on the clipboard content below, complete the task. Output only the result, no explanation:\n\n{{content}}",
+  "appliesTo": ["text"],
+  "outputMode": "copy",
+  "minAppVersion": "3.0.0"
+}

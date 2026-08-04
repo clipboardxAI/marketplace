@@ -1,0 +1,17 @@
+{
+  "name": "Meeting Notes",
+  "icon": "calendar",
+  "author": "ClipboardXAI",
+  "version": "1.0.0",
+  "description": "Turn scattered meeting notes into a structured summary.",
+  "tags": [
+    "meeting",
+    "notes"
+  ],
+  "prompt": "Organize the meeting notes below into a structured summary with four sections: Conclusions / Action Items / Owner / Timeline:\n\n{{content}}",
+  "appliesTo": [
+    "text"
+  ],
+  "outputMode": "openPanel",
+  "minAppVersion": "3.0.0"
+}

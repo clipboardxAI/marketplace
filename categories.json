@@ -1,0 +1,34 @@
+{
+  "categories": [
+    {
+      "id": "writing",
+      "name": "Writing",
+      "icon": "pencil.line"
+    },
+    {
+      "id": "dev",
+      "name": "Developer",
+      "icon": "chevron.left.forwardslash.chevron.right"
+    },
+    {
+      "id": "productivity",
+      "name": "Productivity",
+      "icon": "bolt"
+    },
+    {
+      "id": "translate",
+      "name": "Translate",
+      "icon": "globe"
+    },
+    {
+      "id": "social",
+      "name": "Social",
+      "icon": "bubble.left.and.bubble.right"
+    },
+    {
+      "id": "analysis",
+      "name": "Analytics",
+      "icon": "chart.bar"
+    }
+  ]
+}

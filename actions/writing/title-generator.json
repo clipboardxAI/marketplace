@@ -1,0 +1,17 @@
+{
+  "name": "Title Generator",
+  "icon": "text.book.closed",
+  "author": "ClipboardXAI",
+  "version": "1.0.0",
+  "description": "Generate 5 catchy, varied titles for an article or paragraph.",
+  "tags": [
+    "title",
+    "ideas"
+  ],
+  "prompt": "Generate 5 concise, attractive titles in different styles for the following content, one per line:\n\n{{content}}",
+  "appliesTo": [
+    "text"
+  ],
+  "outputMode": "copy",
+  "minAppVersion": "3.0.0"
+}

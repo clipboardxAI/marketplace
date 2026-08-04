@@ -1,0 +1,18 @@
+{
+  "name": "SQL Optimize",
+  "icon": "database",
+  "author": "ClipboardXAI",
+  "version": "1.0.0",
+  "description": "Analyze SQL and give actionable performance optimization advice.",
+  "tags": [
+    "SQL",
+    "database"
+  ],
+  "prompt": "Analyze the SQL statement below, point out performance bottlenecks, and give actionable optimization suggestions (indexes, rewrites, etc.):\n\n{{content}}",
+  "appliesTo": [
+    "text",
+    "code"
+  ],
+  "outputMode": "openPanel",
+  "minAppVersion": "3.0.0"
+}
