@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "catalogVersion": "2026.08.05",
-  "updatedAt": "2026-08-04",
+  "updatedAt": "2026-08-05",
   "categories": [
     {
       "id": "writing",
@@ -343,7 +343,7 @@
       "id": "regex-gen",
       "category": "dev",
       "name": "Regex Generator",
-      "icon": "regex",
+      "icon": "chevron.left.forwardslash.chevron.right",
       "author": "ClipboardXAI",
       "version": "1.0.0",
       "description": "Generate a working regular expression from a natural-language description.",
@@ -373,7 +373,7 @@
       "id": "sql-optimize",
       "category": "dev",
       "name": "SQL Optimize",
-      "icon": "database",
+      "icon": "externaldrive",
       "author": "ClipboardXAI",
       "version": "1.0.0",
       "description": "Analyze SQL and give actionable performance optimization advice.",

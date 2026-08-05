@@ -1,6 +1,6 @@
 {
   "name": "Regex Generator",
-  "icon": "regex",
+  "icon": "chevron.left.forwardslash.chevron.right",
   "author": "ClipboardXAI",
   "version": "1.0.0",
   "description": "Generate a working regular expression from a natural-language description.",

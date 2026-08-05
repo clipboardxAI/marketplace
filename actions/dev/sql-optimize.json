@@ -1,6 +1,6 @@
 {
   "name": "SQL Optimize",
-  "icon": "database",
+  "icon": "externaldrive",
   "author": "ClipboardXAI",
   "version": "1.0.0",
   "description": "Analyze SQL and give actionable performance optimization advice.",
