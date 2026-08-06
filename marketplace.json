@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "catalogVersion": "2026.08.05",
-  "updatedAt": "2026-08-05",
+  "catalogVersion": "2026.08.06",
+  "updatedAt": "2026-08-06",
   "categories": [
     {
       "id": "writing",
@@ -66,12 +66,7 @@
     {
       "id": "ecosystem",
       "name": "Ecosystem",
-      "icon": "shippingbox",
-      "locales": {
-        "zh-CN": {
-          "name": "生态合作"
-        }
-      }
+      "icon": "shippingbox"
     }
   ],
   "actions": [
@@ -681,17 +676,17 @@
       }
     },
     {
-      "id": "nuezip-compress-zip",
+      "id": "nicasa-fileinfo",
       "category": "ecosystem",
-      "name": "Compress to ZIP",
-      "icon": "archivebox",
-      "author": "NueZip",
+      "name": "File Info",
+      "icon": "info.circle",
+      "author": "Nicasa",
       "version": "1.0.0",
-      "description": "Compress the selected file(s) into a .zip archive using NueZip.",
+      "description": "Show detailed info (size, dimensions, metadata) for the selected file with Nicasa.",
       "tags": [
-        "compress",
-        "zip",
-        "archive"
+        "file",
+        "info",
+        "metadata"
       ],
       "prompt": "",
       "appliesTo": [
@@ -699,31 +694,32 @@
       ],
       "outputMode": "copy",
       "minAppVersion": "3.0.0",
-      "appIcon": "icons/nuezip.png",
+      "appIcon": "icons/nicasa.png",
+      "appStoreURL": "https://apps.apple.com/us/app/nicasa/id6756032669",
       "execution": {
         "kind": "externalApp",
-        "scheme": "nuezip",
-        "urlTemplate": "nuezip://quickCompress?files={{files}}&extra=zip"
+        "scheme": "nicasa",
+        "urlTemplate": "nicasa://open/info?files={{files}}"
       },
       "locales": {
         "zh-CN": {
-          "name": "压缩为 ZIP",
-          "description": "使用 NueZip 把所选文件压缩成 .zip 归档。"
+          "name": "文件信息",
+          "description": "使用 Nicasa 查看所选文件的详细信息（体积、尺寸、元数据）。"
         }
       }
     },
     {
-      "id": "nuezip-compress-7z",
+      "id": "nicasa-inpaint",
       "category": "ecosystem",
-      "name": "Compress to 7Z",
-      "icon": "archivebox",
-      "author": "NueZip",
+      "name": "AI Image Editor",
+      "icon": "wand.and.stars",
+      "author": "Nicasa",
       "version": "1.0.0",
-      "description": "Compress the selected file(s) into a high-ratio .7z archive using NueZip.",
+      "description": "Open the selected image in Nicasa's AI editor to remove objects or retouch.",
       "tags": [
-        "compress",
-        "7z",
-        "archive"
+        "image",
+        "ai",
+        "edit"
       ],
       "prompt": "",
       "appliesTo": [
@@ -731,112 +727,17 @@
       ],
       "outputMode": "copy",
       "minAppVersion": "3.0.0",
-      "appIcon": "icons/nuezip.png",
+      "appIcon": "icons/nicasa.png",
+      "appStoreURL": "https://apps.apple.com/us/app/nicasa/id6756032669",
       "execution": {
         "kind": "externalApp",
-        "scheme": "nuezip",
-        "urlTemplate": "nuezip://quickCompress?files={{files}}&extra=7z"
+        "scheme": "nicasa",
+        "urlTemplate": "nicasa://open/inpaint?files={{files}}"
       },
       "locales": {
         "zh-CN": {
-          "name": "压缩为 7Z",
-          "description": "使用 NueZip 把所选文件压缩成高压缩率的 .7z 归档。"
-        }
-      }
-    },
-    {
-      "id": "nuezip-extract-here",
-      "category": "ecosystem",
-      "name": "Extract Here",
-      "icon": "doc.zipper",
-      "author": "NueZip",
-      "version": "1.0.0",
-      "description": "Extract the selected archive into the current folder using NueZip.",
-      "tags": [
-        "extract",
-        "unzip",
-        "archive"
-      ],
-      "prompt": "",
-      "appliesTo": [
-        "file"
-      ],
-      "outputMode": "copy",
-      "minAppVersion": "3.0.0",
-      "appIcon": "icons/nuezip.png",
-      "execution": {
-        "kind": "externalApp",
-        "scheme": "nuezip",
-        "urlTemplate": "nuezip://extractHere?files={{files}}"
-      },
-      "locales": {
-        "zh-CN": {
-          "name": "解压到此处",
-          "description": "使用 NueZip 把所选归档解压到当前文件夹。"
-        }
-      }
-    },
-    {
-      "id": "nuezip-extract-folder",
-      "category": "ecosystem",
-      "name": "Extract to Folder",
-      "icon": "folder",
-      "author": "NueZip",
-      "version": "1.0.0",
-      "description": "Extract the selected archive into a new folder using NueZip.",
-      "tags": [
-        "extract",
-        "unzip",
-        "archive"
-      ],
-      "prompt": "",
-      "appliesTo": [
-        "file"
-      ],
-      "outputMode": "copy",
-      "minAppVersion": "3.0.0",
-      "appIcon": "icons/nuezip.png",
-      "execution": {
-        "kind": "externalApp",
-        "scheme": "nuezip",
-        "urlTemplate": "nuezip://extractToFolder?files={{files}}"
-      },
-      "locales": {
-        "zh-CN": {
-          "name": "解压到文件夹",
-          "description": "使用 NueZip 把所选归档解压到一个新文件夹。"
-        }
-      }
-    },
-    {
-      "id": "nuezip-dropbox",
-      "category": "ecosystem",
-      "name": "Add to NueZip Drop Box",
-      "icon": "tray.full",
-      "author": "NueZip",
-      "version": "1.0.0",
-      "description": "Send the selected file(s) to NueZip's Drop Box for later batch archiving.",
-      "tags": [
-        "dropbox",
-        "archive",
-        "batch"
-      ],
-      "prompt": "",
-      "appliesTo": [
-        "file"
-      ],
-      "outputMode": "copy",
-      "minAppVersion": "3.0.0",
-      "appIcon": "icons/nuezip.png",
-      "execution": {
-        "kind": "externalApp",
-        "scheme": "nuezip",
-        "urlTemplate": "nuezip://addToDropBox?files={{files}}"
-      },
-      "locales": {
-        "zh-CN": {
-          "name": "加入 NueZip 收集箱",
-          "description": "把所选文件送入 NueZip 收集箱，便于稍后批量归档。"
+          "name": "AI 修图",
+          "description": "在 Nicasa 的 AI 编辑器里打开所选图片，去除多余物体或精修。"
         }
       }
     },
@@ -860,6 +761,7 @@
       "outputMode": "copy",
       "minAppVersion": "3.0.0",
       "appIcon": "icons/nicasa.png",
+      "appStoreURL": "https://apps.apple.com/us/app/nicasa/id6756032669",
       "execution": {
         "kind": "externalApp",
         "scheme": "nicasa",
@@ -873,17 +775,17 @@
       }
     },
     {
-      "id": "nicasa-inpaint",
+      "id": "nuezip-compress-7z",
       "category": "ecosystem",
-      "name": "AI Image Editor",
-      "icon": "wand.and.photograph",
-      "author": "Nicasa",
+      "name": "Compress to 7Z",
+      "icon": "archivebox",
+      "author": "NueZip",
       "version": "1.0.0",
-      "description": "Open the selected image in Nicasa's AI editor to remove objects or retouch.",
+      "description": "Compress the selected file(s) into a high-ratio .7z archive using NueZip.",
       "tags": [
-        "image",
-        "ai",
-        "edit"
+        "compress",
+        "7z",
+        "archive"
       ],
       "prompt": "",
       "appliesTo": [
@@ -891,31 +793,32 @@
       ],
       "outputMode": "copy",
       "minAppVersion": "3.0.0",
-      "appIcon": "icons/nicasa.png",
+      "appIcon": "icons/nuezip.png",
+      "appStoreURL": "https://apps.apple.com/us/app/nuezip/id6785846417",
       "execution": {
         "kind": "externalApp",
-        "scheme": "nicasa",
-        "urlTemplate": "nicasa://open/inpaint?files={{files}}"
+        "scheme": "nuezip",
+        "urlTemplate": "nuezip://quickCompress?files={{files}}&extra=7z"
       },
       "locales": {
         "zh-CN": {
-          "name": "AI 修图",
-          "description": "在 Nicasa 的 AI 编辑器里打开所选图片，去除多余物体或精修。"
+          "name": "压缩为 7Z",
+          "description": "使用 NueZip 把所选文件压缩成高压缩率的 .7z 归档。"
         }
       }
     },
     {
-      "id": "nicasa-fileinfo",
+      "id": "nuezip-compress-zip",
       "category": "ecosystem",
-      "name": "File Info",
-      "icon": "info.circle",
-      "author": "Nicasa",
+      "name": "Compress to ZIP",
+      "icon": "archivebox",
+      "author": "NueZip",
       "version": "1.0.0",
-      "description": "Show detailed info (size, dimensions, metadata) for the selected file with Nicasa.",
+      "description": "Compress the selected file(s) into a .zip archive using NueZip.",
       "tags": [
-        "file",
-        "info",
-        "metadata"
+        "compress",
+        "zip",
+        "archive"
       ],
       "prompt": "",
       "appliesTo": [
@@ -923,16 +826,116 @@
       ],
       "outputMode": "copy",
       "minAppVersion": "3.0.0",
-      "appIcon": "icons/nicasa.png",
+      "appIcon": "icons/nuezip.png",
+      "appStoreURL": "https://apps.apple.com/us/app/nuezip/id6785846417",
       "execution": {
         "kind": "externalApp",
-        "scheme": "nicasa",
-        "urlTemplate": "nicasa://open/info?files={{files}}"
+        "scheme": "nuezip",
+        "urlTemplate": "nuezip://quickCompress?files={{files}}&extra=zip"
       },
       "locales": {
         "zh-CN": {
-          "name": "文件信息",
-          "description": "使用 Nicasa 查看所选文件的详细信息（体积、尺寸、元数据）。"
+          "name": "压缩为 ZIP",
+          "description": "使用 NueZip 把所选文件压缩成 .zip 归档。"
+        }
+      }
+    },
+    {
+      "id": "nuezip-dropbox",
+      "category": "ecosystem",
+      "name": "Add to NueZip Drop Box",
+      "icon": "tray.full",
+      "author": "NueZip",
+      "version": "1.0.0",
+      "description": "Send the selected file(s) to NueZip's Drop Box for later batch archiving.",
+      "tags": [
+        "dropbox",
+        "archive",
+        "batch"
+      ],
+      "prompt": "",
+      "appliesTo": [
+        "file"
+      ],
+      "outputMode": "copy",
+      "minAppVersion": "3.0.0",
+      "appIcon": "icons/nuezip.png",
+      "appStoreURL": "https://apps.apple.com/us/app/nuezip/id6785846417",
+      "execution": {
+        "kind": "externalApp",
+        "scheme": "nuezip",
+        "urlTemplate": "nuezip://addToDropBox?files={{files}}"
+      },
+      "locales": {
+        "zh-CN": {
+          "name": "加入 NueZip 收集箱",
+          "description": "把所选文件送入 NueZip 收集箱，便于稍后批量归档。"
+        }
+      }
+    },
+    {
+      "id": "nuezip-extract-folder",
+      "category": "ecosystem",
+      "name": "Extract to Folder",
+      "icon": "folder",
+      "author": "NueZip",
+      "version": "1.0.0",
+      "description": "Extract the selected archive into a new folder using NueZip.",
+      "tags": [
+        "extract",
+        "unzip",
+        "archive"
+      ],
+      "prompt": "",
+      "appliesTo": [
+        "file"
+      ],
+      "outputMode": "copy",
+      "minAppVersion": "3.0.0",
+      "appIcon": "icons/nuezip.png",
+      "appStoreURL": "https://apps.apple.com/us/app/nuezip/id6785846417",
+      "execution": {
+        "kind": "externalApp",
+        "scheme": "nuezip",
+        "urlTemplate": "nuezip://extractToFolder?files={{files}}"
+      },
+      "locales": {
+        "zh-CN": {
+          "name": "解压到文件夹",
+          "description": "使用 NueZip 把所选归档解压到一个新文件夹。"
+        }
+      }
+    },
+    {
+      "id": "nuezip-extract-here",
+      "category": "ecosystem",
+      "name": "Extract Here",
+      "icon": "doc.zipper",
+      "author": "NueZip",
+      "version": "1.0.0",
+      "description": "Extract the selected archive into the current folder using NueZip.",
+      "tags": [
+        "extract",
+        "unzip",
+        "archive"
+      ],
+      "prompt": "",
+      "appliesTo": [
+        "file"
+      ],
+      "outputMode": "copy",
+      "minAppVersion": "3.0.0",
+      "appIcon": "icons/nuezip.png",
+      "appStoreURL": "https://apps.apple.com/us/app/nuezip/id6785846417",
+      "execution": {
+        "kind": "externalApp",
+        "scheme": "nuezip",
+        "urlTemplate": "nuezip://extractHere?files={{files}}"
+      },
+      "locales": {
+        "zh-CN": {
+          "name": "解压到此处",
+          "description": "使用 NueZip 把所选归档解压到当前文件夹。"
         }
       }
     }

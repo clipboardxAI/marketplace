@@ -1,0 +1,25 @@
+{
+  "name": "Extract Here",
+  "icon": "doc.zipper",
+  "author": "NueZip",
+  "version": "1.0.0",
+  "description": "Extract the selected archive into the current folder using NueZip.",
+  "tags": [
+    "extract",
+    "unzip",
+    "archive"
+  ],
+  "prompt": "",
+  "appliesTo": [
+    "file"
+  ],
+  "outputMode": "copy",
+  "minAppVersion": "3.0.0",
+  "appIcon": "icons/nuezip.png",
+  "execution": {
+    "kind": "externalApp",
+    "scheme": "nuezip",
+    "urlTemplate": "nuezip://extractHere?files={{files}}"
+  },
+  "appStoreURL": "https://apps.apple.com/us/app/nuezip/id6785846417"
+}

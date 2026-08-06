@@ -12,14 +12,17 @@ import path from "node:path";
 
 import {
   ACTION_FIELDS,
+  REQUIRED_ACTION_FIELDS,
   SCHEMA_VERSION,
   SUPPORTED_LOCALES,
+  VALID_EXECUTION_KINDS,
   VALID_OUTPUT_MODES,
   VALID_TYPES,
   type ActionEntry,
   type ActionOverride,
   type Catalog,
   type CategoryEntry,
+  type ExecutionSpec,
 } from "./types.js";
 
 const ROOT = path.resolve(path.dirname(new URL(import.meta.url).pathname), "..");
@@ -101,7 +104,7 @@ function validateAction(
     return ["Action " + id + " is not a JSON object"];
   }
   const keys = Object.keys(data);
-  const missing = ACTION_FIELDS.filter((f) => !(f in data));
+  const missing = REQUIRED_ACTION_FIELDS.filter((f) => !(f in data));
   if (missing.length) errors.push("Action " + id + " missing fields: " + missing.join(", "));
   const extra = keys.filter((k) => !(ACTION_FIELDS as readonly string[]).includes(k));
   if (extra.length) errors.push("Action " + id + " has unknown fields: " + extra.join(", "));
@@ -131,6 +134,30 @@ function validateAction(
   }
   if ("outputMode" in data && !VALID_OUTPUT_MODES.has(data.outputMode))
     errors.push("Action " + id + ".outputMode must be one of " + [...VALID_OUTPUT_MODES].join("/"));
+
+  // Phase 7 — Ecosystem / external-app delegation.
+  for (const optStr of ["appIcon", "appStoreURL", "appDownloadURL"] as const) {
+    if (optStr in data && typeof data[optStr] !== "string")
+      errors.push("Action " + id + "." + optStr + " must be a string");
+  }
+  if ("execution" in data) {
+    const ex = data.execution;
+    if (typeof ex !== "object" || ex === null || Array.isArray(ex)) {
+      errors.push("Action " + id + ".execution must be an object");
+    } else {
+      if (typeof ex.kind !== "string" || !VALID_EXECUTION_KINDS.has(ex.kind)) {
+        errors.push(
+          "Action " + id + ".execution.kind must be one of " + [...VALID_EXECUTION_KINDS].join(", "),
+        );
+      }
+      if (ex.kind === "externalApp") {
+        if (typeof ex.scheme !== "string" || ex.scheme.length === 0)
+          errors.push("Action " + id + ".execution.scheme is required for externalApp");
+        if (typeof ex.urlTemplate !== "string" || ex.urlTemplate.length === 0)
+          errors.push("Action " + id + ".execution.urlTemplate is required for externalApp");
+      }
+    }
+  }
   for (const vkey of ["version", "minAppVersion"]) {
     if (vkey in data && data[vkey] !== null && data[vkey] !== undefined && !semverLike(data[vkey]))
       errors.push("Action " + id + "." + vkey + " must be a x.y.z version, got: " + JSON.stringify(data[vkey]));
@@ -245,6 +272,11 @@ function buildCatalog(): Catalog {
       outputMode: data.outputMode,
       minAppVersion: data.minAppVersion,
     };
+    // Phase 7 — Ecosystem / external-app delegation (carried through only when present).
+    if ("appIcon" in data) entry.appIcon = data.appIcon;
+    if ("appStoreURL" in data) entry.appStoreURL = data.appStoreURL;
+    if ("appDownloadURL" in data) entry.appDownloadURL = data.appDownloadURL;
+    if ("execution" in data) entry.execution = data.execution as ExecutionSpec;
     actions.push(entry);
   }
 

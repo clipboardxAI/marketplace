@@ -1,0 +1,25 @@
+{
+  "name": "File Info",
+  "icon": "info.circle",
+  "author": "Nicasa",
+  "version": "1.0.0",
+  "description": "Show detailed info (size, dimensions, metadata) for the selected file with Nicasa.",
+  "tags": [
+    "file",
+    "info",
+    "metadata"
+  ],
+  "prompt": "",
+  "appliesTo": [
+    "file"
+  ],
+  "outputMode": "copy",
+  "minAppVersion": "3.0.0",
+  "appIcon": "icons/nicasa.png",
+  "execution": {
+    "kind": "externalApp",
+    "scheme": "nicasa",
+    "urlTemplate": "nicasa://open/info?files={{files}}"
+  },
+  "appStoreURL": "https://apps.apple.com/us/app/nicasa/id6756032669"
+}

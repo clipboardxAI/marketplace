@@ -1,0 +1,25 @@
+{
+  "name": "Add to NueZip Drop Box",
+  "icon": "tray.full",
+  "author": "NueZip",
+  "version": "1.0.0",
+  "description": "Send the selected file(s) to NueZip's Drop Box for later batch archiving.",
+  "tags": [
+    "dropbox",
+    "archive",
+    "batch"
+  ],
+  "prompt": "",
+  "appliesTo": [
+    "file"
+  ],
+  "outputMode": "copy",
+  "minAppVersion": "3.0.0",
+  "appIcon": "icons/nuezip.png",
+  "execution": {
+    "kind": "externalApp",
+    "scheme": "nuezip",
+    "urlTemplate": "nuezip://addToDropBox?files={{files}}"
+  },
+  "appStoreURL": "https://apps.apple.com/us/app/nuezip/id6785846417"
+}

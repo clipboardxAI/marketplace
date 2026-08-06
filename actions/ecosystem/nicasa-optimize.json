@@ -1,0 +1,25 @@
+{
+  "name": "Image Optimizer",
+  "icon": "photo",
+  "author": "Nicasa",
+  "version": "1.0.0",
+  "description": "Optimize the selected image(s) for web with Nicasa — smaller size, same quality.",
+  "tags": [
+    "image",
+    "optimize",
+    "web"
+  ],
+  "prompt": "",
+  "appliesTo": [
+    "file"
+  ],
+  "outputMode": "copy",
+  "minAppVersion": "3.0.0",
+  "appIcon": "icons/nicasa.png",
+  "execution": {
+    "kind": "externalApp",
+    "scheme": "nicasa",
+    "urlTemplate": "nicasa://open/optim?files={{files}}"
+  },
+  "appStoreURL": "https://apps.apple.com/us/app/nicasa/id6756032669"
+}

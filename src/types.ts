@@ -55,8 +55,11 @@ export const VALID_TYPES = new Set([
 
 export const VALID_OUTPUT_MODES = new Set(["copy", "openPanel"]);
 
-/** Fields that live in a single action file (id/category are derived from path). */
-export const ACTION_FIELDS = [
+/** Valid values for an action's `execution.kind`. */
+export const VALID_EXECUTION_KINDS = new Set(["externalApp"]);
+
+/** Fields required in every action file (id/category are derived from path). */
+export const REQUIRED_ACTION_FIELDS = [
   "name",
   "icon",
   "author",
@@ -69,7 +72,31 @@ export const ACTION_FIELDS = [
   "minAppVersion",
 ] as const;
 
+/** All fields allowed in an action file (required + optional / ecosystem). */
+export const ACTION_FIELDS = [
+  ...REQUIRED_ACTION_FIELDS,
+  // Phase 7 — Ecosystem / external-app delegation (v3.0, all optional):
+  "appIcon", // 打包的伙伴 App 品牌图标（网站端渲染用，相对 icons/ 目录）
+  "appStoreURL", // App Store / 官网下载链接（未安装时引导下载）
+  "appDownloadURL", // 可选：非 App Store 的直接下载链接
+  "execution", // 外部 App 委派：{ kind, scheme, urlTemplate }
+] as const;
+
 export type ActionField = (typeof ACTION_FIELDS)[number];
+
+/**
+ * 外部 App 委派描述（v3.0 生态动作）。
+ * 不直接在 ClipboardXAI 内执行，而是用 NSWorkspace.open 拉起已安装的兄弟 App，
+ * 并把当前条目（文件 / 文本）填进它的 deeplink。
+ */
+export interface ExecutionSpec {
+  /** 必须为 "externalApp"（其余类型预留）。 */
+  kind: string;
+  /** 目标 App 的 URL scheme（如 "nuezip" / "nicasa"）。 */
+  scheme?: string;
+  /** deeplink 模板，含 {{files}} / {{text}} / {{returnURL}} 变量。 */
+  urlTemplate?: string;
+}
 
 /** A translatable subset of an action — what `i18n/<lang>/...` files may carry. */
 export interface ActionOverride {
@@ -89,6 +116,11 @@ export interface ActionEntry extends ActionOverride {
   appliesTo: string[];
   outputMode: string;
   minAppVersion: string;
+  // Phase 7 — Ecosystem / external-app delegation (v3.0):
+  appIcon?: string;
+  appStoreURL?: string;
+  appDownloadURL?: string;
+  execution?: ExecutionSpec;
   locales?: Record<string, ActionOverride>;
 }
 

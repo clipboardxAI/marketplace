@@ -1,0 +1,25 @@
+{
+  "name": "Compress to ZIP",
+  "icon": "archivebox",
+  "author": "NueZip",
+  "version": "1.0.0",
+  "description": "Compress the selected file(s) into a .zip archive using NueZip.",
+  "tags": [
+    "compress",
+    "zip",
+    "archive"
+  ],
+  "prompt": "",
+  "appliesTo": [
+    "file"
+  ],
+  "outputMode": "copy",
+  "minAppVersion": "3.0.0",
+  "appIcon": "icons/nuezip.png",
+  "execution": {
+    "kind": "externalApp",
+    "scheme": "nuezip",
+    "urlTemplate": "nuezip://quickCompress?files={{files}}&extra=zip"
+  },
+  "appStoreURL": "https://apps.apple.com/us/app/nuezip/id6785846417"
+}

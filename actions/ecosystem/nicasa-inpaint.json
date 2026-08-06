@@ -1,0 +1,25 @@
+{
+  "name": "AI Image Editor",
+  "icon": "wand.and.stars",
+  "author": "Nicasa",
+  "version": "1.0.0",
+  "description": "Open the selected image in Nicasa's AI editor to remove objects or retouch.",
+  "tags": [
+    "image",
+    "ai",
+    "edit"
+  ],
+  "prompt": "",
+  "appliesTo": [
+    "file"
+  ],
+  "outputMode": "copy",
+  "minAppVersion": "3.0.0",
+  "appIcon": "icons/nicasa.png",
+  "execution": {
+    "kind": "externalApp",
+    "scheme": "nicasa",
+    "urlTemplate": "nicasa://open/inpaint?files={{files}}"
+  },
+  "appStoreURL": "https://apps.apple.com/us/app/nicasa/id6756032669"
+}
