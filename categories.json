@@ -29,6 +29,11 @@
       "id": "analysis",
       "name": "Analytics",
       "icon": "chart.bar"
+    },
+    {
+      "id": "ecosystem",
+      "name": "Ecosystem",
+      "icon": "shippingbox"
     }
   ]
 }
