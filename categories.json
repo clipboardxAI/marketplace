@@ -48,7 +48,7 @@
     {
       "id": "legal",
       "name": "Legal",
-      "icon": "scale.2"
+      "icon": "checkmark.seal"
     },
     {
       "id": "finance",
