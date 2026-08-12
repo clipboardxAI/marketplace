@@ -19,6 +19,30 @@
     },
     "analysis": {
       "name": "分析洞察"
+    },
+    "business": {
+      "name": "商业办公"
+    },
+    "content": {
+      "name": "内容营销"
+    },
+    "academic": {
+      "name": "学术"
+    },
+    "legal": {
+      "name": "法律"
+    },
+    "finance": {
+      "name": "金融"
+    },
+    "health": {
+      "name": "健康"
+    },
+    "support": {
+      "name": "客户支持"
+    },
+    "ecosystem": {
+      "name": "生态"
     }
   },
   "actions": {
