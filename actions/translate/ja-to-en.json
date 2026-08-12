@@ -1,0 +1,18 @@
+{
+  "name": "日本語 → English",
+  "icon": "globe",
+  "author": "ClipboardXAI",
+  "version": "1.0.0",
+  "description": "Translate Japanese text into natural English.",
+  "tags": [
+    "translate",
+    "ja",
+    "en"
+  ],
+  "prompt": "Translate the following Japanese text into natural, fluent English. Keep the meaning and tone:\n\n{{content}}",
+  "appliesTo": [
+    "text"
+  ],
+  "outputMode": "copy",
+  "minAppVersion": "3.0.0"
+}

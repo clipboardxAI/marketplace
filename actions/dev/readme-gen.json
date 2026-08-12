@@ -1,0 +1,19 @@
+{
+  "name": "Generate README",
+  "icon": "doc.richtext",
+  "author": "ClipboardXAI",
+  "version": "1.0.0",
+  "description": "Generate a clear README from the code or notes.",
+  "tags": [
+    "readme",
+    "docs",
+    "long-text"
+  ],
+  "prompt": "Write a clean README for the following project/code. Include: Overview, Install, Usage, and API if present:\n\n{{content}}",
+  "appliesTo": [
+    "code",
+    "text"
+  ],
+  "outputMode": "openPanel",
+  "minAppVersion": "3.0.0"
+}

@@ -1,0 +1,19 @@
+{
+  "name": "Financial Summary",
+  "icon": "chart.line.uptrend.xyaxis",
+  "author": "ClipboardXAI",
+  "version": "1.0.0",
+  "description": "Summarize a financial statement or long report.",
+  "tags": [
+    "finance",
+    "summary",
+    "long-text"
+  ],
+  "prompt": "Summarize the following financial text into key takeaways: revenue, cost, profit, risks, and outlook:\n\n{{content}}",
+  "appliesTo": [
+    "text",
+    "file"
+  ],
+  "outputMode": "openPanel",
+  "minAppVersion": "3.0.0"
+}

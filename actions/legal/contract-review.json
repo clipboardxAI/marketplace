@@ -1,0 +1,19 @@
+{
+  "name": "Contract Review",
+  "icon": "doc.text.magnifyingglass",
+  "author": "ClipboardXAI",
+  "version": "1.0.0",
+  "description": "Review a contract for risky or unusual clauses.",
+  "tags": [
+    "contract",
+    "legal",
+    "review"
+  ],
+  "prompt": "Review the following contract. Flag unusual, one-sided, or risky clauses with a short explanation for each:\n\n{{content}}",
+  "appliesTo": [
+    "text",
+    "file"
+  ],
+  "outputMode": "openPanel",
+  "minAppVersion": "3.0.0"
+}

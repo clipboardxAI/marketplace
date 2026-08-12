@@ -1,0 +1,18 @@
+{
+  "name": "OKR Draft",
+  "icon": "target",
+  "author": "ClipboardXAI",
+  "version": "1.0.0",
+  "description": "Draft Objectives and Key Results from a goal brief.",
+  "tags": [
+    "okr",
+    "goals",
+    "plan"
+  ],
+  "prompt": "Draft OKRs from the following brief. For each Objective, write 2-3 measurable Key Results:\n\n{{content}}",
+  "appliesTo": [
+    "text"
+  ],
+  "outputMode": "openPanel",
+  "minAppVersion": "3.0.0"
+}

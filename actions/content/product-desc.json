@@ -1,0 +1,19 @@
+{
+  "name": "Product Description",
+  "icon": "tag.fill",
+  "author": "ClipboardXAI",
+  "version": "1.0.0",
+  "description": "Write a compelling product description.",
+  "tags": [
+    "product",
+    "ecommerce",
+    "copy"
+  ],
+  "prompt": "Write a compelling product description from the following. Highlight benefits, not just features, and end with a CTA:\n\n{{content}}",
+  "appliesTo": [
+    "text",
+    "url"
+  ],
+  "outputMode": "openPanel",
+  "minAppVersion": "3.0.0"
+}

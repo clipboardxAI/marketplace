@@ -1,0 +1,18 @@
+{
+  "name": "Blog Post",
+  "icon": "doc.richtext",
+  "author": "ClipboardXAI",
+  "version": "1.0.0",
+  "description": "Write a full blog post from an outline or notes.",
+  "tags": [
+    "blog",
+    "article",
+    "long-text"
+  ],
+  "prompt": "Write a complete blog post from the following. Include a catchy title, intro, 3-5 sections with subheads, and a conclusion:\n\n{{content}}",
+  "appliesTo": [
+    "text"
+  ],
+  "outputMode": "openPanel",
+  "minAppVersion": "3.0.0"
+}

@@ -1,0 +1,19 @@
+{
+  "name": "API Doc",
+  "icon": "book.closed",
+  "author": "ClipboardXAI",
+  "version": "1.0.0",
+  "description": "Generate API documentation from code or an endpoint description.",
+  "tags": [
+    "api",
+    "docs",
+    "long-text"
+  ],
+  "prompt": "Generate API documentation for the following. Use sections: Endpoint, Parameters, Request, Response, Errors:\n\n{{content}}",
+  "appliesTo": [
+    "code",
+    "text"
+  ],
+  "outputMode": "openPanel",
+  "minAppVersion": "3.0.0"
+}

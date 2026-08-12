@@ -1,0 +1,19 @@
+{
+  "name": "Expense Report",
+  "icon": "receipt",
+  "author": "ClipboardXAI",
+  "version": "1.0.0",
+  "description": "Turn raw expense notes into a clean report.",
+  "tags": [
+    "expense",
+    "finance",
+    "report"
+  ],
+  "prompt": "Turn the following expense notes into a clean report: category, date, amount, total, and notes:\n\n{{content}}",
+  "appliesTo": [
+    "text",
+    "file"
+  ],
+  "outputMode": "openPanel",
+  "minAppVersion": "3.0.0"
+}

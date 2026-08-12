@@ -1,0 +1,19 @@
+{
+  "name": "Risk Scan",
+  "icon": "exclamationmark.shield",
+  "author": "ClipboardXAI",
+  "version": "1.0.0",
+  "description": "Scan a long document for risks, red flags, and gaps.",
+  "tags": [
+    "risk",
+    "review",
+    "long-text"
+  ],
+  "prompt": "Scan the following document for risks, red flags, inconsistencies, and missing items. List each with context:\n\n{{content}}",
+  "appliesTo": [
+    "text",
+    "file"
+  ],
+  "outputMode": "openPanel",
+  "minAppVersion": "3.0.0"
+}

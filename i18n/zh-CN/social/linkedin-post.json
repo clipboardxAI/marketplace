@@ -1,0 +1,10 @@
+{
+  "name": "LinkedIn 发文",
+  "description": "把想法整理为精修 LinkedIn 贴文。",
+  "prompt": "请将以下内容改写为精修的 LinkedIn 贴文：开场钩子、2-3 个短段落、一个引发互动的提问：\n\n{{content}}",
+  "tags": [
+    "领英",
+    "发文",
+    "社交"
+  ]
+}

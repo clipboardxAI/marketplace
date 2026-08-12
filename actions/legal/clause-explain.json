@@ -1,0 +1,19 @@
+{
+  "name": "Explain Clause",
+  "icon": "doc.on.doc",
+  "author": "ClipboardXAI",
+  "version": "1.0.0",
+  "description": "Explain a legal clause in plain language.",
+  "tags": [
+    "clause",
+    "legal",
+    "explain"
+  ],
+  "prompt": "Explain the following legal clause in plain, non-lawyer language. What it means and what to watch for:\n\n{{content}}",
+  "appliesTo": [
+    "text",
+    "file"
+  ],
+  "outputMode": "openPanel",
+  "minAppVersion": "3.0.0"
+}

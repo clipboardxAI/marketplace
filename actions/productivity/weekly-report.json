@@ -1,0 +1,18 @@
+{
+  "name": "Weekly Report",
+  "icon": "doc.text",
+  "author": "ClipboardXAI",
+  "version": "1.0.0",
+  "description": "Summarize the week's work into a clean progress report.",
+  "tags": [
+    "report",
+    "weekly",
+    "long-text"
+  ],
+  "prompt": "Summarize the following week's notes into a weekly report: Done / In Progress / Blockers / Next Week:\n\n{{content}}",
+  "appliesTo": [
+    "text"
+  ],
+  "outputMode": "openPanel",
+  "minAppVersion": "3.0.0"
+}

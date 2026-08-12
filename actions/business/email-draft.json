@@ -1,0 +1,18 @@
+{
+  "name": "Email Draft",
+  "icon": "envelope",
+  "author": "ClipboardXAI",
+  "version": "1.0.0",
+  "description": "Draft a clear, professional email from a brief.",
+  "tags": [
+    "email",
+    "business",
+    "draft"
+  ],
+  "prompt": "Draft a clear, professional email from the following brief. Include subject, greeting, body, and sign-off:\n\n{{content}}",
+  "appliesTo": [
+    "text"
+  ],
+  "outputMode": "openPanel",
+  "minAppVersion": "3.0.0"
+}

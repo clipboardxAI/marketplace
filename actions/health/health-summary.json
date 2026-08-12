@@ -1,0 +1,19 @@
+{
+  "name": "Health Summary",
+  "icon": "heart.text.square",
+  "author": "ClipboardXAI",
+  "version": "1.0.0",
+  "description": "Summarize a medical/health note into key points.",
+  "tags": [
+    "health",
+    "summary",
+    "long-text"
+  ],
+  "prompt": "Summarize the following health/medical note into clear key points: conditions, medications, follow-ups:\n\n{{content}}",
+  "appliesTo": [
+    "text",
+    "file"
+  ],
+  "outputMode": "openPanel",
+  "minAppVersion": "3.0.0"
+}

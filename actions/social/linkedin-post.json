@@ -1,0 +1,18 @@
+{
+  "name": "LinkedIn Post",
+  "icon": "network",
+  "author": "ClipboardXAI",
+  "version": "1.0.0",
+  "description": "Turn an idea or note into a polished LinkedIn post.",
+  "tags": [
+    "linkedin",
+    "post",
+    "social"
+  ],
+  "prompt": "Turn the following into a polished LinkedIn post: hook, 2-3 short paragraphs, a question to drive comments:\n\n{{content}}",
+  "appliesTo": [
+    "text"
+  ],
+  "outputMode": "openPanel",
+  "minAppVersion": "3.0.0"
+}

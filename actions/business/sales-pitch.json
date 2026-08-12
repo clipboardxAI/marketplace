@@ -1,0 +1,18 @@
+{
+  "name": "Sales Pitch",
+  "icon": "megaphone",
+  "author": "ClipboardXAI",
+  "version": "1.0.0",
+  "description": "Craft a persuasive sales pitch for a product or service.",
+  "tags": [
+    "sales",
+    "pitch",
+    "persuade"
+  ],
+  "prompt": "Craft a persuasive sales pitch for the following. Lead with the customer's pain, then value, then a clear CTA:\n\n{{content}}",
+  "appliesTo": [
+    "text"
+  ],
+  "outputMode": "openPanel",
+  "minAppVersion": "3.0.0"
+}

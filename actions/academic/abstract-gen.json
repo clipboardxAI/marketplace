@@ -1,0 +1,18 @@
+{
+  "name": "Abstract",
+  "icon": "doc.text",
+  "author": "ClipboardXAI",
+  "version": "1.0.0",
+  "description": "Write a concise academic abstract.",
+  "tags": [
+    "abstract",
+    "research",
+    "summary"
+  ],
+  "prompt": "Write a concise academic abstract (about 150 words) from the following: background, method, results, conclusion:\n\n{{content}}",
+  "appliesTo": [
+    "text"
+  ],
+  "outputMode": "copy",
+  "minAppVersion": "3.0.0"
+}

@@ -1,0 +1,18 @@
+{
+  "name": "Newsletter",
+  "icon": "newspaper",
+  "author": "ClipboardXAI",
+  "version": "1.0.0",
+  "description": "Turn notes into a clean newsletter issue.",
+  "tags": [
+    "newsletter",
+    "email",
+    "long-text"
+  ],
+  "prompt": "Turn the following into a newsletter issue: a subject line, a short intro, 3-5 items with headers, and a sign-off:\n\n{{content}}",
+  "appliesTo": [
+    "text"
+  ],
+  "outputMode": "openPanel",
+  "minAppVersion": "3.0.0"
+}

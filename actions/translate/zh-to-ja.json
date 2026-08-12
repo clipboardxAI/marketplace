@@ -1,0 +1,18 @@
+{
+  "name": "中文 → 日本語",
+  "icon": "globe",
+  "author": "ClipboardXAI",
+  "version": "1.0.0",
+  "description": "Translate Chinese text into natural Japanese.",
+  "tags": [
+    "translate",
+    "ja",
+    "japanese"
+  ],
+  "prompt": "Translate the following Chinese text into natural, fluent Japanese. Keep the meaning and tone:\n\n{{content}}",
+  "appliesTo": [
+    "text"
+  ],
+  "outputMode": "copy",
+  "minAppVersion": "3.0.0"
+}

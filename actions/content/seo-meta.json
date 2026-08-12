@@ -1,0 +1,19 @@
+{
+  "name": "SEO Meta",
+  "icon": "magnifyingglass.circle",
+  "author": "ClipboardXAI",
+  "version": "1.0.0",
+  "description": "Generate SEO title, description, and keywords.",
+  "tags": [
+    "seo",
+    "meta",
+    "marketing"
+  ],
+  "prompt": "Generate SEO metadata for the following: a title (<=60 chars), a meta description (<=155 chars), and 5 keywords:\n\n{{content}}",
+  "appliesTo": [
+    "text",
+    "url"
+  ],
+  "outputMode": "copy",
+  "minAppVersion": "3.0.0"
+}

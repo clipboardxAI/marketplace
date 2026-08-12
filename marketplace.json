@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "catalogVersion": "2026.08.06",
-  "updatedAt": "2026-08-06",
+  "catalogVersion": "2026.08.12",
+  "updatedAt": "2026-08-12",
   "categories": [
     {
       "id": "writing",
@@ -64,12 +64,111 @@
       }
     },
     {
+      "id": "business",
+      "name": "Business",
+      "icon": "briefcase"
+    },
+    {
+      "id": "content",
+      "name": "Content & Marketing",
+      "icon": "megaphone"
+    },
+    {
+      "id": "academic",
+      "name": "Academic",
+      "icon": "graduationcap"
+    },
+    {
+      "id": "legal",
+      "name": "Legal",
+      "icon": "scale.2"
+    },
+    {
+      "id": "finance",
+      "name": "Finance",
+      "icon": "banknote"
+    },
+    {
+      "id": "health",
+      "name": "Health",
+      "icon": "cross.case"
+    },
+    {
+      "id": "support",
+      "name": "Customer Support",
+      "icon": "lifepreserver"
+    },
+    {
       "id": "ecosystem",
       "name": "Ecosystem",
       "icon": "shippingbox"
     }
   ],
   "actions": [
+    {
+      "id": "bullet-points",
+      "category": "writing",
+      "name": "Bullet Points",
+      "icon": "list.bullet",
+      "author": "ClipboardXAI",
+      "version": "1.0.0",
+      "description": "Turn a dense paragraph into clear, scannable bullet points.",
+      "tags": [
+        "bullets",
+        "summarize",
+        "long-text"
+      ],
+      "prompt": "Convert the following long text into clear, scannable bullet points. Preserve the key facts and hierarchy:\n\n{{content}}",
+      "appliesTo": [
+        "text"
+      ],
+      "outputMode": "openPanel",
+      "minAppVersion": "3.0.0",
+      "locales": {
+        "zh-CN": {
+          "name": "要点提炼",
+          "description": "把长段落整理为清晰的要点列表。",
+          "prompt": "请将以下长文本整理为清晰、易读的要点列表，保留关键事实与层级：\n\n{{content}}",
+          "tags": [
+            "要点",
+            "列表",
+            "长文本"
+          ]
+        }
+      }
+    },
+    {
+      "id": "continue-writing",
+      "category": "writing",
+      "name": "Continue Writing",
+      "icon": "pencil.and.scribble",
+      "author": "ClipboardXAI",
+      "version": "1.0.0",
+      "description": "Continue the draft naturally from where it leaves off.",
+      "tags": [
+        "continue",
+        "draft",
+        "writing"
+      ],
+      "prompt": "Continue writing the following draft naturally, matching its style and tone. Do not repeat what is already there:\n\n{{content}}",
+      "appliesTo": [
+        "text"
+      ],
+      "outputMode": "openPanel",
+      "minAppVersion": "3.0.0",
+      "locales": {
+        "zh-CN": {
+          "name": "续写",
+          "description": "顺着现有草稿自然续写。",
+          "prompt": "请顺着以下草稿自然续写，保持原有风格与语气，不要重复已有内容：\n\n{{content}}",
+          "tags": [
+            "续写",
+            "草稿",
+            "写作"
+          ]
+        }
+      }
+    },
     {
       "id": "expand",
       "category": "writing",
@@ -96,6 +195,38 @@
           "tags": [
             "扩写",
             "创作"
+          ]
+        }
+      }
+    },
+    {
+      "id": "grammar-fix",
+      "category": "writing",
+      "name": "Fix Grammar",
+      "icon": "textformat.abc",
+      "author": "ClipboardXAI",
+      "version": "1.0.0",
+      "description": "Correct grammar and sentence structure while keeping the original voice.",
+      "tags": [
+        "grammar",
+        "correct",
+        "edit"
+      ],
+      "prompt": "Fix the grammar and sentence structure of the following text. Keep the original tone and meaning:\n\n{{content}}",
+      "appliesTo": [
+        "text"
+      ],
+      "outputMode": "copy",
+      "minAppVersion": "3.0.0",
+      "locales": {
+        "zh-CN": {
+          "name": "修正语法",
+          "description": "修正语法与句式，保留原语气。",
+          "prompt": "请修正以下文本的语法与句式，保留原有语气与含义：\n\n{{content}}",
+          "tags": [
+            "语法",
+            "修正",
+            "编辑"
           ]
         }
       }
@@ -129,6 +260,70 @@
             "润色",
             "改写",
             "写作"
+          ]
+        }
+      }
+    },
+    {
+      "id": "proofread",
+      "category": "writing",
+      "name": "Proofread",
+      "icon": "checkmark.seal",
+      "author": "ClipboardXAI",
+      "version": "1.0.0",
+      "description": "Proofread the text for spelling, grammar, and punctuation errors without changing the wording.",
+      "tags": [
+        "proofread",
+        "spelling",
+        "edit"
+      ],
+      "prompt": "Proofread the following text. Fix spelling, grammar, and punctuation errors only; do not change wording or meaning:\n\n{{content}}",
+      "appliesTo": [
+        "text"
+      ],
+      "outputMode": "copy",
+      "minAppVersion": "3.0.0",
+      "locales": {
+        "zh-CN": {
+          "name": "校对",
+          "description": "校对文本中的拼写、语法与标点错误，不改变原意。",
+          "prompt": "请校对以下文本，仅修正拼写、语法和标点错误，不要改动措辞与含义：\n\n{{content}}",
+          "tags": [
+            "校对",
+            "拼写",
+            "编辑"
+          ]
+        }
+      }
+    },
+    {
+      "id": "rephrase",
+      "category": "writing",
+      "name": "Rephrase",
+      "icon": "text.bubble",
+      "author": "ClipboardXAI",
+      "version": "1.0.0",
+      "description": "Rephrase the text in different words with the same meaning.",
+      "tags": [
+        "rephrase",
+        "paraphrase",
+        "rewrite"
+      ],
+      "prompt": "Rephrase the following text using different wording but the same meaning:\n\n{{content}}",
+      "appliesTo": [
+        "text"
+      ],
+      "outputMode": "copy",
+      "minAppVersion": "3.0.0",
+      "locales": {
+        "zh-CN": {
+          "name": "改写措辞",
+          "description": "用不同措辞表达相同含义。",
+          "prompt": "请用不同的措辞改写以下文本，保持原意不变：\n\n{{content}}",
+          "tags": [
+            "改写",
+            "释义",
+            "重写"
           ]
         }
       }
@@ -194,6 +389,38 @@
       }
     },
     {
+      "id": "simplify",
+      "category": "writing",
+      "name": "Simplify",
+      "icon": "text.justify",
+      "author": "ClipboardXAI",
+      "version": "1.0.0",
+      "description": "Simplify complex text so it is easy to understand.",
+      "tags": [
+        "simplify",
+        "plain",
+        "long-text"
+      ],
+      "prompt": "Simplify the following text so a general audience can understand it easily, without losing the core meaning:\n\n{{content}}",
+      "appliesTo": [
+        "text"
+      ],
+      "outputMode": "copy",
+      "minAppVersion": "3.0.0",
+      "locales": {
+        "zh-CN": {
+          "name": "通俗化",
+          "description": "把复杂文本改写为易懂表达。",
+          "prompt": "请将以下文本改写为通俗易懂的表达，不丢失核心含义：\n\n{{content}}",
+          "tags": [
+            "通俗",
+            "简化",
+            "长文本"
+          ]
+        }
+      }
+    },
+    {
       "id": "title-generator",
       "category": "writing",
       "name": "Title Generator",
@@ -224,6 +451,39 @@
       }
     },
     {
+      "id": "api-doc",
+      "category": "dev",
+      "name": "API Doc",
+      "icon": "book.closed",
+      "author": "ClipboardXAI",
+      "version": "1.0.0",
+      "description": "Generate API documentation from code or an endpoint description.",
+      "tags": [
+        "api",
+        "docs",
+        "long-text"
+      ],
+      "prompt": "Generate API documentation for the following. Use sections: Endpoint, Parameters, Request, Response, Errors:\n\n{{content}}",
+      "appliesTo": [
+        "code",
+        "text"
+      ],
+      "outputMode": "openPanel",
+      "minAppVersion": "3.0.0",
+      "locales": {
+        "zh-CN": {
+          "name": "接口文档",
+          "description": "根据代码或接口描述生成 API 文档。",
+          "prompt": "请为以下内容生成接口文档，包含：路径、参数、请求、响应、错误说明：\n\n{{content}}",
+          "tags": [
+            "接口",
+            "文档",
+            "长文本"
+          ]
+        }
+      }
+    },
+    {
       "id": "code-review",
       "category": "dev",
       "name": "Code Review",
@@ -249,6 +509,38 @@
           "tags": [
             "审查",
             "质量"
+          ]
+        }
+      }
+    },
+    {
+      "id": "commit-msg",
+      "category": "dev",
+      "name": "Commit Message",
+      "icon": "paperplane",
+      "author": "ClipboardXAI",
+      "version": "1.0.0",
+      "description": "Write a concise Conventional Commits message from the diff.",
+      "tags": [
+        "git",
+        "commit",
+        "message"
+      ],
+      "prompt": "Write a concise Conventional Commits message (type: subject, then body if needed) for the following change:\n\n{{content}}",
+      "appliesTo": [
+        "code"
+      ],
+      "outputMode": "copy",
+      "minAppVersion": "3.0.0",
+      "locales": {
+        "zh-CN": {
+          "name": "提交信息",
+          "description": "根据改动生成简洁的 Conventional Commits 提交信息。",
+          "prompt": "请为以下改动生成简洁的 Conventional Commits 提交信息（type: 主题，必要时补充正文）：\n\n{{content}}",
+          "tags": [
+            "git",
+            "提交",
+            "信息"
           ]
         }
       }
@@ -315,6 +607,39 @@
       }
     },
     {
+      "id": "explain-error",
+      "category": "dev",
+      "name": "Explain Error",
+      "icon": "exclamationmark.bubble",
+      "author": "ClipboardXAI",
+      "version": "1.0.0",
+      "description": "Explain an error/stack trace and suggest a fix.",
+      "tags": [
+        "error",
+        "debug",
+        "explain"
+      ],
+      "prompt": "Explain what the following error or stack trace means, likely causes, and how to fix it:\n\n{{content}}",
+      "appliesTo": [
+        "code",
+        "text"
+      ],
+      "outputMode": "openPanel",
+      "minAppVersion": "3.0.0",
+      "locales": {
+        "zh-CN": {
+          "name": "解释错误",
+          "description": "解释报错与堆栈并给出修复建议。",
+          "prompt": "请解释以下报错或堆栈的含义、可能原因及修复方法：\n\n{{content}}",
+          "tags": [
+            "错误",
+            "调试",
+            "解释"
+          ]
+        }
+      }
+    },
+    {
       "id": "gen-comments",
       "category": "dev",
       "name": "Generate Comments",
@@ -340,6 +665,39 @@
           "tags": [
             "注释",
             "文档"
+          ]
+        }
+      }
+    },
+    {
+      "id": "readme-gen",
+      "category": "dev",
+      "name": "Generate README",
+      "icon": "doc.richtext",
+      "author": "ClipboardXAI",
+      "version": "1.0.0",
+      "description": "Generate a clear README from the code or notes.",
+      "tags": [
+        "readme",
+        "docs",
+        "long-text"
+      ],
+      "prompt": "Write a clean README for the following project/code. Include: Overview, Install, Usage, and API if present:\n\n{{content}}",
+      "appliesTo": [
+        "code",
+        "text"
+      ],
+      "outputMode": "openPanel",
+      "minAppVersion": "3.0.0",
+      "locales": {
+        "zh-CN": {
+          "name": "生成 README",
+          "description": "根据代码或说明生成清晰的 README。",
+          "prompt": "请为以下项目/代码生成清晰的 README，包含：简介、安装、用法，如有接口则补充 API：\n\n{{content}}",
+          "tags": [
+            "文档",
+            "说明",
+            "长文本"
           ]
         }
       }
@@ -401,6 +759,102 @@
           "tags": [
             "SQL",
             "数据库"
+          ]
+        }
+      }
+    },
+    {
+      "id": "unit-test-gen",
+      "category": "dev",
+      "name": "Generate Unit Tests",
+      "icon": "checkmark.seal",
+      "author": "ClipboardXAI",
+      "version": "1.0.0",
+      "description": "Generate unit tests for the given code.",
+      "tags": [
+        "test",
+        "unit",
+        "quality"
+      ],
+      "prompt": "Write concise, meaningful unit tests for the following code. Cover the main paths and edge cases:\n\n{{content}}",
+      "appliesTo": [
+        "code"
+      ],
+      "outputMode": "openPanel",
+      "minAppVersion": "3.0.0",
+      "locales": {
+        "zh-CN": {
+          "name": "生成单元测试",
+          "description": "为给定代码生成单元测试。",
+          "prompt": "请为以下代码编写简洁、有效的单元测试，覆盖主要路径与边界情况：\n\n{{content}}",
+          "tags": [
+            "测试",
+            "单元",
+            "质量"
+          ]
+        }
+      }
+    },
+    {
+      "id": "daily-plan",
+      "category": "productivity",
+      "name": "Daily Plan",
+      "icon": "calendar",
+      "author": "ClipboardXAI",
+      "version": "1.0.0",
+      "description": "Turn a messy to-do list into a prioritized daily plan.",
+      "tags": [
+        "plan",
+        "schedule",
+        "todo"
+      ],
+      "prompt": "Turn the following notes into a prioritized daily plan with time blocks and the top 3 must-dos:\n\n{{content}}",
+      "appliesTo": [
+        "text"
+      ],
+      "outputMode": "openPanel",
+      "minAppVersion": "3.0.0",
+      "locales": {
+        "zh-CN": {
+          "name": "每日计划",
+          "description": "把杂乱待办整理为优先级每日计划。",
+          "prompt": "请将以下记录整理为带时间块的优先级每日计划，并标出最重要的 3 件事：\n\n{{content}}",
+          "tags": [
+            "计划",
+            "日程",
+            "待办"
+          ]
+        }
+      }
+    },
+    {
+      "id": "decision-memo",
+      "category": "productivity",
+      "name": "Decision Memo",
+      "icon": "doc.on.doc",
+      "author": "ClipboardXAI",
+      "version": "1.0.0",
+      "description": "Write a decision memo with options and a recommendation.",
+      "tags": [
+        "memo",
+        "decision",
+        "long-text"
+      ],
+      "prompt": "Write a decision memo for the following. Include: Background, Options, Recommendation, Rationale:\n\n{{content}}",
+      "appliesTo": [
+        "text"
+      ],
+      "outputMode": "openPanel",
+      "minAppVersion": "3.0.0",
+      "locales": {
+        "zh-CN": {
+          "name": "决策备忘",
+          "description": "撰写含方案与建议的决策备忘。",
+          "prompt": "请就以下内容撰写决策备忘，包含：背景、可选方案、建议、理由：\n\n{{content}}",
+          "tags": [
+            "备忘",
+            "决策",
+            "长文本"
           ]
         }
       }
@@ -496,6 +950,102 @@
       }
     },
     {
+      "id": "okr-draft",
+      "category": "productivity",
+      "name": "OKR Draft",
+      "icon": "target",
+      "author": "ClipboardXAI",
+      "version": "1.0.0",
+      "description": "Draft Objectives and Key Results from a goal brief.",
+      "tags": [
+        "okr",
+        "goals",
+        "plan"
+      ],
+      "prompt": "Draft OKRs from the following brief. For each Objective, write 2-3 measurable Key Results:\n\n{{content}}",
+      "appliesTo": [
+        "text"
+      ],
+      "outputMode": "openPanel",
+      "minAppVersion": "3.0.0",
+      "locales": {
+        "zh-CN": {
+          "name": "OKR 起草",
+          "description": "根据目标简述起草 OKR。",
+          "prompt": "请根据以下简述起草 OKR，每个目标配 2-3 个可量化关键结果：\n\n{{content}}",
+          "tags": [
+            "okr",
+            "目标",
+            "计划"
+          ]
+        }
+      }
+    },
+    {
+      "id": "project-plan",
+      "category": "productivity",
+      "name": "Project Plan",
+      "icon": "list.bullet.below.rectangle",
+      "author": "ClipboardXAI",
+      "version": "1.0.0",
+      "description": "Draft a structured project plan from rough ideas.",
+      "tags": [
+        "project",
+        "plan",
+        "long-text"
+      ],
+      "prompt": "Draft a project plan from the following. Include: Goals, Milestones, Owners, Risks, Timeline:\n\n{{content}}",
+      "appliesTo": [
+        "text"
+      ],
+      "outputMode": "openPanel",
+      "minAppVersion": "3.0.0",
+      "locales": {
+        "zh-CN": {
+          "name": "项目计划",
+          "description": "根据粗略想法起草结构化项目计划。",
+          "prompt": "请根据以下内容起草项目计划，包含：目标、里程碑、负责人、风险、时间线：\n\n{{content}}",
+          "tags": [
+            "项目",
+            "计划",
+            "长文本"
+          ]
+        }
+      }
+    },
+    {
+      "id": "retrospective",
+      "category": "productivity",
+      "name": "Retrospective",
+      "icon": "arrow.counterclockwise",
+      "author": "ClipboardXAI",
+      "version": "1.0.0",
+      "description": "Structure a sprint retrospective from team notes.",
+      "tags": [
+        "retro",
+        "agile",
+        "team"
+      ],
+      "prompt": "Turn the following team notes into a retrospective: What went well / Wrong / Improve next:\n\n{{content}}",
+      "appliesTo": [
+        "text"
+      ],
+      "outputMode": "openPanel",
+      "minAppVersion": "3.0.0",
+      "locales": {
+        "zh-CN": {
+          "name": "复盘",
+          "description": "把团队记录整理为复盘。",
+          "prompt": "请将以下团队记录整理为复盘，包含：做得好 / 待改进 / 下一步：\n\n{{content}}",
+          "tags": [
+            "复盘",
+            "敏捷",
+            "团队"
+          ]
+        }
+      }
+    },
+    {
       "id": "todo-split",
       "category": "productivity",
       "name": "To-do Splitter",
@@ -521,6 +1071,70 @@
           "tags": [
             "待办",
             "计划"
+          ]
+        }
+      }
+    },
+    {
+      "id": "weekly-report",
+      "category": "productivity",
+      "name": "Weekly Report",
+      "icon": "doc.text",
+      "author": "ClipboardXAI",
+      "version": "1.0.0",
+      "description": "Summarize the week's work into a clean progress report.",
+      "tags": [
+        "report",
+        "weekly",
+        "long-text"
+      ],
+      "prompt": "Summarize the following week's notes into a weekly report: Done / In Progress / Blockers / Next Week:\n\n{{content}}",
+      "appliesTo": [
+        "text"
+      ],
+      "outputMode": "openPanel",
+      "minAppVersion": "3.0.0",
+      "locales": {
+        "zh-CN": {
+          "name": "周报",
+          "description": "把本周工作整理为清晰的进展报告。",
+          "prompt": "请将以下本周记录整理为周报，包含：已完成 / 进行中 / 阻塞 / 下周计划：\n\n{{content}}",
+          "tags": [
+            "报告",
+            "周报",
+            "长文本"
+          ]
+        }
+      }
+    },
+    {
+      "id": "en-to-ja",
+      "category": "translate",
+      "name": "English → 日本語",
+      "icon": "globe",
+      "author": "ClipboardXAI",
+      "version": "1.0.0",
+      "description": "Translate English text into natural Japanese.",
+      "tags": [
+        "translate",
+        "en",
+        "ja"
+      ],
+      "prompt": "Translate the following English text into natural, fluent Japanese. Keep the meaning and tone:\n\n{{content}}",
+      "appliesTo": [
+        "text"
+      ],
+      "outputMode": "copy",
+      "minAppVersion": "3.0.0",
+      "locales": {
+        "zh-CN": {
+          "name": "English → 日本語",
+          "description": "将英文翻译为自然日语。",
+          "prompt": "请将以下英文翻译为自然流畅的日语，保持含义与语气：\n\n{{content}}",
+          "tags": [
+            "翻译",
+            "英语",
+            "日语"
           ]
         }
       }
@@ -556,6 +1170,69 @@
       }
     },
     {
+      "id": "ja-to-en",
+      "category": "translate",
+      "name": "日本語 → English",
+      "icon": "globe",
+      "author": "ClipboardXAI",
+      "version": "1.0.0",
+      "description": "Translate Japanese text into natural English.",
+      "tags": [
+        "translate",
+        "ja",
+        "en"
+      ],
+      "prompt": "Translate the following Japanese text into natural, fluent English. Keep the meaning and tone:\n\n{{content}}",
+      "appliesTo": [
+        "text"
+      ],
+      "outputMode": "copy",
+      "minAppVersion": "3.0.0",
+      "locales": {
+        "zh-CN": {
+          "name": "日本語 → English",
+          "description": "将日语翻译为自然英文。",
+          "prompt": "请将以下日语翻译为自然流畅的英文，保持含义与语气：\n\n{{content}}",
+          "tags": [
+            "翻译",
+            "日语",
+            "英语"
+          ]
+        }
+      }
+    },
+    {
+      "id": "ja-to-zh",
+      "category": "translate",
+      "name": "日本語 → 中文",
+      "icon": "globe",
+      "author": "ClipboardXAI",
+      "version": "1.0.0",
+      "description": "Translate Japanese text into natural Chinese.",
+      "tags": [
+        "translate",
+        "zh",
+        "chinese"
+      ],
+      "prompt": "Translate the following Japanese text into natural, fluent Chinese. Keep the meaning and tone:\n\n{{content}}",
+      "appliesTo": [
+        "text"
+      ],
+      "outputMode": "copy",
+      "minAppVersion": "3.0.0",
+      "locales": {
+        "zh-CN": {
+          "name": "日本語 → 中文",
+          "description": "将日语翻译为自然中文。",
+          "prompt": "请将以下日语翻译为自然流畅的中文，保持含义与语气：\n\n{{content}}",
+          "tags": [
+            "翻译",
+            "中文"
+          ]
+        }
+      }
+    },
+    {
       "id": "zh-to-en",
       "category": "translate",
       "name": "Chinese → English",
@@ -581,6 +1258,133 @@
           "tags": [
             "翻译",
             "中译英"
+          ]
+        }
+      }
+    },
+    {
+      "id": "zh-to-ja",
+      "category": "translate",
+      "name": "中文 → 日本語",
+      "icon": "globe",
+      "author": "ClipboardXAI",
+      "version": "1.0.0",
+      "description": "Translate Chinese text into natural Japanese.",
+      "tags": [
+        "translate",
+        "ja",
+        "japanese"
+      ],
+      "prompt": "Translate the following Chinese text into natural, fluent Japanese. Keep the meaning and tone:\n\n{{content}}",
+      "appliesTo": [
+        "text"
+      ],
+      "outputMode": "copy",
+      "minAppVersion": "3.0.0",
+      "locales": {
+        "zh-CN": {
+          "name": "中文 → 日本語",
+          "description": "将中文翻译为自然日语。",
+          "prompt": "请将以下中文翻译为自然流畅的日语，保持含义与语气：\n\n{{content}}",
+          "tags": [
+            "翻译",
+            "日语"
+          ]
+        }
+      }
+    },
+    {
+      "id": "bio-writer",
+      "category": "social",
+      "name": "Write Bio",
+      "icon": "person.crop.square",
+      "author": "ClipboardXAI",
+      "version": "1.0.0",
+      "description": "Write a short personal or professional bio.",
+      "tags": [
+        "bio",
+        "profile",
+        "about"
+      ],
+      "prompt": "Write a short (2-3 sentence) professional bio based on the following. Confident, not boastful:\n\n{{content}}",
+      "appliesTo": [
+        "text"
+      ],
+      "outputMode": "copy",
+      "minAppVersion": "3.0.0",
+      "locales": {
+        "zh-CN": {
+          "name": "写简介",
+          "description": "撰写简短的个人/职业简介。",
+          "prompt": "请根据以下内容写一段简短（2-3 句）的职业简介，自信而不浮夸：\n\n{{content}}",
+          "tags": [
+            "简介",
+            "资料",
+            "关于"
+          ]
+        }
+      }
+    },
+    {
+      "id": "comment-reply",
+      "category": "social",
+      "name": "Reply to Comment",
+      "icon": "bubble.right",
+      "author": "ClipboardXAI",
+      "version": "1.0.0",
+      "description": "Write a friendly, on-brand reply to a comment or message.",
+      "tags": [
+        "reply",
+        "comment",
+        "social"
+      ],
+      "prompt": "Write a friendly, on-brand reply to the following comment. Be concise and warm:\n\n{{content}}",
+      "appliesTo": [
+        "text"
+      ],
+      "outputMode": "copy",
+      "minAppVersion": "3.0.0",
+      "locales": {
+        "zh-CN": {
+          "name": "回复评论",
+          "description": "写一条友好、贴合调性的评论回复。",
+          "prompt": "请为以下评论写一条友好、贴合品牌调性的回复，简洁而温暖：\n\n{{content}}",
+          "tags": [
+            "回复",
+            "评论",
+            "社交"
+          ]
+        }
+      }
+    },
+    {
+      "id": "linkedin-post",
+      "category": "social",
+      "name": "LinkedIn Post",
+      "icon": "network",
+      "author": "ClipboardXAI",
+      "version": "1.0.0",
+      "description": "Turn an idea or note into a polished LinkedIn post.",
+      "tags": [
+        "linkedin",
+        "post",
+        "social"
+      ],
+      "prompt": "Turn the following into a polished LinkedIn post: hook, 2-3 short paragraphs, a question to drive comments:\n\n{{content}}",
+      "appliesTo": [
+        "text"
+      ],
+      "outputMode": "openPanel",
+      "minAppVersion": "3.0.0",
+      "locales": {
+        "zh-CN": {
+          "name": "LinkedIn 发文",
+          "description": "把想法整理为精修 LinkedIn 贴文。",
+          "prompt": "请将以下内容改写为精修的 LinkedIn 贴文：开场钩子、2-3 个短段落、一个引发互动的提问：\n\n{{content}}",
+          "tags": [
+            "领英",
+            "发文",
+            "社交"
           ]
         }
       }
@@ -616,6 +1420,38 @@
       }
     },
     {
+      "id": "thread-draft",
+      "category": "social",
+      "name": "X / Twitter Thread",
+      "icon": "text.bubble",
+      "author": "ClipboardXAI",
+      "version": "1.0.0",
+      "description": "Expand a topic into a punchy multi-tweet thread.",
+      "tags": [
+        "thread",
+        "twitter",
+        "x"
+      ],
+      "prompt": "Expand the following into a punchy X/Twitter thread (5-8 tweets), each under 280 chars, with a strong opener and CTA:\n\n{{content}}",
+      "appliesTo": [
+        "text"
+      ],
+      "outputMode": "openPanel",
+      "minAppVersion": "3.0.0",
+      "locales": {
+        "zh-CN": {
+          "name": "X / 推特长帖",
+          "description": "把主题展开为犀利的多条推文。",
+          "prompt": "请将以下内容展开为犀利的 X/推特长帖（5-8 条，每条不超 280 字），含强开场与结尾呼吁：\n\n{{content}}",
+          "tags": [
+            "长帖",
+            "推特",
+            "社交"
+          ]
+        }
+      }
+    },
+    {
       "id": "tweet-polish",
       "category": "social",
       "name": "Social Post Polish",
@@ -646,6 +1482,101 @@
       }
     },
     {
+      "id": "entity-extract",
+      "category": "analysis",
+      "name": "Extract Entities",
+      "icon": "viewfinder",
+      "author": "ClipboardXAI",
+      "version": "1.0.0",
+      "description": "Extract people, orgs, dates, and places from text.",
+      "tags": [
+        "entity",
+        "ner",
+        "extract"
+      ],
+      "prompt": "Extract entities from the following text and group them as: People / Organizations / Dates / Places / Other:\n\n{{content}}",
+      "appliesTo": [
+        "text"
+      ],
+      "outputMode": "openPanel",
+      "minAppVersion": "3.0.0",
+      "locales": {
+        "zh-CN": {
+          "name": "提取实体",
+          "description": "提取人名、机构、日期、地点等实体。",
+          "prompt": "请从以下文本提取实体，并分组为：人物 / 机构 / 日期 / 地点 / 其他：\n\n{{content}}",
+          "tags": [
+            "实体",
+            "提取"
+          ]
+        }
+      }
+    },
+    {
+      "id": "keyword-extract",
+      "category": "analysis",
+      "name": "Extract Keywords",
+      "icon": "tag",
+      "author": "ClipboardXAI",
+      "version": "1.0.0",
+      "description": "Extract the most important keywords and phrases.",
+      "tags": [
+        "keyword",
+        "seo",
+        "extract"
+      ],
+      "prompt": "Extract the 8-12 most important keywords/phrases from the following text, as a comma-separated list:\n\n{{content}}",
+      "appliesTo": [
+        "text"
+      ],
+      "outputMode": "copy",
+      "minAppVersion": "3.0.0",
+      "locales": {
+        "zh-CN": {
+          "name": "提取关键词",
+          "description": "提取最重要的关键词与短语。",
+          "prompt": "请从以下文本中提取 8-12 个最重要的关键词/短语，以逗号分隔：\n\n{{content}}",
+          "tags": [
+            "关键词",
+            "提取"
+          ]
+        }
+      }
+    },
+    {
+      "id": "risk-scan",
+      "category": "analysis",
+      "name": "Risk Scan",
+      "icon": "exclamationmark.shield",
+      "author": "ClipboardXAI",
+      "version": "1.0.0",
+      "description": "Scan a long document for risks, red flags, and gaps.",
+      "tags": [
+        "risk",
+        "review",
+        "long-text"
+      ],
+      "prompt": "Scan the following document for risks, red flags, inconsistencies, and missing items. List each with context:\n\n{{content}}",
+      "appliesTo": [
+        "text",
+        "file"
+      ],
+      "outputMode": "openPanel",
+      "minAppVersion": "3.0.0",
+      "locales": {
+        "zh-CN": {
+          "name": "风险扫描",
+          "description": "扫描长文档中的风险与缺失。",
+          "prompt": "请扫描以下文档，找出风险、红旗、不一致与缺失项，并逐条给出上下文：\n\n{{content}}",
+          "tags": [
+            "风险",
+            "审查",
+            "长文本"
+          ]
+        }
+      }
+    },
+    {
       "id": "sentiment",
       "category": "analysis",
       "name": "Sentiment Analysis",
@@ -671,6 +1602,909 @@
           "tags": [
             "情感",
             "分析"
+          ]
+        }
+      }
+    },
+    {
+      "id": "text-classify",
+      "category": "analysis",
+      "name": "Classify Text",
+      "icon": "square.stack",
+      "author": "ClipboardXAI",
+      "version": "1.0.0",
+      "description": "Classify the text by intent, topic, or sentiment.",
+      "tags": [
+        "classify",
+        "intent",
+        "category"
+      ],
+      "prompt": "Classify the following text. Output a short label for: Topic, Intent, and Tone:\n\n{{content}}",
+      "appliesTo": [
+        "text"
+      ],
+      "outputMode": "copy",
+      "minAppVersion": "3.0.0",
+      "locales": {
+        "zh-CN": {
+          "name": "文本分类",
+          "description": "按意图、主题或情感对文本分类。",
+          "prompt": "请对以下文本分类，输出：主题、意图、语气三个简短标签：\n\n{{content}}",
+          "tags": [
+            "分类",
+            "意图",
+            "主题"
+          ]
+        }
+      }
+    },
+    {
+      "id": "topic-summary",
+      "category": "analysis",
+      "name": "Topic Summary",
+      "icon": "text.magnifyingglass",
+      "author": "ClipboardXAI",
+      "version": "1.0.0",
+      "description": "Summarize the main topics and themes of a long text.",
+      "tags": [
+        "summary",
+        "topic",
+        "long-text"
+      ],
+      "prompt": "Summarize the main topics and themes of the following long text into 3-5 bullet points:\n\n{{content}}",
+      "appliesTo": [
+        "text"
+      ],
+      "outputMode": "openPanel",
+      "minAppVersion": "3.0.0",
+      "locales": {
+        "zh-CN": {
+          "name": "主题摘要",
+          "description": "总结长文本的主要主题与要点。",
+          "prompt": "请将以下长文本的主要主题与要点概括为 3-5 个要点：\n\n{{content}}",
+          "tags": [
+            "摘要",
+            "主题",
+            "长文本"
+          ]
+        }
+      }
+    },
+    {
+      "id": "business-proposal",
+      "category": "business",
+      "name": "Business Proposal",
+      "icon": "doc.text.fill",
+      "author": "ClipboardXAI",
+      "version": "1.0.0",
+      "description": "Draft a structured business proposal for a long brief.",
+      "tags": [
+        "proposal",
+        "business",
+        "long-text"
+      ],
+      "prompt": "Draft a business proposal from the following. Sections: Problem, Solution, Market, Model, Ask:\n\n{{content}}",
+      "appliesTo": [
+        "text"
+      ],
+      "outputMode": "openPanel",
+      "minAppVersion": "3.0.0",
+      "locales": {
+        "zh-CN": {
+          "name": "商业计划书",
+          "description": "根据长简述起草结构化商业提案。",
+          "prompt": "请根据以下内容起草商业提案，章节：问题、方案、市场、模式、诉求：\n\n{{content}}",
+          "tags": [
+            "提案",
+            "商务",
+            "长文本"
+          ]
+        }
+      }
+    },
+    {
+      "id": "elevator-pitch",
+      "category": "business",
+      "name": "Elevator Pitch",
+      "icon": "person.2",
+      "author": "ClipboardXAI",
+      "version": "1.0.0",
+      "description": "Write a 30-second elevator pitch.",
+      "tags": [
+        "pitch",
+        "intro",
+        "business"
+      ],
+      "prompt": "Write a 30-second elevator pitch from the following. Clear value, audience, and differentiation:\n\n{{content}}",
+      "appliesTo": [
+        "text"
+      ],
+      "outputMode": "copy",
+      "minAppVersion": "3.0.0",
+      "locales": {
+        "zh-CN": {
+          "name": "电梯演讲",
+          "description": "撰写 30 秒电梯演讲。",
+          "prompt": "请根据以下内容写一段 30 秒电梯演讲，讲清价值、受众与差异化：\n\n{{content}}",
+          "tags": [
+            "演讲",
+            "介绍",
+            "商务"
+          ]
+        }
+      }
+    },
+    {
+      "id": "email-draft",
+      "category": "business",
+      "name": "Email Draft",
+      "icon": "envelope",
+      "author": "ClipboardXAI",
+      "version": "1.0.0",
+      "description": "Draft a clear, professional email from a brief.",
+      "tags": [
+        "email",
+        "business",
+        "draft"
+      ],
+      "prompt": "Draft a clear, professional email from the following brief. Include subject, greeting, body, and sign-off:\n\n{{content}}",
+      "appliesTo": [
+        "text"
+      ],
+      "outputMode": "openPanel",
+      "minAppVersion": "3.0.0",
+      "locales": {
+        "zh-CN": {
+          "name": "邮件起草",
+          "description": "根据简述起草专业邮件。",
+          "prompt": "请根据以下简述起草一封清晰专业的邮件，含主题、称呼、正文与落款：\n\n{{content}}",
+          "tags": [
+            "邮件",
+            "商务",
+            "起草"
+          ]
+        }
+      }
+    },
+    {
+      "id": "meeting-agenda",
+      "category": "business",
+      "name": "Meeting Agenda",
+      "icon": "calendar.badge.clock",
+      "author": "ClipboardXAI",
+      "version": "1.0.0",
+      "description": "Build a focused meeting agenda from a topic list.",
+      "tags": [
+        "agenda",
+        "meeting",
+        "business"
+      ],
+      "prompt": "Build a meeting agenda from the following. Include: Goal, Attendees, Timebox per item, Decisions needed:\n\n{{content}}",
+      "appliesTo": [
+        "text"
+      ],
+      "outputMode": "openPanel",
+      "minAppVersion": "3.0.0",
+      "locales": {
+        "zh-CN": {
+          "name": "会议议程",
+          "description": "根据议题列表建立聚焦的会议议程。",
+          "prompt": "请根据以下内容建立会议议程，包含：目标、参会人、每项时间盒、需决策事项：\n\n{{content}}",
+          "tags": [
+            "议程",
+            "会议",
+            "商务"
+          ]
+        }
+      }
+    },
+    {
+      "id": "sales-pitch",
+      "category": "business",
+      "name": "Sales Pitch",
+      "icon": "megaphone",
+      "author": "ClipboardXAI",
+      "version": "1.0.0",
+      "description": "Craft a persuasive sales pitch for a product or service.",
+      "tags": [
+        "sales",
+        "pitch",
+        "persuade"
+      ],
+      "prompt": "Craft a persuasive sales pitch for the following. Lead with the customer's pain, then value, then a clear CTA:\n\n{{content}}",
+      "appliesTo": [
+        "text"
+      ],
+      "outputMode": "openPanel",
+      "minAppVersion": "3.0.0",
+      "locales": {
+        "zh-CN": {
+          "name": "销售话术",
+          "description": "为产品/服务撰写有说服力的销售话术。",
+          "prompt": "请为以下内容撰写有说服力的销售话术，先点出客户痛点，再讲价值，最后给出明确行动号召：\n\n{{content}}",
+          "tags": [
+            "销售",
+            "话术",
+            "说服"
+          ]
+        }
+      }
+    },
+    {
+      "id": "swot",
+      "category": "business",
+      "name": "SWOT Analysis",
+      "icon": "chart.pie",
+      "author": "ClipboardXAI",
+      "version": "1.0.0",
+      "description": "Produce a SWOT analysis from a business description.",
+      "tags": [
+        "swot",
+        "strategy",
+        "business"
+      ],
+      "prompt": "Produce a SWOT analysis (Strengths / Weaknesses / Opportunities / Threats) from the following:\n\n{{content}}",
+      "appliesTo": [
+        "text"
+      ],
+      "outputMode": "openPanel",
+      "minAppVersion": "3.0.0",
+      "locales": {
+        "zh-CN": {
+          "name": "SWOT 分析",
+          "description": "根据业务描述生成 SWOT 分析。",
+          "prompt": "请根据以下内容生成 SWOT 分析（优势 / 劣势 / 机会 / 威胁）：\n\n{{content}}",
+          "tags": [
+            "swot",
+            "战略",
+            "商务"
+          ]
+        }
+      }
+    },
+    {
+      "id": "ad-copy",
+      "category": "content",
+      "name": "Ad Copy",
+      "icon": "megaphone.fill",
+      "author": "ClipboardXAI",
+      "version": "1.0.0",
+      "description": "Write short, high-converting ad copy variants.",
+      "tags": [
+        "ad",
+        "copy",
+        "marketing"
+      ],
+      "prompt": "Write 3 short ad copy variants (headline + 1 line) for the following, each with a different angle:\n\n{{content}}",
+      "appliesTo": [
+        "text"
+      ],
+      "outputMode": "copy",
+      "minAppVersion": "3.0.0",
+      "locales": {
+        "zh-CN": {
+          "name": "广告文案",
+          "description": "撰写简短高转化的广告文案变体。",
+          "prompt": "请为以下内容写 3 条简短广告文案（标题+1 行），每条角度不同：\n\n{{content}}",
+          "tags": [
+            "广告",
+            "文案",
+            "营销"
+          ]
+        }
+      }
+    },
+    {
+      "id": "blog-post",
+      "category": "content",
+      "name": "Blog Post",
+      "icon": "doc.richtext",
+      "author": "ClipboardXAI",
+      "version": "1.0.0",
+      "description": "Write a full blog post from an outline or notes.",
+      "tags": [
+        "blog",
+        "article",
+        "long-text"
+      ],
+      "prompt": "Write a complete blog post from the following. Include a catchy title, intro, 3-5 sections with subheads, and a conclusion:\n\n{{content}}",
+      "appliesTo": [
+        "text"
+      ],
+      "outputMode": "openPanel",
+      "minAppVersion": "3.0.0",
+      "locales": {
+        "zh-CN": {
+          "name": "博客文章",
+          "description": "根据大纲或笔记撰写完整博客。",
+          "prompt": "请根据以下内容写一篇完整博客，含吸睛标题、引言、3-5 个带小标题的章节与结语：\n\n{{content}}",
+          "tags": [
+            "博客",
+            "文章",
+            "长文本"
+          ]
+        }
+      }
+    },
+    {
+      "id": "newsletter",
+      "category": "content",
+      "name": "Newsletter",
+      "icon": "newspaper",
+      "author": "ClipboardXAI",
+      "version": "1.0.0",
+      "description": "Turn notes into a clean newsletter issue.",
+      "tags": [
+        "newsletter",
+        "email",
+        "long-text"
+      ],
+      "prompt": "Turn the following into a newsletter issue: a subject line, a short intro, 3-5 items with headers, and a sign-off:\n\n{{content}}",
+      "appliesTo": [
+        "text"
+      ],
+      "outputMode": "openPanel",
+      "minAppVersion": "3.0.0",
+      "locales": {
+        "zh-CN": {
+          "name": "新闻邮件",
+          "description": "把笔记整理为整洁的通讯期刊。",
+          "prompt": "请将以下内容整理为一期新闻邮件：主题行、简短引言、3-5 个带标题的条目与落款：\n\n{{content}}",
+          "tags": [
+            "通讯",
+            "邮件",
+            "长文本"
+          ]
+        }
+      }
+    },
+    {
+      "id": "product-desc",
+      "category": "content",
+      "name": "Product Description",
+      "icon": "tag.fill",
+      "author": "ClipboardXAI",
+      "version": "1.0.0",
+      "description": "Write a compelling product description.",
+      "tags": [
+        "product",
+        "ecommerce",
+        "copy"
+      ],
+      "prompt": "Write a compelling product description from the following. Highlight benefits, not just features, and end with a CTA:\n\n{{content}}",
+      "appliesTo": [
+        "text",
+        "url"
+      ],
+      "outputMode": "openPanel",
+      "minAppVersion": "3.0.0",
+      "locales": {
+        "zh-CN": {
+          "name": "商品描述",
+          "description": "撰写有吸引力的商品描述。",
+          "prompt": "请根据以下内容撰写有吸引力的商品描述，突出利益而非仅罗列功能，并以行动号召结尾：\n\n{{content}}",
+          "tags": [
+            "商品",
+            "电商",
+            "文案"
+          ]
+        }
+      }
+    },
+    {
+      "id": "seo-meta",
+      "category": "content",
+      "name": "SEO Meta",
+      "icon": "magnifyingglass.circle",
+      "author": "ClipboardXAI",
+      "version": "1.0.0",
+      "description": "Generate SEO title, description, and keywords.",
+      "tags": [
+        "seo",
+        "meta",
+        "marketing"
+      ],
+      "prompt": "Generate SEO metadata for the following: a title (<=60 chars), a meta description (<=155 chars), and 5 keywords:\n\n{{content}}",
+      "appliesTo": [
+        "text",
+        "url"
+      ],
+      "outputMode": "copy",
+      "minAppVersion": "3.0.0",
+      "locales": {
+        "zh-CN": {
+          "name": "SEO 元信息",
+          "description": "生成 SEO 标题、描述与关键词。",
+          "prompt": "请为以下内容生成 SEO 元信息：标题（≤60 字）、描述（≤155 字）、5 个关键词：\n\n{{content}}",
+          "tags": [
+            "seo",
+            "元信息",
+            "营销"
+          ]
+        }
+      }
+    },
+    {
+      "id": "video-script",
+      "category": "content",
+      "name": "Video Script",
+      "icon": "video",
+      "author": "ClipboardXAI",
+      "version": "1.0.0",
+      "description": "Write a video script with scenes and voiceover.",
+      "tags": [
+        "video",
+        "script",
+        "youtube"
+      ],
+      "prompt": "Write a video script from the following. Include scene headings, on-screen text, and voiceover lines:\n\n{{content}}",
+      "appliesTo": [
+        "text"
+      ],
+      "outputMode": "openPanel",
+      "minAppVersion": "3.0.0",
+      "locales": {
+        "zh-CN": {
+          "name": "视频脚本",
+          "description": "撰写含分镜与旁白的视频脚本。",
+          "prompt": "请根据以下内容写视频脚本，包含场景标题、画面文字与旁白台词：\n\n{{content}}",
+          "tags": [
+            "视频",
+            "脚本",
+            "YouTube"
+          ]
+        }
+      }
+    },
+    {
+      "id": "abstract-gen",
+      "category": "academic",
+      "name": "Abstract",
+      "icon": "doc.text",
+      "author": "ClipboardXAI",
+      "version": "1.0.0",
+      "description": "Write a concise academic abstract.",
+      "tags": [
+        "abstract",
+        "research",
+        "summary"
+      ],
+      "prompt": "Write a concise academic abstract (about 150 words) from the following: background, method, results, conclusion:\n\n{{content}}",
+      "appliesTo": [
+        "text"
+      ],
+      "outputMode": "copy",
+      "minAppVersion": "3.0.0",
+      "locales": {
+        "zh-CN": {
+          "name": "摘要",
+          "description": "撰写简洁的学术摘要。",
+          "prompt": "请根据以下内容撰写简洁的学术摘要（约 150 词）：背景、方法、结果、结论：\n\n{{content}}",
+          "tags": [
+            "摘要",
+            "研究",
+            "总结"
+          ]
+        }
+      }
+    },
+    {
+      "id": "citation-format",
+      "category": "academic",
+      "name": "Format Citations",
+      "icon": "text.quote",
+      "author": "ClipboardXAI",
+      "version": "1.0.0",
+      "description": "Format a reference list into a chosen citation style.",
+      "tags": [
+        "citation",
+        "reference",
+        "format"
+      ],
+      "prompt": "Format the following references into APA style. Use a clean numbered list:\n\n{{content}}",
+      "appliesTo": [
+        "text"
+      ],
+      "outputMode": "copy",
+      "minAppVersion": "3.0.0",
+      "locales": {
+        "zh-CN": {
+          "name": "格式化引用",
+          "description": "将参考文献格式化为指定引用样式。",
+          "prompt": "请将以下参考文献格式化为 APA 样式，使用编号列表：\n\n{{content}}",
+          "tags": [
+            "引用",
+            "参考文献",
+            "格式"
+          ]
+        }
+      }
+    },
+    {
+      "id": "literature-review",
+      "category": "academic",
+      "name": "Literature Review",
+      "icon": "books.vertical",
+      "author": "ClipboardXAI",
+      "version": "1.0.0",
+      "description": "Synthesize a literature review from multiple sources.",
+      "tags": [
+        "literature",
+        "review",
+        "long-text"
+      ],
+      "prompt": "Synthesize a literature review from the following notes. Group by theme, note agreements/gaps, and suggest future work:\n\n{{content}}",
+      "appliesTo": [
+        "text"
+      ],
+      "outputMode": "openPanel",
+      "minAppVersion": "3.0.0",
+      "locales": {
+        "zh-CN": {
+          "name": "文献综述",
+          "description": "综合多篇来源撰写文献综述。",
+          "prompt": "请根据以下笔记综合文献综述，按主题分组、指出共识与空白，并给出未来方向：\n\n{{content}}",
+          "tags": [
+            "文献",
+            "综述",
+            "长文本"
+          ]
+        }
+      }
+    },
+    {
+      "id": "paper-outline",
+      "category": "academic",
+      "name": "Paper Outline",
+      "icon": "list.bullet.below.rectangle",
+      "author": "ClipboardXAI",
+      "version": "1.0.0",
+      "description": "Build a research paper outline from a topic.",
+      "tags": [
+        "outline",
+        "research",
+        "long-text"
+      ],
+      "prompt": "Build a research paper outline from the following: Title, Abstract plan, IMRaD sections with sub-points:\n\n{{content}}",
+      "appliesTo": [
+        "text"
+      ],
+      "outputMode": "openPanel",
+      "minAppVersion": "3.0.0",
+      "locales": {
+        "zh-CN": {
+          "name": "论文大纲",
+          "description": "根据主题构建论文大纲。",
+          "prompt": "请根据以下内容构建论文大纲：标题、摘要规划、IMRaD 各章节及子要点：\n\n{{content}}",
+          "tags": [
+            "大纲",
+            "研究",
+            "长文本"
+          ]
+        }
+      }
+    },
+    {
+      "id": "clause-explain",
+      "category": "legal",
+      "name": "Explain Clause",
+      "icon": "doc.on.doc",
+      "author": "ClipboardXAI",
+      "version": "1.0.0",
+      "description": "Explain a legal clause in plain language.",
+      "tags": [
+        "clause",
+        "legal",
+        "explain"
+      ],
+      "prompt": "Explain the following legal clause in plain, non-lawyer language. What it means and what to watch for:\n\n{{content}}",
+      "appliesTo": [
+        "text",
+        "file"
+      ],
+      "outputMode": "openPanel",
+      "minAppVersion": "3.0.0",
+      "locales": {
+        "zh-CN": {
+          "name": "条款解释",
+          "description": "用通俗语言解释法律条款。",
+          "prompt": "请用通俗语言解释以下法律条款：它意味着什么、需要注意什么：\n\n{{content}}",
+          "tags": [
+            "条款",
+            "法律",
+            "解释"
+          ]
+        }
+      }
+    },
+    {
+      "id": "contract-review",
+      "category": "legal",
+      "name": "Contract Review",
+      "icon": "doc.text.magnifyingglass",
+      "author": "ClipboardXAI",
+      "version": "1.0.0",
+      "description": "Review a contract for risky or unusual clauses.",
+      "tags": [
+        "contract",
+        "legal",
+        "review"
+      ],
+      "prompt": "Review the following contract. Flag unusual, one-sided, or risky clauses with a short explanation for each:\n\n{{content}}",
+      "appliesTo": [
+        "text",
+        "file"
+      ],
+      "outputMode": "openPanel",
+      "minAppVersion": "3.0.0",
+      "locales": {
+        "zh-CN": {
+          "name": "合同审查",
+          "description": "审查合同中的风险或不寻常条款。",
+          "prompt": "请审查以下合同，标出不公平、单方面或高风险条款，并逐条简要说明：\n\n{{content}}",
+          "tags": [
+            "合同",
+            "法律",
+            "审查"
+          ]
+        }
+      }
+    },
+    {
+      "id": "nda-draft",
+      "category": "legal",
+      "name": "NDA Draft",
+      "icon": "signature",
+      "author": "ClipboardXAI",
+      "version": "1.0.0",
+      "description": "Draft a simple mutual NDA from key terms.",
+      "tags": [
+        "nda",
+        "legal",
+        "draft"
+      ],
+      "prompt": "Draft a simple mutual NDA from the following key terms. Include definitions, obligations, term, and exclusions:\n\n{{content}}",
+      "appliesTo": [
+        "text"
+      ],
+      "outputMode": "openPanel",
+      "minAppVersion": "3.0.0",
+      "locales": {
+        "zh-CN": {
+          "name": "起草保密协议",
+          "description": "根据关键条款起草简易双向 NDA。",
+          "prompt": "请根据以下关键条款起草一份简易双向保密协议，含定义、义务、期限与除外情形：\n\n{{content}}",
+          "tags": [
+            "保密协议",
+            "法律",
+            "起草"
+          ]
+        }
+      }
+    },
+    {
+      "id": "expense-report",
+      "category": "finance",
+      "name": "Expense Report",
+      "icon": "receipt",
+      "author": "ClipboardXAI",
+      "version": "1.0.0",
+      "description": "Turn raw expense notes into a clean report.",
+      "tags": [
+        "expense",
+        "finance",
+        "report"
+      ],
+      "prompt": "Turn the following expense notes into a clean report: category, date, amount, total, and notes:\n\n{{content}}",
+      "appliesTo": [
+        "text",
+        "file"
+      ],
+      "outputMode": "openPanel",
+      "minAppVersion": "3.0.0",
+      "locales": {
+        "zh-CN": {
+          "name": "报销单",
+          "description": "把零散费用记录整理为清晰报表。",
+          "prompt": "请将以下费用记录整理为清晰报表：类别、日期、金额、合计与备注：\n\n{{content}}",
+          "tags": [
+            "报销",
+            "财务",
+            "报表"
+          ]
+        }
+      }
+    },
+    {
+      "id": "financial-summary",
+      "category": "finance",
+      "name": "Financial Summary",
+      "icon": "chart.line.uptrend.xyaxis",
+      "author": "ClipboardXAI",
+      "version": "1.0.0",
+      "description": "Summarize a financial statement or long report.",
+      "tags": [
+        "finance",
+        "summary",
+        "long-text"
+      ],
+      "prompt": "Summarize the following financial text into key takeaways: revenue, cost, profit, risks, and outlook:\n\n{{content}}",
+      "appliesTo": [
+        "text",
+        "file"
+      ],
+      "outputMode": "openPanel",
+      "minAppVersion": "3.0.0",
+      "locales": {
+        "zh-CN": {
+          "name": "财务摘要",
+          "description": "总结财务报表或长报告。",
+          "prompt": "请将以下财务内容概括为关键要点：收入、成本、利润、风险与展望：\n\n{{content}}",
+          "tags": [
+            "财务",
+            "摘要",
+            "长文本"
+          ]
+        }
+      }
+    },
+    {
+      "id": "invoice-draft",
+      "category": "finance",
+      "name": "Invoice Draft",
+      "icon": "doc.text.fill",
+      "author": "ClipboardXAI",
+      "version": "1.0.0",
+      "description": "Draft a professional invoice from order details.",
+      "tags": [
+        "invoice",
+        "finance",
+        "billing"
+      ],
+      "prompt": "Draft a professional invoice from the following: issuer, client, items, amounts, due date:\n\n{{content}}",
+      "appliesTo": [
+        "text"
+      ],
+      "outputMode": "copy",
+      "minAppVersion": "3.0.0",
+      "locales": {
+        "zh-CN": {
+          "name": "起草发票",
+          "description": "根据订单信息起草专业发票。",
+          "prompt": "请根据以下内容起草专业发票：开票方、客户、项目、金额、到期日：\n\n{{content}}",
+          "tags": [
+            "发票",
+            "财务",
+            "账单"
+          ]
+        }
+      }
+    },
+    {
+      "id": "health-summary",
+      "category": "health",
+      "name": "Health Summary",
+      "icon": "heart.text.square",
+      "author": "ClipboardXAI",
+      "version": "1.0.0",
+      "description": "Summarize a medical/health note into key points.",
+      "tags": [
+        "health",
+        "summary",
+        "long-text"
+      ],
+      "prompt": "Summarize the following health/medical note into clear key points: conditions, medications, follow-ups:\n\n{{content}}",
+      "appliesTo": [
+        "text",
+        "file"
+      ],
+      "outputMode": "openPanel",
+      "minAppVersion": "3.0.0",
+      "locales": {
+        "zh-CN": {
+          "name": "健康摘要",
+          "description": "把医疗/健康记录总结为要点。",
+          "prompt": "请将以下医疗/健康记录总结为清晰要点：病情、用药、随访：\n\n{{content}}",
+          "tags": [
+            "健康",
+            "摘要",
+            "长文本"
+          ]
+        }
+      }
+    },
+    {
+      "id": "symptom-explain",
+      "category": "health",
+      "name": "Explain Symptoms",
+      "icon": "cross.case",
+      "author": "ClipboardXAI",
+      "version": "1.0.0",
+      "description": "Explain possible meanings of described symptoms (informational).",
+      "tags": [
+        "health",
+        "symptoms",
+        "info"
+      ],
+      "prompt": "Explain, for informational purposes only, what the following described symptoms could commonly relate to. Add a disclaimer to consult a doctor:\n\n{{content}}",
+      "appliesTo": [
+        "text"
+      ],
+      "outputMode": "openPanel",
+      "minAppVersion": "3.0.0",
+      "locales": {
+        "zh-CN": {
+          "name": "症状说明",
+          "description": "解释所描述症状的可能含义（仅供参考）。",
+          "prompt": "请仅作信息参考，解释以下描述的症状通常可能关联什么，并附上看医生的免责声明：\n\n{{content}}",
+          "tags": [
+            "健康",
+            "症状",
+            "参考"
+          ]
+        }
+      }
+    },
+    {
+      "id": "faq-gen",
+      "category": "support",
+      "name": "Generate FAQ",
+      "icon": "questionmark.circle",
+      "author": "ClipboardXAI",
+      "version": "1.0.0",
+      "description": "Turn product notes into a clear FAQ.",
+      "tags": [
+        "faq",
+        "support",
+        "long-text"
+      ],
+      "prompt": "Turn the following notes into a clear FAQ with 5-8 Q&A pairs, concise and customer-friendly:\n\n{{content}}",
+      "appliesTo": [
+        "text"
+      ],
+      "outputMode": "openPanel",
+      "minAppVersion": "3.0.0",
+      "locales": {
+        "zh-CN": {
+          "name": "生成 FAQ",
+          "description": "把产品笔记整理为清晰 FAQ。",
+          "prompt": "请将以下笔记整理为清晰 FAQ，含 5-8 组问答，简洁且面向用户：\n\n{{content}}",
+          "tags": [
+            "问答",
+            "客服",
+            "长文本"
+          ]
+        }
+      }
+    },
+    {
+      "id": "ticket-reply",
+      "category": "support",
+      "name": "Reply to Ticket",
+      "icon": "lifepreserver",
+      "author": "ClipboardXAI",
+      "version": "1.0.0",
+      "description": "Write an empathetic support reply to a ticket.",
+      "tags": [
+        "support",
+        "ticket",
+        "reply"
+      ],
+      "prompt": "Write an empathetic, clear support reply to the following ticket. Acknowledge, resolve or next step, friendly close:\n\n{{content}}",
+      "appliesTo": [
+        "text"
+      ],
+      "outputMode": "openPanel",
+      "minAppVersion": "3.0.0",
+      "locales": {
+        "zh-CN": {
+          "name": "回复工单",
+          "description": "写一条有同理心的工单回复。",
+          "prompt": "请为以下工单写一条有同理心、清晰的回复：先共情，再给出解决或下一步，友好收尾：\n\n{{content}}",
+          "tags": [
+            "客服",
+            "工单",
+            "回复"
           ]
         }
       }

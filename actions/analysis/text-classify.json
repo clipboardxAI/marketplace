@@ -1,0 +1,18 @@
+{
+  "name": "Classify Text",
+  "icon": "square.stack",
+  "author": "ClipboardXAI",
+  "version": "1.0.0",
+  "description": "Classify the text by intent, topic, or sentiment.",
+  "tags": [
+    "classify",
+    "intent",
+    "category"
+  ],
+  "prompt": "Classify the following text. Output a short label for: Topic, Intent, and Tone:\n\n{{content}}",
+  "appliesTo": [
+    "text"
+  ],
+  "outputMode": "copy",
+  "minAppVersion": "3.0.0"
+}

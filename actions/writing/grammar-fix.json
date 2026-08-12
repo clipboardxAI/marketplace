@@ -1,0 +1,18 @@
+{
+  "name": "Fix Grammar",
+  "icon": "textformat.abc",
+  "author": "ClipboardXAI",
+  "version": "1.0.0",
+  "description": "Correct grammar and sentence structure while keeping the original voice.",
+  "tags": [
+    "grammar",
+    "correct",
+    "edit"
+  ],
+  "prompt": "Fix the grammar and sentence structure of the following text. Keep the original tone and meaning:\n\n{{content}}",
+  "appliesTo": [
+    "text"
+  ],
+  "outputMode": "copy",
+  "minAppVersion": "3.0.0"
+}

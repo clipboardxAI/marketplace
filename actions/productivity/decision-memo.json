@@ -1,0 +1,18 @@
+{
+  "name": "Decision Memo",
+  "icon": "doc.on.doc",
+  "author": "ClipboardXAI",
+  "version": "1.0.0",
+  "description": "Write a decision memo with options and a recommendation.",
+  "tags": [
+    "memo",
+    "decision",
+    "long-text"
+  ],
+  "prompt": "Write a decision memo for the following. Include: Background, Options, Recommendation, Rationale:\n\n{{content}}",
+  "appliesTo": [
+    "text"
+  ],
+  "outputMode": "openPanel",
+  "minAppVersion": "3.0.0"
+}

@@ -1,0 +1,18 @@
+{
+  "name": "Extract Keywords",
+  "icon": "tag",
+  "author": "ClipboardXAI",
+  "version": "1.0.0",
+  "description": "Extract the most important keywords and phrases.",
+  "tags": [
+    "keyword",
+    "seo",
+    "extract"
+  ],
+  "prompt": "Extract the 8-12 most important keywords/phrases from the following text, as a comma-separated list:\n\n{{content}}",
+  "appliesTo": [
+    "text"
+  ],
+  "outputMode": "copy",
+  "minAppVersion": "3.0.0"
+}

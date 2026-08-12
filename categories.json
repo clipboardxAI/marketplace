@@ -31,6 +31,41 @@
       "icon": "chart.bar"
     },
     {
+      "id": "business",
+      "name": "Business",
+      "icon": "briefcase"
+    },
+    {
+      "id": "content",
+      "name": "Content & Marketing",
+      "icon": "megaphone"
+    },
+    {
+      "id": "academic",
+      "name": "Academic",
+      "icon": "graduationcap"
+    },
+    {
+      "id": "legal",
+      "name": "Legal",
+      "icon": "scale.2"
+    },
+    {
+      "id": "finance",
+      "name": "Finance",
+      "icon": "banknote"
+    },
+    {
+      "id": "health",
+      "name": "Health",
+      "icon": "cross.case"
+    },
+    {
+      "id": "support",
+      "name": "Customer Support",
+      "icon": "lifepreserver"
+    },
+    {
       "id": "ecosystem",
       "name": "Ecosystem",
       "icon": "shippingbox"

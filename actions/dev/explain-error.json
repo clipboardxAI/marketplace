@@ -1,0 +1,19 @@
+{
+  "name": "Explain Error",
+  "icon": "exclamationmark.bubble",
+  "author": "ClipboardXAI",
+  "version": "1.0.0",
+  "description": "Explain an error/stack trace and suggest a fix.",
+  "tags": [
+    "error",
+    "debug",
+    "explain"
+  ],
+  "prompt": "Explain what the following error or stack trace means, likely causes, and how to fix it:\n\n{{content}}",
+  "appliesTo": [
+    "code",
+    "text"
+  ],
+  "outputMode": "openPanel",
+  "minAppVersion": "3.0.0"
+}

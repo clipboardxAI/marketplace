@@ -1,0 +1,18 @@
+{
+  "name": "Video Script",
+  "icon": "video",
+  "author": "ClipboardXAI",
+  "version": "1.0.0",
+  "description": "Write a video script with scenes and voiceover.",
+  "tags": [
+    "video",
+    "script",
+    "youtube"
+  ],
+  "prompt": "Write a video script from the following. Include scene headings, on-screen text, and voiceover lines:\n\n{{content}}",
+  "appliesTo": [
+    "text"
+  ],
+  "outputMode": "openPanel",
+  "minAppVersion": "3.0.0"
+}

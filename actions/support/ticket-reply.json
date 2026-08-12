@@ -1,0 +1,18 @@
+{
+  "name": "Reply to Ticket",
+  "icon": "lifepreserver",
+  "author": "ClipboardXAI",
+  "version": "1.0.0",
+  "description": "Write an empathetic support reply to a ticket.",
+  "tags": [
+    "support",
+    "ticket",
+    "reply"
+  ],
+  "prompt": "Write an empathetic, clear support reply to the following ticket. Acknowledge, resolve or next step, friendly close:\n\n{{content}}",
+  "appliesTo": [
+    "text"
+  ],
+  "outputMode": "openPanel",
+  "minAppVersion": "3.0.0"
+}

@@ -1,0 +1,18 @@
+{
+  "name": "Proofread",
+  "icon": "checkmark.seal",
+  "author": "ClipboardXAI",
+  "version": "1.0.0",
+  "description": "Proofread the text for spelling, grammar, and punctuation errors without changing the wording.",
+  "tags": [
+    "proofread",
+    "spelling",
+    "edit"
+  ],
+  "prompt": "Proofread the following text. Fix spelling, grammar, and punctuation errors only; do not change wording or meaning:\n\n{{content}}",
+  "appliesTo": [
+    "text"
+  ],
+  "outputMode": "copy",
+  "minAppVersion": "3.0.0"
+}

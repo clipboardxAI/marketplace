@@ -1,0 +1,18 @@
+{
+  "name": "Retrospective",
+  "icon": "arrow.counterclockwise",
+  "author": "ClipboardXAI",
+  "version": "1.0.0",
+  "description": "Structure a sprint retrospective from team notes.",
+  "tags": [
+    "retro",
+    "agile",
+    "team"
+  ],
+  "prompt": "Turn the following team notes into a retrospective: What went well / Wrong / Improve next:\n\n{{content}}",
+  "appliesTo": [
+    "text"
+  ],
+  "outputMode": "openPanel",
+  "minAppVersion": "3.0.0"
+}
