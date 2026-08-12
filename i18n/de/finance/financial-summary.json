@@ -1,0 +1,10 @@
+{
+  "name": "Finanzzusammenfassung",
+  "description": "Fasst Finanzberichte oder lange Berichte zusammen.",
+  "prompt": "Bitte fassen Sie die folgenden Finanzinhalte auf Kernpunkte zusammen: Einnahmen, Kosten, Gewinn, Risiken und Ausblick:\n\n{{content}}",
+  "tags": [
+    "Finanzen",
+    "Zusammenfassung",
+    "Langtext"
+  ]
+}

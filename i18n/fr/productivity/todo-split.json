@@ -1,0 +1,9 @@
+{
+  "name": "Découper les tâches",
+  "description": "Décompose un objectif en liste de tâches exécutables.",
+  "prompt": "Décomposez l'objectif ou l'idée suivante en une liste de tâches claires, exécutables et priorisées :\n\n{{content}}",
+  "tags": [
+    "tâches",
+    "planification"
+  ]
+}

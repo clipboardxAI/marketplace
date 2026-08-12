@@ -1,0 +1,10 @@
+{
+  "name": "Blogartikel",
+  "description": "Verfasst anhand von Gliederung oder Notizen einen vollständigen Blogbeitrag.",
+  "prompt": "Bitte verfassen Sie anhand der folgenden Inhalte einen vollständigen Blogbeitrag mit aufmerksamkeitsstarkem Titel, Einleitung, 3–5 Abschnitten mit Zwischenüberschriften und einem Fazit:\n\n{{content}}",
+  "tags": [
+    "Blog",
+    "Artikel",
+    "Langtext"
+  ]
+}

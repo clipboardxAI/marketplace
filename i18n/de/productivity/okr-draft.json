@@ -1,0 +1,10 @@
+{
+  "name": "OKR erstellen",
+  "description": "Entwirft anhand einer Zielbeschreibung OKRs.",
+  "prompt": "Bitte entwerfen Sie anhand der folgenden Beschreibung OKRs, wobei jedes Ziel 2–3 messbare Key Results hat:\n\n{{content}}",
+  "tags": [
+    "OKR",
+    "Ziel",
+    "Plan"
+  ]
+}

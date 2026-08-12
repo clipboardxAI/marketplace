@@ -1,0 +1,10 @@
+{
+  "name": "Analyse SWOT",
+  "description": "Génère une analyse SWOT à partir d'une description d'activité.",
+  "prompt": "Générez une analyse SWOT à partir du contenu suivant (forces / faiblesses / opportunités / menaces) :\n\n{{content}}",
+  "tags": [
+    "swot",
+    "stratégie",
+    "business"
+  ]
+}

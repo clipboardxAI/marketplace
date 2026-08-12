@@ -1,0 +1,10 @@
+{
+  "name": "Literaturübersicht",
+  "description": "Verfasst anhand mehrerer Quellen eine Literaturübersicht.",
+  "prompt": "Bitte fassen Sie anhand der folgenden Notizen eine Literaturübersicht zusammen, gruppiert nach Themen, weisen Sie Konsens und Lücken auf und geben Sie zukünftige Richtungen an:\n\n{{content}}",
+  "tags": [
+    "Literatur",
+    "Übersicht",
+    "Langtext"
+  ]
+}

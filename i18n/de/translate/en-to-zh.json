@@ -1,0 +1,9 @@
+{
+  "name": "Englisch → Chinesisch",
+  "description": "Übersetzt englischen Text flüssig ins Chinesische.",
+  "prompt": "Bitte übersetzen Sie den folgenden englischen Text flüssig und präzise ins Chinesische und bewahren Sie Fachbegriffe und Format:\n\n{{content}}",
+  "tags": [
+    "Übersetzung",
+    "Englisch-Chinesisch"
+  ]
+}

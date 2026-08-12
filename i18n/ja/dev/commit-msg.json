@@ -1,0 +1,10 @@
+{
+  "name": "コミットメッセージ",
+  "description": "変更から簡潔な Conventional Commits メッセージを生成します。",
+  "prompt": "以下の変更に対し、簡潔な Conventional Commits メッセージ（type: 件名、必要に応じ本文を補足）を生成してください：\n\n{{content}}",
+  "tags": [
+    "git",
+    "コミット",
+    "メッセージ"
+  ]
+}

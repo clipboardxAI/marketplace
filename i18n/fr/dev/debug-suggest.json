@@ -1,0 +1,9 @@
+{
+  "name": "Résoudre un bug",
+  "description": "Analyse les bugs possibles et propose un correctif.",
+  "prompt": "Analysez les bugs possibles du code suivant, leurs causes, et donnez des suggestions de correction concrètes et applicables (si pertinent) :\n\n{{content}}",
+  "tags": [
+    "débogage",
+    "correctif"
+  ]
+}

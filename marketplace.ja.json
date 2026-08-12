@@ -1,0 +1,819 @@
+{
+  "schemaVersion": 2,
+  "lang": "ja",
+  "categories": {
+    "writing": {
+      "name": "ライティング"
+    },
+    "dev": {
+      "name": "開発"
+    },
+    "productivity": {
+      "name": "生産性"
+    },
+    "translate": {
+      "name": "翻訳"
+    },
+    "social": {
+      "name": "ソーシャル"
+    },
+    "analysis": {
+      "name": "分析"
+    },
+    "business": {
+      "name": "ビジネス"
+    },
+    "content": {
+      "name": "コンテンツ＆マーケティング"
+    },
+    "academic": {
+      "name": "学術"
+    },
+    "legal": {
+      "name": "法務"
+    },
+    "finance": {
+      "name": "ファイナンス"
+    },
+    "health": {
+      "name": "ヘルス"
+    },
+    "support": {
+      "name": "カスタマーサポート"
+    },
+    "ecosystem": {
+      "name": "エコシステム"
+    }
+  },
+  "actions": {
+    "academic/abstract-gen": {
+      "name": "アブストラクト",
+      "description": "簡潔な学術要旨を作成します。",
+      "prompt": "以下の内容から、簡潔な学術要旨（約 150 語）を書いてください。背景・手法・結果・結論：\n\n{{content}}",
+      "tags": [
+        "要旨",
+        "研究",
+        "まとめ"
+      ]
+    },
+    "academic/citation-format": {
+      "name": "引用の書式化",
+      "description": "参考文献を指定スタイルで書式化します。",
+      "prompt": "以下の参考文献を APA スタイルで書式化し、番号付きリストで出力してください：\n\n{{content}}",
+      "tags": [
+        "引用",
+        "参考文献",
+        "書式"
+      ]
+    },
+    "academic/literature-review": {
+      "name": "文献レビュー",
+      "description": "複数のソースを総合して文献レビューを作成します。",
+      "prompt": "以下のメモから文献レビューを総合し、トピックごとに分類し、合意点と空白を指摘し、今後の方向性を提示してください：\n\n{{content}}",
+      "tags": [
+        "文献",
+        "レビュー",
+        "長文"
+      ]
+    },
+    "academic/paper-outline": {
+      "name": "論文アウトライン",
+      "description": "トピックから論文の構成を作成します。",
+      "prompt": "以下の内容から論文のアウトラインを構成してください。タイトル・要旨の計画・IMRaD 各章とサブポイント：\n\n{{content}}",
+      "tags": [
+        "アウトライン",
+        "研究",
+        "長文"
+      ]
+    },
+    "analysis/entity-extract": {
+      "name": "エンティティ抽出",
+      "description": "人名・組織・日付・場所などのエンティティを抽出します。",
+      "prompt": "以下のテキストからエンティティを抽出し、人物／組織／日付／場所／その他に分類してください：\n\n{{content}}",
+      "tags": [
+        "エンティティ",
+        "抽出"
+      ]
+    },
+    "analysis/keyword-extract": {
+      "name": "キーワード抽出",
+      "description": "最も重要なキーワードとフレーズを抽出します。",
+      "prompt": "以下のテキストから最も重要なキーワード／フレーズを 8〜12 個、カンマ区切りで抽出してください：\n\n{{content}}",
+      "tags": [
+        "キーワード",
+        "抽出"
+      ]
+    },
+    "analysis/risk-scan": {
+      "name": "リスクスキャン",
+      "description": "長文ドキュメント内のリスクや抜けをスキャンします。",
+      "prompt": "以下のドキュメントをスキャンし、リスク、要注意点、不整合、抜けを特定し、それぞれ文脈を添えて箇条書きで示してください：\n\n{{content}}",
+      "tags": [
+        "リスク",
+        "レビュー",
+        "長文"
+      ]
+    },
+    "analysis/sentiment": {
+      "name": "感情分析",
+      "description": "テキストの感情傾向を判定し、簡単な根拠を提示します。",
+      "prompt": "以下のテキストの感情傾向（ポジティブ／ニュートラル／ネガティブ）を判定し、一言の根拠を添えてください：\n\n{{content}}",
+      "tags": [
+        "感情",
+        "分析"
+      ]
+    },
+    "analysis/text-classify": {
+      "name": "テキスト分類",
+      "description": "意図・トピック・感情でテキストを分類します。",
+      "prompt": "以下のテキストを分類し、トピック・意図・トーン（語調）の 3 つの短いラベルを出力してください：\n\n{{content}}",
+      "tags": [
+        "分類",
+        "意図",
+        "トピック"
+      ]
+    },
+    "analysis/topic-summary": {
+      "name": "トピック要約",
+      "description": "長文の主要トピックと要点を要約します。",
+      "prompt": "以下の長文の主要トピックと要点を 3〜5 個のポイントにまとめてください：\n\n{{content}}",
+      "tags": [
+        "要約",
+        "トピック",
+        "長文"
+      ]
+    },
+    "business/business-proposal": {
+      "name": "事業提案書",
+      "description": "概要から構造化された事業提案を起草します。",
+      "prompt": "以下の内容から事業提案を起草し、章立ては「課題・解決策・市場・ビジネスモデル・要望」としてください：\n\n{{content}}",
+      "tags": [
+        "提案",
+        "ビジネス",
+        "長文"
+      ]
+    },
+    "business/elevator-pitch": {
+      "name": "エレベーターピッチ",
+      "description": "30 秒のエレベーターピッチを作成します。",
+      "prompt": "以下の内容から、価値・対象者・差別化が伝わる 30 秒のエレベーターピッチを書いてください：\n\n{{content}}",
+      "tags": [
+        "ピッチ",
+        "紹介",
+        "ビジネス"
+      ]
+    },
+    "business/email-draft": {
+      "name": "メール草案",
+      "description": "概要から丁寧なメールを起草します。",
+      "prompt": "以下の概要から、件名・宛名・本文・署名を含む明確でプロフェッショナルなメールを起草してください：\n\n{{content}}",
+      "tags": [
+        "メール",
+        "ビジネス",
+        "草案"
+      ]
+    },
+    "business/meeting-agenda": {
+      "name": "会議アジェンダ",
+      "description": "議題リストから焦点を絞った会議アジェンダを作成します。",
+      "prompt": "以下の内容から会議アジェンダを作成し、目的・参加者・各項目のタイムボックス・決定事項を含めてください：\n\n{{content}}",
+      "tags": [
+        "アジェンダ",
+        "会議",
+        "ビジネス"
+      ]
+    },
+    "business/sales-pitch": {
+      "name": "セールストーク",
+      "description": "製品／サービスの説得力あるセールストークを作成します。",
+      "prompt": "以下の内容について、顧客の悩みを提示し、次に価値を語り、最後に明確な行動喚起を置く説得力あるセールストークを書いてください：\n\n{{content}}",
+      "tags": [
+        "営業",
+        "トーク",
+        "説得"
+      ]
+    },
+    "business/swot": {
+      "name": "SWOT 分析",
+      "description": "事業の説明から SWOT 分析を生成します。",
+      "prompt": "以下の内容から SWOT 分析（強み／弱み／機会／脅威）を生成してください：\n\n{{content}}",
+      "tags": [
+        "swot",
+        "戦略",
+        "ビジネス"
+      ]
+    },
+    "content/ad-copy": {
+      "name": "広告コピー",
+      "description": "短く高転換な広告コピーのバリエーションを作成します。",
+      "prompt": "以下の内容について、異なる角度の短い広告コピーを 3 本（タイトル＋1 行）書いてください：\n\n{{content}}",
+      "tags": [
+        "広告",
+        "コピー",
+        "マーケティング"
+      ]
+    },
+    "content/blog-post": {
+      "name": "ブログ記事",
+      "description": "アウトラインやメモから完成したブログを作成します。",
+      "prompt": "以下の内容から、魅力的なタイトル・導入・小見出し付き 3〜5 セクション・結びを含む完成したブログ記事を書いてください：\n\n{{content}}",
+      "tags": [
+        "ブログ",
+        "記事",
+        "長文"
+      ]
+    },
+    "content/newsletter": {
+      "name": "ニュースレター",
+      "description": "メモを整理して整ったニュースレターにします。",
+      "prompt": "以下の内容をニュースレターにまとめてください。件名・短い導入・タイトル付き 3〜5 項目・署名：\n\n{{content}}",
+      "tags": [
+        "ニュースレター",
+        "メール",
+        "長文"
+      ]
+    },
+    "content/product-desc": {
+      "name": "商品説明",
+      "description": "魅力ある商品説明を作成します。",
+      "prompt": "以下の内容から、機能の列挙ではなく利益を際立たせ、行動喚起で締める魅力ある商品説明を書いてください：\n\n{{content}}",
+      "tags": [
+        "商品",
+        "eコマース",
+        "コピー"
+      ]
+    },
+    "content/seo-meta": {
+      "name": "SEO メタ情報",
+      "description": "SEO タイトル・説明・キーワードを生成します。",
+      "prompt": "以下の内容の SEO メタ情報を生成してください。タイトル（60 文字以内）・説明（155 文字以内）・キーワード 5 個：\n\n{{content}}",
+      "tags": [
+        "seo",
+        "メタ情報",
+        "マーケティング"
+      ]
+    },
+    "content/video-script": {
+      "name": "動画スクリプト",
+      "description": "絵コンテとナレーションを含む動画スクリプトを作成します。",
+      "prompt": "以下の内容から動画スクリプトを書き、シーンタイトル・画面テキスト・ナレーション台詞を含めてください：\n\n{{content}}",
+      "tags": [
+        "動画",
+        "スクリプト",
+        "YouTube"
+      ]
+    },
+    "dev/api-doc": {
+      "name": "API ドキュメント",
+      "description": "コードやインタフェース記述から API ドキュメントを生成します。",
+      "prompt": "以下の内容から API ドキュメントを生成し、パス・パラメータ・リクエスト・レスポンス・エラー説明を含めてください：\n\n{{content}}",
+      "tags": [
+        "API",
+        "ドキュメント",
+        "長文"
+      ]
+    },
+    "dev/code-review": {
+      "name": "コードレビュー",
+      "description": "可読性・堅牢性・パフォーマンスの観点でコードをレビューし改善点を提示します。",
+      "prompt": "ベテランエンジニアのように以下のコードをレビューし、可読性・堅牢性・パフォーマンス・セキュリティの観点から問題を指摘し、改善提案を提示してください：\n\n{{content}}",
+      "tags": [
+        "レビュー",
+        "品質"
+      ]
+    },
+    "dev/commit-msg": {
+      "name": "コミットメッセージ",
+      "description": "変更から簡潔な Conventional Commits メッセージを生成します。",
+      "prompt": "以下の変更に対し、簡潔な Conventional Commits メッセージ（type: 件名、必要に応じ本文を補足）を生成してください：\n\n{{content}}",
+      "tags": [
+        "git",
+        "コミット",
+        "メッセージ"
+      ]
+    },
+    "dev/debug-suggest": {
+      "name": "バグ調査",
+      "description": "コードのありそうなバグと原因を分析し修正案を提示します。",
+      "prompt": "以下のコードに存在しうるバグとその原因を分析し、具体的で実行可能な修正提案（あれば）を提示してください：\n\n{{content}}",
+      "tags": [
+        "デバッグ",
+        "修正"
+      ]
+    },
+    "dev/explain-code": {
+      "name": "コード解説",
+      "description": "このコードが何をするか・主要なロジックを平易に説明します。",
+      "prompt": "以下のコードが担う役割、主要なロジック、注意点を平易な言葉で説明してください：\n\n{{content}}",
+      "tags": [
+        "コード",
+        "解説"
+      ]
+    },
+    "dev/explain-error": {
+      "name": "エラー解説",
+      "description": "エラーやスタックトレースを説明し修正案を提示します。",
+      "prompt": "以下のエラーまたはスタックトレースの意味、考えられる原因、修正方法を説明してください：\n\n{{content}}",
+      "tags": [
+        "エラー",
+        "デバッグ",
+        "解説"
+      ]
+    },
+    "dev/gen-comments": {
+      "name": "コメント生成",
+      "description": "コードに明確な日本語コメントを補足します（ロジックは変えず）。",
+      "prompt": "コードのロジックを変えずに、以下のコードに他者が理解できる明確で必要な日本語コメントを補足してください：\n\n{{content}}",
+      "tags": [
+        "コメント",
+        "ドキュメント"
+      ]
+    },
+    "dev/readme-gen": {
+      "name": "README 生成",
+      "description": "コードや説明から分かりやすい README を生成します。",
+      "prompt": "以下のプロジェクト／コードから分かりやすい README を生成し、概要・インストール・使い方を含め、API があれば補足してください：\n\n{{content}}",
+      "tags": [
+        "ドキュメント",
+        "説明",
+        "長文"
+      ]
+    },
+    "dev/regex-gen": {
+      "name": "正規表現生成",
+      "description": "自然言語の記述から使える正規表現を生成します。",
+      "prompt": "以下の要件から正しい正規表現を生成し、各部分の意味と一致例を簡潔に説明してください：\n\n要件：{{content}}",
+      "tags": [
+        "正規表現",
+        "ツール"
+      ]
+    },
+    "dev/sql-optimize": {
+      "name": "SQL 最適化",
+      "description": "SQL を分析しパフォーマンス改善を提案します。",
+      "prompt": "以下の SQL 文を分析し、パフォーマンスのボトルネックを指摘し、実行可能な最適化提案（インデックス、書き換えなど）を提示してください：\n\n{{content}}",
+      "tags": [
+        "SQL",
+        "データベース"
+      ]
+    },
+    "dev/unit-test-gen": {
+      "name": "単体テスト生成",
+      "description": "与えられたコードから単体テストを生成します。",
+      "prompt": "以下のコードに対し、主要なパスと境界ケースを網羅する、簡潔で効果的な単体テストを書いてください：\n\n{{content}}",
+      "tags": [
+        "テスト",
+        "単体",
+        "品質"
+      ]
+    },
+    "ecosystem/nicasa-fileinfo": {
+      "name": "ファイル情報",
+      "description": "Nicasa で選択したファイルの詳細情報（サイズ、寸法、メタデータ）を表示します。"
+    },
+    "ecosystem/nicasa-inpaint": {
+      "name": "AI 編集（修復）",
+      "description": "選択した画像を Nicasa の AI エディタで開き、不要な物体の除去やレタッチを行います。"
+    },
+    "ecosystem/nicasa-optimize": {
+      "name": "画像最適化",
+      "description": "Nicasa で選択した画像を、Web に適したサイズと容量に最適化します。"
+    },
+    "ecosystem/nuezip-compress-7z": {
+      "name": "7Z に圧縮",
+      "description": "NueZip で選択したファイルを高圧縮率の .7z アーカイブに圧縮します。"
+    },
+    "ecosystem/nuezip-compress-zip": {
+      "name": "ZIP に圧縮",
+      "description": "NueZip で選択したファイルを .zip アーカイブに圧縮します。"
+    },
+    "ecosystem/nuezip-dropbox": {
+      "name": "NueZip コレクションボックスに追加",
+      "description": "選択したファイルを NueZip のコレクションボックスに送り、後で一括アーカイブできるようにします。"
+    },
+    "ecosystem/nuezip-extract-folder": {
+      "name": "フォルダに解凍",
+      "description": "NueZip で選択したアーカイブを新しいフォルダに解凍します。"
+    },
+    "ecosystem/nuezip-extract-here": {
+      "name": "この場所に解凍",
+      "description": "NueZip で選択したアーカイブを現在のフォルダに解凍します。"
+    },
+    "finance/expense-report": {
+      "name": "経費報告書",
+      "description": "ばらばらの費用記録を整理して明確な表にします。",
+      "prompt": "以下の費用記録を明確な報告書にまとめてください。カテゴリ・日付・金額・合計・備考：\n\n{{content}}",
+      "tags": [
+        "経費",
+        "財務",
+        "レポート"
+      ]
+    },
+    "finance/financial-summary": {
+      "name": "財務要約",
+      "description": "財務諸表や長い報告を要約します。",
+      "prompt": "以下の財務内容を主要な要点に要約してください。収益・コスト・利益・リスク・見通し：\n\n{{content}}",
+      "tags": [
+        "財務",
+        "要約",
+        "長文"
+      ]
+    },
+    "finance/invoice-draft": {
+      "name": "請求書草案",
+      "description": "注文情報からプロフェッショナルな請求書を起草します。",
+      "prompt": "以下の内容からプロフェッショナルな請求書を起草してください。発行者・顧客・項目・金額・支払期限：\n\n{{content}}",
+      "tags": [
+        "請求書",
+        "財務",
+        "請求"
+      ]
+    },
+    "health/health-summary": {
+      "name": "健康サマリー",
+      "description": "医療／健康記録を要点にまとめます。",
+      "prompt": "以下の医療／健康記録を、病状・服薬・フォローアップの要点が分かる形にまとめてください：\n\n{{content}}",
+      "tags": [
+        "健康",
+        "要約",
+        "長文"
+      ]
+    },
+    "health/symptom-explain": {
+      "name": "症状の説明",
+      "description": "記述された症状のおそらくの意味を説明します（参考のみ）。",
+      "prompt": "参考情報としてのみ、以下に記述された症状が通常どのようなものと関連しうるかを説明し、医師に相談する旨の免責事項を付記してください：\n\n{{content}}",
+      "tags": [
+        "健康",
+        "症状",
+        "参考"
+      ]
+    },
+    "legal/clause-explain": {
+      "name": "条項解説",
+      "description": "法律の条項を平易に説明します。",
+      "prompt": "以下の法律条項を平易な言葉で説明してください。それが意味するもの、気をつけるべき点：\n\n{{content}}",
+      "tags": [
+        "条項",
+        "法律",
+        "解説"
+      ]
+    },
+    "legal/contract-review": {
+      "name": "契約審査",
+      "description": "契約中のリスクや不自然な条項を審査します。",
+      "prompt": "以下の契約を審査し、不当・一方的・高リスクな条項を指摘し、それぞれ簡潔に説明してください：\n\n{{content}}",
+      "tags": [
+        "契約",
+        "法律",
+        "レビュー"
+      ]
+    },
+    "legal/nda-draft": {
+      "name": "秘密保持契約（NDA）起草",
+      "description": "主要条項から簡易の双務 NDA を起草します。",
+      "prompt": "以下の主要条項から、定義・義務・期間・除外事項を含む簡易の双務秘密保持契約を起草してください：\n\n{{content}}",
+      "tags": [
+        "NDA",
+        "法律",
+        "起草"
+      ]
+    },
+    "productivity/daily-plan": {
+      "name": "日次計画",
+      "description": "雑然とした ToDo を優先度付きの日次計画に整理します。",
+      "prompt": "以下の記録をタイムブロック付きの優先度付き日次計画にまとめ、最も重要な 3 件事項を明示してください：\n\n{{content}}",
+      "tags": [
+        "計画",
+        "スケジュール",
+        "ToDo"
+      ]
+    },
+    "productivity/decision-memo": {
+      "name": "意思決定メモ",
+      "description": "案と提言を含む意思決定メモを作成します。",
+      "prompt": "以下の内容について意思決定メモを書き、背景・選択肢・提言・その理由を含めてください：\n\n{{content}}",
+      "tags": [
+        "メモ",
+        "意思決定",
+        "長文"
+      ]
+    },
+    "productivity/email-reply": {
+      "name": "メール返信",
+      "description": "メール本文から上品な返信を起草します。",
+      "prompt": "以下のメール内容に基づき、上品で簡潔かつ丁寧な返信（返信本文のみをそのまま）を起草してください：\n\n{{content}}",
+      "tags": [
+        "メール",
+        "コミュニケーション"
+      ]
+    },
+    "productivity/extract-key": {
+      "name": "要点抽出",
+      "description": "長文から 3〜5 の核心をリストで抽出します。",
+      "prompt": "以下の内容から 3〜5 個の核心となる要点を抽出し、簡潔な箇条書きリストで示してください：\n\n{{content}}",
+      "tags": [
+        "要点",
+        "まとめ"
+      ]
+    },
+    "productivity/meeting-notes": {
+      "name": "会議録",
+      "description": "散らばったメモを構造化された議事録にまとめます。",
+      "prompt": "以下の会議メモを構造化された議事録にまとめてください。「結論／ToDo／担当／期限」の 4 項目を含めて：\n\n{{content}}",
+      "tags": [
+        "会議",
+        "議事録"
+      ]
+    },
+    "productivity/okr-draft": {
+      "name": "OKR 起草",
+      "description": "目標の概要から OKR を起草します。",
+      "prompt": "以下の概要から OKR を起草し、各目標に 2〜3 の定量の主要結果を伴わせてください：\n\n{{content}}",
+      "tags": [
+        "okr",
+        "目標",
+        "計画"
+      ]
+    },
+    "productivity/project-plan": {
+      "name": "プロジェクト計画",
+      "description": "大まかな考えから構造化されたプロジェクト計画を起草します。",
+      "prompt": "以下の内容からプロジェクト計画を起草し、目標・マイルストーン・担当者・リスク・タイムラインを含めてください：\n\n{{content}}",
+      "tags": [
+        "プロジェクト",
+        "計画",
+        "長文"
+      ]
+    },
+    "productivity/retrospective": {
+      "name": "振り返り（レトロスペクティブ）",
+      "description": "チームの記録を振り返りにまとめます。",
+      "prompt": "以下のチーム記録を振り返りにまとめ、よかったこと／改善点／次のステップを含めてください：\n\n{{content}}",
+      "tags": [
+        "振り返り",
+        "アジャイル",
+        "チーム"
+      ]
+    },
+    "productivity/todo-split": {
+      "name": "タスク分割",
+      "description": "目標を実行可能な ToDo リストに分解します。",
+      "prompt": "以下の目標や考えを、明確で実行可能かつ優先度付きの ToDo リストに分解してください：\n\n{{content}}",
+      "tags": [
+        "ToDo",
+        "計画"
+      ]
+    },
+    "productivity/weekly-report": {
+      "name": "週報",
+      "description": "今週の仕事を整理して明確な進捗報告にします。",
+      "prompt": "以下の今週の記録を週報にまとめ、完了／進行中／障害／来週の予定を含めてください：\n\n{{content}}",
+      "tags": [
+        "レポート",
+        "週報",
+        "長文"
+      ]
+    },
+    "social/bio-writer": {
+      "name": "プロフィール作成",
+      "description": "短い個人／職業プロフィールを作成します。",
+      "prompt": "以下の内容から、自信に満ちて控えめすぎない短い（2〜3 文）職業プロフィールを書いてください：\n\n{{content}}",
+      "tags": [
+        "プロフィール",
+        "経歴",
+        "About"
+      ]
+    },
+    "social/comment-reply": {
+      "name": "コメント返信",
+      "description": "ブランドのトーンに合う丁寧な返信を書きます。",
+      "prompt": "以下のコメントに対し、ブランドのトーンに合った親しみやすく温かい、簡潔な返信を書いてください：\n\n{{content}}",
+      "tags": [
+        "返信",
+        "コメント",
+        "ソーシャル"
+      ]
+    },
+    "social/linkedin-post": {
+      "name": "LinkedIn 投稿",
+      "description": "考えを洗練された LinkedIn 投稿にまとめます。",
+      "prompt": "以下の内容を洗練された LinkedIn 投稿に書き換えてください。フックとなる導入・2〜3 の短い段落・対話を促す質問を含めて：\n\n{{content}}",
+      "tags": [
+        "LinkedIn",
+        "投稿",
+        "ソーシャル"
+      ]
+    },
+    "social/polite-decline": {
+      "name": "丁寧な断り",
+      "description": "硬い断りを礼儀正しく適切な表現に書き換えます。",
+      "prompt": "元の意味を損なわずに、以下の断りや不同意の表現を、より丁寧で適切な言い回しに書き換えてください：\n\n{{content}}",
+      "tags": [
+        "断り",
+        "コミュニケーション"
+      ]
+    },
+    "social/thread-draft": {
+      "name": "X／Twitter スレッド",
+      "description": "テーマを鋭い複数ツイートに展開します。",
+      "prompt": "以下の内容を鋭い X／Twitter スレッド（5〜8 ツイート、各 280 字以内）に展開し、強い導入と結びの呼びかけを含めてください：\n\n{{content}}",
+      "tags": [
+        "スレッド",
+        "Twitter",
+        "ソーシャル"
+      ]
+    },
+    "social/tweet-polish": {
+      "name": "ツイート化",
+      "description": "考えを SNS 向けの短文に書き換えます。",
+      "prompt": "以下の内容を、X／微博などの SNS に投稿するのに適した短く魅力的なテキストに書き換え、必要に応じて 1〜2 個のハッシュタグを添えてください：\n\n{{content}}",
+      "tags": [
+        "SNS",
+        "コピー"
+      ]
+    },
+    "support/faq-gen": {
+      "name": "FAQ 生成",
+      "description": "製品メモを分かりやすい FAQ にまとめます。",
+      "prompt": "以下のメモを、5〜8 組の Q&A からなる分かりやすい FAQ にまとめ、簡潔でユーザー向けにしてください：\n\n{{content}}",
+      "tags": [
+        "Q&A",
+        "カスタマーサポート",
+        "長文"
+      ]
+    },
+    "support/ticket-reply": {
+      "name": "チケット返信",
+      "description": "共感のこもったチケット返信を書きます。",
+      "prompt": "以下のチケットに対し、共感と明確さのこもった返信を書いてください。まず共感し、次に解決策または次のステップを示し、友好的に締めてください：\n\n{{content}}",
+      "tags": [
+        "カスタマーサポート",
+        "チケット",
+        "返信"
+      ]
+    },
+    "translate/en-to-ja": {
+      "name": "英語→日本語",
+      "description": "英語を自然な日本語に翻訳します。",
+      "prompt": "以下の英語を、意味とトーンを保った自然で流暢な日本語に翻訳してください：\n\n{{content}}",
+      "tags": [
+        "翻訳",
+        "英語",
+        "日本語"
+      ]
+    },
+    "translate/en-to-zh": {
+      "name": "英語→中国語",
+      "description": "英語のテキストを流暢な中国語に翻訳します。",
+      "prompt": "以下の英語を、用語と形式を保った流暢で正確な中国語に翻訳してください：\n\n{{content}}",
+      "tags": [
+        "翻訳",
+        "英語→中国語"
+      ]
+    },
+    "translate/ja-to-en": {
+      "name": "日本語→英語",
+      "description": "日本語を自然な英語に翻訳します。",
+      "prompt": "以下の日本語を、意味とトーンを保った自然で流暢な英語に翻訳してください：\n\n{{content}}",
+      "tags": [
+        "翻訳",
+        "日本語",
+        "英語"
+      ]
+    },
+    "translate/ja-to-zh": {
+      "name": "日本語→中国語",
+      "description": "日本語を自然な中国語に翻訳します。",
+      "prompt": "以下の日本語を、意味とトーンを保った自然で流暢な中国語に翻訳してください：\n\n{{content}}",
+      "tags": [
+        "翻訳",
+        "中国語"
+      ]
+    },
+    "translate/zh-to-en": {
+      "name": "中国語→英語",
+      "description": "中国語のテキストを自然な英語に翻訳します。",
+      "prompt": "以下の中国語を、意味とトーンを保った自然で流暢な英語に翻訳してください：\n\n{{content}}",
+      "tags": [
+        "翻訳",
+        "中国語→英語"
+      ]
+    },
+    "translate/zh-to-ja": {
+      "name": "中国語→日本語",
+      "description": "中国語を自然な日本語に翻訳します。",
+      "prompt": "以下の中国語を、意味とトーンを保った自然で流暢な日本語に翻訳してください：\n\n{{content}}",
+      "tags": [
+        "翻訳",
+        "日本語"
+      ]
+    },
+    "writing/bullet-points": {
+      "name": "箇条書き化",
+      "description": "長い段落を明確な箇条書きリストに整理します。",
+      "prompt": "以下の長文を、重要な事実と階層を保った明確で読みやすい箇条書きリストにまとめてください：\n\n{{content}}",
+      "tags": [
+        "要点",
+        "リスト",
+        "長文"
+      ]
+    },
+    "writing/continue-writing": {
+      "name": "続きを書く",
+      "description": "既存の下書きに自然に続きを書きます。",
+      "prompt": "以下の下書きに自然に続きを書き、元のスタイルとトーンを保ち、既存の内容を繰り返さないでください：\n\n{{content}}",
+      "tags": [
+        "続き",
+        "下書き",
+        "執筆"
+      ]
+    },
+    "writing/expand": {
+      "name": "展開・リライト",
+      "description": "テーマを中心に詳細と例を補い、内容を豊かにします。",
+      "prompt": "元の意味を変えずに、以下の内容を展開し、詳細・背景・適切な例を補って豊かにしてください：\n\n{{content}}",
+      "tags": [
+        "展開",
+        "執筆"
+      ]
+    },
+    "writing/grammar-fix": {
+      "name": "文法修正",
+      "description": "文法と文構造を修正し、元のトーンを保ちます。",
+      "prompt": "以下のテキストの文法と文構造を修正し、元のトーンと意味を保ってください：\n\n{{content}}",
+      "tags": [
+        "文法",
+        "修正",
+        "編集"
+      ]
+    },
+    "writing/polish-copy": {
+      "name": "コピー推敲",
+      "description": "選択テキストをより流暢でプロらしく推敲し、意味を保ちます。",
+      "prompt": "以下のテキストを推敲し、意味を保ちつつ表現をより流暢・プロフェッショナル・適切にしてください：\n\n{{content}}",
+      "tags": [
+        "推敲",
+        "書き換え",
+        "執筆"
+      ]
+    },
+    "writing/proofread": {
+      "name": "校正",
+      "description": "スペル・文法・句読点の誤りを校正し、意味を変えません。",
+      "prompt": "以下のテキストを校正し、スペル・文法・句読点の誤りのみを修正し、表現や意味を変えないでください：\n\n{{content}}",
+      "tags": [
+        "校正",
+        "スペル",
+        "編集"
+      ]
+    },
+    "writing/rephrase": {
+      "name": "言い換え",
+      "description": "異なる表現で同じ意味を伝えます。",
+      "prompt": "以下のテキストを異なる言い回しで書き換え、元の意味を保ってください：\n\n{{content}}",
+      "tags": [
+        "書き換え",
+        "言い換え",
+        "リライト"
+      ]
+    },
+    "writing/rewrite-tone": {
+      "name": "トーン書き換え",
+      "description": "テキストをより自然で親しみやすい口語トーンに書き換え、情報はそのまま。",
+      "prompt": "以下のテキストを、日常のコミュニケーションにふさわしい自然で親しみやすい口語トーンに書き換え、情報は保ってください：\n\n{{content}}",
+      "tags": [
+        "トーン",
+        "書き換え"
+      ]
+    },
+    "writing/shorten": {
+      "name": "短縮要約",
+      "description": "关键信息を失わず、冗長なテキストを最短に圧縮します。",
+      "prompt": "关键信息を失わずに、以下の内容を最短にまで圧縮し、核心のみを残してください：\n\n{{content}}",
+      "tags": [
+        "短縮",
+        "要約"
+      ]
+    },
+    "writing/simplify": {
+      "name": "分かりやすく",
+      "description": "複雑なテキストを易しい表現に書き換えます。",
+      "prompt": "以下のテキストを、核心の意味を失わずに誰でも分かりやすい表現に書き換えてください：\n\n{{content}}",
+      "tags": [
+        "わかりやすく",
+        "簡略化",
+        "長文"
+      ]
+    },
+    "writing/title-generator": {
+      "name": "タイトル生成",
+      "description": "記事や段落に 5 つの魅力的なタイトルを生成します。",
+      "prompt": "以下の内容に、簡潔で魅力的かつ異なるスタイルのタイトルを 5 つ、1 行 1 個で生成してください：\n\n{{content}}",
+      "tags": [
+        "タイトル",
+        "アイデア"
+      ]
+    }
+  }
+}

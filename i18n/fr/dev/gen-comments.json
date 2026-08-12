@@ -1,0 +1,9 @@
+{
+  "name": "Générer des commentaires",
+  "description": "Ajoute des commentaires clairs au code (sans changer la logique).",
+  "prompt": "Sans modifier la logique du code, ajoutez des commentaires clairs et nécessaires au code suivant pour en faciliter la compréhension :\n\n{{content}}",
+  "tags": [
+    "commentaires",
+    "documentation"
+  ]
+}

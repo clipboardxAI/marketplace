@@ -1,0 +1,10 @@
+{
+  "name": "Ticket beantworten",
+  "description": "Verfasst eine einfühlsame Ticket-Antwort.",
+  "prompt": "Bitte verfassen Sie für das folgende Ticket eine einfühlsame, klare Antwort: zuerst Empathie zeigen, dann Lösung oder nächsten Schritt nennen, freundlicher Abschluss:\n\n{{content}}",
+  "tags": [
+    "Kundenservice",
+    "Ticket",
+    "Antwort"
+  ]
+}

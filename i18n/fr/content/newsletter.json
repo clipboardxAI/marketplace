@@ -1,0 +1,10 @@
+{
+  "name": "Newsletter",
+  "description": "Organise des notes en une newsletter soignée.",
+  "prompt": "Organisez le contenu suivant en une newsletter : ligne d'objet, introduction courte, 3 à 5 entrées titrées et signature :\n\n{{content}}",
+  "tags": [
+    "newsletter",
+    "e-mail",
+    "document long"
+  ]
+}

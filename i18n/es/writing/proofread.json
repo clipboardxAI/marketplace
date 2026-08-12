@@ -1,0 +1,10 @@
+{
+  "name": "Revisión de estilo",
+  "description": "Corrige errores de ortografía, gramática y puntuación sin cambiar el sentido.",
+  "prompt": "Revisa el siguiente texto y corrige solo errores de ortografía, gramática y puntuación, sin cambiar el vocabulario ni el significado:\n\n{{content}}",
+  "tags": [
+    "revisión",
+    "ortografía",
+    "edición"
+  ]
+}

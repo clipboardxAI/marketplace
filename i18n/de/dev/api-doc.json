@@ -1,0 +1,10 @@
+{
+  "name": "API-Dokumentation",
+  "description": "Generiert anhand von Code oder Schnittstellenbeschreibung eine API-Dokumentation.",
+  "prompt": "Bitte erstellen Sie für die folgenden Inhalte eine Schnittstellen-Dokumentation mit: Pfad, Parametern, Request, Response, Fehlerbeschreibung:\n\n{{content}}",
+  "tags": [
+    "Schnittstelle",
+    "Dokumentation",
+    "Langtext"
+  ]
+}

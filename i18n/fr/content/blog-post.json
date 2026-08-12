@@ -1,0 +1,10 @@
+{
+  "name": "Article de blog",
+  "description": "Rédige un article de blog complet à partir d'un plan ou de notes.",
+  "prompt": "Rédigez un article de blog complet à partir du contenu suivant, avec un titre accrocheur, une introduction, 3 à 5 sections sous-titrées et une conclusion :\n\n{{content}}",
+  "tags": [
+    "blog",
+    "article",
+    "document long"
+  ]
+}

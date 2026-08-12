@@ -1,0 +1,10 @@
+{
+  "name": "Discurso de elevador",
+  "description": "Escribe un discurso de elevador de 30 segundos.",
+  "prompt": "Escribe un discurso de elevador de 30 segundos sobre lo siguiente, aclarando valor, público y diferenciación:\n\n{{content}}",
+  "tags": [
+    "discurso",
+    "presentación",
+    "negocios"
+  ]
+}

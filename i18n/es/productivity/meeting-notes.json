@@ -1,0 +1,9 @@
+{
+  "name": "Acta de reunión",
+  "description": "Organiza notas de reunión dispersas en un acta estructurada.",
+  "prompt": "Organiza las siguientes notas de reunión en un acta estructurada con cuatro partes: conclusiones / tareas / responsables / fechas:\n\n{{content}}",
+  "tags": [
+    "reunión",
+    "acta"
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "name": "Extraer palabras clave",
+  "description": "Extrae las palabras y frases clave más importantes.",
+  "prompt": "Extrae de 8 a 12 palabras o frases clave del siguiente texto, separadas por comas:\n\n{{content}}",
+  "tags": [
+    "palabras clave",
+    "extracción"
+  ]
+}

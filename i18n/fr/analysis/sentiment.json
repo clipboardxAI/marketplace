@@ -1,0 +1,9 @@
+{
+  "name": "Analyse de sentiment",
+  "description": "Détermine le ton émotionnel du texte avec un bref justificatif.",
+  "prompt": "Indiquez la tonalité du texte ci-dessous (positive / neutre / négative) avec une phrase justificative :\n\n{{content}}",
+  "tags": [
+    "sentiment",
+    "analyse"
+  ]
+}

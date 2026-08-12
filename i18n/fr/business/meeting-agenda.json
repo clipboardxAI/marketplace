@@ -1,0 +1,10 @@
+{
+  "name": "Ordre du jour",
+  "description": "Établit un ordre du jour focalisé à partir d'une liste de sujets.",
+  "prompt": "Établissez un ordre du jour à partir du contenu suivant, incluant : objectifs, participants, créneaux horaires par point, décisions à prendre :\n\n{{content}}",
+  "tags": [
+    "ordre du jour",
+    "réunion",
+    "business"
+  ]
+}

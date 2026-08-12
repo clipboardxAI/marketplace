@@ -1,0 +1,10 @@
+{
+  "name": "Tagesordnung",
+  "description": "Erstellt anhand einer Themenliste eine fokussierte Tagesordnung.",
+  "prompt": "Bitte erstellen Sie anhand der folgenden Inhalte eine Tagesordnung mit: Ziel, Teilnehmern, Zeitkontingent pro Punkt, zu treffenden Entscheidungen:\n\n{{content}}",
+  "tags": [
+    "Agenda",
+    "Meeting",
+    "Business"
+  ]
+}

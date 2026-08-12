@@ -1,0 +1,10 @@
+{
+  "name": "SEO-Metadaten",
+  "description": "Generiert SEO-Titel, Beschreibung und Keywords.",
+  "prompt": "Bitte generieren Sie für die folgenden Inhalte SEO-Metadaten: Titel (≤60 Zeichen), Beschreibung (≤155 Zeichen), 5 Keywords:\n\n{{content}}",
+  "tags": [
+    "SEO",
+    "Metadaten",
+    "Marketing"
+  ]
+}

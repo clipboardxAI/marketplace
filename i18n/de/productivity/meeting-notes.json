@@ -1,0 +1,9 @@
+{
+  "name": "Meeting-Notizen",
+  "description": "Ordnet lose Meeting-Notizen zu strukturierten Protokollen.",
+  "prompt": "Bitte ordnen Sie die folgenden Meeting-Notizen zu einem strukturierten Protokoll mit den vier Teilen: Ergebnis / To-Do / Verantwortlich / Termin:\n\n{{content}}",
+  "tags": [
+    "Meeting",
+    "Protokoll"
+  ]
+}

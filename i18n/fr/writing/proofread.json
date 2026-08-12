@@ -1,0 +1,10 @@
+{
+  "name": "Relecture",
+  "description": "Corrige fautes d'orthographe, grammaire et ponctuation sans changer le sens.",
+  "prompt": "Relisez le texte suivant en corrigeant uniquement les fautes d'orthographe, de grammaire et de ponctuation, sans modifier le style ni le sens :\n\n{{content}}",
+  "tags": [
+    "relecture",
+    "orthographe",
+    "édition"
+  ]
+}

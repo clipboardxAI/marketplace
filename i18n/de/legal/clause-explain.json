@@ -1,0 +1,10 @@
+{
+  "name": "Klausel erklären",
+  "description": "Erklärt Rechtsklauseln in einfacher Sprache.",
+  "prompt": "Bitte erklären Sie die folgende Rechtsklausel in einfacher Sprache: was sie bedeutet und worauf zu achten ist:\n\n{{content}}",
+  "tags": [
+    "Klausel",
+    "Recht",
+    "Erklärung"
+  ]
+}

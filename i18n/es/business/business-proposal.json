@@ -1,0 +1,10 @@
+{
+  "name": "Propuesta comercial",
+  "description": "Redacta una propuesta comercial estructurada a partir de una descripción larga.",
+  "prompt": "Redacta una propuesta comercial basada en lo siguiente, con secciones: problema, solución, mercado, modelo y petición:\n\n{{content}}",
+  "tags": [
+    "propuesta",
+    "negocios",
+    "texto largo"
+  ]
+}

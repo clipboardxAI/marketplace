@@ -1,0 +1,9 @@
+{
+  "name": "Refus poli",
+  "description": "Réécrit un refus brut en expression polie et appropriée.",
+  "prompt": "Sans trahir le sens d'origine, réécrivez l'expression de refus ou de désaccord suivante de façon plus polie et appropriée :\n\n{{content}}",
+  "tags": [
+    "refus",
+    "communication"
+  ]
+}

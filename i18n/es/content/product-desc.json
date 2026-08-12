@@ -1,0 +1,10 @@
+{
+  "name": "Descripción de producto",
+  "description": "Escribe descripciones de producto atractivas.",
+  "prompt": "Escribe una descripción de producto atractiva basada en lo siguiente, destacando beneficios en lugar de solo funciones, y cierra con una llamada a la acción:\n\n{{content}}",
+  "tags": [
+    "producto",
+    "ecommerce",
+    "copy"
+  ]
+}

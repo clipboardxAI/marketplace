@@ -1,0 +1,10 @@
+{
+  "name": "Verständlich machen",
+  "description": "Überarbeitet komplexe Texte zu verständlicher Sprache.",
+  "prompt": "Bitte überarbeiten Sie den folgenden Text zu einer verständlichen Ausdrucksweise, ohne die Kernbedeutung zu verlieren:\n\n{{content}}",
+  "tags": [
+    "Einfach",
+    "Vereinfachung",
+    "Langtext"
+  ]
+}

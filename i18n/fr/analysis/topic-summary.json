@@ -1,0 +1,10 @@
+{
+  "name": "Résumé thématique",
+  "description": "Résume les thèmes et points clés d'un texte long.",
+  "prompt": "Résumez les thèmes et points clés du texte suivant en 3 à 5 points :\n\n{{content}}",
+  "tags": [
+    "résumé",
+    "thème",
+    "document long"
+  ]
+}

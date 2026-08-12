@@ -1,0 +1,9 @@
+{
+  "name": "Bug finden",
+  "description": "Analysiert mögliche Bugs und Ursachen im Code und gibt Reparaturvorschläge.",
+  "prompt": "Bitte analysieren Sie mögliche Bugs und Ursachen im folgenden Code und geben Sie konkrete, umsetzbare Reparaturvorschläge (sofern vorhanden):\n\n{{content}}",
+  "tags": [
+    "Debug",
+    "Behebung"
+  ]
+}

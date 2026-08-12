@@ -1,0 +1,10 @@
+{
+  "name": "Plan quotidien",
+  "description": "Organise des tâches en plan quotidien priorisé.",
+  "prompt": "Organisez le suivi suivant en plan quotidien priorisé avec créneaux horaires, et marquez les 3 tâches les plus importantes :\n\n{{content}}",
+  "tags": [
+    "planification",
+    "agenda",
+    "tâches"
+  ]
+}

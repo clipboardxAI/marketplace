@@ -1,0 +1,10 @@
+{
+  "name": "Script vidéo",
+  "description": "Rédige un script vidéo avec storyboard et voix off.",
+  "prompt": "Rédigez un script vidéo à partir du contenu suivant, avec titre de scène, texte à l'image et dialogue de voix off :\n\n{{content}}",
+  "tags": [
+    "vidéo",
+    "script",
+    "YouTube"
+  ]
+}

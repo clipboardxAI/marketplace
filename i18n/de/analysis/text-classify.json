@@ -1,0 +1,10 @@
+{
+  "name": "Textklassifizierung",
+  "description": "Klassifiziert Text nach Absicht, Thema oder Stimmung.",
+  "prompt": "Bitte klassifizieren Sie den folgenden Text und geben Sie drei kurze Labels aus: Thema, Absicht, Tonfall:\n\n{{content}}",
+  "tags": [
+    "Klassifizierung",
+    "Absicht",
+    "Thema"
+  ]
+}

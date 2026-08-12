@@ -1,0 +1,9 @@
+{
+  "name": "Changer le ton",
+  "description": "Réécrit le texte dans un ton oral plus naturel et chaleureux.",
+  "prompt": "Réécrivez le texte suivant dans un ton oral plus naturel et chaleureux, adapté à la communication quotidienne, en conservant l'information :\n\n{{content}}",
+  "tags": [
+    "ton",
+    "reformuler"
+  ]
+}

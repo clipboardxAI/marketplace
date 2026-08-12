@@ -1,0 +1,10 @@
+{
+  "name": "Explication de clause",
+  "description": "Explique une clause juridique en langage clair.",
+  "prompt": "Expliquez en langage clair la clause juridique suivante : ce qu'elle signifie et à quoi faire attention :\n\n{{content}}",
+  "tags": [
+    "clause",
+    "juridique",
+    "explication"
+  ]
+}

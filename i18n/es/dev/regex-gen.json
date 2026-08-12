@@ -1,0 +1,9 @@
+{
+  "name": "Generar expresión regular",
+  "description": "Genera una expresión regular válida a partir de una descripción en lenguaje natural.",
+  "prompt": "Genera una expresión regular correcta según la siguiente necesidad y explica brevemente el significado de cada parte con un ejemplo de coincidencia:\n\nNecesidad: {{content}}",
+  "tags": [
+    "regex",
+    "herramienta"
+  ]
+}

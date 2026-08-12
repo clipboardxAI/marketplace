@@ -1,0 +1,10 @@
+{
+  "name": "Expliquer l'erreur",
+  "description": "Explique l'erreur et la pile, et propose un correctif.",
+  "prompt": "Expliquez la signification de l'erreur ou de la pile suivante, ses causes possibles et la méthode de correction :\n\n{{content}}",
+  "tags": [
+    "erreur",
+    "débogage",
+    "explication"
+  ]
+}

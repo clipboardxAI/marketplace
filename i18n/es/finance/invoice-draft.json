@@ -1,0 +1,10 @@
+{
+  "name": "Borrador de factura",
+  "description": "Redacta una factura profesional según la información del pedido.",
+  "prompt": "Redacta una factura profesional basada en lo siguiente: emisor, cliente, concepto, monto y fecha de vencimiento:\n\n{{content}}",
+  "tags": [
+    "factura",
+    "finanzas",
+    "cobro"
+  ]
+}

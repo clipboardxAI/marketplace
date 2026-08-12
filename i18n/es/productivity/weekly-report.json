@@ -1,0 +1,10 @@
+{
+  "name": "Informe semanal",
+  "description": "Organiza el trabajo de la semana en un informe claro.",
+  "prompt": "Organiza los siguientes registros de la semana en un informe con: completado / en curso / bloqueado / plan de la próxima semana:\n\n{{content}}",
+  "tags": [
+    "informe",
+    "semanal",
+    "texto largo"
+  ]
+}

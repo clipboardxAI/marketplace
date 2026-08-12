@@ -1,0 +1,10 @@
+{
+  "name": "Produktbeschreibung",
+  "description": "Verfasst eine ansprechende Produktbeschreibung.",
+  "prompt": "Bitte verfassen Sie anhand der folgenden Inhalte eine ansprechende Produktbeschreibung, die den Nutzen statt nur Funktionen hervorhebt, und schließen Sie mit einem Call-to-Action ab:\n\n{{content}}",
+  "tags": [
+    "Produkt",
+    "E-Commerce",
+    "Text"
+  ]
+}

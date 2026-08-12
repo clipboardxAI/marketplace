@@ -1,0 +1,9 @@
+{
+  "name": "Développer",
+  "description": "Développe un sujet avec détails et exemples.",
+  "prompt": "Sans changer le sens, développez le contenu suivant en ajoutant détails, contexte et exemples pertinents pour le rendre plus riche :\n\n{{content}}",
+  "tags": [
+    "développer",
+    "rédaction"
+  ]
+}

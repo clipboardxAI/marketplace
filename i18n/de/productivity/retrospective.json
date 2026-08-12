@@ -1,0 +1,10 @@
+{
+  "name": "Retrospektive",
+  "description": "Ordnet Teamnotizen zu einer Retrospektive.",
+  "prompt": "Bitte ordnen Sie die folgenden Teamnotizen zu einer Retrospektive mit: Gutes / Verbesserungspotenzial / Nächste Schritte:\n\n{{content}}",
+  "tags": [
+    "Retrospektive",
+    "Agile",
+    "Team"
+  ]
+}

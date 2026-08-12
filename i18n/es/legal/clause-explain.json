@@ -1,0 +1,10 @@
+{
+  "name": "Explicar cláusula",
+  "description": "Explica cláusulas legales en lenguaje sencillo.",
+  "prompt": "Explica la siguiente cláusula legal en lenguaje sencillo: qué significa y en qué hay que fijarse:\n\n{{content}}",
+  "tags": [
+    "cláusula",
+    "legal",
+    "explicación"
+  ]
+}

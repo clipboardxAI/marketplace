@@ -1,0 +1,10 @@
+{
+  "name": "Note de frais",
+  "description": "Organise des notes de frais éparses en rapport clair.",
+  "prompt": "Organisez les notes de frais suivantes en un rapport clair : catégorie, date, montant, total et remarques :\n\n{{content}}",
+  "tags": [
+    "frais",
+    "finance",
+    "rapport"
+  ]
+}

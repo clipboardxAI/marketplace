@@ -1,0 +1,9 @@
+{
+  "name": "Extraer entidades",
+  "description": "Extrae entidades como personas, organizaciones, fechas y lugares.",
+  "prompt": "Extrae las entidades del siguiente texto y agrúpalas en: personas / organizaciones / fechas / lugares / otros:\n\n{{content}}",
+  "tags": [
+    "entidades",
+    "extracción"
+  ]
+}

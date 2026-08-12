@@ -1,0 +1,10 @@
+{
+  "name": "Description produit",
+  "description": "Rédige une description produit attractive.",
+  "prompt": "Rédigez une description produit attractive à partir du contenu suivant, en mettant en avant les bénéfices plutôt que la simple liste des fonctions, et terminez par un appel à l'action :\n\n{{content}}",
+  "tags": [
+    "produit",
+    "e-commerce",
+    "texte"
+  ]
+}

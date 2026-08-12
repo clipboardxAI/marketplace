@@ -1,0 +1,10 @@
+{
+  "name": "Métadonnées SEO",
+  "description": "Génère titre, description et mots-clés SEO.",
+  "prompt": "Générez des métadonnées SEO pour le contenu suivant : titre (≤60 caractères), description (≤155 caractères), 5 mots-clés :\n\n{{content}}",
+  "tags": [
+    "seo",
+    "métadonnées",
+    "marketing"
+  ]
+}

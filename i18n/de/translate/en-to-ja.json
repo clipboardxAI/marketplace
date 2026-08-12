@@ -1,0 +1,10 @@
+{
+  "name": "Englisch → Japanisch",
+  "description": "Übersetzt Englisch in natürliches Japanisch.",
+  "prompt": "Bitte übersetzen Sie den folgenden englischen Text in flüssiges, natürliches Japanisch und bewahren Sie Bedeutung und Tonfall:\n\n{{content}}",
+  "tags": [
+    "Übersetzung",
+    "Englisch",
+    "Japanisch"
+  ]
+}

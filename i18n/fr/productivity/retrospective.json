@@ -1,0 +1,10 @@
+{
+  "name": "Rétrospective",
+  "description": "Organise un suivi d'équipe en rétrospective.",
+  "prompt": "Organisez le suivi d'équipe suivant en rétrospective, incluant : réussites / à améliorer / prochaines étapes :\n\n{{content}}",
+  "tags": [
+    "rétrospective",
+    "agile",
+    "équipe"
+  ]
+}

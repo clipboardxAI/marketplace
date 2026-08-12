@@ -1,0 +1,10 @@
+{
+  "name": "Borrador de OKR",
+  "description": "Redacta OKR a partir de una descripción del objetivo.",
+  "prompt": "Redacta un OKR basado en la siguiente descripción, con 2-3 resultados clave cuantificables por objetivo:\n\n{{content}}",
+  "tags": [
+    "okr",
+    "objetivo",
+    "plan"
+  ]
+}

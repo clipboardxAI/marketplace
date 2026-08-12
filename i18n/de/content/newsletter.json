@@ -1,0 +1,10 @@
+{
+  "name": "Newsletter",
+  "description": "Ordnet Notizen zu einem aufgeräumten Newsletter.",
+  "prompt": "Bitte ordnen Sie die folgenden Inhalte zu einer Newsletter-Ausgabe: Betreffzeile, kurze Einleitung, 3–5 betitelte Einträge und Grußformel:\n\n{{content}}",
+  "tags": [
+    "Newsletter",
+    "E-Mail",
+    "Langtext"
+  ]
+}

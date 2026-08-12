@@ -1,0 +1,10 @@
+{
+  "name": "Anglais → Japonais",
+  "description": "Traduit un texte anglais en japonais naturel.",
+  "prompt": "Traduisez l'anglais suivant en japonais naturel et fluide, en conservant le sens et le ton :\n\n{{content}}",
+  "tags": [
+    "traduction",
+    "anglais",
+    "japonais"
+  ]
+}

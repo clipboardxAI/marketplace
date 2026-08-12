@@ -1,0 +1,9 @@
+{
+  "name": "Kürzen",
+  "description": "Kürzt weitschweifige Texte aufs Wesentliche, ohne Schlüsselinfos zu verlieren.",
+  "prompt": "Bitte kürzen Sie die folgenden Inhalte auf das Minimum, ohne Schlüsselinformationen zu verlieren, und behalten Sie nur das Wesentliche:\n\n{{content}}",
+  "tags": [
+    "Kürzen",
+    "Zusammenfassung"
+  ]
+}

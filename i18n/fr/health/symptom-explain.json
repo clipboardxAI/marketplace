@@ -1,0 +1,10 @@
+{
+  "name": "Explication de symptômes",
+  "description": "Explique le sens possible des symptômes décrits (à titre indicatif).",
+  "prompt": "À titre purement informatif, expliquez à quoi les symptômes décrits peuvent généralement correspondre, avec un avertissement recommandant de consulter un médecin :\n\n{{content}}",
+  "tags": [
+    "santé",
+    "symptômes",
+    "information"
+  ]
+}

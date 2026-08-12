@@ -1,0 +1,10 @@
+{
+  "name": "Résumé financier",
+  "description": "Résume des états financiers ou un rapport long.",
+  "prompt": "Résumez le contenu financier suivant en points clés : revenus, coûts, bénéfices, risques et perspectives :\n\n{{content}}",
+  "tags": [
+    "finance",
+    "résumé",
+    "document long"
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "name": "Réponse à un commentaire",
+  "description": "Rédige une réponse amicale et conforme à la tonalité.",
+  "prompt": "Rédigez une réponse amicale et conforme à la tonalité de la marque pour le commentaire suivant, concise et chaleureuse :\n\n{{content}}",
+  "tags": [
+    "réponse",
+    "commentaire",
+    "réseau social"
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "name": "Argumentaire de vente",
+  "description": "Rédige un argumentaire de vente convaincant pour un produit/service.",
+  "prompt": "Rédigez un argumentaire de vente convaincant à partir du contenu suivant : commencez par le problème client, puis la valeur, et terminez par un appel à l'action clair :\n\n{{content}}",
+  "tags": [
+    "vente",
+    "argumentaire",
+    "persuasion"
+  ]
+}

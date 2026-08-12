@@ -12,6 +12,7 @@ import path from "node:path";
 
 import {
   ACTION_FIELDS,
+  PACK_LOCALES,
   REQUIRED_ACTION_FIELDS,
   SCHEMA_VERSION,
   SUPPORTED_LOCALES,
@@ -21,6 +22,7 @@ import {
   type ActionEntry,
   type ActionOverride,
   type Catalog,
+  type CatalogPack,
   type CategoryEntry,
   type ExecutionSpec,
 } from "./types.js";
@@ -280,15 +282,10 @@ function buildCatalog(): Catalog {
     actions.push(entry);
   }
 
+  // Build per-language packs (separate files) instead of inlining every locale
+  // into each action. The base catalog carries only canonical (English) fields
+  // plus a `languages` list so consumers know which packs exist.
   const locales = loadLocales(validCategories, validActionKeys);
-  for (const a of actions) {
-    const ov = locales.actions[a.category + "/" + a.id];
-    if (ov && Object.keys(ov).length) a.locales = ov;
-  }
-  const categories: CategoryEntry[] = cats.map((c) => {
-    const ov = locales.categories[c.id];
-    return ov && Object.keys(ov).length ? { ...c, locales: ov } : c;
-  });
 
   if (problems.length) {
     for (const p of problems) process.stderr.write("❌ " + p + "\n");
@@ -307,13 +304,32 @@ function buildCatalog(): Catalog {
   const stamp = (n: number) => String(n).padStart(2, "0");
   const versionStamp = today.getFullYear() + "." + stamp(today.getMonth() + 1) + "." + stamp(today.getDate());
 
-  return {
+  const base: Catalog = {
     schemaVersion: SCHEMA_VERSION,
     catalogVersion: process.env.CATALOG_VERSION ?? versionStamp,
     updatedAt: process.env.UPDATED_AT ?? ymd,
-    categories,
+    languages: [...PACK_LOCALES],
+    categories: cats,
     actions,
   };
+
+  // One pack per PACK_LOCALE. Even languages without i18n data get an empty
+  // stub so consumers know the pack file exists (and falls back to English).
+  const packs: CatalogPack[] = PACK_LOCALES.map((lang) => {
+    const categories: Record<string, { name?: string }> = {};
+    for (const [cid, byLang] of Object.entries(locales.categories)) {
+      const ov = byLang[lang];
+      if (ov && Object.keys(ov).length) categories[cid] = ov;
+    }
+    const actionsMap: Record<string, ActionOverride> = {};
+    for (const [key, byLang] of Object.entries(locales.actions)) {
+      const ov = byLang[lang];
+      if (ov && Object.keys(ov).length) actionsMap[key] = ov;
+    }
+    return { schemaVersion: SCHEMA_VERSION, lang, categories, actions: actionsMap };
+  });
+
+  return { base, packs };
 }
 
 function normalize(catalog: Catalog): string {
@@ -335,8 +351,18 @@ function writeCatalog(catalog: Catalog): void {
   );
 }
 
+function writePack(pack: CatalogPack): void {
+  const file = path.join(ROOT, "marketplace." + pack.lang + ".json");
+  fs.writeFileSync(file, JSON.stringify(pack, null, 2) + "\n", "utf-8");
+  process.stdout.write(
+    "✅ Wrote " + file + " (" + Object.keys(pack.actions).length + " action overrides)\n",
+  );
+}
+
 export function cmdBuild(): void {
-  writeCatalog(buildCatalog());
+  const { base, packs } = buildCatalog();
+  writeCatalog(base);
+  for (const p of packs) writePack(p);
 }
 
 export function cmdSplit(): void {
@@ -357,21 +383,32 @@ export function cmdSplit(): void {
 }
 
 export function cmdValidate(): void {
-  const catalog = buildCatalog();
+  const { base, packs } = buildCatalog();
   if (!fs.existsSync(OUTPUT_FILE)) die("marketplace.json does not exist. Run `npm run build` first.");
   const existing = loadJSON(OUTPUT_FILE) as Catalog;
-  if (normalize(existing) !== normalize(catalog)) {
+  if (normalize(existing) !== normalize(base)) {
     const eIds = new Map((existing.actions ?? []).map((a) => [a.id, a]));
-    const nIds = new Map(catalog.actions.map((a) => [a.id, a]));
+    const nIds = new Map(base.actions.map((a) => [a.id, a]));
     const diffs: string[] = [];
     for (const id of [...eIds.keys()].filter((k) => !nIds.has(k))) diffs.push("removed action: " + id);
     for (const id of [...nIds.keys()].filter((k) => !eIds.has(k))) diffs.push("added action: " + id);
     for (const id of [...eIds.keys()].filter((k) => nIds.has(k))) {
       if (stableStringify(eIds.get(id)!) !== stableStringify(nIds.get(id)!)) diffs.push("changed action: " + id);
     }
-    if (stableStringify(existing.categories) !== stableStringify(catalog.categories)) diffs.push("category list changed");
+    if (stableStringify(existing.categories) !== stableStringify(base.categories)) diffs.push("category list changed");
     for (const d of diffs) process.stderr.write("⚠️  " + d + "\n");
     die("marketplace.json is out of sync with source. Run `npm run build` and commit the result.");
   }
-  process.stdout.write("✅ Validation passed — marketplace.json matches source (" + catalog.actions.length + " actions).\n");
+  // Validate each language pack.
+  for (const p of packs) {
+    const file = path.join(ROOT, "marketplace." + p.lang + ".json");
+    if (!fs.existsSync(file)) die("Language pack " + file + " is missing. Run `npm run build`.");
+    const ep = loadJSON(file) as CatalogPack;
+    if (stableStringify(ep) !== stableStringify(p)) {
+      die("Language pack " + file + " is out of sync with source. Run `npm run build` and commit the result.");
+    }
+  }
+  process.stdout.write(
+    "✅ Validation passed — base + " + packs.length + " language packs match source (" + base.actions.length + " actions).\n",
+  );
 }

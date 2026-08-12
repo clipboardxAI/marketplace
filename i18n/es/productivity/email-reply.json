@@ -1,0 +1,9 @@
+{
+  "name": "Responder correo",
+  "description": "Redacta una respuesta adecuada según el cuerpo del correo.",
+  "prompt": "Basado en el siguiente correo, redacta una respuesta adecuada, concisa y cortés (da directamente el cuerpo de la respuesta):\n\n{{content}}",
+  "tags": [
+    "correo",
+    "comunicación"
+  ]
+}

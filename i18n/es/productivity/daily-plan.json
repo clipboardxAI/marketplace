@@ -1,0 +1,10 @@
+{
+  "name": "Plan diario",
+  "description": "Organiza tareas desordenadas en un plan diario con prioridades.",
+  "prompt": "Organiza los siguientes registros en un plan diario con bloques de tiempo y prioridades, marcando las 3 tareas más importantes:\n\n{{content}}",
+  "tags": [
+    "plan",
+    "agenda",
+    "tareas"
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "name": "Symptombeschreibung",
+  "description": "Erklärt die mögliche Bedeutung beschriebener Symptome (nur zur Information).",
+  "prompt": "Bitte geben Sie nur zu Informationszwecken eine Erklärung, was die folgend beschriebenen Symptome üblicherweise bedeuten können, und fügen Sie einen Haftungsausschluss hinzu, einen Arzt aufzusuchen:\n\n{{content}}",
+  "tags": [
+    "Gesundheit",
+    "Symptom",
+    "Info"
+  ]
+}

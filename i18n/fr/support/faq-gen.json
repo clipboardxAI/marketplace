@@ -1,0 +1,10 @@
+{
+  "name": "Générer une FAQ",
+  "description": "Organise des notes produit en FAQ claire.",
+  "prompt": "Organisez les notes suivantes en une FAQ claire, avec 5 à 8 paires question-réponse, concises et orientées utilisateur :\n\n{{content}}",
+  "tags": [
+    "Q&R",
+    "support",
+    "document long"
+  ]
+}

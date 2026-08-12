@@ -6,7 +6,7 @@
 // validates the result.
 
 /** Catalog schema version. Bump only on breaking changes to the output shape. */
-export const SCHEMA_VERSION = 1;
+export const SCHEMA_VERSION = 2;
 
 /**
  * Locales the desktop app supports. Raw values mirror `AppLanguage` in the app
@@ -41,6 +41,22 @@ export const SUPPORTED_LOCALES: readonly string[] = [
   "tr",
   "uk",
   "vi",
+];
+
+/**
+ * Languages for which a standalone `marketplace.<lang>.json` pack is emitted at
+ * build time. Each pack carries ONLY that language's overrides (name/description/
+ * prompt/tags) — so adding a language = add one file, with zero impact on the
+ * base catalog or the other packs. `en` is the canonical base and is excluded.
+ * Mirrors the app's remote language-pack behavior and the site's supported locales.
+ */
+export const PACK_LOCALES: readonly string[] = [
+  "zh-CN",
+  "zh-TW",
+  "es",
+  "ja",
+  "de",
+  "fr",
 ];
 
 export const VALID_TYPES = new Set([
@@ -135,6 +151,21 @@ export interface Catalog {
   schemaVersion: number;
   catalogVersion: string;
   updatedAt: string;
+  /** Languages with a standalone pack file (`marketplace.<lang>.json`). */
+  languages?: string[];
   categories: CategoryEntry[];
   actions: ActionEntry[];
+}
+
+/**
+ * A standalone per-language override pack. Emitted as `marketplace.<lang>.json`.
+ * Action keys are "<category>/<id>" (matching the base catalog's path-derived id);
+ * category keys are the category id. Consumers merge these on top of the base
+ * catalog at runtime for the active language only.
+ */
+export interface CatalogPack {
+  schemaVersion: number;
+  lang: string;
+  categories: Record<string, { name?: string }>;
+  actions: Record<string, ActionOverride>;
 }

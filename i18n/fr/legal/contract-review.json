@@ -1,0 +1,10 @@
+{
+  "name": "Revue de contrat",
+  "description": "Revue les clauses à risque ou inhabituelles d'un contrat.",
+  "prompt": "Revoyez le contrat suivant, signalez les clauses injustes, unilatérales ou à haut risque, et commentez chaque point brièvement :\n\n{{content}}",
+  "tags": [
+    "contrat",
+    "juridique",
+    "revue"
+  ]
+}

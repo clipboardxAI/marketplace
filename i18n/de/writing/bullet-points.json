@@ -1,0 +1,10 @@
+{
+  "name": "Stichpunkte",
+  "description": "Ordnet lange Absätze zu einer klaren Stichpunktliste.",
+  "prompt": "Bitte ordnen Sie den folgenden Langtext zu einer klaren, lesbaren Stichpunktliste und bewahren Sie Schlüsselfakten und Hierarchie:\n\n{{content}}",
+  "tags": [
+    "Stichpunkte",
+    "Liste",
+    "Langtext"
+  ]
+}

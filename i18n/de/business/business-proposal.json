@@ -1,0 +1,10 @@
+{
+  "name": "Geschäftsvorschlag",
+  "description": "Entwirft anhand einer längeren Beschreibung einen strukturierten Geschäftsvorschlag.",
+  "prompt": "Bitte entwerfen Sie anhand der folgenden Inhalte einen Geschäftsvorschlag mit den Abschnitten: Problem, Lösung, Markt, Modell, Forderung:\n\n{{content}}",
+  "tags": [
+    "Vorschlag",
+    "Business",
+    "Langtext"
+  ]
+}

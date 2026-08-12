@@ -1,0 +1,10 @@
+{
+  "name": "Wochenbericht",
+  "description": "Ordnet die Arbeitswoche zu einem klaren Fortschrittsbericht.",
+  "prompt": "Bitte ordnen Sie die folgenden Wochennotizen zu einem Wochenbericht mit: Erledigt / In Arbeit / Blockiert / Plan für nächste Woche:\n\n{{content}}",
+  "tags": [
+    "Bericht",
+    "Wochenbericht",
+    "Langtext"
+  ]
+}

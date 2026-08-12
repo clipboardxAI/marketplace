@@ -1,0 +1,10 @@
+{
+  "name": "Reformuler",
+  "description": "Exprime la même idée avec d'autres mots.",
+  "prompt": "Reformulez le texte suivant avec d'autres mots en conservant le sens :\n\n{{content}}",
+  "tags": [
+    "reformuler",
+    "paraphrase",
+    "réécriture"
+  ]
+}

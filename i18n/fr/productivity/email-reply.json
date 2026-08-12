@@ -1,0 +1,9 @@
+{
+  "name": "Réponse e-mail",
+  "description": "Rédige une réponse e-mail appropriée au corps du message.",
+  "prompt": "À partir du contenu de l'e-mail suivant, rédigez une réponse appropriée, concise et polie (donnez directement le corps de la réponse) :\n\n{{content}}",
+  "tags": [
+    "e-mail",
+    "communication"
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "name": "Hilo de X",
+  "description": "Desarrolla un tema en un hilo de tweets contundente.",
+  "prompt": "Desarrolla lo siguiente en un hilo de X contundente (5-8 tweets, cada uno ≤280 caracteres), con una apertura fuerte y un cierre con llamada a la acción:\n\n{{content}}",
+  "tags": [
+    "hilo",
+    "twitter",
+    "redes"
+  ]
+}

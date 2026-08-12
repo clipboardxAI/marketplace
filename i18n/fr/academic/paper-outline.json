@@ -1,0 +1,10 @@
+{
+  "name": "Plan de thèse",
+  "description": "Construit un plan d'article à partir d'un sujet.",
+  "prompt": "Construisez un plan d'article à partir du contenu suivant : titre, plan de résumé, sections IMRaD et sous-points :\n\n{{content}}",
+  "tags": [
+    "plan",
+    "recherche",
+    "document long"
+  ]
+}

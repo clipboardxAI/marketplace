@@ -1,0 +1,9 @@
+{
+  "name": "Revue de code",
+  "description": "Revue le code sur lisibilité, robustesse et performance.",
+  "prompt": "Revoyez le code suivant comme un ingénieur senior, en signalant les problèmes de lisibilité, robustesse, performance et sécurité, avec des suggestions d'amélioration :\n\n{{content}}",
+  "tags": [
+    "revue",
+    "qualité"
+  ]
+}

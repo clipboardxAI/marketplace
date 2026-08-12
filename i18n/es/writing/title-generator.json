@@ -1,0 +1,9 @@
+{
+  "name": "Generar títulos",
+  "description": "Genera 5 títulos atractivos para un artículo o párrafo.",
+  "prompt": "Genera 5 títulos concisos, atractivos y de estilos distintos para lo siguiente, uno por línea:\n\n{{content}}",
+  "tags": [
+    "título",
+    "inspiración"
+  ]
+}

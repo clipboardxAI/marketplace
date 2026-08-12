@@ -1,0 +1,9 @@
+{
+  "name": "Peaufiner un tweet",
+  "description": "Réécrit une idée en message court pour les réseaux sociaux.",
+  "prompt": "Réécrivez le contenu suivant en un message court et accrocheur adapté aux réseaux sociaux (ex. X / Weibo), avec 1 ou 2 hashtags possibles :\n\n{{content}}",
+  "tags": [
+    "réseau social",
+    "texte"
+  ]
+}

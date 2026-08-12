@@ -1,0 +1,10 @@
+{
+  "name": "Guion de video",
+  "description": "Escribe un guion de video con planos y narración.",
+  "prompt": "Escribe un guion de video basado en lo siguiente, con título de escena, texto en imagen y narración:\n\n{{content}}",
+  "tags": [
+    "video",
+    "guion",
+    "YouTube"
+  ]
+}

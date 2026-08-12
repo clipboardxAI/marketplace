@@ -1,0 +1,10 @@
+{
+  "name": "Analyse des risques",
+  "description": "Analyse les risques et les omissions dans les documents longs.",
+  "prompt": "Analysez le document suivant pour repérer risques, alertes, incohérences et éléments manquants, et commentez chaque point avec son contexte :\n\n{{content}}",
+  "tags": [
+    "risque",
+    "revue",
+    "document long"
+  ]
+}

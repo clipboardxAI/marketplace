@@ -1,0 +1,10 @@
+{
+  "name": "Pulir texto",
+  "description": "Pule el texto seleccionado para que sea más fluido y profesional, sin cambiar el sentido.",
+  "prompt": "Pule el siguiente texto manteniendo el sentido pero con una expresión más fluida, profesional y adecuada:\n\n{{content}}",
+  "tags": [
+    "pulir",
+    "reformular",
+    "escritura"
+  ]
+}

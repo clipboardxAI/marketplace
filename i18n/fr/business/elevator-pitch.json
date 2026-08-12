@@ -1,0 +1,10 @@
+{
+  "name": "Pitch de 30 secondes",
+  "description": "Rédige un pitch de 30 secondes.",
+  "prompt": "Rédigez un pitch de 30 secondes à partir du contenu suivant, en clarifiant la valeur, le public et la différenciation :\n\n{{content}}",
+  "tags": [
+    "pitch",
+    "présentation",
+    "business"
+  ]
+}

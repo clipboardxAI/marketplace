@@ -1,0 +1,9 @@
+{
+  "name": "Extraction d'entités",
+  "description": "Extrait les entités : personnes, organisations, dates, lieux.",
+  "prompt": "Extrayez les entités du texte suivant, regroupées en : personnes / organisations / dates / lieux / autres :\n\n{{content}}",
+  "tags": [
+    "entités",
+    "extraction"
+  ]
+}

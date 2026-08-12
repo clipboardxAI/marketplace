@@ -1,0 +1,10 @@
+{
+  "name": "Borrador de acuerdo de confidencialidad",
+  "description": "Redacta un NDA bilateral sencillo según cláusulas clave.",
+  "prompt": "Redacta un acuerdo de confidencialidad bilateral sencillo basado en las siguientes cláusulas clave, con definiciones, obligaciones, plazo y excepciones:\n\n{{content}}",
+  "tags": [
+    "confidencialidad",
+    "legal",
+    "redacción"
+  ]
+}

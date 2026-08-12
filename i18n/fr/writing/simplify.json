@@ -1,0 +1,10 @@
+{
+  "name": "Simplifier",
+  "description": "Réécrit un texte complexe en expression accessible.",
+  "prompt": "Réécrivez le texte suivant en expression vulgarisée, sans perdre le sens central :\n\n{{content}}",
+  "tags": [
+    "accessible",
+    "simplification",
+    "document long"
+  ]
+}

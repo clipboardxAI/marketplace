@@ -1,0 +1,10 @@
+{
+  "name": "Análisis de riesgos",
+  "description": "Escanea documentos largos en busca de riesgos y omisiones.",
+  "prompt": "Escanea el siguiente documento e identifica riesgos, banderas rojas, incoherencias y omisiones, con contexto para cada uno:\n\n{{content}}",
+  "tags": [
+    "riesgo",
+    "revisión",
+    "texto largo"
+  ]
+}

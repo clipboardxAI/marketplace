@@ -1,0 +1,10 @@
+{
+  "name": "LinkedIn 投稿",
+  "description": "考えを洗練された LinkedIn 投稿にまとめます。",
+  "prompt": "以下の内容を洗練された LinkedIn 投稿に書き換えてください。フックとなる導入・2〜3 の短い段落・対話を促す質問を含めて：\n\n{{content}}",
+  "tags": [
+    "LinkedIn",
+    "投稿",
+    "ソーシャル"
+  ]
+}

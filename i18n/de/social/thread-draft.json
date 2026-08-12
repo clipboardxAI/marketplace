@@ -1,0 +1,10 @@
+{
+  "name": "X-/Twitter-Thread",
+  "description": "Entfaltet ein Thema zu pointierten Mehrfach-Tweets.",
+  "prompt": "Bitte entfalten Sie die folgenden Inhalte zu einem pointierten X/Twitter-Thread (5–8 Tweets, je max. 280 Zeichen) mit starkem Einstieg und abschließendem Aufruf:\n\n{{content}}",
+  "tags": [
+    "Thread",
+    "Twitter",
+    "Social"
+  ]
+}

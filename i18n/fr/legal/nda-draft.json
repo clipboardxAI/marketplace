@@ -1,0 +1,10 @@
+{
+  "name": "Rédiger un NDA",
+  "description": "Rédige un NDA bilatéral simple à partir de clauses clés.",
+  "prompt": "Rédigez un accord de confidentialité bilatéral simple à partir des clauses clés suivantes, incluant : définitions, obligations, durée et exceptions :\n\n{{content}}",
+  "tags": [
+    "NDA",
+    "juridique",
+    "rédaction"
+  ]
+}

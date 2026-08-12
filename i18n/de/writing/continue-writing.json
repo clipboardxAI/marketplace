@@ -1,0 +1,10 @@
+{
+  "name": "Weiterschreiben",
+  "description": "Setzt einen vorhandenen Entwurf natürlich fort.",
+  "prompt": "Bitte setzen Sie den folgenden Entwurf natürlich fort, bewahren Sie Stil und Tonfall und wiederholen Sie nicht bereits Geschriebenes:\n\n{{content}}",
+  "tags": [
+    "Weiterschreiben",
+    "Entwurf",
+    "Schreiben"
+  ]
+}

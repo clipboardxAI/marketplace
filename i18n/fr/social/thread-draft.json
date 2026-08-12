@@ -1,0 +1,10 @@
+{
+  "name": "Fil X / Twitter",
+  "description": "Développe un sujet en plusieurs tweets percutants.",
+  "prompt": "Développez le contenu suivant en un fil X/Twitter percutant (5 à 8 tweets, chacun ≤280 caractères), avec une ouverture forte et un appel final :\n\n{{content}}",
+  "tags": [
+    "fil",
+    "Twitter",
+    "réseau social"
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "name": "Plan de projet",
+  "description": "Rédige un plan de projet structuré à partir d'une idée brute.",
+  "prompt": "Rédigez un plan de projet à partir du contenu suivant, incluant : objectifs, jalons, responsables, risques, calendrier :\n\n{{content}}",
+  "tags": [
+    "projet",
+    "planification",
+    "document long"
+  ]
+}

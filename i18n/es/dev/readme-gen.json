@@ -1,0 +1,10 @@
+{
+  "name": "Generar README",
+  "description": "Genera un README claro a partir de código o instrucciones.",
+  "prompt": "Genera un README claro para el siguiente proyecto/código, incluyendo: introducción, instalación, uso y, si aplica, la API:\n\n{{content}}",
+  "tags": [
+    "documentación",
+    "guía",
+    "texto largo"
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "name": "Expliquer le code",
+  "description": "Explique en langage clair ce que fait ce code et sa logique clé.",
+  "prompt": "Expliquez en termes simples le rôle du code suivant, sa logique clé et ses éventuels points d'attention :\n\n{{content}}",
+  "tags": [
+    "code",
+    "explication"
+  ]
+}

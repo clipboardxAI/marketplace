@@ -1,0 +1,9 @@
+{
+  "name": "Pulir tweet",
+  "description": "Reescribe ideas como textos breves para redes sociales.",
+  "prompt": "Reescribe lo siguiente como un texto breve y atractivo para redes sociales (como X / Weibo), con 1-2 etiquetas de tema si conviene:\n\n{{content}}",
+  "tags": [
+    "redes",
+    "copy"
+  ]
+}

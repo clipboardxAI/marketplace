@@ -1,0 +1,9 @@
+{
+  "name": "日本語 → Chino",
+  "description": "Traduce japonés a un chino natural.",
+  "prompt": "Traduce el siguiente japonés a un chino natural y fluido, conservando el significado y el tono:\n\n{{content}}",
+  "tags": [
+    "traducción",
+    "chino"
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "name": "Poursuivre l'écriture",
+  "description": "Poursuit un brouillon existant de façon naturelle.",
+  "prompt": "Poursuivez naturellement le brouillon suivant en conservant le style et le ton, sans répéter le contenu existant :\n\n{{content}}",
+  "tags": [
+    "poursuivre",
+    "brouillon",
+    "rédaction"
+  ]
+}

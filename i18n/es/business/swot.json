@@ -1,0 +1,10 @@
+{
+  "name": "Análisis DAFO",
+  "description": "Genera un análisis DAFO a partir de la descripción del negocio.",
+  "prompt": "Genera un análisis DAFO (fortalezas / debilidades / oportunidades / amenazas) basado en lo siguiente:\n\n{{content}}",
+  "tags": [
+    "dafo",
+    "estrategia",
+    "negocios"
+  ]
+}

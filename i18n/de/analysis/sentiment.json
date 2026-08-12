@@ -1,0 +1,9 @@
+{
+  "name": "Stimmungsanalyse",
+  "description": "Bestimmt die emotionale Tendenz eines Textes mit kurzer Begründung.",
+  "prompt": "Bitte bestimmen Sie die emotionale Tendenz des folgenden Textes (positiv / neutral / negativ) und geben Sie eine einzeilige Begründung an:\n\n{{content}}",
+  "tags": [
+    "Stimmung",
+    "Analyse"
+  ]
+}

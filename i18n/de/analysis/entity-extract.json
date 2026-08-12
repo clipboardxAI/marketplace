@@ -1,0 +1,9 @@
+{
+  "name": "Entitäten extrahieren",
+  "description": "Extrahiert Entitäten wie Personen, Organisationen, Daten und Orte.",
+  "prompt": "Bitte extrahieren Sie Entitäten aus dem folgenden Text und gruppieren Sie diese nach: Personen / Organisationen / Daten / Orte / Sonstiges:\n\n{{content}}",
+  "tags": [
+    "Entität",
+    "Extrahieren"
+  ]
+}

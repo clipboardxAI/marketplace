@@ -1,0 +1,10 @@
+{
+  "name": "Generar preguntas frecuentes",
+  "description": "Organiza notas de producto en una FAQ clara.",
+  "prompt": "Organiza las siguientes notas en una FAQ clara, con 5-8 pares de pregunta y respuesta, concisa y orientada al usuario:\n\n{{content}}",
+  "tags": [
+    "preguntas",
+    "soporte",
+    "texto largo"
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "name": "Ausweiten",
+  "description": "Erweitert um Thema herum mit Details und Beispielen.",
+  "prompt": "Bitte erweitern Sie die folgenden Inhalte, ohne die ursprüngliche Bedeutung zu ändern, um Details, Hintergrund und passende Beispiele, damit sie gehaltvoller werden:\n\n{{content}}",
+  "tags": [
+    "Erweitern",
+    "Kreativ"
+  ]
+}

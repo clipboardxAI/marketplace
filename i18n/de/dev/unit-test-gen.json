@@ -1,0 +1,10 @@
+{
+  "name": "Unit-Tests generieren",
+  "description": "Generiert Unit-Tests für den gegebenen Code.",
+  "prompt": "Bitte schreiben Sie für den folgenden Code prägnante, effektive Unit-Tests, die Hauptpfade und Randfälle abdecken:\n\n{{content}}",
+  "tags": [
+    "Test",
+    "Unit",
+    "Qualität"
+  ]
+}

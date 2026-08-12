@@ -1,0 +1,10 @@
+{
+  "name": "Polir le texte",
+  "description": "Polish le texte sélectionné pour plus de fluidité et de professionnalisme.",
+  "prompt": "Polissez le texte suivant : conservez le sens mais rendez l'expression plus fluide, professionnelle et appropriée :\n\n{{content}}",
+  "tags": [
+    "polish",
+    "reformuler",
+    "rédaction"
+  ]
+}

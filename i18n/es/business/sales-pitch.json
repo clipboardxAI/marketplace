@@ -1,0 +1,10 @@
+{
+  "name": "Argumento de ventas",
+  "description": "Escribe un argumento de ventas persuasivo para un producto o servicio.",
+  "prompt": "Escribe un argumento de ventas persuasivo para lo siguiente: primero señala el dolor del cliente, luego el valor y finalmente una clara llamada a la acción:\n\n{{content}}",
+  "tags": [
+    "ventas",
+    "argumento",
+    "persuasión"
+  ]
+}

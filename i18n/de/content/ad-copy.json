@@ -1,0 +1,10 @@
+{
+  "name": "Anzeigentext",
+  "description": "Verfasst kurze, hochkonvertierende Anzeigentext-Varianten.",
+  "prompt": "Bitte verfassen Sie für die folgenden Inhalte 3 kurze Anzeigentexte (Titel + 1 Zeile), jeweils mit unterschiedlichem Ansatz:\n\n{{content}}",
+  "tags": [
+    "Werbung",
+    "Text",
+    "Marketing"
+  ]
+}

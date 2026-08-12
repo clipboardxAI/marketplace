@@ -1,0 +1,10 @@
+{
+  "name": "Revue de littérature",
+  "description": "Synthétise plusieurs sources en une revue de littérature.",
+  "prompt": "Synthétisez une revue de littérature à partir des notes suivantes, regroupée par thème, en signalant consensus et lacunes, et en proposant des pistes futures :\n\n{{content}}",
+  "tags": [
+    "littérature",
+    "revue",
+    "document long"
+  ]
+}

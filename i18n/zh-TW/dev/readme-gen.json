@@ -1,0 +1,10 @@
+{
+  "name": "生成 README",
+  "description": "根據程式碼或說明生成清晰的 README。",
+  "prompt": "請為以下專案/程式碼生成清晰的 README，包含：簡介、安裝、用法，如有介面則補充 API：\n\n{{content}}",
+  "tags": [
+    "文件",
+    "說明",
+    "長文件"
+  ]
+}

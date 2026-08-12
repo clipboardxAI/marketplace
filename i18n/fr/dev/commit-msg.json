@@ -1,0 +1,10 @@
+{
+  "name": "Message de commit",
+  "description": "Génère un message de commit Conventional Commits concis.",
+  "prompt": "Générez un message de commit Conventional Commits concis pour les changements suivants (type: sujet, avec corps si nécessaire) :\n\n{{content}}",
+  "tags": [
+    "git",
+    "commit",
+    "message"
+  ]
+}

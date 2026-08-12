@@ -1,0 +1,10 @@
+{
+  "name": "Risikoscan",
+  "description": "Scannt lange Dokumente nach Risiken und Lücken.",
+  "prompt": "Bitte scannen Sie das folgende Dokument und identifizieren Sie Risiken, Warnsignale, Widersprüche und fehlende Punkte. Geben Sie jeweils den Kontext an:\n\n{{content}}",
+  "tags": [
+    "Risiko",
+    "Prüfung",
+    "Langtext"
+  ]
+}

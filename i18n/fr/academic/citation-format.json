@@ -1,0 +1,10 @@
+{
+  "name": "Formatage des citations",
+  "description": "Formate les références selon un style de citation.",
+  "prompt": "Formatez les références suivantes dans le style APA, sous forme de liste numérotée :\n\n{{content}}",
+  "tags": [
+    "citation",
+    "références",
+    "format"
+  ]
+}

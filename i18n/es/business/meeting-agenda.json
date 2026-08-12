@@ -1,0 +1,10 @@
+{
+  "name": "Orden del día",
+  "description": "Crea una agenda de reunión enfocada a partir de una lista de temas.",
+  "prompt": "Crea un orden del día basado en lo siguiente, incluyendo: objetivo, asistentes, tiempo por punto y decisiones requeridas:\n\n{{content}}",
+  "tags": [
+    "agenda",
+    "reunión",
+    "negocios"
+  ]
+}

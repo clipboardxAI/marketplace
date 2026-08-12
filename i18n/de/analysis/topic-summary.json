@@ -1,0 +1,10 @@
+{
+  "name": "Themenzusammenfassung",
+  "description": "Fasst die Hauptthemen und Kernpunkte langer Texte zusammen.",
+  "prompt": "Bitte fassen Sie die Hauptthemen und Kernpunkte des folgenden Langtexts in 3–5 Stichpunkten zusammen:\n\n{{content}}",
+  "tags": [
+    "Zusammenfassung",
+    "Thema",
+    "Langtext"
+  ]
+}

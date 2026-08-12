@@ -1,0 +1,10 @@
+{
+  "name": "Puntos clave",
+  "description": "Organiza párrafos largos en una lista de puntos clara.",
+  "prompt": "Organiza el siguiente texto largo en una lista de puntos clara y legible, conservando hechos clave y jerarquía:\n\n{{content}}",
+  "tags": [
+    "puntos clave",
+    "lista",
+    "texto largo"
+  ]
+}

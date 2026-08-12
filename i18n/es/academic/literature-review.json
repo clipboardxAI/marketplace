@@ -1,0 +1,10 @@
+{
+  "name": "Revisión bibliográfica",
+  "description": "Redacta una revisión bibliográfica combinando varias fuentes.",
+  "prompt": "Redacta una revisión bibliográfica a partir de las siguientes notas, agrupada por tema, señalando consensos y vacíos, y sugiere direcciones futuras:\n\n{{content}}",
+  "tags": [
+    "literatura",
+    "revisión",
+    "texto largo"
+  ]
+}

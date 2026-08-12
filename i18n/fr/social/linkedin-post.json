@@ -1,0 +1,10 @@
+{
+  "name": "Publication LinkedIn",
+  "description": "Transforme une idée en publication LinkedIn soignée.",
+  "prompt": "Réécrivez le contenu suivant en publication LinkedIn soignée : accroche, 2 à 3 paragraphes courts, et une question suscitant l'interaction :\n\n{{content}}",
+  "tags": [
+    "LinkedIn",
+    "publication",
+    "réseau social"
+  ]
+}

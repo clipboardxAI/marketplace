@@ -1,0 +1,10 @@
+{
+  "name": "Texto publicitario",
+  "description": "Escribe variaciones breves de anuncios de alta conversión.",
+  "prompt": "Escribe 3 textos publicitarios breves (título + 1 línea) para lo siguiente, cada uno con un enfoque distinto:\n\n{{content}}",
+  "tags": [
+    "anuncio",
+    "copy",
+    "marketing"
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "name": "Code-Review",
+  "description": "Prüft Code auf Lesbarkeit, Robustheit und Performance und gibt Verbesserungen.",
+  "prompt": "Bitte prüfen Sie den folgenden Code wie ein erfahrener Ingenieur und weisen Sie aus den Blickwinkeln Lesbarkeit, Robustheit, Performance und Sicherheit Probleme auf und geben Sie Verbesserungsvorschläge:\n\n{{content}}",
+  "tags": [
+    "Review",
+    "Qualität"
+  ]
+}

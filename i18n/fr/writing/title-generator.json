@@ -1,0 +1,9 @@
+{
+  "name": "Générateur de titres",
+  "description": "Génère 5 titres accrocheurs pour un article ou paragraphe.",
+  "prompt": "Générez 5 titres concis, accrocheurs et de styles différents pour le contenu suivant, un par ligne :\n\n{{content}}",
+  "tags": [
+    "titre",
+    "inspiration"
+  ]
+}

@@ -1,0 +1,819 @@
+{
+  "schemaVersion": 2,
+  "lang": "de",
+  "categories": {
+    "writing": {
+      "name": "Schreiben"
+    },
+    "dev": {
+      "name": "Entwicklung"
+    },
+    "productivity": {
+      "name": "Produktivität"
+    },
+    "translate": {
+      "name": "Übersetzen"
+    },
+    "social": {
+      "name": "Social"
+    },
+    "analysis": {
+      "name": "Analyse"
+    },
+    "business": {
+      "name": "Business"
+    },
+    "content": {
+      "name": "Content & Marketing"
+    },
+    "academic": {
+      "name": "Akademisch"
+    },
+    "legal": {
+      "name": "Recht"
+    },
+    "finance": {
+      "name": "Finanzen"
+    },
+    "health": {
+      "name": "Gesundheit"
+    },
+    "support": {
+      "name": "Kundenservice"
+    },
+    "ecosystem": {
+      "name": "Ökosystem"
+    }
+  },
+  "actions": {
+    "academic/abstract-gen": {
+      "name": "Abstract",
+      "description": "Verfasst ein prägnantes wissenschaftliches Abstract.",
+      "prompt": "Bitte verfassen Sie anhand der folgenden Inhalte ein prägnantes wissenschaftliches Abstract (ca. 150 Wörter): Hintergrund, Methode, Ergebnisse, Schlussfolgerung:\n\n{{content}}",
+      "tags": [
+        "Abstract",
+        "Forschung",
+        "Zusammenfassung"
+      ]
+    },
+    "academic/citation-format": {
+      "name": "Zitate formatieren",
+      "description": "Formatiert Literaturverweise in einen vorgegebenen Zitierstil.",
+      "prompt": "Bitte formatieren Sie die folgenden Literaturverweise im APA-Stil und verwenden Sie eine nummerierte Liste:\n\n{{content}}",
+      "tags": [
+        "Zitat",
+        "Literaturverzeichnis",
+        "Format"
+      ]
+    },
+    "academic/literature-review": {
+      "name": "Literaturübersicht",
+      "description": "Verfasst anhand mehrerer Quellen eine Literaturübersicht.",
+      "prompt": "Bitte fassen Sie anhand der folgenden Notizen eine Literaturübersicht zusammen, gruppiert nach Themen, weisen Sie Konsens und Lücken auf und geben Sie zukünftige Richtungen an:\n\n{{content}}",
+      "tags": [
+        "Literatur",
+        "Übersicht",
+        "Langtext"
+      ]
+    },
+    "academic/paper-outline": {
+      "name": "Paper-Gliederung",
+      "description": "Erstellt anhand eines Themas eine Paper-Gliederung.",
+      "prompt": "Bitte erstellen Sie anhand der folgenden Inhalte eine Paper-Gliederung: Titel, Abstract-Planung, IMRaD-Abschnitte sowie Unterpunkte:\n\n{{content}}",
+      "tags": [
+        "Gliederung",
+        "Forschung",
+        "Langtext"
+      ]
+    },
+    "analysis/entity-extract": {
+      "name": "Entitäten extrahieren",
+      "description": "Extrahiert Entitäten wie Personen, Organisationen, Daten und Orte.",
+      "prompt": "Bitte extrahieren Sie Entitäten aus dem folgenden Text und gruppieren Sie diese nach: Personen / Organisationen / Daten / Orte / Sonstiges:\n\n{{content}}",
+      "tags": [
+        "Entität",
+        "Extrahieren"
+      ]
+    },
+    "analysis/keyword-extract": {
+      "name": "Schlüsselwörter extrahieren",
+      "description": "Extrahiert die wichtigsten Schlüsselwörter und Phrasen.",
+      "prompt": "Bitte extrahieren Sie aus dem folgenden Text 8–12 der wichtigsten Schlüsselwörter/Phrasen, durch Kommas getrennt:\n\n{{content}}",
+      "tags": [
+        "Schlüsselwörter",
+        "Extrahieren"
+      ]
+    },
+    "analysis/risk-scan": {
+      "name": "Risikoscan",
+      "description": "Scannt lange Dokumente nach Risiken und Lücken.",
+      "prompt": "Bitte scannen Sie das folgende Dokument und identifizieren Sie Risiken, Warnsignale, Widersprüche und fehlende Punkte. Geben Sie jeweils den Kontext an:\n\n{{content}}",
+      "tags": [
+        "Risiko",
+        "Prüfung",
+        "Langtext"
+      ]
+    },
+    "analysis/sentiment": {
+      "name": "Stimmungsanalyse",
+      "description": "Bestimmt die emotionale Tendenz eines Textes mit kurzer Begründung.",
+      "prompt": "Bitte bestimmen Sie die emotionale Tendenz des folgenden Textes (positiv / neutral / negativ) und geben Sie eine einzeilige Begründung an:\n\n{{content}}",
+      "tags": [
+        "Stimmung",
+        "Analyse"
+      ]
+    },
+    "analysis/text-classify": {
+      "name": "Textklassifizierung",
+      "description": "Klassifiziert Text nach Absicht, Thema oder Stimmung.",
+      "prompt": "Bitte klassifizieren Sie den folgenden Text und geben Sie drei kurze Labels aus: Thema, Absicht, Tonfall:\n\n{{content}}",
+      "tags": [
+        "Klassifizierung",
+        "Absicht",
+        "Thema"
+      ]
+    },
+    "analysis/topic-summary": {
+      "name": "Themenzusammenfassung",
+      "description": "Fasst die Hauptthemen und Kernpunkte langer Texte zusammen.",
+      "prompt": "Bitte fassen Sie die Hauptthemen und Kernpunkte des folgenden Langtexts in 3–5 Stichpunkten zusammen:\n\n{{content}}",
+      "tags": [
+        "Zusammenfassung",
+        "Thema",
+        "Langtext"
+      ]
+    },
+    "business/business-proposal": {
+      "name": "Geschäftsvorschlag",
+      "description": "Entwirft anhand einer längeren Beschreibung einen strukturierten Geschäftsvorschlag.",
+      "prompt": "Bitte entwerfen Sie anhand der folgenden Inhalte einen Geschäftsvorschlag mit den Abschnitten: Problem, Lösung, Markt, Modell, Forderung:\n\n{{content}}",
+      "tags": [
+        "Vorschlag",
+        "Business",
+        "Langtext"
+      ]
+    },
+    "business/elevator-pitch": {
+      "name": "Elevator Pitch",
+      "description": "Verfasst einen 30-Sekunden-Elevator-Pitch.",
+      "prompt": "Bitte verfassen Sie anhand der folgenden Inhalte einen 30-Sekunden-Elevator-Pitch, der Nutzen, Zielgruppe und Differenzierung klar darstellt:\n\n{{content}}",
+      "tags": [
+        "Pitch",
+        "Vorstellung",
+        "Business"
+      ]
+    },
+    "business/email-draft": {
+      "name": "E-Mail entwerfen",
+      "description": "Entwirft anhand einer kurzen Beschreibung eine professionelle E-Mail.",
+      "prompt": "Bitte entwerfen Sie anhand der folgenden Beschreibung eine klare, professionelle E-Mail mit Betreff, Anrede, Text und Grußformel:\n\n{{content}}",
+      "tags": [
+        "E-Mail",
+        "Business",
+        "Entwurf"
+      ]
+    },
+    "business/meeting-agenda": {
+      "name": "Tagesordnung",
+      "description": "Erstellt anhand einer Themenliste eine fokussierte Tagesordnung.",
+      "prompt": "Bitte erstellen Sie anhand der folgenden Inhalte eine Tagesordnung mit: Ziel, Teilnehmern, Zeitkontingent pro Punkt, zu treffenden Entscheidungen:\n\n{{content}}",
+      "tags": [
+        "Agenda",
+        "Meeting",
+        "Business"
+      ]
+    },
+    "business/sales-pitch": {
+      "name": "Verkaufsargumentation",
+      "description": "Verfasst eine überzeugende Verkaufsargumentation für Produkt/Dienstleistung.",
+      "prompt": "Bitte verfassen Sie für die folgenden Inhalte eine überzeugende Verkaufsargumentation: zuerst den Kundenschmerzpunkt ansprechen, dann den Nutzen darlegen und am Ende einen klaren Call-to-Action geben:\n\n{{content}}",
+      "tags": [
+        "Vertrieb",
+        "Argumentation",
+        "Überzeugung"
+      ]
+    },
+    "business/swot": {
+      "name": "SWOT-Analyse",
+      "description": "Erstellt anhand einer Geschäftsbeschreibung eine SWOT-Analyse.",
+      "prompt": "Bitte erstellen Sie anhand der folgenden Inhalte eine SWOT-Analyse (Stärken / Schwächen / Chancen / Risiken):\n\n{{content}}",
+      "tags": [
+        "SWOT",
+        "Strategie",
+        "Business"
+      ]
+    },
+    "content/ad-copy": {
+      "name": "Anzeigentext",
+      "description": "Verfasst kurze, hochkonvertierende Anzeigentext-Varianten.",
+      "prompt": "Bitte verfassen Sie für die folgenden Inhalte 3 kurze Anzeigentexte (Titel + 1 Zeile), jeweils mit unterschiedlichem Ansatz:\n\n{{content}}",
+      "tags": [
+        "Werbung",
+        "Text",
+        "Marketing"
+      ]
+    },
+    "content/blog-post": {
+      "name": "Blogartikel",
+      "description": "Verfasst anhand von Gliederung oder Notizen einen vollständigen Blogbeitrag.",
+      "prompt": "Bitte verfassen Sie anhand der folgenden Inhalte einen vollständigen Blogbeitrag mit aufmerksamkeitsstarkem Titel, Einleitung, 3–5 Abschnitten mit Zwischenüberschriften und einem Fazit:\n\n{{content}}",
+      "tags": [
+        "Blog",
+        "Artikel",
+        "Langtext"
+      ]
+    },
+    "content/newsletter": {
+      "name": "Newsletter",
+      "description": "Ordnet Notizen zu einem aufgeräumten Newsletter.",
+      "prompt": "Bitte ordnen Sie die folgenden Inhalte zu einer Newsletter-Ausgabe: Betreffzeile, kurze Einleitung, 3–5 betitelte Einträge und Grußformel:\n\n{{content}}",
+      "tags": [
+        "Newsletter",
+        "E-Mail",
+        "Langtext"
+      ]
+    },
+    "content/product-desc": {
+      "name": "Produktbeschreibung",
+      "description": "Verfasst eine ansprechende Produktbeschreibung.",
+      "prompt": "Bitte verfassen Sie anhand der folgenden Inhalte eine ansprechende Produktbeschreibung, die den Nutzen statt nur Funktionen hervorhebt, und schließen Sie mit einem Call-to-Action ab:\n\n{{content}}",
+      "tags": [
+        "Produkt",
+        "E-Commerce",
+        "Text"
+      ]
+    },
+    "content/seo-meta": {
+      "name": "SEO-Metadaten",
+      "description": "Generiert SEO-Titel, Beschreibung und Keywords.",
+      "prompt": "Bitte generieren Sie für die folgenden Inhalte SEO-Metadaten: Titel (≤60 Zeichen), Beschreibung (≤155 Zeichen), 5 Keywords:\n\n{{content}}",
+      "tags": [
+        "SEO",
+        "Metadaten",
+        "Marketing"
+      ]
+    },
+    "content/video-script": {
+      "name": "Video-Drehbuch",
+      "description": "Verfasst ein Video-Drehbuch mit Storyboard und Off-Kommentar.",
+      "prompt": "Bitte verfassen Sie anhand der folgenden Inhalte ein Video-Drehbuch mit Szenentitel, Bildtext und Off-Sprechertext:\n\n{{content}}",
+      "tags": [
+        "Video",
+        "Drehbuch",
+        "YouTube"
+      ]
+    },
+    "dev/api-doc": {
+      "name": "API-Dokumentation",
+      "description": "Generiert anhand von Code oder Schnittstellenbeschreibung eine API-Dokumentation.",
+      "prompt": "Bitte erstellen Sie für die folgenden Inhalte eine Schnittstellen-Dokumentation mit: Pfad, Parametern, Request, Response, Fehlerbeschreibung:\n\n{{content}}",
+      "tags": [
+        "Schnittstelle",
+        "Dokumentation",
+        "Langtext"
+      ]
+    },
+    "dev/code-review": {
+      "name": "Code-Review",
+      "description": "Prüft Code auf Lesbarkeit, Robustheit und Performance und gibt Verbesserungen.",
+      "prompt": "Bitte prüfen Sie den folgenden Code wie ein erfahrener Ingenieur und weisen Sie aus den Blickwinkeln Lesbarkeit, Robustheit, Performance und Sicherheit Probleme auf und geben Sie Verbesserungsvorschläge:\n\n{{content}}",
+      "tags": [
+        "Review",
+        "Qualität"
+      ]
+    },
+    "dev/commit-msg": {
+      "name": "Commit-Nachricht",
+      "description": "Generiert anhand der Änderungen eine prägnante Conventional-Commits-Nachricht.",
+      "prompt": "Bitte generieren Sie für die folgenden Änderungen eine prägnante Conventional-Commits-Nachricht (type: Betreff, bei Bedarf mit Body):\n\n{{content}}",
+      "tags": [
+        "Git",
+        "Commit",
+        "Nachricht"
+      ]
+    },
+    "dev/debug-suggest": {
+      "name": "Bug finden",
+      "description": "Analysiert mögliche Bugs und Ursachen im Code und gibt Reparaturvorschläge.",
+      "prompt": "Bitte analysieren Sie mögliche Bugs und Ursachen im folgenden Code und geben Sie konkrete, umsetzbare Reparaturvorschläge (sofern vorhanden):\n\n{{content}}",
+      "tags": [
+        "Debug",
+        "Behebung"
+      ]
+    },
+    "dev/explain-code": {
+      "name": "Code erklären",
+      "description": "Erklärt in einfacher Sprache, was dieser Code macht und welche Logik dahintersteckt.",
+      "prompt": "Bitte erklären Sie in einfacher Sprache, was der folgende Code bewirkt, welche zentrale Logik er enthält und worauf zu achten ist:\n\n{{content}}",
+      "tags": [
+        "Code",
+        "Erklärung"
+      ]
+    },
+    "dev/explain-error": {
+      "name": "Fehler erklären",
+      "description": "Erklärt Fehlermeldung und Stacktrace und gibt Reparaturvorschläge.",
+      "prompt": "Bitte erklären Sie Bedeutung, mögliche Ursachen und Behebung des folgenden Fehlers oder Stacktraces:\n\n{{content}}",
+      "tags": [
+        "Fehler",
+        "Debug",
+        "Erklärung"
+      ]
+    },
+    "dev/gen-comments": {
+      "name": "Kommentare generieren",
+      "description": "Ergänzt den Code um klare, hilfreiche Kommentare (ohne die Logik zu ändern).",
+      "prompt": "Bitte ergänzen Sie den folgenden Code, ohne die Logik zu ändern, um klare, hilfreiche Kommentare, damit andere ihn besser verstehen:\n\n{{content}}",
+      "tags": [
+        "Kommentar",
+        "Dokumentation"
+      ]
+    },
+    "dev/readme-gen": {
+      "name": "README generieren",
+      "description": "Generiert anhand von Code oder Beschreibung ein klares README.",
+      "prompt": "Bitte generieren Sie für das folgende Projekt/den folgenden Code ein klares README mit: Einführung, Installation, Nutzung; sofern vorhanden, ergänzen Sie die API:\n\n{{content}}",
+      "tags": [
+        "Dokumentation",
+        "Anleitung",
+        "Langtext"
+      ]
+    },
+    "dev/regex-gen": {
+      "name": "Regex generieren",
+      "description": "Generiert anhand einer natürlichsprachlichen Beschreibung einen nutzbaren regulären Ausdruck.",
+      "prompt": "Bitte generieren Sie anhand der folgenden Anforderung einen korrekten regulären Ausdruck und erläutern Sie kurz die Bedeutung jedes Teils sowie ein Match-Beispiel:\n\nAnforderung：{{content}}",
+      "tags": [
+        "Regex",
+        "Tool"
+      ]
+    },
+    "dev/sql-optimize": {
+      "name": "SQL optimieren",
+      "description": "Analysiert SQL und gibt Performance-Optimierungsempfehlungen.",
+      "prompt": "Bitte analysieren Sie die folgende SQL-Anweisung, benennen Sie Performance-Engpässe und geben Sie umsetzbare Optimierungsvorschläge (Indizes, Rewrite usw.):\n\n{{content}}",
+      "tags": [
+        "SQL",
+        "Datenbank"
+      ]
+    },
+    "dev/unit-test-gen": {
+      "name": "Unit-Tests generieren",
+      "description": "Generiert Unit-Tests für den gegebenen Code.",
+      "prompt": "Bitte schreiben Sie für den folgenden Code prägnante, effektive Unit-Tests, die Hauptpfade und Randfälle abdecken:\n\n{{content}}",
+      "tags": [
+        "Test",
+        "Unit",
+        "Qualität"
+      ]
+    },
+    "ecosystem/nicasa-fileinfo": {
+      "name": "Dateiinformationen",
+      "description": "Zeigt mit Nicasa die Details der ausgewählten Datei an (Größe, Maße, Metadaten)."
+    },
+    "ecosystem/nicasa-inpaint": {
+      "name": "KI-Bildbearbeitung",
+      "description": "Öffnet das ausgewählte Bild im KI-Editor von Nicasa, um Objekte zu entfernen oder es zu retuschieren."
+    },
+    "ecosystem/nicasa-optimize": {
+      "name": "Bildoptimierung",
+      "description": "Optimiert das ausgewählte Bild mit Nicasa auf webgerechte Größe und Dateigröße."
+    },
+    "ecosystem/nuezip-compress-7z": {
+      "name": "Als 7Z komprimieren",
+      "description": "Komprimiert die ausgewählten Dateien mit NueZip zu einem hochkomprimierten .7z-Archiv."
+    },
+    "ecosystem/nuezip-compress-zip": {
+      "name": "Als ZIP komprimieren",
+      "description": "Komprimiert die ausgewählten Dateien mit NueZip zu einem .zip-Archiv."
+    },
+    "ecosystem/nuezip-dropbox": {
+      "name": "Zu NueZip-Sammelbox hinzufügen",
+      "description": "Sendet die ausgewählten Dateien in die NueZip-Sammelbox für die spätere Batch-Archivierung."
+    },
+    "ecosystem/nuezip-extract-folder": {
+      "name": "In Ordner entpacken",
+      "description": "Entpackt das ausgewählte Archiv mit NueZip in einen neuen Ordner."
+    },
+    "ecosystem/nuezip-extract-here": {
+      "name": "Hier entpacken",
+      "description": "Entpackt das ausgewählte Archiv mit NueZip in den aktuellen Ordner."
+    },
+    "finance/expense-report": {
+      "name": "Spesenabrechnung",
+      "description": "Ordnet verstreute Ausgabenaufzeichnungen zu einem klaren Bericht.",
+      "prompt": "Bitte ordnen Sie die folgenden Ausgabenaufzeichnungen zu einem klaren Bericht: Kategorie, Datum, Betrag, Summe und Anmerkung:\n\n{{content}}",
+      "tags": [
+        "Spesen",
+        "Finanzen",
+        "Bericht"
+      ]
+    },
+    "finance/financial-summary": {
+      "name": "Finanzzusammenfassung",
+      "description": "Fasst Finanzberichte oder lange Berichte zusammen.",
+      "prompt": "Bitte fassen Sie die folgenden Finanzinhalte auf Kernpunkte zusammen: Einnahmen, Kosten, Gewinn, Risiken und Ausblick:\n\n{{content}}",
+      "tags": [
+        "Finanzen",
+        "Zusammenfassung",
+        "Langtext"
+      ]
+    },
+    "finance/invoice-draft": {
+      "name": "Rechnung erstellen",
+      "description": "Entwirft anhand von Bestelldaten eine professionelle Rechnung.",
+      "prompt": "Bitte entwerfen Sie anhand der folgenden Inhalte eine professionelle Rechnung: Aussteller, Kunde, Position, Betrag, Fälligkeitsdatum:\n\n{{content}}",
+      "tags": [
+        "Rechnung",
+        "Finanzen",
+        "Abrechnung"
+      ]
+    },
+    "health/health-summary": {
+      "name": "Gesundheitszusammenfassung",
+      "description": "Fasst medizinische/gesundheitliche Aufzeichnungen in Kernpunkten zusammen.",
+      "prompt": "Bitte fassen Sie die folgenden medizinischen/gesundheitlichen Aufzeichnungen in klaren Punkten zusammen: Befund, Medikation, Nachsorge:\n\n{{content}}",
+      "tags": [
+        "Gesundheit",
+        "Zusammenfassung",
+        "Langtext"
+      ]
+    },
+    "health/symptom-explain": {
+      "name": "Symptombeschreibung",
+      "description": "Erklärt die mögliche Bedeutung beschriebener Symptome (nur zur Information).",
+      "prompt": "Bitte geben Sie nur zu Informationszwecken eine Erklärung, was die folgend beschriebenen Symptome üblicherweise bedeuten können, und fügen Sie einen Haftungsausschluss hinzu, einen Arzt aufzusuchen:\n\n{{content}}",
+      "tags": [
+        "Gesundheit",
+        "Symptom",
+        "Info"
+      ]
+    },
+    "legal/clause-explain": {
+      "name": "Klausel erklären",
+      "description": "Erklärt Rechtsklauseln in einfacher Sprache.",
+      "prompt": "Bitte erklären Sie die folgende Rechtsklausel in einfacher Sprache: was sie bedeutet und worauf zu achten ist:\n\n{{content}}",
+      "tags": [
+        "Klausel",
+        "Recht",
+        "Erklärung"
+      ]
+    },
+    "legal/contract-review": {
+      "name": "Vertragsprüfung",
+      "description": "Prüft Verträge auf Risiken oder unübliche Klauseln.",
+      "prompt": "Bitte prüfen Sie den folgenden Vertrag und markieren Sie unfaire, einseitige oder risikoreiche Klauseln und erläutern Sie diese jeweils kurz:\n\n{{content}}",
+      "tags": [
+        "Vertrag",
+        "Recht",
+        "Review"
+      ]
+    },
+    "legal/nda-draft": {
+      "name": "NDA erstellen",
+      "description": "Entwirft anhand zentraler Klauseln eine einfache zweiseitige NDA.",
+      "prompt": "Bitte entwerfen Sie anhand der folgenden Kernklauseln eine einfache zweiseitige Vertraulichkeitsvereinbarung mit Definition, Pflichten, Laufzeit und Ausnahmen:\n\n{{content}}",
+      "tags": [
+        "NDA",
+        "Recht",
+        "Entwurf"
+      ]
+    },
+    "productivity/daily-plan": {
+      "name": "Tagesplan",
+      "description": "Ordnet wirre To-Dos zu einem priorisierten Tagesplan.",
+      "prompt": "Bitte ordnen Sie die folgenden Notizen zu einem priorisierten Tagesplan mit Zeitblöcken und markieren Sie die 3 wichtigsten Dinge:\n\n{{content}}",
+      "tags": [
+        "Plan",
+        "Zeitplan",
+        "To-Do"
+      ]
+    },
+    "productivity/decision-memo": {
+      "name": "Entscheidungsmemo",
+      "description": "Verfasst ein Entscheidungsmemo mit Optionen und Empfehlung.",
+      "prompt": "Bitte verfassen Sie anhand der folgenden Inhalte ein Entscheidungsmemo mit: Hintergrund, Optionen, Empfehlung, Begründung:\n\n{{content}}",
+      "tags": [
+        "Memo",
+        "Entscheidung",
+        "Langtext"
+      ]
+    },
+    "productivity/email-reply": {
+      "name": "E-Mail antworten",
+      "description": "Entwirft anhand des E-Mail-Texts eine angemessene Antwort.",
+      "prompt": "Bitte entwerfen Sie anhand des folgenden E-Mail-Inhalts eine angemessene, prägnante, höfliche Antwort (geben Sie direkt den Antworttext an):\n\n{{content}}",
+      "tags": [
+        "E-Mail",
+        "Kommunikation"
+      ]
+    },
+    "productivity/extract-key": {
+      "name": "Kernpunkte extrahieren",
+      "description": "Extrahiert 3–5 Kernpunkte aus langen Texten als Liste.",
+      "prompt": "Bitte extrahieren Sie aus den folgenden Inhalten 3–5 Kernpunkte und stellen Sie sie als prägnante Liste dar:\n\n{{content}}",
+      "tags": [
+        "Kernpunkte",
+        "Zusammenfassung"
+      ]
+    },
+    "productivity/meeting-notes": {
+      "name": "Meeting-Notizen",
+      "description": "Ordnet lose Meeting-Notizen zu strukturierten Protokollen.",
+      "prompt": "Bitte ordnen Sie die folgenden Meeting-Notizen zu einem strukturierten Protokoll mit den vier Teilen: Ergebnis / To-Do / Verantwortlich / Termin:\n\n{{content}}",
+      "tags": [
+        "Meeting",
+        "Protokoll"
+      ]
+    },
+    "productivity/okr-draft": {
+      "name": "OKR erstellen",
+      "description": "Entwirft anhand einer Zielbeschreibung OKRs.",
+      "prompt": "Bitte entwerfen Sie anhand der folgenden Beschreibung OKRs, wobei jedes Ziel 2–3 messbare Key Results hat:\n\n{{content}}",
+      "tags": [
+        "OKR",
+        "Ziel",
+        "Plan"
+      ]
+    },
+    "productivity/project-plan": {
+      "name": "Projektplan",
+      "description": "Entwirft anhand grober Ideen einen strukturierten Projektplan.",
+      "prompt": "Bitte entwerfen Sie anhand der folgenden Inhalte einen Projektplan mit: Ziel, Meilensteinen, Verantwortlichen, Risiken, Zeitstrahl:\n\n{{content}}",
+      "tags": [
+        "Projekt",
+        "Plan",
+        "Langtext"
+      ]
+    },
+    "productivity/retrospective": {
+      "name": "Retrospektive",
+      "description": "Ordnet Teamnotizen zu einer Retrospektive.",
+      "prompt": "Bitte ordnen Sie die folgenden Teamnotizen zu einer Retrospektive mit: Gutes / Verbesserungspotenzial / Nächste Schritte:\n\n{{content}}",
+      "tags": [
+        "Retrospektive",
+        "Agile",
+        "Team"
+      ]
+    },
+    "productivity/todo-split": {
+      "name": "Aufgaben zerlegen",
+      "description": "Zerlegt ein Ziel in eine ausführbare To-Do-Liste.",
+      "prompt": "Bitte zerlegen Sie das folgende Ziel oder die Idee in eine klare, ausführbare, priorisierte To-Do-Liste:\n\n{{content}}",
+      "tags": [
+        "To-Do",
+        "Plan"
+      ]
+    },
+    "productivity/weekly-report": {
+      "name": "Wochenbericht",
+      "description": "Ordnet die Arbeitswoche zu einem klaren Fortschrittsbericht.",
+      "prompt": "Bitte ordnen Sie die folgenden Wochennotizen zu einem Wochenbericht mit: Erledigt / In Arbeit / Blockiert / Plan für nächste Woche:\n\n{{content}}",
+      "tags": [
+        "Bericht",
+        "Wochenbericht",
+        "Langtext"
+      ]
+    },
+    "social/bio-writer": {
+      "name": "Bio schreiben",
+      "description": "Verfasst eine kurze persönliche/professionelle Biografie.",
+      "prompt": "Bitte verfassen Sie anhand der folgenden Inhalte eine kurze (2–3 Sätze) professionelle Biografie, selbstbewusst, aber nicht aufschneiderisch:\n\n{{content}}",
+      "tags": [
+        "Bio",
+        "Profil",
+        "Über"
+      ]
+    },
+    "social/comment-reply": {
+      "name": "Kommentar antworten",
+      "description": "Verfasst eine freundliche, tonfallgerechte Kommentarantwort.",
+      "prompt": "Bitte verfassen Sie für den folgenden Kommentar eine freundliche, zum Markenton passende Antwort, kurz und warmherzig:\n\n{{content}}",
+      "tags": [
+        "Antwort",
+        "Kommentar",
+        "Social"
+      ]
+    },
+    "social/linkedin-post": {
+      "name": "LinkedIn-Beitrag",
+      "description": "Ordnet Ideen zu einem polierten LinkedIn-Beitrag.",
+      "prompt": "Bitte überarbeiten Sie die folgenden Inhalte zu einem polierten LinkedIn-Beitrag: Hook am Anfang, 2–3 kurze Absätze, eine interaktionsfördernde Frage:\n\n{{content}}",
+      "tags": [
+        "LinkedIn",
+        "Beitrag",
+        "Social"
+      ]
+    },
+    "social/polite-decline": {
+      "name": "Höflich ablehnen",
+      "description": "Überarbeitet eine harte Ablehnung zu einer höflichen Formulierung.",
+      "prompt": "Bitte formulieren Sie die folgende Ablehnung oder Nichteinverständnis-Erklärung ohne die ursprüngliche Bedeutung zu verändern, höflicher und angemessener um:\n\n{{content}}",
+      "tags": [
+        "Ablehnung",
+        "Kommunikation"
+      ]
+    },
+    "social/thread-draft": {
+      "name": "X-/Twitter-Thread",
+      "description": "Entfaltet ein Thema zu pointierten Mehrfach-Tweets.",
+      "prompt": "Bitte entfalten Sie die folgenden Inhalte zu einem pointierten X/Twitter-Thread (5–8 Tweets, je max. 280 Zeichen) mit starkem Einstieg und abschließendem Aufruf:\n\n{{content}}",
+      "tags": [
+        "Thread",
+        "Twitter",
+        "Social"
+      ]
+    },
+    "social/tweet-polish": {
+      "name": "Tweet aufpolieren",
+      "description": "Überarbeitet Ideen zu kurzem, plattformgerechtem Social-Text.",
+      "prompt": "Bitte überarbeiten Sie die folgenden Inhalte zu einem kurzen, ansprechenden Text für Social-Media-Plattformen (z. B. X / Weibo); fügen Sie 1–2 Hashtags hinzu:\n\n{{content}}",
+      "tags": [
+        "Social Media",
+        "Text"
+      ]
+    },
+    "support/faq-gen": {
+      "name": "FAQ erstellen",
+      "description": "Ordnet Produktnotizen zu einer klaren FAQ.",
+      "prompt": "Bitte ordnen Sie die folgenden Notizen zu einer klaren FAQ mit 5–8 Frage-Antwort-Paaren, prägnant und nutzerorientiert:\n\n{{content}}",
+      "tags": [
+        "Q&A",
+        "Kundenservice",
+        "Langtext"
+      ]
+    },
+    "support/ticket-reply": {
+      "name": "Ticket beantworten",
+      "description": "Verfasst eine einfühlsame Ticket-Antwort.",
+      "prompt": "Bitte verfassen Sie für das folgende Ticket eine einfühlsame, klare Antwort: zuerst Empathie zeigen, dann Lösung oder nächsten Schritt nennen, freundlicher Abschluss:\n\n{{content}}",
+      "tags": [
+        "Kundenservice",
+        "Ticket",
+        "Antwort"
+      ]
+    },
+    "translate/en-to-ja": {
+      "name": "Englisch → Japanisch",
+      "description": "Übersetzt Englisch in natürliches Japanisch.",
+      "prompt": "Bitte übersetzen Sie den folgenden englischen Text in flüssiges, natürliches Japanisch und bewahren Sie Bedeutung und Tonfall:\n\n{{content}}",
+      "tags": [
+        "Übersetzung",
+        "Englisch",
+        "Japanisch"
+      ]
+    },
+    "translate/en-to-zh": {
+      "name": "Englisch → Chinesisch",
+      "description": "Übersetzt englischen Text flüssig ins Chinesische.",
+      "prompt": "Bitte übersetzen Sie den folgenden englischen Text flüssig und präzise ins Chinesische und bewahren Sie Fachbegriffe und Format:\n\n{{content}}",
+      "tags": [
+        "Übersetzung",
+        "Englisch-Chinesisch"
+      ]
+    },
+    "translate/ja-to-en": {
+      "name": "Japanisch → Englisch",
+      "description": "Übersetzt Japanisch in natürliches Englisch.",
+      "prompt": "Bitte übersetzen Sie den folgenden japanischen Text in flüssiges, natürliches Englisch und bewahren Sie Bedeutung und Tonfall:\n\n{{content}}",
+      "tags": [
+        "Übersetzung",
+        "Japanisch",
+        "Englisch"
+      ]
+    },
+    "translate/ja-to-zh": {
+      "name": "Japanisch → Chinesisch",
+      "description": "Übersetzt Japanisch in natürliches Chinesisch.",
+      "prompt": "Bitte übersetzen Sie den folgenden japanischen Text in flüssiges, natürliches Chinesisch und bewahren Sie Bedeutung und Tonfall:\n\n{{content}}",
+      "tags": [
+        "Übersetzung",
+        "Chinesisch"
+      ]
+    },
+    "translate/zh-to-en": {
+      "name": "Chinesisch → Englisch",
+      "description": "Übersetzt chinesischen Text in natürliches Englisch.",
+      "prompt": "Bitte übersetzen Sie den folgenden chinesischen Text in natürliches, flüssiges Englisch und bewahren Sie Bedeutung und Tonfall:\n\n{{content}}",
+      "tags": [
+        "Übersetzung",
+        "Chinesisch-Englisch"
+      ]
+    },
+    "translate/zh-to-ja": {
+      "name": "Chinesisch → Japanisch",
+      "description": "Übersetzt Chinesisch in natürliches Japanisch.",
+      "prompt": "Bitte übersetzen Sie den folgenden chinesischen Text in flüssiges, natürliches Japanisch und bewahren Sie Bedeutung und Tonfall:\n\n{{content}}",
+      "tags": [
+        "Übersetzung",
+        "Japanisch"
+      ]
+    },
+    "writing/bullet-points": {
+      "name": "Stichpunkte",
+      "description": "Ordnet lange Absätze zu einer klaren Stichpunktliste.",
+      "prompt": "Bitte ordnen Sie den folgenden Langtext zu einer klaren, lesbaren Stichpunktliste und bewahren Sie Schlüsselfakten und Hierarchie:\n\n{{content}}",
+      "tags": [
+        "Stichpunkte",
+        "Liste",
+        "Langtext"
+      ]
+    },
+    "writing/continue-writing": {
+      "name": "Weiterschreiben",
+      "description": "Setzt einen vorhandenen Entwurf natürlich fort.",
+      "prompt": "Bitte setzen Sie den folgenden Entwurf natürlich fort, bewahren Sie Stil und Tonfall und wiederholen Sie nicht bereits Geschriebenes:\n\n{{content}}",
+      "tags": [
+        "Weiterschreiben",
+        "Entwurf",
+        "Schreiben"
+      ]
+    },
+    "writing/expand": {
+      "name": "Ausweiten",
+      "description": "Erweitert um Thema herum mit Details und Beispielen.",
+      "prompt": "Bitte erweitern Sie die folgenden Inhalte, ohne die ursprüngliche Bedeutung zu ändern, um Details, Hintergrund und passende Beispiele, damit sie gehaltvoller werden:\n\n{{content}}",
+      "tags": [
+        "Erweitern",
+        "Kreativ"
+      ]
+    },
+    "writing/grammar-fix": {
+      "name": "Grammatik korrigieren",
+      "description": "Korrigiert Grammatik und Satzbau, bewahrt den Tonfall.",
+      "prompt": "Bitte korrigieren Sie Grammatik und Satzbau des folgenden Texts und bewahren Sie den ursprünglichen Tonfall und Sinn:\n\n{{content}}",
+      "tags": [
+        "Grammatik",
+        "Korrektur",
+        "Edit"
+      ]
+    },
+    "writing/polish-copy": {
+      "name": "Text polieren",
+      "description": "Poliert ausgewählten Text zu flüssigerem, professionellerem Ausdruck.",
+      "prompt": "Bitte polieren Sie den folgenden Text, bewahren Sie die Bedeutung, aber drücken Sie sich flüssiger, professioneller und angemessener aus:\n\n{{content}}",
+      "tags": [
+        "Polish",
+        "Umformulieren",
+        "Schreiben"
+      ]
+    },
+    "writing/proofread": {
+      "name": "Korrektorat",
+      "description": "Korrigiert Rechtschreibung, Grammatik und Zeichensetzung, ohne Sinn zu ändern.",
+      "prompt": "Bitte korrigieren Sie den folgenden Text und beheben Sie nur Rechtschreib-, Grammatik- und Zeichensetzungsfehler, ohne Wortwahl und Bedeutung zu ändern:\n\n{{content}}",
+      "tags": [
+        "Korrektur",
+        "Rechtschreibung",
+        "Edit"
+      ]
+    },
+    "writing/rephrase": {
+      "name": "Umformulieren",
+      "description": "Drückt denselben Sinn mit anderen Worten aus.",
+      "prompt": "Bitte formulieren Sie den folgenden Text mit anderen Worten um und bewahren Sie die ursprüngliche Bedeutung:\n\n{{content}}",
+      "tags": [
+        "Umformulieren",
+        "Paraphrase",
+        "Rewrite"
+      ]
+    },
+    "writing/rewrite-tone": {
+      "name": "Tonfall anpassen",
+      "description": "Überarbeitet Text zu natürlicherem, freundlicherem Umgangston, Info bleibt gleich.",
+      "prompt": "Bitte überarbeiten Sie den folgenden Text zu einem natürlicheren, freundlicheren, umgangssprachlichen Ton, der besser für den Alltag passt, und bewahren Sie die Information:\n\n{{content}}",
+      "tags": [
+        "Tonfall",
+        "Umformulieren"
+      ]
+    },
+    "writing/shorten": {
+      "name": "Kürzen",
+      "description": "Kürzt weitschweifige Texte aufs Wesentliche, ohne Schlüsselinfos zu verlieren.",
+      "prompt": "Bitte kürzen Sie die folgenden Inhalte auf das Minimum, ohne Schlüsselinformationen zu verlieren, und behalten Sie nur das Wesentliche:\n\n{{content}}",
+      "tags": [
+        "Kürzen",
+        "Zusammenfassung"
+      ]
+    },
+    "writing/simplify": {
+      "name": "Verständlich machen",
+      "description": "Überarbeitet komplexe Texte zu verständlicher Sprache.",
+      "prompt": "Bitte überarbeiten Sie den folgenden Text zu einer verständlichen Ausdrucksweise, ohne die Kernbedeutung zu verlieren:\n\n{{content}}",
+      "tags": [
+        "Einfach",
+        "Vereinfachung",
+        "Langtext"
+      ]
+    },
+    "writing/title-generator": {
+      "name": "Titel generieren",
+      "description": "Generiert 5 ansprechende Titel für Artikel oder Absätze.",
+      "prompt": "Bitte generieren Sie für die folgenden Inhalte 5 prägnante, ansprechende, stilistisch unterschiedliche Titel, jeweils eine pro Zeile:\n\n{{content}}",
+      "tags": [
+        "Titel",
+        "Ideen"
+      ]
+    }
+  }
+}

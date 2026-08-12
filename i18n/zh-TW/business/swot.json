@@ -1,0 +1,10 @@
+{
+  "name": "SWOT 分析",
+  "description": "根據業務描述生成 SWOT 分析。",
+  "prompt": "請根據以下內容生成 SWOT 分析（優勢 / 劣勢 / 機會 / 威脅）：\n\n{{content}}",
+  "tags": [
+    "swot",
+    "戰略",
+    "商務"
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "name": "Projektplan",
+  "description": "Entwirft anhand grober Ideen einen strukturierten Projektplan.",
+  "prompt": "Bitte entwerfen Sie anhand der folgenden Inhalte einen Projektplan mit: Ziel, Meilensteinen, Verantwortlichen, Risiken, Zeitstrahl:\n\n{{content}}",
+  "tags": [
+    "Projekt",
+    "Plan",
+    "Langtext"
+  ]
+}

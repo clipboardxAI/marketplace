@@ -1,0 +1,9 @@
+{
+  "name": "Ampliar",
+  "description": "Amplía el tema con detalles y ejemplos para enriquecerlo.",
+  "prompt": "Sin cambiar el significado, amplía lo siguiente añadiendo detalles, contexto y ejemplos adecuados para enriquecerlo:\n\n{{content}}",
+  "tags": [
+    "ampliar",
+    "redacción"
+  ]
+}

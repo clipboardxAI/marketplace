@@ -1,0 +1,9 @@
+{
+  "name": "Chinois → Anglais",
+  "description": "Traduit un texte chinois en anglais naturel.",
+  "prompt": "Traduisez le chinois suivant en anglais naturel et fluide, en conservant le sens et le ton :\n\n{{content}}",
+  "tags": [
+    "traduction",
+    "chinois vers anglais"
+  ]
+}

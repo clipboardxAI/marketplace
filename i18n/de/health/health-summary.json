@@ -1,0 +1,10 @@
+{
+  "name": "Gesundheitszusammenfassung",
+  "description": "Fasst medizinische/gesundheitliche Aufzeichnungen in Kernpunkten zusammen.",
+  "prompt": "Bitte fassen Sie die folgenden medizinischen/gesundheitlichen Aufzeichnungen in klaren Punkten zusammen: Befund, Medikation, Nachsorge:\n\n{{content}}",
+  "tags": [
+    "Gesundheit",
+    "Zusammenfassung",
+    "Langtext"
+  ]
+}

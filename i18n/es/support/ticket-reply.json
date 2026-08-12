@@ -1,0 +1,10 @@
+{
+  "name": "Responder ticket",
+  "description": "Escribe una respuesta a un ticket con empatía.",
+  "prompt": "Escribe una respuesta empática y clara para el siguiente ticket: primero empatiza, luego da una solución o siguiente paso, y cierra con amabilidad:\n\n{{content}}",
+  "tags": [
+    "soporte",
+    "ticket",
+    "respuesta"
+  ]
+}

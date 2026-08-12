@@ -1,0 +1,9 @@
+{
+  "name": "Résumer",
+  "description": "Réduit un texte long au strict minimum sans perdre l'essentiel.",
+  "prompt": "Sans perdre l'information clé, réduisez le contenu suivant au minimum, ne gardant que l'essentiel :\n\n{{content}}",
+  "tags": [
+    "condenser",
+    "résumé"
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "name": "Extraer puntos clave",
+  "description": "Extrae 3-5 puntos centrales de un texto largo en forma de lista.",
+  "prompt": "Extrae 3-5 puntos centrales del siguiente contenido y preséntalos en una lista breve:\n\n{{content}}",
+  "tags": [
+    "puntos clave",
+    "resumen"
+  ]
+}

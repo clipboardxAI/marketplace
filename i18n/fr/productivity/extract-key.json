@@ -1,0 +1,9 @@
+{
+  "name": "Extraire les points clés",
+  "description": "Extrait 3 à 5 points clés d'un texte long en liste.",
+  "prompt": "Extrayez 3 à 5 points clés du contenu suivant, présentés en liste concise :\n\n{{content}}",
+  "tags": [
+    "points clés",
+    "synthèse"
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "name": "Retrospectiva",
+  "description": "Organiza registros de equipo en una retrospectiva.",
+  "prompt": "Organiza los siguientes registros de equipo en una retrospectiva con: lo que salió bien / a mejorar / próximos pasos:\n\n{{content}}",
+  "tags": [
+    "retrospectiva",
+    "ágil",
+    "equipo"
+  ]
+}

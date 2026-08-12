@@ -1,0 +1,10 @@
+{
+  "name": "Zitate formatieren",
+  "description": "Formatiert Literaturverweise in einen vorgegebenen Zitierstil.",
+  "prompt": "Bitte formatieren Sie die folgenden Literaturverweise im APA-Stil und verwenden Sie eine nummerierte Liste:\n\n{{content}}",
+  "tags": [
+    "Zitat",
+    "Literaturverzeichnis",
+    "Format"
+  ]
+}

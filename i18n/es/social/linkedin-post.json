@@ -1,0 +1,10 @@
+{
+  "name": "Publicación de LinkedIn",
+  "description": "Convierte ideas en una publicación pulida de LinkedIn.",
+  "prompt": "Reescribe lo siguiente como una publicación pulida de LinkedIn: gancho inicial, 2-3 párrafos cortos y una pregunta que invite a interactuar:\n\n{{content}}",
+  "tags": [
+    "linkedin",
+    "publicación",
+    "redes"
+  ]
+}

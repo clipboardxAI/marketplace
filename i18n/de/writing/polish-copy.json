@@ -1,0 +1,10 @@
+{
+  "name": "Text polieren",
+  "description": "Poliert ausgewählten Text zu flüssigerem, professionellerem Ausdruck.",
+  "prompt": "Bitte polieren Sie den folgenden Text, bewahren Sie die Bedeutung, aber drücken Sie sich flüssiger, professioneller und angemessener aus:\n\n{{content}}",
+  "tags": [
+    "Polish",
+    "Umformulieren",
+    "Schreiben"
+  ]
+}

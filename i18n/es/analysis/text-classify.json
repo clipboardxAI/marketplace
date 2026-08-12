@@ -1,0 +1,10 @@
+{
+  "name": "Clasificación de texto",
+  "description": "Clasifica el texto por intención, tema o sentimiento.",
+  "prompt": "Clasifica el siguiente texto y devuelve tres etiquetas breves: tema, intención y tono:\n\n{{content}}",
+  "tags": [
+    "clasificación",
+    "intención",
+    "tema"
+  ]
+}

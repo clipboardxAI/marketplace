@@ -1,0 +1,10 @@
+{
+  "name": "Vertragsprüfung",
+  "description": "Prüft Verträge auf Risiken oder unübliche Klauseln.",
+  "prompt": "Bitte prüfen Sie den folgenden Vertrag und markieren Sie unfaire, einseitige oder risikoreiche Klauseln und erläutern Sie diese jeweils kurz:\n\n{{content}}",
+  "tags": [
+    "Vertrag",
+    "Recht",
+    "Review"
+  ]
+}

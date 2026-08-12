@@ -1,0 +1,10 @@
+{
+  "name": "Correction grammaticale",
+  "description": "Corrige la grammaire et la syntaxe en gardant le ton.",
+  "prompt": "Corrigez la grammaire et la syntaxe du texte suivant en conservant le ton et le sens d'origine :\n\n{{content}}",
+  "tags": [
+    "grammaire",
+    "correction",
+    "édition"
+  ]
+}

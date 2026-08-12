@@ -1,0 +1,10 @@
+{
+  "name": "Résumé",
+  "description": "Rédige un résumé académique concis.",
+  "prompt": "Rédigez un résumé académique concis à partir du contenu suivant (environ 150 mots) : contexte, méthode, résultats, conclusion :\n\n{{content}}",
+  "tags": [
+    "résumé",
+    "recherche",
+    "synthèse"
+  ]
+}

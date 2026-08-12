@@ -1,0 +1,10 @@
+{
+  "name": "Rédiger une facture",
+  "description": "Rédige une facture professionnelle à partir d'une commande.",
+  "prompt": "Rédigez une facture professionnelle à partir du contenu suivant : émetteur, client, prestation, montant, date d'échéance :\n\n{{content}}",
+  "tags": [
+    "facture",
+    "finance",
+    "facturation"
+  ]
+}

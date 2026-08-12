@@ -1,0 +1,10 @@
+{
+  "name": "Rédiger des OKR",
+  "description": "Rédige des OKR à partir d'une brève description.",
+  "prompt": "Rédigez des OKR à partir de la note suivante, chaque objectif avec 2 à 3 résultats clés quantifiables :\n\n{{content}}",
+  "tags": [
+    "okr",
+    "objectif",
+    "planification"
+  ]
+}

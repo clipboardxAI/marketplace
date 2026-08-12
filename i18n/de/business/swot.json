@@ -1,0 +1,10 @@
+{
+  "name": "SWOT-Analyse",
+  "description": "Erstellt anhand einer Geschäftsbeschreibung eine SWOT-Analyse.",
+  "prompt": "Bitte erstellen Sie anhand der folgenden Inhalte eine SWOT-Analyse (Stärken / Schwächen / Chancen / Risiken):\n\n{{content}}",
+  "tags": [
+    "SWOT",
+    "Strategie",
+    "Business"
+  ]
+}

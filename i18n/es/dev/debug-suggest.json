@@ -1,0 +1,9 @@
+{
+  "name": "Depurar bug",
+  "description": "Analiza posibles bugs y causas en el código y da correcciones.",
+  "prompt": "Analiza los posibles bugs del siguiente código, sus causas y da recomendaciones concretas y aplicables de corrección (si las hay):\n\n{{content}}",
+  "tags": [
+    "depuración",
+    "corrección"
+  ]
+}

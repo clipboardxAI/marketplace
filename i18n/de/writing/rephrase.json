@@ -1,0 +1,10 @@
+{
+  "name": "Umformulieren",
+  "description": "Drückt denselben Sinn mit anderen Worten aus.",
+  "prompt": "Bitte formulieren Sie den folgenden Text mit anderen Worten um und bewahren Sie die ursprüngliche Bedeutung:\n\n{{content}}",
+  "tags": [
+    "Umformulieren",
+    "Paraphrase",
+    "Rewrite"
+  ]
+}

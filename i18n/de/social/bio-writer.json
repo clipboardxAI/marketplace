@@ -1,0 +1,10 @@
+{
+  "name": "Bio schreiben",
+  "description": "Verfasst eine kurze persönliche/professionelle Biografie.",
+  "prompt": "Bitte verfassen Sie anhand der folgenden Inhalte eine kurze (2–3 Sätze) professionelle Biografie, selbstbewusst, aber nicht aufschneiderisch:\n\n{{content}}",
+  "tags": [
+    "Bio",
+    "Profil",
+    "Über"
+  ]
+}

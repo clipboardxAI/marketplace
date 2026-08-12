@@ -1,0 +1,10 @@
+{
+  "name": "Esquema de artículo",
+  "description": "Construye un esquema de artículo a partir del tema.",
+  "prompt": "Construye un esquema de artículo basado en lo siguiente: título, plan de resumen, secciones IMRaD y subpuntos:\n\n{{content}}",
+  "tags": [
+    "esquema",
+    "investigación",
+    "texto largo"
+  ]
+}

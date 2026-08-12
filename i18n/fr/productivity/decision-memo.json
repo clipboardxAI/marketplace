@@ -1,0 +1,10 @@
+{
+  "name": "Mémo de décision",
+  "description": "Rédige un mémo de décision avec options et recommandation.",
+  "prompt": "Rédigez un mémo de décision à partir du contenu suivant, incluant : contexte, options, recommandation, justification :\n\n{{content}}",
+  "tags": [
+    "mémo",
+    "décision",
+    "document long"
+  ]
+}

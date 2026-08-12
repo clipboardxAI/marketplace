@@ -1,0 +1,9 @@
+{
+  "name": "Regex generieren",
+  "description": "Generiert anhand einer natürlichsprachlichen Beschreibung einen nutzbaren regulären Ausdruck.",
+  "prompt": "Bitte generieren Sie anhand der folgenden Anforderung einen korrekten regulären Ausdruck und erläutern Sie kurz die Bedeutung jedes Teils sowie ein Match-Beispiel:\n\nAnforderung：{{content}}",
+  "tags": [
+    "Regex",
+    "Tool"
+  ]
+}

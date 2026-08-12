@@ -1,0 +1,9 @@
+{
+  "name": "Rechazo cortés",
+  "description": "Reescribe un rechazo brusco como una expresión cortés y adecuada.",
+  "prompt": "Sin cambiar el significado, reescribe la siguiente expresión de rechazo o desacuerdo como algo más cortés y adecuado:\n\n{{content}}",
+  "tags": [
+    "rechazo",
+    "comunicación"
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "name": "Tweet aufpolieren",
+  "description": "Überarbeitet Ideen zu kurzem, plattformgerechtem Social-Text.",
+  "prompt": "Bitte überarbeiten Sie die folgenden Inhalte zu einem kurzen, ansprechenden Text für Social-Media-Plattformen (z. B. X / Weibo); fügen Sie 1–2 Hashtags hinzu:\n\n{{content}}",
+  "tags": [
+    "Social Media",
+    "Text"
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "name": "Entscheidungsmemo",
+  "description": "Verfasst ein Entscheidungsmemo mit Optionen und Empfehlung.",
+  "prompt": "Bitte verfassen Sie anhand der folgenden Inhalte ein Entscheidungsmemo mit: Hintergrund, Optionen, Empfehlung, Begründung:\n\n{{content}}",
+  "tags": [
+    "Memo",
+    "Entscheidung",
+    "Langtext"
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "name": "Cambiar tono",
+  "description": "Reescribe el texto con un tono más natural y cercano, sin cambiar la información.",
+  "prompt": "Reescribe el siguiente texto con un tono conversacional más natural y cercano, propio de la comunicación diaria, sin cambiar la información:\n\n{{content}}",
+  "tags": [
+    "tono",
+    "reformular"
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "name": "Texte publicitaire",
+  "description": "Rédige des variantes courtes et performantes de publicité.",
+  "prompt": "Rédigez 3 courts textes publicitaires (titre + 1 ligne) à partir du contenu suivant, chacun sous un angle différent :\n\n{{content}}",
+  "tags": [
+    "publicité",
+    "texte",
+    "marketing"
+  ]
+}

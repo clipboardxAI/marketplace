@@ -1,0 +1,10 @@
+{
+  "name": "Informe de gastos",
+  "description": "Organiza registros de gastos dispersos en un informe claro.",
+  "prompt": "Organiza los siguientes registros de gastos en un informe claro: categoría, fecha, monto, total y notas:\n\n{{content}}",
+  "tags": [
+    "gastos",
+    "finanzas",
+    "informe"
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "name": "FAQ erstellen",
+  "description": "Ordnet Produktnotizen zu einer klaren FAQ.",
+  "prompt": "Bitte ordnen Sie die folgenden Notizen zu einer klaren FAQ mit 5–8 Frage-Antwort-Paaren, prägnant und nutzerorientiert:\n\n{{content}}",
+  "tags": [
+    "Q&A",
+    "Kundenservice",
+    "Langtext"
+  ]
+}

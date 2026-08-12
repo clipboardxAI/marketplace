@@ -1,0 +1,9 @@
+{
+  "name": "E-Mail antworten",
+  "description": "Entwirft anhand des E-Mail-Texts eine angemessene Antwort.",
+  "prompt": "Bitte entwerfen Sie anhand des folgenden E-Mail-Inhalts eine angemessene, prägnante, höfliche Antwort (geben Sie direkt den Antworttext an):\n\n{{content}}",
+  "tags": [
+    "E-Mail",
+    "Kommunikation"
+  ]
+}

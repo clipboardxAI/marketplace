@@ -1,0 +1,10 @@
+{
+  "name": "Tagesplan",
+  "description": "Ordnet wirre To-Dos zu einem priorisierten Tagesplan.",
+  "prompt": "Bitte ordnen Sie die folgenden Notizen zu einem priorisierten Tagesplan mit Zeitblöcken und markieren Sie die 3 wichtigsten Dinge:\n\n{{content}}",
+  "tags": [
+    "Plan",
+    "Zeitplan",
+    "To-Do"
+  ]
+}

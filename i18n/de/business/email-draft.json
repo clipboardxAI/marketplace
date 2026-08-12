@@ -1,0 +1,10 @@
+{
+  "name": "E-Mail entwerfen",
+  "description": "Entwirft anhand einer kurzen Beschreibung eine professionelle E-Mail.",
+  "prompt": "Bitte entwerfen Sie anhand der folgenden Beschreibung eine klare, professionelle E-Mail mit Betreff, Anrede, Text und Grußformel:\n\n{{content}}",
+  "tags": [
+    "E-Mail",
+    "Business",
+    "Entwurf"
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "name": "Escribir biografía",
+  "description": "Escribe una breve biografía personal o profesional.",
+  "prompt": "Escribe una breve biografía profesional (2-3 frases) basada en lo siguiente, segura de sí misma sin resultar presumida:\n\n{{content}}",
+  "tags": [
+    "biografía",
+    "perfil",
+    "acerca de"
+  ]
+}

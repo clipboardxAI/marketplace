@@ -60,12 +60,12 @@
 </div>
 <script>
 const SCHEME = "clipboardxai://install?action=";
-let CATS = [], ACTIONS = [], active = null, lang = "en", LANGS = ["en"];
+let CATS = [], ACTIONS = [], active = null, lang = "en", LANGS = ["en"], BASE = null;
 
 function esc(s){ return (s==null?"":String(s)).replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c])); }
 
 // Localized field lookup: prefer the active locale's override, fall back to the
-// canonical (English) base value. `locales` is injected by the build tool.
+// canonical (English) base value. `locales` is merged in from marketplace.<lang>.json.
 function locAction(a, field){
   if (lang !== "en" && a.locales && a.locales[lang] && a.locales[lang][field] != null) return a.locales[lang][field];
   return a[field];
@@ -75,11 +75,35 @@ function locCat(c){
   return c.name;
 }
 
-function collectLangs(){
-  const set = new Set(["en"]);
-  CATS.forEach(c => { if (c.locales) Object.keys(c.locales).forEach(l => set.add(l)); });
-  ACTIONS.forEach(a => { if (a.locales) Object.keys(a.locales).forEach(l => set.add(l)); });
-  LANGS = [...set];
+function clone(o){ return JSON.parse(JSON.stringify(o)); }
+
+// Merge one language pack's overrides (marketplace.<lang>.json) onto the base
+// catalog. Pack action keys are "<category>/<id>".
+function applyPack(pack, l){
+  const pa = pack.actions || {};
+  for (const a of ACTIONS) {
+    const key = a.category + "/" + a.id;
+    if (pa[key]) { a.locales = a.locales || {}; a.locales[l] = pa[key]; }
+  }
+  const pc = pack.categories || {};
+  for (const c of CATS) {
+    if (pc[c.id]) { c.locales = c.locales || {}; c.locales[l] = pc[c.id]; }
+  }
+}
+
+// Switch language: reset to the English base, then overlay the chosen pack.
+async function setLang(l){
+  lang = l;
+  if (!BASE) return;
+  CATS = clone(BASE.categories);
+  ACTIONS = clone(BASE.actions);
+  if (l !== "en") {
+    try {
+      const pack = await fetch("./marketplace." + l + ".json").then(r => r.json());
+      applyPack(pack, l);
+    } catch(e) { /* no pack available; show English base */ }
+  }
+  renderCats(); renderGrid();
 }
 
 function renderLang(){
@@ -91,7 +115,7 @@ function renderLang(){
     if (l === lang) o.selected = true;
     sel.appendChild(o);
   });
-  sel.onchange = () => { lang = sel.value; renderCats(); renderGrid(); };
+  sel.onchange = () => { setLang(sel.value); };
 }
 
 function renderCats(){
@@ -145,7 +169,13 @@ function renderGrid(){
 
 fetch('./marketplace.json')
   .then(r => r.json())
-  .then(d => { CATS = d.categories||[]; ACTIONS = d.actions||[]; collectLangs(); renderLang(); renderCats(); renderGrid(); })
+  .then(d => {
+    BASE = d;
+    // Languages come from the catalog's `languages` list (the separate packs).
+    LANGS = (d.languages && d.languages.length) ? ["en", ...d.languages] : ["en"];
+    renderLang();
+    setLang("en");
+  })
   .catch(e => {
     document.getElementById('grid').innerHTML =
       '<p style="color:var(--muted);grid-column:1/-1;text-align:center;">Failed to load the catalog. Make sure it is deployed to GitHub Pages / Cloudflare.</p>';

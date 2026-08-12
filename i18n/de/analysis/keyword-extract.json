@@ -1,0 +1,9 @@
+{
+  "name": "Schlüsselwörter extrahieren",
+  "description": "Extrahiert die wichtigsten Schlüsselwörter und Phrasen.",
+  "prompt": "Bitte extrahieren Sie aus dem folgenden Text 8–12 der wichtigsten Schlüsselwörter/Phrasen, durch Kommas getrennt:\n\n{{content}}",
+  "tags": [
+    "Schlüsselwörter",
+    "Extrahieren"
+  ]
+}

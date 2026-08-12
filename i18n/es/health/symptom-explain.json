@@ -1,0 +1,10 @@
+{
+  "name": "Explicación de síntomas",
+  "description": "Explica el posible significado de los síntomas descritos (solo informativo).",
+  "prompt": "Solo con fines informativos, explica a qué suelen asociarse los síntomas descritos e incluye un aviso de consultar a un médico:\n\n{{content}}",
+  "tags": [
+    "salud",
+    "síntomas",
+    "información"
+  ]
+}

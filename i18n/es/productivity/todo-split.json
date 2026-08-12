@@ -1,0 +1,9 @@
+{
+  "name": "Dividir tareas",
+  "description": "Descompone un objetivo en una lista de tareas ejecutables.",
+  "prompt": "Descompón el siguiente objetivo o idea en una lista de tareas clara, ejecutable y con prioridades:\n\n{{content}}",
+  "tags": [
+    "tareas",
+    "plan"
+  ]
+}

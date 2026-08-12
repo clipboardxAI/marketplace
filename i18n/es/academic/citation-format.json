@@ -1,0 +1,10 @@
+{
+  "name": "Formatear citas",
+  "description": "Da formato a las referencias en un estilo de cita indicado.",
+  "prompt": "Da formato a las siguientes referencias en estilo APA, usando una lista numerada:\n\n{{content}}",
+  "tags": [
+    "citas",
+    "referencias",
+    "formato"
+  ]
+}

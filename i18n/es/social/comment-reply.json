@@ -1,0 +1,10 @@
+{
+  "name": "Responder comentario",
+  "description": "Escribe una respuesta a un comentario amable y acorde a la marca.",
+  "prompt": "Escribe una respuesta amable y acorde a la voz de la marca para el siguiente comentario, breve y cálida:\n\n{{content}}",
+  "tags": [
+    "respuesta",
+    "comentario",
+    "redes"
+  ]
+}

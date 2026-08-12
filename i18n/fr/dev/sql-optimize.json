@@ -1,0 +1,9 @@
+{
+  "name": "Optimisation SQL",
+  "description": "Analyse le SQL et propose des optimisations de performance.",
+  "prompt": "Analysez la requête SQL suivante, identifiez les goulots d'étranglement et proposez des optimisations concrètes (index, réécriture, etc.) :\n\n{{content}}",
+  "tags": [
+    "SQL",
+    "base de données"
+  ]
+}

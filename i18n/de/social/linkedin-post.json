@@ -1,0 +1,10 @@
+{
+  "name": "LinkedIn-Beitrag",
+  "description": "Ordnet Ideen zu einem polierten LinkedIn-Beitrag.",
+  "prompt": "Bitte überarbeiten Sie die folgenden Inhalte zu einem polierten LinkedIn-Beitrag: Hook am Anfang, 2–3 kurze Absätze, eine interaktionsfördernde Frage:\n\n{{content}}",
+  "tags": [
+    "LinkedIn",
+    "Beitrag",
+    "Social"
+  ]
+}

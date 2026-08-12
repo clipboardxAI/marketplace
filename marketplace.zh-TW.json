@@ -1,0 +1,819 @@
+{
+  "schemaVersion": 2,
+  "lang": "zh-TW",
+  "categories": {
+    "writing": {
+      "name": "寫作潤飾"
+    },
+    "dev": {
+      "name": "開發助手"
+    },
+    "productivity": {
+      "name": "效率工具"
+    },
+    "translate": {
+      "name": "翻譯"
+    },
+    "social": {
+      "name": "社群溝通"
+    },
+    "analysis": {
+      "name": "分析洞察"
+    },
+    "business": {
+      "name": "商務"
+    },
+    "content": {
+      "name": "內容與行銷"
+    },
+    "academic": {
+      "name": "學術"
+    },
+    "legal": {
+      "name": "法律"
+    },
+    "finance": {
+      "name": "財務"
+    },
+    "health": {
+      "name": "健康"
+    },
+    "support": {
+      "name": "客戶支援"
+    },
+    "ecosystem": {
+      "name": "生態系"
+    }
+  },
+  "actions": {
+    "academic/abstract-gen": {
+      "name": "摘要",
+      "description": "撰寫簡潔的學術摘要。",
+      "prompt": "請根據以下內容撰寫簡潔的學術摘要（約 150 字）：背景、方法、結果、結論：\n\n{{content}}",
+      "tags": [
+        "摘要",
+        "研究",
+        "總結"
+      ]
+    },
+    "academic/citation-format": {
+      "name": "格式化引用",
+      "description": "將參考文獻格式化為指定引用樣式。",
+      "prompt": "請將以下參考文獻格式化為 APA 樣式，使用編號清單：\n\n{{content}}",
+      "tags": [
+        "引用",
+        "參考文獻",
+        "格式"
+      ]
+    },
+    "academic/literature-review": {
+      "name": "文獻探討",
+      "description": "綜合多篇來源撰寫文獻探討。",
+      "prompt": "請根據以下筆記綜合文獻探討，按主題分組、指出共識與空白，並給出未來方向：\n\n{{content}}",
+      "tags": [
+        "文獻",
+        "探討",
+        "長文件"
+      ]
+    },
+    "academic/paper-outline": {
+      "name": "論文大綱",
+      "description": "根據主題建構論文大綱。",
+      "prompt": "請根據以下內容建構論文大綱：標題、摘要規劃、IMRaD 各章節及子要點：\n\n{{content}}",
+      "tags": [
+        "大綱",
+        "研究",
+        "長文件"
+      ]
+    },
+    "analysis/entity-extract": {
+      "name": "提取實體",
+      "description": "提取人名、機構、日期、地點等實體。",
+      "prompt": "請從以下文本提取實體，並分組為：人物 / 機構 / 日期 / 地點 / 其他：\n\n{{content}}",
+      "tags": [
+        "實體",
+        "提取"
+      ]
+    },
+    "analysis/keyword-extract": {
+      "name": "提取關鍵字",
+      "description": "提取最重要的關鍵字與短語。",
+      "prompt": "請從以下文本中提取 8-12 個最重要的關鍵字/短語，以逗號分隔：\n\n{{content}}",
+      "tags": [
+        "關鍵字",
+        "提取"
+      ]
+    },
+    "analysis/risk-scan": {
+      "name": "風險掃描",
+      "description": "掃描長文件中風險與缺失。",
+      "prompt": "請掃描以下文件，找出風險、紅旗、不一致與缺失項，並逐條給出上下文：\n\n{{content}}",
+      "tags": [
+        "風險",
+        "審查",
+        "長文件"
+      ]
+    },
+    "analysis/sentiment": {
+      "name": "情感分析",
+      "description": "判斷文本情緒傾向並給出簡要依據。",
+      "prompt": "請判斷下面文本的情緒傾向（正面 / 中性 / 負面），並給出一句話依據：\n\n{{content}}",
+      "tags": [
+        "情感",
+        "分析"
+      ]
+    },
+    "analysis/text-classify": {
+      "name": "文本分類",
+      "description": "按意圖、主題或情感對文本分類。",
+      "prompt": "請對以下文本分類，輸出：主題、意圖、語氣三個簡短標籤：\n\n{{content}}",
+      "tags": [
+        "分類",
+        "意圖",
+        "主題"
+      ]
+    },
+    "analysis/topic-summary": {
+      "name": "主題摘要",
+      "description": "總結長文本的主要主題與要點。",
+      "prompt": "請將以下長文本的主要主題與要點概括為 3-5 個要點：\n\n{{content}}",
+      "tags": [
+        "摘要",
+        "主題",
+        "長文件"
+      ]
+    },
+    "business/business-proposal": {
+      "name": "商業計畫書",
+      "description": "根據長簡述起草結構化商業提案。",
+      "prompt": "請根據以下內容起草商業提案，章節：問題、方案、市場、模式、訴求：\n\n{{content}}",
+      "tags": [
+        "提案",
+        "商務",
+        "長文件"
+      ]
+    },
+    "business/elevator-pitch": {
+      "name": "電梯簡報",
+      "description": "撰寫 30 秒電梯簡報。",
+      "prompt": "請根據以下內容寫一段 30 秒電梯簡報，講清價值、受眾與差異化：\n\n{{content}}",
+      "tags": [
+        "簡報",
+        "介紹",
+        "商務"
+      ]
+    },
+    "business/email-draft": {
+      "name": "郵件起草",
+      "description": "根據簡述起草專業郵件。",
+      "prompt": "請根據以下簡述起草一封清晰專業的郵件，含主旨、稱呼、正文與落款：\n\n{{content}}",
+      "tags": [
+        "郵件",
+        "商務",
+        "起草"
+      ]
+    },
+    "business/meeting-agenda": {
+      "name": "會議議程",
+      "description": "根據議題清單建立聚焦的會議議程。",
+      "prompt": "請根據以下內容建立會議議程，包含：目標、與會者、每項時間盒、需決策事項：\n\n{{content}}",
+      "tags": [
+        "議程",
+        "會議",
+        "商務"
+      ]
+    },
+    "business/sales-pitch": {
+      "name": "銷售話術",
+      "description": "為產品/服務撰寫有說服力的銷售話術。",
+      "prompt": "請為以下內容撰寫有說服力的銷售話術，先點出客戶痛點，再講價值，最後給出明確行動呼籲：\n\n{{content}}",
+      "tags": [
+        "銷售",
+        "話術",
+        "說服"
+      ]
+    },
+    "business/swot": {
+      "name": "SWOT 分析",
+      "description": "根據業務描述生成 SWOT 分析。",
+      "prompt": "請根據以下內容生成 SWOT 分析（優勢 / 劣勢 / 機會 / 威脅）：\n\n{{content}}",
+      "tags": [
+        "swot",
+        "戰略",
+        "商務"
+      ]
+    },
+    "content/ad-copy": {
+      "name": "廣告文案",
+      "description": "撰寫簡短高轉換的廣告文案變體。",
+      "prompt": "請為以下內容寫 3 條簡短廣告文案（標題+1 行），每條角度不同：\n\n{{content}}",
+      "tags": [
+        "廣告",
+        "文案",
+        "行銷"
+      ]
+    },
+    "content/blog-post": {
+      "name": "部落格文章",
+      "description": "根據大綱或筆記撰寫完整部落格。",
+      "prompt": "請根據以下內容寫一篇完整部落格，含吸睛標題、引言、3-5 個帶小標題的章節與結語：\n\n{{content}}",
+      "tags": [
+        "部落格",
+        "文章",
+        "長文件"
+      ]
+    },
+    "content/newsletter": {
+      "name": "電子報",
+      "description": "把筆記整理為整潔的電子報。",
+      "prompt": "請將以下內容整理為一期電子報：主旨行、簡短引言、3-5 個帶標題的條目與落款：\n\n{{content}}",
+      "tags": [
+        "電子報",
+        "郵件",
+        "長文件"
+      ]
+    },
+    "content/product-desc": {
+      "name": "商品描述",
+      "description": "撰寫有吸引力的商品描述。",
+      "prompt": "請根據以下內容撰寫有吸引力的商品描述，突顯利益而非僅羅列功能，並以行動呼籲結尾：\n\n{{content}}",
+      "tags": [
+        "商品",
+        "電商",
+        "文案"
+      ]
+    },
+    "content/seo-meta": {
+      "name": "SEO 元資訊",
+      "description": "生成 SEO 標題、描述與關鍵字。",
+      "prompt": "請為以下內容生成 SEO 元資訊：標題（≤60 字）、描述（≤155 字）、5 個關鍵字：\n\n{{content}}",
+      "tags": [
+        "seo",
+        "元資訊",
+        "行銷"
+      ]
+    },
+    "content/video-script": {
+      "name": "影片腳本",
+      "description": "撰寫含分鏡與旁白的影片腳本。",
+      "prompt": "請根據以下內容寫影片腳本，包含場景標題、畫面文字與旁白台詞：\n\n{{content}}",
+      "tags": [
+        "影片",
+        "腳本",
+        "YouTube"
+      ]
+    },
+    "dev/api-doc": {
+      "name": "介面文件",
+      "description": "根據程式碼或介面描述生成 API 文件。",
+      "prompt": "請為以下內容生成介面文件，包含：路徑、參數、請求、回應、錯誤說明：\n\n{{content}}",
+      "tags": [
+        "介面",
+        "文件",
+        "長文件"
+      ]
+    },
+    "dev/code-review": {
+      "name": "程式碼審查",
+      "description": "從可讀性、健全性、效能角度審查程式碼並給出改進點。",
+      "prompt": "請像資深工程師一樣審查下面程式碼，從可讀性、健全性、效能和安全性角度指出問題，並給出改進建議：\n\n{{content}}",
+      "tags": [
+        "審查",
+        "品質"
+      ]
+    },
+    "dev/commit-msg": {
+      "name": "提交資訊",
+      "description": "根據變更生成簡潔的 Conventional Commits 提交資訊。",
+      "prompt": "請為以下變更生成簡潔的 Conventional Commits 提交資訊（type: 主題，必要時補充正文）：\n\n{{content}}",
+      "tags": [
+        "git",
+        "提交",
+        "資訊"
+      ]
+    },
+    "dev/debug-suggest": {
+      "name": "排查 Bug",
+      "description": "分析程式碼可能的 Bug 與原因，並給出修復建議。",
+      "prompt": "請分析下面程式碼可能存在的 Bug、原因，並給出具體、可執行的修復建議（如有）：\n\n{{content}}",
+      "tags": [
+        "除錯",
+        "修復"
+      ]
+    },
+    "dev/explain-code": {
+      "name": "解釋程式碼",
+      "description": "用通俗語言解釋這段程式碼在做什麼、關鍵邏輯是什麼。",
+      "prompt": "請用通俗的語言解釋下面這段程式碼的作用、關鍵邏輯和可能的注意事項：\n\n{{content}}",
+      "tags": [
+        "程式碼",
+        "解釋"
+      ]
+    },
+    "dev/explain-error": {
+      "name": "解釋錯誤",
+      "description": "解釋報錯與堆疊並給出修復建議。",
+      "prompt": "請解釋以下報錯或堆疊的含義、可能原因及修復方法：\n\n{{content}}",
+      "tags": [
+        "錯誤",
+        "除錯",
+        "解釋"
+      ]
+    },
+    "dev/gen-comments": {
+      "name": "生成註解",
+      "description": "為程式碼補充清晰的中文註解（不改邏輯）。",
+      "prompt": "請在不改動程式碼邏輯的前提下，為下面程式碼補充清晰、必要的中文註解，幫助他人理解：\n\n{{content}}",
+      "tags": [
+        "註解",
+        "文件"
+      ]
+    },
+    "dev/readme-gen": {
+      "name": "生成 README",
+      "description": "根據程式碼或說明生成清晰的 README。",
+      "prompt": "請為以下專案/程式碼生成清晰的 README，包含：簡介、安裝、用法，如有介面則補充 API：\n\n{{content}}",
+      "tags": [
+        "文件",
+        "說明",
+        "長文件"
+      ]
+    },
+    "dev/regex-gen": {
+      "name": "正規表示式生成",
+      "description": "根據自然語言描述生成可用的正規表示式。",
+      "prompt": "請根據下面的需求生成一個正確的正規表示式，並簡要說明每個部分的含義和匹配範例：\n\n需求：{{content}}",
+      "tags": [
+        "正規表示式",
+        "工具"
+      ]
+    },
+    "dev/sql-optimize": {
+      "name": "SQL 優化",
+      "description": "分析 SQL 並給出效能最佳化建議。",
+      "prompt": "請分析下面的 SQL 語句，指出效能瓶頸，並給出可落地的最佳化建議（索引、改寫等）：\n\n{{content}}",
+      "tags": [
+        "SQL",
+        "資料庫"
+      ]
+    },
+    "dev/unit-test-gen": {
+      "name": "生成單元測試",
+      "description": "為給定程式碼生成單元測試。",
+      "prompt": "請為以下程式碼編寫簡潔、有效的單元測試，涵蓋主要路徑與邊界情況：\n\n{{content}}",
+      "tags": [
+        "測試",
+        "單元",
+        "品質"
+      ]
+    },
+    "ecosystem/nicasa-fileinfo": {
+      "name": "檔案資訊",
+      "description": "使用 Nicasa 檢視所選檔案的詳細資訊（大小、尺寸、中繼資料）。"
+    },
+    "ecosystem/nicasa-inpaint": {
+      "name": "AI 修圖",
+      "description": "在 Nicasa 的 AI 編輯器中開啟所選圖片，去除多餘物體或精修。"
+    },
+    "ecosystem/nicasa-optimize": {
+      "name": "圖片最佳化",
+      "description": "使用 Nicasa 把所選圖片最佳化為更適合網路的尺寸與大小。"
+    },
+    "ecosystem/nuezip-compress-7z": {
+      "name": "壓縮為 7Z",
+      "description": "使用 NueZip 把所選檔案壓縮成高壓縮率的 .7z 封存檔。"
+    },
+    "ecosystem/nuezip-compress-zip": {
+      "name": "壓縮為 ZIP",
+      "description": "使用 NueZip 把所選檔案壓縮成 .zip 封存檔。"
+    },
+    "ecosystem/nuezip-dropbox": {
+      "name": "加入 NueZip 收集箱",
+      "description": "把所選檔案送入 NueZip 收集箱，便於稍後批次歸檔。"
+    },
+    "ecosystem/nuezip-extract-folder": {
+      "name": "解壓到資料夾",
+      "description": "使用 NueZip 把所選封存檔解壓到一個新資料夾。"
+    },
+    "ecosystem/nuezip-extract-here": {
+      "name": "解壓到此處",
+      "description": "使用 NueZip 把所選封存檔解壓到目前資料夾。"
+    },
+    "finance/expense-report": {
+      "name": "報銷單",
+      "description": "把零散費用記錄整理為清晰報表。",
+      "prompt": "請將以下費用記錄整理為清晰報表：類別、日期、金額、合計與備註：\n\n{{content}}",
+      "tags": [
+        "報銷",
+        "財務",
+        "報表"
+      ]
+    },
+    "finance/financial-summary": {
+      "name": "財務摘要",
+      "description": "總結財務報表或長報告。",
+      "prompt": "請將以下財務內容概括為關鍵要點：收入、成本、利潤、風險與展望：\n\n{{content}}",
+      "tags": [
+        "財務",
+        "摘要",
+        "長文件"
+      ]
+    },
+    "finance/invoice-draft": {
+      "name": "起草發票",
+      "description": "根據訂單資訊起草專業發票。",
+      "prompt": "請根據以下內容起草專業發票：開立方、客戶、項目、金額、到期日：\n\n{{content}}",
+      "tags": [
+        "發票",
+        "財務",
+        "帳單"
+      ]
+    },
+    "health/health-summary": {
+      "name": "健康摘要",
+      "description": "把醫療/健康記錄總結為要點。",
+      "prompt": "請將以下醫療/健康記錄總結為清晰要點：病情、用藥、追蹤：\n\n{{content}}",
+      "tags": [
+        "健康",
+        "摘要",
+        "長文件"
+      ]
+    },
+    "health/symptom-explain": {
+      "name": "症狀說明",
+      "description": "解釋所描述症狀的可能含義（僅供參考）。",
+      "prompt": "請僅作資訊參考，解釋以下描述的症狀通常可能關聯什麼，並附上看醫生的免責聲明：\n\n{{content}}",
+      "tags": [
+        "健康",
+        "症狀",
+        "參考"
+      ]
+    },
+    "legal/clause-explain": {
+      "name": "條款解釋",
+      "description": "用通俗語言解釋法律條款。",
+      "prompt": "請用通俗語言解釋以下法律條款：它意味著什麼、需要注意什麼：\n\n{{content}}",
+      "tags": [
+        "條款",
+        "法律",
+        "解釋"
+      ]
+    },
+    "legal/contract-review": {
+      "name": "合約審查",
+      "description": "審查合約中的風險或不尋常條款。",
+      "prompt": "請審查以下合約，標出不公平、單方面或高風險條款，並逐條簡要說明：\n\n{{content}}",
+      "tags": [
+        "合約",
+        "法律",
+        "審查"
+      ]
+    },
+    "legal/nda-draft": {
+      "name": "起草保密協議",
+      "description": "根據關鍵條款起草簡易雙向 NDA。",
+      "prompt": "請根據以下關鍵條款起草一份簡易雙向保密協議，含定義、義務、期限與除外情形：\n\n{{content}}",
+      "tags": [
+        "保密協議",
+        "法律",
+        "起草"
+      ]
+    },
+    "productivity/daily-plan": {
+      "name": "每日計畫",
+      "description": "把雜亂待辦整理為優先級每日計畫。",
+      "prompt": "請將以下記錄整理為帶時間塊的優先級每日計畫，並標出最重要的 3 件事：\n\n{{content}}",
+      "tags": [
+        "計畫",
+        "日程",
+        "待辦"
+      ]
+    },
+    "productivity/decision-memo": {
+      "name": "決策備忘",
+      "description": "撰寫含方案與建議的決策備忘。",
+      "prompt": "請就以下內容撰寫決策備忘，包含：背景、可選方案、建議、理由：\n\n{{content}}",
+      "tags": [
+        "備忘",
+        "決策",
+        "長文件"
+      ]
+    },
+    "productivity/email-reply": {
+      "name": "郵件回覆",
+      "description": "根據郵件正文起草一封得體的回覆。",
+      "prompt": "請根據下面的郵件內容，起草一封得體、簡明、禮貌的回覆（直接給出回覆正文）：\n\n{{content}}",
+      "tags": [
+        "郵件",
+        "溝通"
+      ]
+    },
+    "productivity/extract-key": {
+      "name": "提取要點",
+      "description": "從長文中提取 3-5 個核心要點，以清單呈現。",
+      "prompt": "請從下面內容中提取 3-5 個核心要點，用簡潔的中文要點清單呈現：\n\n{{content}}",
+      "tags": [
+        "要點",
+        "總結"
+      ]
+    },
+    "productivity/meeting-notes": {
+      "name": "會議紀錄",
+      "description": "把零散的會議記錄整理成結構化紀錄。",
+      "prompt": "請把下面的會議記錄整理成結構化紀錄：包含「結論 / 待辦 / 負責人 / 時間」四部分：\n\n{{content}}",
+      "tags": [
+        "會議",
+        "紀錄"
+      ]
+    },
+    "productivity/okr-draft": {
+      "name": "OKR 起草",
+      "description": "根據目標簡述起草 OKR。",
+      "prompt": "請根據以下簡述起草 OKR，每個目標配 2-3 個可量化關鍵結果：\n\n{{content}}",
+      "tags": [
+        "okr",
+        "目標",
+        "計畫"
+      ]
+    },
+    "productivity/project-plan": {
+      "name": "專案計畫",
+      "description": "根據粗略想法起草結構化專案計畫。",
+      "prompt": "請根據以下內容起草專案計畫，包含：目標、里程碑、負責人、風險、時間線：\n\n{{content}}",
+      "tags": [
+        "專案",
+        "計畫",
+        "長文件"
+      ]
+    },
+    "productivity/retrospective": {
+      "name": "復盤",
+      "description": "把團隊記錄整理為復盤。",
+      "prompt": "請將以下團隊記錄整理為復盤，包含：做得好 / 待改進 / 下一步：\n\n{{content}}",
+      "tags": [
+        "復盤",
+        "敏捷",
+        "團隊"
+      ]
+    },
+    "productivity/todo-split": {
+      "name": "待辦拆分",
+      "description": "把一段目標拆成可執行的待辦清單。",
+      "prompt": "請把下面這段目標或想法，拆分成清晰、可執行、帶優先級的待辦清單：\n\n{{content}}",
+      "tags": [
+        "待辦",
+        "計畫"
+      ]
+    },
+    "productivity/weekly-report": {
+      "name": "週報",
+      "description": "把本週工作整理為清晰的進展報告。",
+      "prompt": "請將以下本週記錄整理為週報，包含：已完成 / 進行中 / 阻塞 / 下週計畫：\n\n{{content}}",
+      "tags": [
+        "報告",
+        "週報",
+        "長文件"
+      ]
+    },
+    "social/bio-writer": {
+      "name": "寫簡介",
+      "description": "撰寫簡短的个人/職業簡介。",
+      "prompt": "請根據以下內容寫一段簡短（2-3 句）的職業簡介，自信而不浮誇：\n\n{{content}}",
+      "tags": [
+        "簡介",
+        "資料",
+        "關於"
+      ]
+    },
+    "social/comment-reply": {
+      "name": "回覆評論",
+      "description": "寫一條友好、貼合調性的評論回覆。",
+      "prompt": "請為以下評論寫一條友好、貼合品牌調性的回覆，簡潔而溫暖：\n\n{{content}}",
+      "tags": [
+        "回覆",
+        "評論",
+        "社群"
+      ]
+    },
+    "social/linkedin-post": {
+      "name": "LinkedIn 發文",
+      "description": "把想法整理為精修 LinkedIn 貼文。",
+      "prompt": "請將以下內容改寫為精修的 LinkedIn 貼文：開場鉤子、2-3 個短段落、一個引發互動的提問：\n\n{{content}}",
+      "tags": [
+        "LinkedIn",
+        "發文",
+        "社群"
+      ]
+    },
+    "social/polite-decline": {
+      "name": "禮貌拒絕",
+      "description": "把生硬的拒絕改寫為禮貌得體的表達。",
+      "prompt": "請在不違背原意的前提下，把下面這段拒絕或不同意的表達，改寫為更禮貌、得體的說法：\n\n{{content}}",
+      "tags": [
+        "拒絕",
+        "溝通"
+      ]
+    },
+    "social/thread-draft": {
+      "name": "X / 推特長帖",
+      "description": "把主題展開為犀利的多條推文。",
+      "prompt": "請將以下內容展開為犀利的 X/推特長帖（5-8 條，每條不超 280 字），含強開場與結尾呼籲：\n\n{{content}}",
+      "tags": [
+        "長帖",
+        "推特",
+        "社群"
+      ]
+    },
+    "social/tweet-polish": {
+      "name": "推文潤色",
+      "description": "把想法改寫為適合社群平台的簡短文案。",
+      "prompt": "請把下面內容改寫為適合發在社群平台（如 X / 微博）的簡短、有吸引力的文案，可加 1-2 個話題標籤：\n\n{{content}}",
+      "tags": [
+        "社群",
+        "文案"
+      ]
+    },
+    "support/faq-gen": {
+      "name": "生成 FAQ",
+      "description": "把產品筆記整理為清晰 FAQ。",
+      "prompt": "請將以下筆記整理為清晰 FAQ，含 5-8 組問答，簡潔且面向使用者：\n\n{{content}}",
+      "tags": [
+        "問答",
+        "客服",
+        "長文件"
+      ]
+    },
+    "support/ticket-reply": {
+      "name": "回覆工單",
+      "description": "寫一條有同理心的工單回覆。",
+      "prompt": "請為以下工單寫一條有同理心、清晰的回覆：先共情，再給出解決或下一步，友好收尾：\n\n{{content}}",
+      "tags": [
+        "客服",
+        "工單",
+        "回覆"
+      ]
+    },
+    "translate/en-to-ja": {
+      "name": "English → 日本語",
+      "description": "將英文翻譯為自然日語。",
+      "prompt": "請將以下英文翻譯為自然流暢的日語，保持含義與語氣：\n\n{{content}}",
+      "tags": [
+        "翻譯",
+        "英語",
+        "日語"
+      ]
+    },
+    "translate/en-to-zh": {
+      "name": "英譯中",
+      "description": "將英文文本流暢翻譯成中文。",
+      "prompt": "請將下面的英文流暢、準確地翻譯成中文，保留術語與格式：\n\n{{content}}",
+      "tags": [
+        "翻譯",
+        "英譯中"
+      ]
+    },
+    "translate/ja-to-en": {
+      "name": "日本語 → English",
+      "description": "將日語翻譯為自然英文。",
+      "prompt": "請將以下日語翻譯為自然流暢的英文，保持含義與語氣：\n\n{{content}}",
+      "tags": [
+        "翻譯",
+        "日語",
+        "英語"
+      ]
+    },
+    "translate/ja-to-zh": {
+      "name": "日本語 → 中文",
+      "description": "將日語翻譯為自然中文。",
+      "prompt": "請將以下日語翻譯為自然流暢的中文，保持含義與語氣：\n\n{{content}}",
+      "tags": [
+        "翻譯",
+        "中文"
+      ]
+    },
+    "translate/zh-to-en": {
+      "name": "中譯英",
+      "description": "將中文文本翻譯成道地英文。",
+      "prompt": "請將下面的中文翻譯成道地、自然的英文，保留原意與語氣：\n\n{{content}}",
+      "tags": [
+        "翻譯",
+        "中譯英"
+      ]
+    },
+    "translate/zh-to-ja": {
+      "name": "中文 → 日本語",
+      "description": "將中文翻譯為自然日語。",
+      "prompt": "請將以下中文翻譯為自然流暢的日語，保持含義與語氣：\n\n{{content}}",
+      "tags": [
+        "翻譯",
+        "日語"
+      ]
+    },
+    "writing/bullet-points": {
+      "name": "要點提煉",
+      "description": "把長段落整理為清晰要點清單。",
+      "prompt": "請將以下長文本整理為清晰、易讀的要點清單，保留關鍵事實與層級：\n\n{{content}}",
+      "tags": [
+        "要點",
+        "清單",
+        "長文件"
+      ]
+    },
+    "writing/continue-writing": {
+      "name": "續寫",
+      "description": "順著現有草稿自然續寫。",
+      "prompt": "請順著以下草稿自然續寫，保持原有風格與語氣，不要重複已有內容：\n\n{{content}}",
+      "tags": [
+        "續寫",
+        "草稿",
+        "寫作"
+      ]
+    },
+    "writing/expand": {
+      "name": "擴寫豐富",
+      "description": "圍繞主題擴寫，補充細節與例子，讓內容更豐滿。",
+      "prompt": "請在不改變原意的基礎上，對下面內容進行擴寫，補充細節、背景和恰當的例子，使其更豐滿：\n\n{{content}}",
+      "tags": [
+        "擴寫",
+        "創作"
+      ]
+    },
+    "writing/grammar-fix": {
+      "name": "修正語法",
+      "description": "修正語法與句式，保留原語氣。",
+      "prompt": "請修正以下文本的語法與句式，保留原有語氣與含義：\n\n{{content}}",
+      "tags": [
+        "語法",
+        "修正",
+        "編輯"
+      ]
+    },
+    "writing/polish-copy": {
+      "name": "潤色文案",
+      "description": "潤色選中的文本，使其更通順、專業，保持原意。",
+      "prompt": "請潤色以下文本，保持原意但表達更通順、專業、得體：\n\n{{content}}",
+      "tags": [
+        "潤色",
+        "改寫",
+        "寫作"
+      ]
+    },
+    "writing/proofread": {
+      "name": "校對",
+      "description": "校對文本中的拼字、語法與標點錯誤，不改變原意。",
+      "prompt": "請校對以下文本，僅修正拼字、語法和標點錯誤，不要改動措辭與含義：\n\n{{content}}",
+      "tags": [
+        "校對",
+        "拼字",
+        "編輯"
+      ]
+    },
+    "writing/rephrase": {
+      "name": "改寫措辭",
+      "description": "用不同措辭表達相同含義。",
+      "prompt": "請用不同的措辭改寫以下文本，保持原意不變：\n\n{{content}}",
+      "tags": [
+        "改寫",
+        "釋義",
+        "重寫"
+      ]
+    },
+    "writing/rewrite-tone": {
+      "name": "改寫語氣",
+      "description": "將文本改寫為更自然親切的口語化語氣，保持資訊不變。",
+      "prompt": "請把下面這段文本改寫為更適合日常溝通、自然親切的口語化語氣，保持資訊不變：\n\n{{content}}",
+      "tags": [
+        "語氣",
+        "改寫"
+      ]
+    },
+    "writing/shorten": {
+      "name": "精簡摘要",
+      "description": "在不丟失關鍵資訊的前提下，把冗長文本壓縮到最短。",
+      "prompt": "請在不丟失關鍵資訊的前提下，把下面內容精簡到最短，只保留核心：\n\n{{content}}",
+      "tags": [
+        "精簡",
+        "摘要"
+      ]
+    },
+    "writing/simplify": {
+      "name": "通俗化",
+      "description": "把複雜文本改寫為易懂表達。",
+      "prompt": "請將以下文本改寫為通俗易懂的表達，不丟失核心含義：\n\n{{content}}",
+      "tags": [
+        "通俗",
+        "簡化",
+        "長文件"
+      ]
+    },
+    "writing/title-generator": {
+      "name": "標題生成",
+      "description": "為文章或段落生成 5 個吸引人的標題。",
+      "prompt": "請為下面內容生成 5 個簡潔、有吸引力、風格不同的標題，每行一個：\n\n{{content}}",
+      "tags": [
+        "標題",
+        "靈感"
+      ]
+    }
+  }
+}

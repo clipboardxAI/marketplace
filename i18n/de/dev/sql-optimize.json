@@ -1,0 +1,9 @@
+{
+  "name": "SQL optimieren",
+  "description": "Analysiert SQL und gibt Performance-Optimierungsempfehlungen.",
+  "prompt": "Bitte analysieren Sie die folgende SQL-Anweisung, benennen Sie Performance-Engpässe und geben Sie umsetzbare Optimierungsvorschläge (Indizes, Rewrite usw.):\n\n{{content}}",
+  "tags": [
+    "SQL",
+    "Datenbank"
+  ]
+}

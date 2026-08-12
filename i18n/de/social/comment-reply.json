@@ -1,0 +1,10 @@
+{
+  "name": "Kommentar antworten",
+  "description": "Verfasst eine freundliche, tonfallgerechte Kommentarantwort.",
+  "prompt": "Bitte verfassen Sie für den folgenden Kommentar eine freundliche, zum Markenton passende Antwort, kurz und warmherzig:\n\n{{content}}",
+  "tags": [
+    "Antwort",
+    "Kommentar",
+    "Social"
+  ]
+}

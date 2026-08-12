@@ -1,0 +1,10 @@
+{
+  "name": "Elevator Pitch",
+  "description": "Verfasst einen 30-Sekunden-Elevator-Pitch.",
+  "prompt": "Bitte verfassen Sie anhand der folgenden Inhalte einen 30-Sekunden-Elevator-Pitch, der Nutzen, Zielgruppe und Differenzierung klar darstellt:\n\n{{content}}",
+  "tags": [
+    "Pitch",
+    "Vorstellung",
+    "Business"
+  ]
+}

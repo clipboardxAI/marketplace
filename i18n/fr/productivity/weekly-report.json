@@ -1,0 +1,10 @@
+{
+  "name": "Rapport hebdomadaire",
+  "description": "Organise le travail de la semaine en rapport clair.",
+  "prompt": "Organisez le suivi de la semaine en rapport hebdomadaire, incluant : terminé / en cours / bloqué / plan de la semaine prochaine :\n\n{{content}}",
+  "tags": [
+    "rapport",
+    "hebdomadaire",
+    "document long"
+  ]
+}

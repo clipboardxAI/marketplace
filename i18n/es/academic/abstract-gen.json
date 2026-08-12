@@ -1,0 +1,10 @@
+{
+  "name": "Resumen",
+  "description": "Escribe un resumen académico conciso.",
+  "prompt": "Escribe un resumen académico conciso (unas 150 palabras) basado en lo siguiente: contexto, método, resultados y conclusión:\n\n{{content}}",
+  "tags": [
+    "resumen",
+    "investigación",
+    "síntesis"
+  ]
+}

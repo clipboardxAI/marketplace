@@ -1,0 +1,10 @@
+{
+  "name": "Verkaufsargumentation",
+  "description": "Verfasst eine überzeugende Verkaufsargumentation für Produkt/Dienstleistung.",
+  "prompt": "Bitte verfassen Sie für die folgenden Inhalte eine überzeugende Verkaufsargumentation: zuerst den Kundenschmerzpunkt ansprechen, dann den Nutzen darlegen und am Ende einen klaren Call-to-Action geben:\n\n{{content}}",
+  "tags": [
+    "Vertrieb",
+    "Argumentation",
+    "Überzeugung"
+  ]
+}

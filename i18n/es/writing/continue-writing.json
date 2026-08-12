@@ -1,0 +1,10 @@
+{
+  "name": "Continuar escribiendo",
+  "description": "Continúa un borrador existente de forma natural.",
+  "prompt": "Continúa el siguiente borrador de forma natural, manteniendo el estilo y el tono originales y sin repetir lo ya escrito:\n\n{{content}}",
+  "tags": [
+    "continuar",
+    "borrador",
+    "escritura"
+  ]
+}

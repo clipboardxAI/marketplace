@@ -1,0 +1,10 @@
+{
+  "name": "Brouillon d'e-mail",
+  "description": "Rédige un e-mail professionnel à partir d'une brève note.",
+  "prompt": "Rédigez un e-mail clair et professionnel à partir de la note suivante, avec objet, formule d'appel, corps et signature :\n\n{{content}}",
+  "tags": [
+    "e-mail",
+    "business",
+    "rédaction"
+  ]
+}

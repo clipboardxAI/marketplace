@@ -1,0 +1,10 @@
+{
+  "name": "Artículo de blog",
+  "description": "Escribe un blog completo a partir de un esquema o notas.",
+  "prompt": "Escribe un artículo de blog completo basado en lo siguiente, con título atractivo, introducción, 3-5 secciones con subtítulos y conclusión:\n\n{{content}}",
+  "tags": [
+    "blog",
+    "artículo",
+    "texto largo"
+  ]
+}

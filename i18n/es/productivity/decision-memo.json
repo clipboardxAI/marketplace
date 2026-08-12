@@ -1,0 +1,10 @@
+{
+  "name": "Memo de decisión",
+  "description": "Escribe un memo de decisión con opciones y recomendación.",
+  "prompt": "Escribe un memo de decisión sobre lo siguiente, con: contexto, opciones, recomendación y justificación:\n\n{{content}}",
+  "tags": [
+    "memo",
+    "decisión",
+    "texto largo"
+  ]
+}

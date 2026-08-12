@@ -1,0 +1,10 @@
+{
+  "name": "Résumé santé",
+  "description": "Résume les documents médicaux/santé en points clés.",
+  "prompt": "Résumez le document médical/santé suivant en points clairs : état, traitements, suivi :\n\n{{content}}",
+  "tags": [
+    "santé",
+    "résumé",
+    "document long"
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "name": "Inglés a chino",
+  "description": "Traduce texto en inglés a un chino fluido y preciso.",
+  "prompt": "Traduce el siguiente inglés a un chino fluido y preciso, conservando los términos y el formato:\n\n{{content}}",
+  "tags": [
+    "traducción",
+    "inglés a chino"
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "name": "Höflich ablehnen",
+  "description": "Überarbeitet eine harte Ablehnung zu einer höflichen Formulierung.",
+  "prompt": "Bitte formulieren Sie die folgende Ablehnung oder Nichteinverständnis-Erklärung ohne die ursprüngliche Bedeutung zu verändern, höflicher und angemessener um:\n\n{{content}}",
+  "tags": [
+    "Ablehnung",
+    "Kommunikation"
+  ]
+}

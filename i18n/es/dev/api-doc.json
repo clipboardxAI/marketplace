@@ -1,0 +1,10 @@
+{
+  "name": "Documentación de API",
+  "description": "Genera documentación de API a partir de código o descripción.",
+  "prompt": "Genera documentación de API para lo siguiente, incluyendo: ruta, parámetros, solicitud, respuesta y descripción de errores:\n\n{{content}}",
+  "tags": [
+    "api",
+    "documentación",
+    "texto largo"
+  ]
+}

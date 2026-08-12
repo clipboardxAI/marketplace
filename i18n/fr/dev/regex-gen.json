@@ -1,0 +1,9 @@
+{
+  "name": "Générer une regex",
+  "description": "Génère une regex utilisable à partir d'une description.",
+  "prompt": "Générez une expression régulière correcte à partir du besoin suivant, et expliquez brièvement le sens de chaque partie avec un exemple de correspondance :\n\nBesoin : {{content}}",
+  "tags": [
+    "regex",
+    "outil"
+  ]
+}

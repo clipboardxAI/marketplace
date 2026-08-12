@@ -1,0 +1,819 @@
+{
+  "schemaVersion": 2,
+  "lang": "fr",
+  "categories": {
+    "writing": {
+      "name": "Rédaction"
+    },
+    "dev": {
+      "name": "Développement"
+    },
+    "productivity": {
+      "name": "Productivité"
+    },
+    "translate": {
+      "name": "Traduction"
+    },
+    "social": {
+      "name": "Réseaux sociaux"
+    },
+    "analysis": {
+      "name": "Analyse"
+    },
+    "business": {
+      "name": "Affaires"
+    },
+    "content": {
+      "name": "Contenu & Marketing"
+    },
+    "academic": {
+      "name": "Académique"
+    },
+    "legal": {
+      "name": "Juridique"
+    },
+    "finance": {
+      "name": "Finance"
+    },
+    "health": {
+      "name": "Santé"
+    },
+    "support": {
+      "name": "Support client"
+    },
+    "ecosystem": {
+      "name": "Écosystème"
+    }
+  },
+  "actions": {
+    "academic/abstract-gen": {
+      "name": "Résumé",
+      "description": "Rédige un résumé académique concis.",
+      "prompt": "Rédigez un résumé académique concis à partir du contenu suivant (environ 150 mots) : contexte, méthode, résultats, conclusion :\n\n{{content}}",
+      "tags": [
+        "résumé",
+        "recherche",
+        "synthèse"
+      ]
+    },
+    "academic/citation-format": {
+      "name": "Formatage des citations",
+      "description": "Formate les références selon un style de citation.",
+      "prompt": "Formatez les références suivantes dans le style APA, sous forme de liste numérotée :\n\n{{content}}",
+      "tags": [
+        "citation",
+        "références",
+        "format"
+      ]
+    },
+    "academic/literature-review": {
+      "name": "Revue de littérature",
+      "description": "Synthétise plusieurs sources en une revue de littérature.",
+      "prompt": "Synthétisez une revue de littérature à partir des notes suivantes, regroupée par thème, en signalant consensus et lacunes, et en proposant des pistes futures :\n\n{{content}}",
+      "tags": [
+        "littérature",
+        "revue",
+        "document long"
+      ]
+    },
+    "academic/paper-outline": {
+      "name": "Plan de thèse",
+      "description": "Construit un plan d'article à partir d'un sujet.",
+      "prompt": "Construisez un plan d'article à partir du contenu suivant : titre, plan de résumé, sections IMRaD et sous-points :\n\n{{content}}",
+      "tags": [
+        "plan",
+        "recherche",
+        "document long"
+      ]
+    },
+    "analysis/entity-extract": {
+      "name": "Extraction d'entités",
+      "description": "Extrait les entités : personnes, organisations, dates, lieux.",
+      "prompt": "Extrayez les entités du texte suivant, regroupées en : personnes / organisations / dates / lieux / autres :\n\n{{content}}",
+      "tags": [
+        "entités",
+        "extraction"
+      ]
+    },
+    "analysis/keyword-extract": {
+      "name": "Extraction de mots-clés",
+      "description": "Extrait les mots-clés et expressions les plus importants.",
+      "prompt": "Extrayez 8 à 12 mots-clés/expressions les plus importants du texte, séparés par des virgules :\n\n{{content}}",
+      "tags": [
+        "mots-clés",
+        "extraction"
+      ]
+    },
+    "analysis/risk-scan": {
+      "name": "Analyse des risques",
+      "description": "Analyse les risques et les omissions dans les documents longs.",
+      "prompt": "Analysez le document suivant pour repérer risques, alertes, incohérences et éléments manquants, et commentez chaque point avec son contexte :\n\n{{content}}",
+      "tags": [
+        "risque",
+        "revue",
+        "document long"
+      ]
+    },
+    "analysis/sentiment": {
+      "name": "Analyse de sentiment",
+      "description": "Détermine le ton émotionnel du texte avec un bref justificatif.",
+      "prompt": "Indiquez la tonalité du texte ci-dessous (positive / neutre / négative) avec une phrase justificative :\n\n{{content}}",
+      "tags": [
+        "sentiment",
+        "analyse"
+      ]
+    },
+    "analysis/text-classify": {
+      "name": "Classification de texte",
+      "description": "Classifie le texte par intention, sujet ou sentiment.",
+      "prompt": "Classifiez le texte suivant en trois étiquettes courtes : sujet, intention, ton :\n\n{{content}}",
+      "tags": [
+        "classification",
+        "intention",
+        "sujet"
+      ]
+    },
+    "analysis/topic-summary": {
+      "name": "Résumé thématique",
+      "description": "Résume les thèmes et points clés d'un texte long.",
+      "prompt": "Résumez les thèmes et points clés du texte suivant en 3 à 5 points :\n\n{{content}}",
+      "tags": [
+        "résumé",
+        "thème",
+        "document long"
+      ]
+    },
+    "business/business-proposal": {
+      "name": "Proposition commerciale",
+      "description": "Rédige une proposition commerciale structurée à partir d'une note longue.",
+      "prompt": "Rédigez une proposition commerciale à partir du contenu suivant, avec les sections : problème, solution, marché, modèle, demande :\n\n{{content}}",
+      "tags": [
+        "proposition",
+        "business",
+        "document long"
+      ]
+    },
+    "business/elevator-pitch": {
+      "name": "Pitch de 30 secondes",
+      "description": "Rédige un pitch de 30 secondes.",
+      "prompt": "Rédigez un pitch de 30 secondes à partir du contenu suivant, en clarifiant la valeur, le public et la différenciation :\n\n{{content}}",
+      "tags": [
+        "pitch",
+        "présentation",
+        "business"
+      ]
+    },
+    "business/email-draft": {
+      "name": "Brouillon d'e-mail",
+      "description": "Rédige un e-mail professionnel à partir d'une brève note.",
+      "prompt": "Rédigez un e-mail clair et professionnel à partir de la note suivante, avec objet, formule d'appel, corps et signature :\n\n{{content}}",
+      "tags": [
+        "e-mail",
+        "business",
+        "rédaction"
+      ]
+    },
+    "business/meeting-agenda": {
+      "name": "Ordre du jour",
+      "description": "Établit un ordre du jour focalisé à partir d'une liste de sujets.",
+      "prompt": "Établissez un ordre du jour à partir du contenu suivant, incluant : objectifs, participants, créneaux horaires par point, décisions à prendre :\n\n{{content}}",
+      "tags": [
+        "ordre du jour",
+        "réunion",
+        "business"
+      ]
+    },
+    "business/sales-pitch": {
+      "name": "Argumentaire de vente",
+      "description": "Rédige un argumentaire de vente convaincant pour un produit/service.",
+      "prompt": "Rédigez un argumentaire de vente convaincant à partir du contenu suivant : commencez par le problème client, puis la valeur, et terminez par un appel à l'action clair :\n\n{{content}}",
+      "tags": [
+        "vente",
+        "argumentaire",
+        "persuasion"
+      ]
+    },
+    "business/swot": {
+      "name": "Analyse SWOT",
+      "description": "Génère une analyse SWOT à partir d'une description d'activité.",
+      "prompt": "Générez une analyse SWOT à partir du contenu suivant (forces / faiblesses / opportunités / menaces) :\n\n{{content}}",
+      "tags": [
+        "swot",
+        "stratégie",
+        "business"
+      ]
+    },
+    "content/ad-copy": {
+      "name": "Texte publicitaire",
+      "description": "Rédige des variantes courtes et performantes de publicité.",
+      "prompt": "Rédigez 3 courts textes publicitaires (titre + 1 ligne) à partir du contenu suivant, chacun sous un angle différent :\n\n{{content}}",
+      "tags": [
+        "publicité",
+        "texte",
+        "marketing"
+      ]
+    },
+    "content/blog-post": {
+      "name": "Article de blog",
+      "description": "Rédige un article de blog complet à partir d'un plan ou de notes.",
+      "prompt": "Rédigez un article de blog complet à partir du contenu suivant, avec un titre accrocheur, une introduction, 3 à 5 sections sous-titrées et une conclusion :\n\n{{content}}",
+      "tags": [
+        "blog",
+        "article",
+        "document long"
+      ]
+    },
+    "content/newsletter": {
+      "name": "Newsletter",
+      "description": "Organise des notes en une newsletter soignée.",
+      "prompt": "Organisez le contenu suivant en une newsletter : ligne d'objet, introduction courte, 3 à 5 entrées titrées et signature :\n\n{{content}}",
+      "tags": [
+        "newsletter",
+        "e-mail",
+        "document long"
+      ]
+    },
+    "content/product-desc": {
+      "name": "Description produit",
+      "description": "Rédige une description produit attractive.",
+      "prompt": "Rédigez une description produit attractive à partir du contenu suivant, en mettant en avant les bénéfices plutôt que la simple liste des fonctions, et terminez par un appel à l'action :\n\n{{content}}",
+      "tags": [
+        "produit",
+        "e-commerce",
+        "texte"
+      ]
+    },
+    "content/seo-meta": {
+      "name": "Métadonnées SEO",
+      "description": "Génère titre, description et mots-clés SEO.",
+      "prompt": "Générez des métadonnées SEO pour le contenu suivant : titre (≤60 caractères), description (≤155 caractères), 5 mots-clés :\n\n{{content}}",
+      "tags": [
+        "seo",
+        "métadonnées",
+        "marketing"
+      ]
+    },
+    "content/video-script": {
+      "name": "Script vidéo",
+      "description": "Rédige un script vidéo avec storyboard et voix off.",
+      "prompt": "Rédigez un script vidéo à partir du contenu suivant, avec titre de scène, texte à l'image et dialogue de voix off :\n\n{{content}}",
+      "tags": [
+        "vidéo",
+        "script",
+        "YouTube"
+      ]
+    },
+    "dev/api-doc": {
+      "name": "Documentation d'API",
+      "description": "Génère une doc d'API à partir du code ou d'une description.",
+      "prompt": "Générez une documentation d'API pour le contenu suivant, incluant : chemin, paramètres, requête, réponse, erreurs :\n\n{{content}}",
+      "tags": [
+        "API",
+        "documentation",
+        "document long"
+      ]
+    },
+    "dev/code-review": {
+      "name": "Revue de code",
+      "description": "Revue le code sur lisibilité, robustesse et performance.",
+      "prompt": "Revoyez le code suivant comme un ingénieur senior, en signalant les problèmes de lisibilité, robustesse, performance et sécurité, avec des suggestions d'amélioration :\n\n{{content}}",
+      "tags": [
+        "revue",
+        "qualité"
+      ]
+    },
+    "dev/commit-msg": {
+      "name": "Message de commit",
+      "description": "Génère un message de commit Conventional Commits concis.",
+      "prompt": "Générez un message de commit Conventional Commits concis pour les changements suivants (type: sujet, avec corps si nécessaire) :\n\n{{content}}",
+      "tags": [
+        "git",
+        "commit",
+        "message"
+      ]
+    },
+    "dev/debug-suggest": {
+      "name": "Résoudre un bug",
+      "description": "Analyse les bugs possibles et propose un correctif.",
+      "prompt": "Analysez les bugs possibles du code suivant, leurs causes, et donnez des suggestions de correction concrètes et applicables (si pertinent) :\n\n{{content}}",
+      "tags": [
+        "débogage",
+        "correctif"
+      ]
+    },
+    "dev/explain-code": {
+      "name": "Expliquer le code",
+      "description": "Explique en langage clair ce que fait ce code et sa logique clé.",
+      "prompt": "Expliquez en termes simples le rôle du code suivant, sa logique clé et ses éventuels points d'attention :\n\n{{content}}",
+      "tags": [
+        "code",
+        "explication"
+      ]
+    },
+    "dev/explain-error": {
+      "name": "Expliquer l'erreur",
+      "description": "Explique l'erreur et la pile, et propose un correctif.",
+      "prompt": "Expliquez la signification de l'erreur ou de la pile suivante, ses causes possibles et la méthode de correction :\n\n{{content}}",
+      "tags": [
+        "erreur",
+        "débogage",
+        "explication"
+      ]
+    },
+    "dev/gen-comments": {
+      "name": "Générer des commentaires",
+      "description": "Ajoute des commentaires clairs au code (sans changer la logique).",
+      "prompt": "Sans modifier la logique du code, ajoutez des commentaires clairs et nécessaires au code suivant pour en faciliter la compréhension :\n\n{{content}}",
+      "tags": [
+        "commentaires",
+        "documentation"
+      ]
+    },
+    "dev/readme-gen": {
+      "name": "Générer un README",
+      "description": "Génère un README clair à partir du code ou d'une notice.",
+      "prompt": "Générez un README clair pour le projet/code suivant, incluant : introduction, installation, utilisation, et API le cas échéant :\n\n{{content}}",
+      "tags": [
+        "documentation",
+        "guide",
+        "document long"
+      ]
+    },
+    "dev/regex-gen": {
+      "name": "Générer une regex",
+      "description": "Génère une regex utilisable à partir d'une description.",
+      "prompt": "Générez une expression régulière correcte à partir du besoin suivant, et expliquez brièvement le sens de chaque partie avec un exemple de correspondance :\n\nBesoin : {{content}}",
+      "tags": [
+        "regex",
+        "outil"
+      ]
+    },
+    "dev/sql-optimize": {
+      "name": "Optimisation SQL",
+      "description": "Analyse le SQL et propose des optimisations de performance.",
+      "prompt": "Analysez la requête SQL suivante, identifiez les goulots d'étranglement et proposez des optimisations concrètes (index, réécriture, etc.) :\n\n{{content}}",
+      "tags": [
+        "SQL",
+        "base de données"
+      ]
+    },
+    "dev/unit-test-gen": {
+      "name": "Générer des tests unitaires",
+      "description": "Génère des tests unitaires pour le code donné.",
+      "prompt": "Écrivez des tests unitaires simples et efficaces pour le code suivant, couvrant les chemins principaux et les cas limites :\n\n{{content}}",
+      "tags": [
+        "test",
+        "unité",
+        "qualité"
+      ]
+    },
+    "ecosystem/nicasa-fileinfo": {
+      "name": "Informations sur le fichier",
+      "description": "Affiche les détails du fichier sélectionné (taille, dimensions, métadonnées) avec Nicasa."
+    },
+    "ecosystem/nicasa-inpaint": {
+      "name": "Retouche IA",
+      "description": "Ouvre l'image sélectionnée dans l'éditeur IA de Nicasa pour supprimer des objets ou l'affiner."
+    },
+    "ecosystem/nicasa-optimize": {
+      "name": "Optimiser l'image",
+      "description": "Optimise l'image sélectionnée pour le web (dimensions et poids) avec Nicasa."
+    },
+    "ecosystem/nuezip-compress-7z": {
+      "name": "Compresser en 7Z",
+      "description": "Compresse les fichiers sélectionnés en archive .7z haute compression avec NueZip."
+    },
+    "ecosystem/nuezip-compress-zip": {
+      "name": "Compresser en ZIP",
+      "description": "Compresse les fichiers sélectionnés en archive .zip avec NueZip."
+    },
+    "ecosystem/nuezip-dropbox": {
+      "name": "Ajouter à la corbeille NueZip",
+      "description": "Envoie les fichiers sélectionnés vers la corbeille NueZip pour un archivage ultérieur par lot."
+    },
+    "ecosystem/nuezip-extract-folder": {
+      "name": "Extraire dans un dossier",
+      "description": "Extrait l'archive sélectionnée dans un nouveau dossier avec NueZip."
+    },
+    "ecosystem/nuezip-extract-here": {
+      "name": "Extraire ici",
+      "description": "Extrait l'archive sélectionnée dans le dossier courant avec NueZip."
+    },
+    "finance/expense-report": {
+      "name": "Note de frais",
+      "description": "Organise des notes de frais éparses en rapport clair.",
+      "prompt": "Organisez les notes de frais suivantes en un rapport clair : catégorie, date, montant, total et remarques :\n\n{{content}}",
+      "tags": [
+        "frais",
+        "finance",
+        "rapport"
+      ]
+    },
+    "finance/financial-summary": {
+      "name": "Résumé financier",
+      "description": "Résume des états financiers ou un rapport long.",
+      "prompt": "Résumez le contenu financier suivant en points clés : revenus, coûts, bénéfices, risques et perspectives :\n\n{{content}}",
+      "tags": [
+        "finance",
+        "résumé",
+        "document long"
+      ]
+    },
+    "finance/invoice-draft": {
+      "name": "Rédiger une facture",
+      "description": "Rédige une facture professionnelle à partir d'une commande.",
+      "prompt": "Rédigez une facture professionnelle à partir du contenu suivant : émetteur, client, prestation, montant, date d'échéance :\n\n{{content}}",
+      "tags": [
+        "facture",
+        "finance",
+        "facturation"
+      ]
+    },
+    "health/health-summary": {
+      "name": "Résumé santé",
+      "description": "Résume les documents médicaux/santé en points clés.",
+      "prompt": "Résumez le document médical/santé suivant en points clairs : état, traitements, suivi :\n\n{{content}}",
+      "tags": [
+        "santé",
+        "résumé",
+        "document long"
+      ]
+    },
+    "health/symptom-explain": {
+      "name": "Explication de symptômes",
+      "description": "Explique le sens possible des symptômes décrits (à titre indicatif).",
+      "prompt": "À titre purement informatif, expliquez à quoi les symptômes décrits peuvent généralement correspondre, avec un avertissement recommandant de consulter un médecin :\n\n{{content}}",
+      "tags": [
+        "santé",
+        "symptômes",
+        "information"
+      ]
+    },
+    "legal/clause-explain": {
+      "name": "Explication de clause",
+      "description": "Explique une clause juridique en langage clair.",
+      "prompt": "Expliquez en langage clair la clause juridique suivante : ce qu'elle signifie et à quoi faire attention :\n\n{{content}}",
+      "tags": [
+        "clause",
+        "juridique",
+        "explication"
+      ]
+    },
+    "legal/contract-review": {
+      "name": "Revue de contrat",
+      "description": "Revue les clauses à risque ou inhabituelles d'un contrat.",
+      "prompt": "Revoyez le contrat suivant, signalez les clauses injustes, unilatérales ou à haut risque, et commentez chaque point brièvement :\n\n{{content}}",
+      "tags": [
+        "contrat",
+        "juridique",
+        "revue"
+      ]
+    },
+    "legal/nda-draft": {
+      "name": "Rédiger un NDA",
+      "description": "Rédige un NDA bilatéral simple à partir de clauses clés.",
+      "prompt": "Rédigez un accord de confidentialité bilatéral simple à partir des clauses clés suivantes, incluant : définitions, obligations, durée et exceptions :\n\n{{content}}",
+      "tags": [
+        "NDA",
+        "juridique",
+        "rédaction"
+      ]
+    },
+    "productivity/daily-plan": {
+      "name": "Plan quotidien",
+      "description": "Organise des tâches en plan quotidien priorisé.",
+      "prompt": "Organisez le suivi suivant en plan quotidien priorisé avec créneaux horaires, et marquez les 3 tâches les plus importantes :\n\n{{content}}",
+      "tags": [
+        "planification",
+        "agenda",
+        "tâches"
+      ]
+    },
+    "productivity/decision-memo": {
+      "name": "Mémo de décision",
+      "description": "Rédige un mémo de décision avec options et recommandation.",
+      "prompt": "Rédigez un mémo de décision à partir du contenu suivant, incluant : contexte, options, recommandation, justification :\n\n{{content}}",
+      "tags": [
+        "mémo",
+        "décision",
+        "document long"
+      ]
+    },
+    "productivity/email-reply": {
+      "name": "Réponse e-mail",
+      "description": "Rédige une réponse e-mail appropriée au corps du message.",
+      "prompt": "À partir du contenu de l'e-mail suivant, rédigez une réponse appropriée, concise et polie (donnez directement le corps de la réponse) :\n\n{{content}}",
+      "tags": [
+        "e-mail",
+        "communication"
+      ]
+    },
+    "productivity/extract-key": {
+      "name": "Extraire les points clés",
+      "description": "Extrait 3 à 5 points clés d'un texte long en liste.",
+      "prompt": "Extrayez 3 à 5 points clés du contenu suivant, présentés en liste concise :\n\n{{content}}",
+      "tags": [
+        "points clés",
+        "synthèse"
+      ]
+    },
+    "productivity/meeting-notes": {
+      "name": "Compte rendu de réunion",
+      "description": "Organise des notes éparses en compte rendu structuré.",
+      "prompt": "Organisez les notes de réunion suivantes en compte rendu structuré : avec les quatre parties « conclusions / tâches / responsables / échéances » :\n\n{{content}}",
+      "tags": [
+        "réunion",
+        "compte rendu"
+      ]
+    },
+    "productivity/okr-draft": {
+      "name": "Rédiger des OKR",
+      "description": "Rédige des OKR à partir d'une brève description.",
+      "prompt": "Rédigez des OKR à partir de la note suivante, chaque objectif avec 2 à 3 résultats clés quantifiables :\n\n{{content}}",
+      "tags": [
+        "okr",
+        "objectif",
+        "planification"
+      ]
+    },
+    "productivity/project-plan": {
+      "name": "Plan de projet",
+      "description": "Rédige un plan de projet structuré à partir d'une idée brute.",
+      "prompt": "Rédigez un plan de projet à partir du contenu suivant, incluant : objectifs, jalons, responsables, risques, calendrier :\n\n{{content}}",
+      "tags": [
+        "projet",
+        "planification",
+        "document long"
+      ]
+    },
+    "productivity/retrospective": {
+      "name": "Rétrospective",
+      "description": "Organise un suivi d'équipe en rétrospective.",
+      "prompt": "Organisez le suivi d'équipe suivant en rétrospective, incluant : réussites / à améliorer / prochaines étapes :\n\n{{content}}",
+      "tags": [
+        "rétrospective",
+        "agile",
+        "équipe"
+      ]
+    },
+    "productivity/todo-split": {
+      "name": "Découper les tâches",
+      "description": "Décompose un objectif en liste de tâches exécutables.",
+      "prompt": "Décomposez l'objectif ou l'idée suivante en une liste de tâches claires, exécutables et priorisées :\n\n{{content}}",
+      "tags": [
+        "tâches",
+        "planification"
+      ]
+    },
+    "productivity/weekly-report": {
+      "name": "Rapport hebdomadaire",
+      "description": "Organise le travail de la semaine en rapport clair.",
+      "prompt": "Organisez le suivi de la semaine en rapport hebdomadaire, incluant : terminé / en cours / bloqué / plan de la semaine prochaine :\n\n{{content}}",
+      "tags": [
+        "rapport",
+        "hebdomadaire",
+        "document long"
+      ]
+    },
+    "social/bio-writer": {
+      "name": "Rédiger une bio",
+      "description": "Rédige une courte présentation personnelle/professionnelle.",
+      "prompt": "Rédigez à partir du contenu suivant une courte bio professionnelle (2 à 3 phrases), confiante sans être prétentieuse :\n\n{{content}}",
+      "tags": [
+        "bio",
+        "profil",
+        "à propos"
+      ]
+    },
+    "social/comment-reply": {
+      "name": "Réponse à un commentaire",
+      "description": "Rédige une réponse amicale et conforme à la tonalité.",
+      "prompt": "Rédigez une réponse amicale et conforme à la tonalité de la marque pour le commentaire suivant, concise et chaleureuse :\n\n{{content}}",
+      "tags": [
+        "réponse",
+        "commentaire",
+        "réseau social"
+      ]
+    },
+    "social/linkedin-post": {
+      "name": "Publication LinkedIn",
+      "description": "Transforme une idée en publication LinkedIn soignée.",
+      "prompt": "Réécrivez le contenu suivant en publication LinkedIn soignée : accroche, 2 à 3 paragraphes courts, et une question suscitant l'interaction :\n\n{{content}}",
+      "tags": [
+        "LinkedIn",
+        "publication",
+        "réseau social"
+      ]
+    },
+    "social/polite-decline": {
+      "name": "Refus poli",
+      "description": "Réécrit un refus brut en expression polie et appropriée.",
+      "prompt": "Sans trahir le sens d'origine, réécrivez l'expression de refus ou de désaccord suivante de façon plus polie et appropriée :\n\n{{content}}",
+      "tags": [
+        "refus",
+        "communication"
+      ]
+    },
+    "social/thread-draft": {
+      "name": "Fil X / Twitter",
+      "description": "Développe un sujet en plusieurs tweets percutants.",
+      "prompt": "Développez le contenu suivant en un fil X/Twitter percutant (5 à 8 tweets, chacun ≤280 caractères), avec une ouverture forte et un appel final :\n\n{{content}}",
+      "tags": [
+        "fil",
+        "Twitter",
+        "réseau social"
+      ]
+    },
+    "social/tweet-polish": {
+      "name": "Peaufiner un tweet",
+      "description": "Réécrit une idée en message court pour les réseaux sociaux.",
+      "prompt": "Réécrivez le contenu suivant en un message court et accrocheur adapté aux réseaux sociaux (ex. X / Weibo), avec 1 ou 2 hashtags possibles :\n\n{{content}}",
+      "tags": [
+        "réseau social",
+        "texte"
+      ]
+    },
+    "support/faq-gen": {
+      "name": "Générer une FAQ",
+      "description": "Organise des notes produit en FAQ claire.",
+      "prompt": "Organisez les notes suivantes en une FAQ claire, avec 5 à 8 paires question-réponse, concises et orientées utilisateur :\n\n{{content}}",
+      "tags": [
+        "Q&R",
+        "support",
+        "document long"
+      ]
+    },
+    "support/ticket-reply": {
+      "name": "Réponse à un ticket",
+      "description": "Rédige une réponse de ticket empathique.",
+      "prompt": "Rédigez une réponse empathique et claire pour le ticket suivant : commencez par l'empathie, proposez une solution ou une étape suivante, et terminez avec amabilité :\n\n{{content}}",
+      "tags": [
+        "support",
+        "ticket",
+        "réponse"
+      ]
+    },
+    "translate/en-to-ja": {
+      "name": "Anglais → Japonais",
+      "description": "Traduit un texte anglais en japonais naturel.",
+      "prompt": "Traduisez l'anglais suivant en japonais naturel et fluide, en conservant le sens et le ton :\n\n{{content}}",
+      "tags": [
+        "traduction",
+        "anglais",
+        "japonais"
+      ]
+    },
+    "translate/en-to-zh": {
+      "name": "Anglais → Chinois",
+      "description": "Traduit un texte anglais en chinois fluide.",
+      "prompt": "Traduisez l'anglais suivant en chinois fluide et précis, en conservant les termes et la mise en forme :\n\n{{content}}",
+      "tags": [
+        "traduction",
+        "anglais vers chinois"
+      ]
+    },
+    "translate/ja-to-en": {
+      "name": "Japonais → Anglais",
+      "description": "Traduit un texte japonais en anglais naturel.",
+      "prompt": "Traduisez le japonais suivant en anglais naturel et fluide, en conservant le sens et le ton :\n\n{{content}}",
+      "tags": [
+        "traduction",
+        "japonais",
+        "anglais"
+      ]
+    },
+    "translate/ja-to-zh": {
+      "name": "Japonais → Chinois",
+      "description": "Traduit un texte japonais en chinois naturel.",
+      "prompt": "Traduisez le japonais suivant en chinois naturel et fluide, en conservant le sens et le ton :\n\n{{content}}",
+      "tags": [
+        "traduction",
+        "chinois"
+      ]
+    },
+    "translate/zh-to-en": {
+      "name": "Chinois → Anglais",
+      "description": "Traduit un texte chinois en anglais naturel.",
+      "prompt": "Traduisez le chinois suivant en anglais naturel et fluide, en conservant le sens et le ton :\n\n{{content}}",
+      "tags": [
+        "traduction",
+        "chinois vers anglais"
+      ]
+    },
+    "translate/zh-to-ja": {
+      "name": "Chinois → Japonais",
+      "description": "Traduit un texte chinois en japonais naturel.",
+      "prompt": "Traduisez le chinois suivant en japonais naturel et fluide, en conservant le sens et le ton :\n\n{{content}}",
+      "tags": [
+        "traduction",
+        "japonais"
+      ]
+    },
+    "writing/bullet-points": {
+      "name": "Points clés",
+      "description": "Organise un long paragraphe en liste de points clairs.",
+      "prompt": "Organisez le texte long suivant en liste de points clairs et lisibles, en conservant faits clés et hiérarchie :\n\n{{content}}",
+      "tags": [
+        "points clés",
+        "liste",
+        "document long"
+      ]
+    },
+    "writing/continue-writing": {
+      "name": "Poursuivre l'écriture",
+      "description": "Poursuit un brouillon existant de façon naturelle.",
+      "prompt": "Poursuivez naturellement le brouillon suivant en conservant le style et le ton, sans répéter le contenu existant :\n\n{{content}}",
+      "tags": [
+        "poursuivre",
+        "brouillon",
+        "rédaction"
+      ]
+    },
+    "writing/expand": {
+      "name": "Développer",
+      "description": "Développe un sujet avec détails et exemples.",
+      "prompt": "Sans changer le sens, développez le contenu suivant en ajoutant détails, contexte et exemples pertinents pour le rendre plus riche :\n\n{{content}}",
+      "tags": [
+        "développer",
+        "rédaction"
+      ]
+    },
+    "writing/grammar-fix": {
+      "name": "Correction grammaticale",
+      "description": "Corrige la grammaire et la syntaxe en gardant le ton.",
+      "prompt": "Corrigez la grammaire et la syntaxe du texte suivant en conservant le ton et le sens d'origine :\n\n{{content}}",
+      "tags": [
+        "grammaire",
+        "correction",
+        "édition"
+      ]
+    },
+    "writing/polish-copy": {
+      "name": "Polir le texte",
+      "description": "Polish le texte sélectionné pour plus de fluidité et de professionnalisme.",
+      "prompt": "Polissez le texte suivant : conservez le sens mais rendez l'expression plus fluide, professionnelle et appropriée :\n\n{{content}}",
+      "tags": [
+        "polish",
+        "reformuler",
+        "rédaction"
+      ]
+    },
+    "writing/proofread": {
+      "name": "Relecture",
+      "description": "Corrige fautes d'orthographe, grammaire et ponctuation sans changer le sens.",
+      "prompt": "Relisez le texte suivant en corrigeant uniquement les fautes d'orthographe, de grammaire et de ponctuation, sans modifier le style ni le sens :\n\n{{content}}",
+      "tags": [
+        "relecture",
+        "orthographe",
+        "édition"
+      ]
+    },
+    "writing/rephrase": {
+      "name": "Reformuler",
+      "description": "Exprime la même idée avec d'autres mots.",
+      "prompt": "Reformulez le texte suivant avec d'autres mots en conservant le sens :\n\n{{content}}",
+      "tags": [
+        "reformuler",
+        "paraphrase",
+        "réécriture"
+      ]
+    },
+    "writing/rewrite-tone": {
+      "name": "Changer le ton",
+      "description": "Réécrit le texte dans un ton oral plus naturel et chaleureux.",
+      "prompt": "Réécrivez le texte suivant dans un ton oral plus naturel et chaleureux, adapté à la communication quotidienne, en conservant l'information :\n\n{{content}}",
+      "tags": [
+        "ton",
+        "reformuler"
+      ]
+    },
+    "writing/shorten": {
+      "name": "Résumer",
+      "description": "Réduit un texte long au strict minimum sans perdre l'essentiel.",
+      "prompt": "Sans perdre l'information clé, réduisez le contenu suivant au minimum, ne gardant que l'essentiel :\n\n{{content}}",
+      "tags": [
+        "condenser",
+        "résumé"
+      ]
+    },
+    "writing/simplify": {
+      "name": "Simplifier",
+      "description": "Réécrit un texte complexe en expression accessible.",
+      "prompt": "Réécrivez le texte suivant en expression vulgarisée, sans perdre le sens central :\n\n{{content}}",
+      "tags": [
+        "accessible",
+        "simplification",
+        "document long"
+      ]
+    },
+    "writing/title-generator": {
+      "name": "Générateur de titres",
+      "description": "Génère 5 titres accrocheurs pour un article ou paragraphe.",
+      "prompt": "Générez 5 titres concis, accrocheurs et de styles différents pour le contenu suivant, un par ligne :\n\n{{content}}",
+      "tags": [
+        "titre",
+        "inspiration"
+      ]
+    }
+  }
+}

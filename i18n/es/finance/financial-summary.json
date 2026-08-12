@@ -1,0 +1,10 @@
+{
+  "name": "Resumen financiero",
+  "description": "Resume estados financieros o informes largos.",
+  "prompt": "Resume lo siguiente en puntos clave: ingresos, costos, beneficios, riesgos y perspectivas:\n\n{{content}}",
+  "tags": [
+    "finanzas",
+    "resumen",
+    "texto largo"
+  ]
+}

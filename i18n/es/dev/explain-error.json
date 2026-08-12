@@ -1,0 +1,10 @@
+{
+  "name": "Explicar error",
+  "description": "Explica el error y el stack trace y da sugerencias de corrección.",
+  "prompt": "Explica el significado del siguiente error o stack trace, sus posibles causas y cómo solucionarlo:\n\n{{content}}",
+  "tags": [
+    "error",
+    "depuración",
+    "explicación"
+  ]
+}

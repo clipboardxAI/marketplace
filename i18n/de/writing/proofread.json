@@ -1,0 +1,10 @@
+{
+  "name": "Korrektorat",
+  "description": "Korrigiert Rechtschreibung, Grammatik und Zeichensetzung, ohne Sinn zu ändern.",
+  "prompt": "Bitte korrigieren Sie den folgenden Text und beheben Sie nur Rechtschreib-, Grammatik- und Zeichensetzungsfehler, ohne Wortwahl und Bedeutung zu ändern:\n\n{{content}}",
+  "tags": [
+    "Korrektur",
+    "Rechtschreibung",
+    "Edit"
+  ]
+}

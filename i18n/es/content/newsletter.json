@@ -1,0 +1,10 @@
+{
+  "name": "Boletín",
+  "description": "Organiza notas en un boletín limpio.",
+  "prompt": "Organiza lo siguiente en un boletín: línea de asunto, breve introducción, 3-5 entradas con título y despedida:\n\n{{content}}",
+  "tags": [
+    "boletín",
+    "correo",
+    "texto largo"
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "name": "Borrador de correo",
+  "description": "Redacta un correo profesional a partir de una descripción breve.",
+  "prompt": "Redacta un correo claro y profesional basado en la siguiente descripción, con asunto, saludo, cuerpo y despedida:\n\n{{content}}",
+  "tags": [
+    "correo",
+    "negocios",
+    "redacción"
+  ]
+}

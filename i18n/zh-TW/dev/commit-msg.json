@@ -1,0 +1,10 @@
+{
+  "name": "提交資訊",
+  "description": "根據變更生成簡潔的 Conventional Commits 提交資訊。",
+  "prompt": "請為以下變更生成簡潔的 Conventional Commits 提交資訊（type: 主題，必要時補充正文）：\n\n{{content}}",
+  "tags": [
+    "git",
+    "提交",
+    "資訊"
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "name": "Paper-Gliederung",
+  "description": "Erstellt anhand eines Themas eine Paper-Gliederung.",
+  "prompt": "Bitte erstellen Sie anhand der folgenden Inhalte eine Paper-Gliederung: Titel, Abstract-Planung, IMRaD-Abschnitte sowie Unterpunkte:\n\n{{content}}",
+  "tags": [
+    "Gliederung",
+    "Forschung",
+    "Langtext"
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "name": "Rechnung erstellen",
+  "description": "Entwirft anhand von Bestelldaten eine professionelle Rechnung.",
+  "prompt": "Bitte entwerfen Sie anhand der folgenden Inhalte eine professionelle Rechnung: Aussteller, Kunde, Position, Betrag, Fälligkeitsdatum:\n\n{{content}}",
+  "tags": [
+    "Rechnung",
+    "Finanzen",
+    "Abrechnung"
+  ]
+}

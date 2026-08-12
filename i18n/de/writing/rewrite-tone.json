@@ -1,0 +1,9 @@
+{
+  "name": "Tonfall anpassen",
+  "description": "Überarbeitet Text zu natürlicherem, freundlicherem Umgangston, Info bleibt gleich.",
+  "prompt": "Bitte überarbeiten Sie den folgenden Text zu einem natürlicheren, freundlicheren, umgangssprachlichen Ton, der besser für den Alltag passt, und bewahren Sie die Information:\n\n{{content}}",
+  "tags": [
+    "Tonfall",
+    "Umformulieren"
+  ]
+}

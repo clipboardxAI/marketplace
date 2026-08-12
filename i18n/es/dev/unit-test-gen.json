@@ -1,0 +1,10 @@
+{
+  "name": "Generar pruebas unitarias",
+  "description": "Genera pruebas unitarias para el código dado.",
+  "prompt": "Escribe pruebas unitarias concisas y efectivas para el siguiente código, cubriendo los casos principales y los límites:\n\n{{content}}",
+  "tags": [
+    "pruebas",
+    "unitarias",
+    "calidad"
+  ]
+}

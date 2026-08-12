@@ -1,0 +1,10 @@
+{
+  "name": "Reformular",
+  "description": "Expresa lo mismo con otras palabras.",
+  "prompt": "Reescribe el siguiente texto con otras palabras, manteniendo el mismo significado:\n\n{{content}}",
+  "tags": [
+    "reformular",
+    "parafrasear",
+    "reescribir"
+  ]
+}

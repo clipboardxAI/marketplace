@@ -1,0 +1,9 @@
+{
+  "name": "Titel generieren",
+  "description": "Generiert 5 ansprechende Titel für Artikel oder Absätze.",
+  "prompt": "Bitte generieren Sie für die folgenden Inhalte 5 prägnante, ansprechende, stilistisch unterschiedliche Titel, jeweils eine pro Zeile:\n\n{{content}}",
+  "tags": [
+    "Titel",
+    "Ideen"
+  ]
+}

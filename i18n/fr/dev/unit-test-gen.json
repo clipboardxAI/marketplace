@@ -1,0 +1,10 @@
+{
+  "name": "Générer des tests unitaires",
+  "description": "Génère des tests unitaires pour le code donné.",
+  "prompt": "Écrivez des tests unitaires simples et efficaces pour le code suivant, couvrant les chemins principaux et les cas limites :\n\n{{content}}",
+  "tags": [
+    "test",
+    "unité",
+    "qualité"
+  ]
+}

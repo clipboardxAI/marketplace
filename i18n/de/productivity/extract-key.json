@@ -1,0 +1,9 @@
+{
+  "name": "Kernpunkte extrahieren",
+  "description": "Extrahiert 3–5 Kernpunkte aus langen Texten als Liste.",
+  "prompt": "Bitte extrahieren Sie aus den folgenden Inhalten 3–5 Kernpunkte und stellen Sie sie als prägnante Liste dar:\n\n{{content}}",
+  "tags": [
+    "Kernpunkte",
+    "Zusammenfassung"
+  ]
+}

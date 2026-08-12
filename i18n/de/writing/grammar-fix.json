@@ -1,0 +1,10 @@
+{
+  "name": "Grammatik korrigieren",
+  "description": "Korrigiert Grammatik und Satzbau, bewahrt den Tonfall.",
+  "prompt": "Bitte korrigieren Sie Grammatik und Satzbau des folgenden Texts und bewahren Sie den ursprünglichen Tonfall und Sinn:\n\n{{content}}",
+  "tags": [
+    "Grammatik",
+    "Korrektur",
+    "Edit"
+  ]
+}

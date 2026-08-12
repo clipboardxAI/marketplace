@@ -1,0 +1,9 @@
+{
+  "name": "Resumir",
+  "description": "Comprime texto extenso a lo mínimo sin perder información clave.",
+  "prompt": "Sin perder información clave, reduce lo siguiente a lo mínimo, conservando solo lo esencial:\n\n{{content}}",
+  "tags": [
+    "resumir",
+    "síntesis"
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "name": "Resumen de salud",
+  "description": "Resume historiales médicos o de salud en puntos clave.",
+  "prompt": "Resume el siguiente historial médico o de salud en puntos claros: estado, medicación, seguimiento:\n\n{{content}}",
+  "tags": [
+    "salud",
+    "resumen",
+    "texto largo"
+  ]
+}

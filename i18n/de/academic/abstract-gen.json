@@ -1,0 +1,10 @@
+{
+  "name": "Abstract",
+  "description": "Verfasst ein prägnantes wissenschaftliches Abstract.",
+  "prompt": "Bitte verfassen Sie anhand der folgenden Inhalte ein prägnantes wissenschaftliches Abstract (ca. 150 Wörter): Hintergrund, Methode, Ergebnisse, Schlussfolgerung:\n\n{{content}}",
+  "tags": [
+    "Abstract",
+    "Forschung",
+    "Zusammenfassung"
+  ]
+}

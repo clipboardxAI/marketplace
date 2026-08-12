@@ -1,0 +1,10 @@
+{
+  "name": "Fehler erklären",
+  "description": "Erklärt Fehlermeldung und Stacktrace und gibt Reparaturvorschläge.",
+  "prompt": "Bitte erklären Sie Bedeutung, mögliche Ursachen und Behebung des folgenden Fehlers oder Stacktraces:\n\n{{content}}",
+  "tags": [
+    "Fehler",
+    "Debug",
+    "Erklärung"
+  ]
+}

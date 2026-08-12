@@ -1,0 +1,10 @@
+{
+  "name": "Corregir gramática",
+  "description": "Corrige gramática y estructura conservando el tono.",
+  "prompt": "Corrige la gramática y la estructura del siguiente texto, conservando el tono y el significado originales:\n\n{{content}}",
+  "tags": [
+    "gramática",
+    "corrección",
+    "edición"
+  ]
+}

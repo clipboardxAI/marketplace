@@ -1,0 +1,9 @@
+{
+  "name": "Chinesisch → Englisch",
+  "description": "Übersetzt chinesischen Text in natürliches Englisch.",
+  "prompt": "Bitte übersetzen Sie den folgenden chinesischen Text in natürliches, flüssiges Englisch und bewahren Sie Bedeutung und Tonfall:\n\n{{content}}",
+  "tags": [
+    "Übersetzung",
+    "Chinesisch-Englisch"
+  ]
+}

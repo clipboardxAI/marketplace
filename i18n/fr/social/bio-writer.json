@@ -1,0 +1,10 @@
+{
+  "name": "Rédiger une bio",
+  "description": "Rédige une courte présentation personnelle/professionnelle.",
+  "prompt": "Rédigez à partir du contenu suivant une courte bio professionnelle (2 à 3 phrases), confiante sans être prétentieuse :\n\n{{content}}",
+  "tags": [
+    "bio",
+    "profil",
+    "à propos"
+  ]
+}

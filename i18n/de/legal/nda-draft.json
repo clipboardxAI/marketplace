@@ -1,0 +1,10 @@
+{
+  "name": "NDA erstellen",
+  "description": "Entwirft anhand zentraler Klauseln eine einfache zweiseitige NDA.",
+  "prompt": "Bitte entwerfen Sie anhand der folgenden Kernklauseln eine einfache zweiseitige Vertraulichkeitsvereinbarung mit Definition, Pflichten, Laufzeit und Ausnahmen:\n\n{{content}}",
+  "tags": [
+    "NDA",
+    "Recht",
+    "Entwurf"
+  ]
+}

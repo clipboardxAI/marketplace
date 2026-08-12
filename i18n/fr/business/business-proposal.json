@@ -1,0 +1,10 @@
+{
+  "name": "Proposition commerciale",
+  "description": "Rédige une proposition commerciale structurée à partir d'une note longue.",
+  "prompt": "Rédigez une proposition commerciale à partir du contenu suivant, avec les sections : problème, solution, marché, modèle, demande :\n\n{{content}}",
+  "tags": [
+    "proposition",
+    "business",
+    "document long"
+  ]
+}

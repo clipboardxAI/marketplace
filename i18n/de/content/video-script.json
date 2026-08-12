@@ -1,0 +1,10 @@
+{
+  "name": "Video-Drehbuch",
+  "description": "Verfasst ein Video-Drehbuch mit Storyboard und Off-Kommentar.",
+  "prompt": "Bitte verfassen Sie anhand der folgenden Inhalte ein Video-Drehbuch mit Szenentitel, Bildtext und Off-Sprechertext:\n\n{{content}}",
+  "tags": [
+    "Video",
+    "Drehbuch",
+    "YouTube"
+  ]
+}

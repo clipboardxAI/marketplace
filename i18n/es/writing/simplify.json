@@ -1,0 +1,10 @@
+{
+  "name": "Simplificar",
+  "description": "Reescribe texto complejo en expresiones fáciles de entender.",
+  "prompt": "Reescribe el siguiente texto en un lenguaje fácil de entender sin perder el significado central:\n\n{{content}}",
+  "tags": [
+    "sencillo",
+    "simplificar",
+    "texto largo"
+  ]
+}

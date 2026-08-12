@@ -1,0 +1,9 @@
+{
+  "name": "Revisión de código",
+  "description": "Revisa el código desde legibilidad, robustez y rendimiento, y da mejoras.",
+  "prompt": "Revisa el siguiente código como un ingeniero senior, señalando problemas de legibilidad, robustez, rendimiento y seguridad, y da recomendaciones de mejora:\n\n{{content}}",
+  "tags": [
+    "revisión",
+    "calidad"
+  ]
+}

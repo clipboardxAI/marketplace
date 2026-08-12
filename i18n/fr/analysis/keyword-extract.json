@@ -1,0 +1,9 @@
+{
+  "name": "Extraction de mots-clés",
+  "description": "Extrait les mots-clés et expressions les plus importants.",
+  "prompt": "Extrayez 8 à 12 mots-clés/expressions les plus importants du texte, séparés par des virgules :\n\n{{content}}",
+  "tags": [
+    "mots-clés",
+    "extraction"
+  ]
+}

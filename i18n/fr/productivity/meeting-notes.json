@@ -1,0 +1,9 @@
+{
+  "name": "Compte rendu de réunion",
+  "description": "Organise des notes éparses en compte rendu structuré.",
+  "prompt": "Organisez les notes de réunion suivantes en compte rendu structuré : avec les quatre parties « conclusions / tâches / responsables / échéances » :\n\n{{content}}",
+  "tags": [
+    "réunion",
+    "compte rendu"
+  ]
+}

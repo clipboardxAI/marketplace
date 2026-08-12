@@ -1,0 +1,10 @@
+{
+  "name": "OKR 起草",
+  "description": "根據目標簡述起草 OKR。",
+  "prompt": "請根據以下簡述起草 OKR，每個目標配 2-3 個可量化關鍵結果：\n\n{{content}}",
+  "tags": [
+    "okr",
+    "目標",
+    "計畫"
+  ]
+}

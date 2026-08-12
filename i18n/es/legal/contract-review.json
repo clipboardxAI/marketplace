@@ -1,0 +1,10 @@
+{
+  "name": "Revisión de contrato",
+  "description": "Revisa contratos en busca de cláusulas riesgosas o inusuales.",
+  "prompt": "Revisa el siguiente contrato y marca las cláusulas injustas, unilaterales o de alto riesgo, explicando cada una brevemente:\n\n{{content}}",
+  "tags": [
+    "contrato",
+    "legal",
+    "revisión"
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "name": "Plan de proyecto",
+  "description": "Redacta un plan de proyecto estructurado a partir de ideas generales.",
+  "prompt": "Redacta un plan de proyecto basado en lo siguiente, incluyendo: objetivo, hitos, responsables, riesgos y cronograma:\n\n{{content}}",
+  "tags": [
+    "proyecto",
+    "plan",
+    "texto largo"
+  ]
+}

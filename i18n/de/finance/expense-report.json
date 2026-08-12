@@ -1,0 +1,10 @@
+{
+  "name": "Spesenabrechnung",
+  "description": "Ordnet verstreute Ausgabenaufzeichnungen zu einem klaren Bericht.",
+  "prompt": "Bitte ordnen Sie die folgenden Ausgabenaufzeichnungen zu einem klaren Bericht: Kategorie, Datum, Betrag, Summe und Anmerkung:\n\n{{content}}",
+  "tags": [
+    "Spesen",
+    "Finanzen",
+    "Bericht"
+  ]
+}

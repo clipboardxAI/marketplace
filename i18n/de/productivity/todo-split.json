@@ -1,0 +1,9 @@
+{
+  "name": "Aufgaben zerlegen",
+  "description": "Zerlegt ein Ziel in eine ausführbare To-Do-Liste.",
+  "prompt": "Bitte zerlegen Sie das folgende Ziel oder die Idee in eine klare, ausführbare, priorisierte To-Do-Liste:\n\n{{content}}",
+  "tags": [
+    "To-Do",
+    "Plan"
+  ]
+}
