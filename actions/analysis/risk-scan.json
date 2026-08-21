@@ -1,7 +1,7 @@
 {
   "name": "Risk Scan",
   "icon": "exclamationmark.shield",
-  "author": "ClipboardXAI",
+  "author": "ClipboxAI",
   "version": "1.0.0",
   "description": "Scan a long document for risks, red flags, and gaps.",
   "tags": [

@@ -1,7 +1,7 @@
 {
   "name": "Meeting Notes",
   "icon": "calendar",
-  "author": "ClipboardXAI",
+  "author": "ClipboxAI",
   "version": "1.0.0",
   "description": "Turn scattered meeting notes into a structured summary.",
   "tags": [

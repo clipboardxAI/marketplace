@@ -1,7 +1,7 @@
 {
   "name": "Chinese → English",
   "icon": "character.book.closed",
-  "author": "ClipboardXAI",
+  "author": "ClipboxAI",
   "version": "1.0.0",
   "description": "Translate Chinese text into natural, idiomatic English.",
   "tags": [

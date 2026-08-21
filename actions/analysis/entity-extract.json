@@ -1,7 +1,7 @@
 {
   "name": "Extract Entities",
   "icon": "viewfinder",
-  "author": "ClipboardXAI",
+  "author": "ClipboxAI",
   "version": "1.0.0",
   "description": "Extract people, orgs, dates, and places from text.",
   "tags": [

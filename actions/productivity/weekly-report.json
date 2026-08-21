@@ -1,7 +1,7 @@
 {
   "name": "Weekly Report",
   "icon": "doc.text",
-  "author": "ClipboardXAI",
+  "author": "ClipboxAI",
   "version": "1.0.0",
   "description": "Summarize the week's work into a clean progress report.",
   "tags": [

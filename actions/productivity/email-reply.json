@@ -1,7 +1,7 @@
 {
   "name": "Email Reply",
   "icon": "envelope.open",
-  "author": "ClipboardXAI",
+  "author": "ClipboxAI",
   "version": "1.0.0",
   "description": "Draft a polite, concise reply based on the email body.",
   "tags": [

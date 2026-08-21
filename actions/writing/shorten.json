@@ -1,7 +1,7 @@
 {
   "name": "Shorten & Summarize",
   "icon": "scissors",
-  "author": "ClipboardXAI",
+  "author": "ClipboxAI",
   "version": "1.0.0",
   "description": "Compress long text to its shortest form without losing key information.",
   "tags": [

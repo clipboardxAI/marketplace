@@ -1,7 +1,7 @@
 {
   "name": "Explain Symptoms",
   "icon": "cross.case",
-  "author": "ClipboardXAI",
+  "author": "ClipboxAI",
   "version": "1.0.0",
   "description": "Explain possible meanings of described symptoms (informational).",
   "tags": [

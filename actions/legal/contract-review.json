@@ -1,7 +1,7 @@
 {
   "name": "Contract Review",
   "icon": "doc.text.magnifyingglass",
-  "author": "ClipboardXAI",
+  "author": "ClipboxAI",
   "version": "1.0.0",
   "description": "Review a contract for risky or unusual clauses.",
   "tags": [

@@ -1,4 +1,4 @@
-// Shared types & constants for the Clipboard x AI Action Marketplace build tool.
+// Shared types & constants for the ClipboxAI Action Marketplace build tool.
 //
 // The marketplace catalog (`marketplace.json`) is the artifact the desktop app
 // fetches. This tool aggregates one-JSON-per-action source files (organized by
@@ -10,7 +10,7 @@ export const SCHEMA_VERSION = 2;
 
 /**
  * Locales the desktop app supports. Raw values mirror `AppLanguage` in the app
- * (ClipboardXAI/Core/Shared/I18n/AppLanguage.swift). Any `<lang>` directory
+ * (ClipboxAI/Core/Shared/I18n/AppLanguage.swift). Any `<lang>` directory
  * under `i18n/` MUST be one of these, otherwise validation fails.
  *
  * The app currently ships 25 locale codes (the user-facing "23+ languages").
@@ -102,7 +102,7 @@ export type ActionField = (typeof ACTION_FIELDS)[number];
 
 /**
  * 外部 App 委派描述（v3.0 生态动作）。
- * 不直接在 ClipboardXAI 内执行，而是用 NSWorkspace.open 拉起已安装的兄弟 App，
+ * 不直接在 ClipboxAI 内执行，而是用 NSWorkspace.open 拉起已安装的兄弟 App，
  * 并把当前条目（文件 / 文本）填进它的 deeplink。
  */
 export interface ExecutionSpec {

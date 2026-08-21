@@ -1,7 +1,7 @@
 {
   "name": "Code Review",
   "icon": "checkmark.shield",
-  "author": "ClipboardXAI",
+  "author": "ClipboxAI",
   "version": "1.0.0",
   "description": "Review code for readability, robustness, and performance, and suggest improvements.",
   "tags": [

@@ -1,7 +1,7 @@
 {
   "name": "Explain Code",
   "icon": "doc.plaintext",
-  "author": "ClipboardXAI",
+  "author": "ClipboxAI",
   "version": "1.0.0",
   "description": "Explain in plain language what the code does, its key logic, and caveats.",
   "tags": [

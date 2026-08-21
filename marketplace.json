@@ -88,7 +88,7 @@
       "category": "writing",
       "name": "Bullet Points",
       "icon": "list.bullet",
-      "author": "ClipboardXAI",
+      "author": "ClipboxAI",
       "version": "1.0.0",
       "description": "Turn a dense paragraph into clear, scannable bullet points.",
       "tags": [
@@ -108,7 +108,7 @@
       "category": "writing",
       "name": "Continue Writing",
       "icon": "pencil.and.scribble",
-      "author": "ClipboardXAI",
+      "author": "ClipboxAI",
       "version": "1.0.0",
       "description": "Continue the draft naturally from where it leaves off.",
       "tags": [
@@ -128,7 +128,7 @@
       "category": "writing",
       "name": "Expand",
       "icon": "text.append",
-      "author": "ClipboardXAI",
+      "author": "ClipboxAI",
       "version": "1.0.0",
       "description": "Expand the text with extra detail, background, and fitting examples to make it richer.",
       "tags": [
@@ -147,7 +147,7 @@
       "category": "writing",
       "name": "Fix Grammar",
       "icon": "textformat.abc",
-      "author": "ClipboardXAI",
+      "author": "ClipboxAI",
       "version": "1.0.0",
       "description": "Correct grammar and sentence structure while keeping the original voice.",
       "tags": [
@@ -167,7 +167,7 @@
       "category": "writing",
       "name": "Polish Copy",
       "icon": "pencil.and.outline",
-      "author": "ClipboardXAI",
+      "author": "ClipboxAI",
       "version": "1.0.0",
       "description": "Polish the selected text to read smoother, more professional, and more polished—while keeping the original meaning.",
       "tags": [
@@ -188,7 +188,7 @@
       "category": "writing",
       "name": "Proofread",
       "icon": "checkmark.seal",
-      "author": "ClipboardXAI",
+      "author": "ClipboxAI",
       "version": "1.0.0",
       "description": "Proofread the text for spelling, grammar, and punctuation errors without changing the wording.",
       "tags": [
@@ -208,7 +208,7 @@
       "category": "writing",
       "name": "Rephrase",
       "icon": "text.bubble",
-      "author": "ClipboardXAI",
+      "author": "ClipboxAI",
       "version": "1.0.0",
       "description": "Rephrase the text in different words with the same meaning.",
       "tags": [
@@ -228,7 +228,7 @@
       "category": "writing",
       "name": "Rewrite Tone",
       "icon": "textformat",
-      "author": "ClipboardXAI",
+      "author": "ClipboxAI",
       "version": "1.0.0",
       "description": "Rewrite the text in a natural, friendly, conversational tone while keeping the information intact.",
       "tags": [
@@ -247,7 +247,7 @@
       "category": "writing",
       "name": "Shorten & Summarize",
       "icon": "scissors",
-      "author": "ClipboardXAI",
+      "author": "ClipboxAI",
       "version": "1.0.0",
       "description": "Compress long text to its shortest form without losing key information.",
       "tags": [
@@ -266,7 +266,7 @@
       "category": "writing",
       "name": "Simplify",
       "icon": "text.justify",
-      "author": "ClipboardXAI",
+      "author": "ClipboxAI",
       "version": "1.0.0",
       "description": "Simplify complex text so it is easy to understand.",
       "tags": [
@@ -286,7 +286,7 @@
       "category": "writing",
       "name": "Title Generator",
       "icon": "text.book.closed",
-      "author": "ClipboardXAI",
+      "author": "ClipboxAI",
       "version": "1.0.0",
       "description": "Generate 5 catchy, varied titles for an article or paragraph.",
       "tags": [
@@ -305,7 +305,7 @@
       "category": "dev",
       "name": "API Doc",
       "icon": "book.closed",
-      "author": "ClipboardXAI",
+      "author": "ClipboxAI",
       "version": "1.0.0",
       "description": "Generate API documentation from code or an endpoint description.",
       "tags": [
@@ -326,7 +326,7 @@
       "category": "dev",
       "name": "Code Review",
       "icon": "checkmark.shield",
-      "author": "ClipboardXAI",
+      "author": "ClipboxAI",
       "version": "1.0.0",
       "description": "Review code for readability, robustness, and performance, and suggest improvements.",
       "tags": [
@@ -345,7 +345,7 @@
       "category": "dev",
       "name": "Commit Message",
       "icon": "paperplane",
-      "author": "ClipboardXAI",
+      "author": "ClipboxAI",
       "version": "1.0.0",
       "description": "Write a concise Conventional Commits message from the diff.",
       "tags": [
@@ -365,7 +365,7 @@
       "category": "dev",
       "name": "Debug & Fix",
       "icon": "ant",
-      "author": "ClipboardXAI",
+      "author": "ClipboxAI",
       "version": "1.0.0",
       "description": "Analyze possible bugs and their causes in the code, and suggest concrete fixes.",
       "tags": [
@@ -384,7 +384,7 @@
       "category": "dev",
       "name": "Explain Code",
       "icon": "doc.plaintext",
-      "author": "ClipboardXAI",
+      "author": "ClipboxAI",
       "version": "1.0.0",
       "description": "Explain in plain language what the code does, its key logic, and caveats.",
       "tags": [
@@ -404,7 +404,7 @@
       "category": "dev",
       "name": "Explain Error",
       "icon": "exclamationmark.bubble",
-      "author": "ClipboardXAI",
+      "author": "ClipboxAI",
       "version": "1.0.0",
       "description": "Explain an error/stack trace and suggest a fix.",
       "tags": [
@@ -425,7 +425,7 @@
       "category": "dev",
       "name": "Generate Comments",
       "icon": "text.bubble",
-      "author": "ClipboardXAI",
+      "author": "ClipboxAI",
       "version": "1.0.0",
       "description": "Add clear, necessary comments to the code without changing its logic.",
       "tags": [
@@ -444,7 +444,7 @@
       "category": "dev",
       "name": "Generate README",
       "icon": "doc.richtext",
-      "author": "ClipboardXAI",
+      "author": "ClipboxAI",
       "version": "1.0.0",
       "description": "Generate a clear README from the code or notes.",
       "tags": [
@@ -465,7 +465,7 @@
       "category": "dev",
       "name": "Regex Generator",
       "icon": "chevron.left.forwardslash.chevron.right",
-      "author": "ClipboardXAI",
+      "author": "ClipboxAI",
       "version": "1.0.0",
       "description": "Generate a working regular expression from a natural-language description.",
       "tags": [
@@ -484,7 +484,7 @@
       "category": "dev",
       "name": "SQL Optimize",
       "icon": "externaldrive",
-      "author": "ClipboardXAI",
+      "author": "ClipboxAI",
       "version": "1.0.0",
       "description": "Analyze SQL and give actionable performance optimization advice.",
       "tags": [
@@ -504,7 +504,7 @@
       "category": "dev",
       "name": "Generate Unit Tests",
       "icon": "checkmark.seal",
-      "author": "ClipboardXAI",
+      "author": "ClipboxAI",
       "version": "1.0.0",
       "description": "Generate unit tests for the given code.",
       "tags": [
@@ -524,7 +524,7 @@
       "category": "productivity",
       "name": "Daily Plan",
       "icon": "calendar",
-      "author": "ClipboardXAI",
+      "author": "ClipboxAI",
       "version": "1.0.0",
       "description": "Turn a messy to-do list into a prioritized daily plan.",
       "tags": [
@@ -544,7 +544,7 @@
       "category": "productivity",
       "name": "Decision Memo",
       "icon": "doc.on.doc",
-      "author": "ClipboardXAI",
+      "author": "ClipboxAI",
       "version": "1.0.0",
       "description": "Write a decision memo with options and a recommendation.",
       "tags": [
@@ -564,7 +564,7 @@
       "category": "productivity",
       "name": "Email Reply",
       "icon": "envelope.open",
-      "author": "ClipboardXAI",
+      "author": "ClipboxAI",
       "version": "1.0.0",
       "description": "Draft a polite, concise reply based on the email body.",
       "tags": [
@@ -583,7 +583,7 @@
       "category": "productivity",
       "name": "Extract Key Points",
       "icon": "list.bullet",
-      "author": "ClipboardXAI",
+      "author": "ClipboxAI",
       "version": "1.0.0",
       "description": "Extract 3-5 core points from a long text as a list.",
       "tags": [
@@ -602,7 +602,7 @@
       "category": "productivity",
       "name": "Meeting Notes",
       "icon": "calendar",
-      "author": "ClipboardXAI",
+      "author": "ClipboxAI",
       "version": "1.0.0",
       "description": "Turn scattered meeting notes into a structured summary.",
       "tags": [
@@ -621,7 +621,7 @@
       "category": "productivity",
       "name": "OKR Draft",
       "icon": "target",
-      "author": "ClipboardXAI",
+      "author": "ClipboxAI",
       "version": "1.0.0",
       "description": "Draft Objectives and Key Results from a goal brief.",
       "tags": [
@@ -641,7 +641,7 @@
       "category": "productivity",
       "name": "Project Plan",
       "icon": "list.bullet.below.rectangle",
-      "author": "ClipboardXAI",
+      "author": "ClipboxAI",
       "version": "1.0.0",
       "description": "Draft a structured project plan from rough ideas.",
       "tags": [
@@ -661,7 +661,7 @@
       "category": "productivity",
       "name": "Retrospective",
       "icon": "arrow.counterclockwise",
-      "author": "ClipboardXAI",
+      "author": "ClipboxAI",
       "version": "1.0.0",
       "description": "Structure a sprint retrospective from team notes.",
       "tags": [
@@ -681,7 +681,7 @@
       "category": "productivity",
       "name": "To-do Splitter",
       "icon": "checkmark.circle",
-      "author": "ClipboardXAI",
+      "author": "ClipboxAI",
       "version": "1.0.0",
       "description": "Break a goal or idea into a clear, actionable, prioritized to-do list.",
       "tags": [
@@ -700,7 +700,7 @@
       "category": "productivity",
       "name": "Weekly Report",
       "icon": "doc.text",
-      "author": "ClipboardXAI",
+      "author": "ClipboxAI",
       "version": "1.0.0",
       "description": "Summarize the week's work into a clean progress report.",
       "tags": [
@@ -720,7 +720,7 @@
       "category": "translate",
       "name": "English → 日本語",
       "icon": "globe",
-      "author": "ClipboardXAI",
+      "author": "ClipboxAI",
       "version": "1.0.0",
       "description": "Translate English text into natural Japanese.",
       "tags": [
@@ -740,7 +740,7 @@
       "category": "translate",
       "name": "English → Chinese",
       "icon": "character",
-      "author": "ClipboardXAI",
+      "author": "ClipboxAI",
       "version": "1.0.0",
       "description": "Translate English text into fluent, accurate Chinese.",
       "tags": [
@@ -759,7 +759,7 @@
       "category": "translate",
       "name": "日本語 → English",
       "icon": "globe",
-      "author": "ClipboardXAI",
+      "author": "ClipboxAI",
       "version": "1.0.0",
       "description": "Translate Japanese text into natural English.",
       "tags": [
@@ -779,7 +779,7 @@
       "category": "translate",
       "name": "日本語 → 中文",
       "icon": "globe",
-      "author": "ClipboardXAI",
+      "author": "ClipboxAI",
       "version": "1.0.0",
       "description": "Translate Japanese text into natural Chinese.",
       "tags": [
@@ -799,7 +799,7 @@
       "category": "translate",
       "name": "Chinese → English",
       "icon": "character.book.closed",
-      "author": "ClipboardXAI",
+      "author": "ClipboxAI",
       "version": "1.0.0",
       "description": "Translate Chinese text into natural, idiomatic English.",
       "tags": [
@@ -818,7 +818,7 @@
       "category": "translate",
       "name": "中文 → 日本語",
       "icon": "globe",
-      "author": "ClipboardXAI",
+      "author": "ClipboxAI",
       "version": "1.0.0",
       "description": "Translate Chinese text into natural Japanese.",
       "tags": [
@@ -838,7 +838,7 @@
       "category": "social",
       "name": "Write Bio",
       "icon": "person.crop.square",
-      "author": "ClipboardXAI",
+      "author": "ClipboxAI",
       "version": "1.0.0",
       "description": "Write a short personal or professional bio.",
       "tags": [
@@ -858,7 +858,7 @@
       "category": "social",
       "name": "Reply to Comment",
       "icon": "bubble.right",
-      "author": "ClipboardXAI",
+      "author": "ClipboxAI",
       "version": "1.0.0",
       "description": "Write a friendly, on-brand reply to a comment or message.",
       "tags": [
@@ -878,7 +878,7 @@
       "category": "social",
       "name": "LinkedIn Post",
       "icon": "network",
-      "author": "ClipboardXAI",
+      "author": "ClipboxAI",
       "version": "1.0.0",
       "description": "Turn an idea or note into a polished LinkedIn post.",
       "tags": [
@@ -898,7 +898,7 @@
       "category": "social",
       "name": "Polite Decline",
       "icon": "hand.raised",
-      "author": "ClipboardXAI",
+      "author": "ClipboxAI",
       "version": "1.0.0",
       "description": "Rewrite a blunt refusal into a polite, tactful expression.",
       "tags": [
@@ -917,7 +917,7 @@
       "category": "social",
       "name": "X / Twitter Thread",
       "icon": "text.bubble",
-      "author": "ClipboardXAI",
+      "author": "ClipboxAI",
       "version": "1.0.0",
       "description": "Expand a topic into a punchy multi-tweet thread.",
       "tags": [
@@ -937,7 +937,7 @@
       "category": "social",
       "name": "Social Post Polish",
       "icon": "megaphone",
-      "author": "ClipboardXAI",
+      "author": "ClipboxAI",
       "version": "1.0.0",
       "description": "Rewrite an idea into a short, catchy social-media post.",
       "tags": [
@@ -956,7 +956,7 @@
       "category": "analysis",
       "name": "Extract Entities",
       "icon": "viewfinder",
-      "author": "ClipboardXAI",
+      "author": "ClipboxAI",
       "version": "1.0.0",
       "description": "Extract people, orgs, dates, and places from text.",
       "tags": [
@@ -976,7 +976,7 @@
       "category": "analysis",
       "name": "Extract Keywords",
       "icon": "tag",
-      "author": "ClipboardXAI",
+      "author": "ClipboxAI",
       "version": "1.0.0",
       "description": "Extract the most important keywords and phrases.",
       "tags": [
@@ -996,7 +996,7 @@
       "category": "analysis",
       "name": "Risk Scan",
       "icon": "exclamationmark.shield",
-      "author": "ClipboardXAI",
+      "author": "ClipboxAI",
       "version": "1.0.0",
       "description": "Scan a long document for risks, red flags, and gaps.",
       "tags": [
@@ -1017,7 +1017,7 @@
       "category": "analysis",
       "name": "Sentiment Analysis",
       "icon": "face.smiling",
-      "author": "ClipboardXAI",
+      "author": "ClipboxAI",
       "version": "1.0.0",
       "description": "Detect the sentiment of text and give a brief rationale.",
       "tags": [
@@ -1036,7 +1036,7 @@
       "category": "analysis",
       "name": "Classify Text",
       "icon": "square.stack",
-      "author": "ClipboardXAI",
+      "author": "ClipboxAI",
       "version": "1.0.0",
       "description": "Classify the text by intent, topic, or sentiment.",
       "tags": [
@@ -1056,7 +1056,7 @@
       "category": "analysis",
       "name": "Topic Summary",
       "icon": "text.magnifyingglass",
-      "author": "ClipboardXAI",
+      "author": "ClipboxAI",
       "version": "1.0.0",
       "description": "Summarize the main topics and themes of a long text.",
       "tags": [
@@ -1076,7 +1076,7 @@
       "category": "business",
       "name": "Business Proposal",
       "icon": "doc.text.fill",
-      "author": "ClipboardXAI",
+      "author": "ClipboxAI",
       "version": "1.0.0",
       "description": "Draft a structured business proposal for a long brief.",
       "tags": [
@@ -1096,7 +1096,7 @@
       "category": "business",
       "name": "Elevator Pitch",
       "icon": "person.2",
-      "author": "ClipboardXAI",
+      "author": "ClipboxAI",
       "version": "1.0.0",
       "description": "Write a 30-second elevator pitch.",
       "tags": [
@@ -1116,7 +1116,7 @@
       "category": "business",
       "name": "Email Draft",
       "icon": "envelope",
-      "author": "ClipboardXAI",
+      "author": "ClipboxAI",
       "version": "1.0.0",
       "description": "Draft a clear, professional email from a brief.",
       "tags": [
@@ -1136,7 +1136,7 @@
       "category": "business",
       "name": "Meeting Agenda",
       "icon": "calendar.badge.clock",
-      "author": "ClipboardXAI",
+      "author": "ClipboxAI",
       "version": "1.0.0",
       "description": "Build a focused meeting agenda from a topic list.",
       "tags": [
@@ -1156,7 +1156,7 @@
       "category": "business",
       "name": "Sales Pitch",
       "icon": "megaphone",
-      "author": "ClipboardXAI",
+      "author": "ClipboxAI",
       "version": "1.0.0",
       "description": "Craft a persuasive sales pitch for a product or service.",
       "tags": [
@@ -1176,7 +1176,7 @@
       "category": "business",
       "name": "SWOT Analysis",
       "icon": "chart.pie",
-      "author": "ClipboardXAI",
+      "author": "ClipboxAI",
       "version": "1.0.0",
       "description": "Produce a SWOT analysis from a business description.",
       "tags": [
@@ -1196,7 +1196,7 @@
       "category": "content",
       "name": "Ad Copy",
       "icon": "megaphone.fill",
-      "author": "ClipboardXAI",
+      "author": "ClipboxAI",
       "version": "1.0.0",
       "description": "Write short, high-converting ad copy variants.",
       "tags": [
@@ -1216,7 +1216,7 @@
       "category": "content",
       "name": "Blog Post",
       "icon": "doc.richtext",
-      "author": "ClipboardXAI",
+      "author": "ClipboxAI",
       "version": "1.0.0",
       "description": "Write a full blog post from an outline or notes.",
       "tags": [
@@ -1236,7 +1236,7 @@
       "category": "content",
       "name": "Newsletter",
       "icon": "newspaper",
-      "author": "ClipboardXAI",
+      "author": "ClipboxAI",
       "version": "1.0.0",
       "description": "Turn notes into a clean newsletter issue.",
       "tags": [
@@ -1256,7 +1256,7 @@
       "category": "content",
       "name": "Product Description",
       "icon": "tag.fill",
-      "author": "ClipboardXAI",
+      "author": "ClipboxAI",
       "version": "1.0.0",
       "description": "Write a compelling product description.",
       "tags": [
@@ -1277,7 +1277,7 @@
       "category": "content",
       "name": "SEO Meta",
       "icon": "magnifyingglass.circle",
-      "author": "ClipboardXAI",
+      "author": "ClipboxAI",
       "version": "1.0.0",
       "description": "Generate SEO title, description, and keywords.",
       "tags": [
@@ -1298,7 +1298,7 @@
       "category": "content",
       "name": "Video Script",
       "icon": "video",
-      "author": "ClipboardXAI",
+      "author": "ClipboxAI",
       "version": "1.0.0",
       "description": "Write a video script with scenes and voiceover.",
       "tags": [
@@ -1318,7 +1318,7 @@
       "category": "academic",
       "name": "Abstract",
       "icon": "doc.text",
-      "author": "ClipboardXAI",
+      "author": "ClipboxAI",
       "version": "1.0.0",
       "description": "Write a concise academic abstract.",
       "tags": [
@@ -1338,7 +1338,7 @@
       "category": "academic",
       "name": "Format Citations",
       "icon": "text.quote",
-      "author": "ClipboardXAI",
+      "author": "ClipboxAI",
       "version": "1.0.0",
       "description": "Format a reference list into a chosen citation style.",
       "tags": [
@@ -1358,7 +1358,7 @@
       "category": "academic",
       "name": "Literature Review",
       "icon": "books.vertical",
-      "author": "ClipboardXAI",
+      "author": "ClipboxAI",
       "version": "1.0.0",
       "description": "Synthesize a literature review from multiple sources.",
       "tags": [
@@ -1378,7 +1378,7 @@
       "category": "academic",
       "name": "Paper Outline",
       "icon": "list.bullet.below.rectangle",
-      "author": "ClipboardXAI",
+      "author": "ClipboxAI",
       "version": "1.0.0",
       "description": "Build a research paper outline from a topic.",
       "tags": [
@@ -1398,7 +1398,7 @@
       "category": "legal",
       "name": "Explain Clause",
       "icon": "doc.on.doc",
-      "author": "ClipboardXAI",
+      "author": "ClipboxAI",
       "version": "1.0.0",
       "description": "Explain a legal clause in plain language.",
       "tags": [
@@ -1419,7 +1419,7 @@
       "category": "legal",
       "name": "Contract Review",
       "icon": "doc.text.magnifyingglass",
-      "author": "ClipboardXAI",
+      "author": "ClipboxAI",
       "version": "1.0.0",
       "description": "Review a contract for risky or unusual clauses.",
       "tags": [
@@ -1440,7 +1440,7 @@
       "category": "legal",
       "name": "NDA Draft",
       "icon": "signature",
-      "author": "ClipboardXAI",
+      "author": "ClipboxAI",
       "version": "1.0.0",
       "description": "Draft a simple mutual NDA from key terms.",
       "tags": [
@@ -1460,7 +1460,7 @@
       "category": "finance",
       "name": "Expense Report",
       "icon": "receipt",
-      "author": "ClipboardXAI",
+      "author": "ClipboxAI",
       "version": "1.0.0",
       "description": "Turn raw expense notes into a clean report.",
       "tags": [
@@ -1481,7 +1481,7 @@
       "category": "finance",
       "name": "Financial Summary",
       "icon": "chart.line.uptrend.xyaxis",
-      "author": "ClipboardXAI",
+      "author": "ClipboxAI",
       "version": "1.0.0",
       "description": "Summarize a financial statement or long report.",
       "tags": [
@@ -1502,7 +1502,7 @@
       "category": "finance",
       "name": "Invoice Draft",
       "icon": "doc.text.fill",
-      "author": "ClipboardXAI",
+      "author": "ClipboxAI",
       "version": "1.0.0",
       "description": "Draft a professional invoice from order details.",
       "tags": [
@@ -1522,7 +1522,7 @@
       "category": "health",
       "name": "Health Summary",
       "icon": "heart.text.square",
-      "author": "ClipboardXAI",
+      "author": "ClipboxAI",
       "version": "1.0.0",
       "description": "Summarize a medical/health note into key points.",
       "tags": [
@@ -1543,7 +1543,7 @@
       "category": "health",
       "name": "Explain Symptoms",
       "icon": "cross.case",
-      "author": "ClipboardXAI",
+      "author": "ClipboxAI",
       "version": "1.0.0",
       "description": "Explain possible meanings of described symptoms (informational).",
       "tags": [
@@ -1563,7 +1563,7 @@
       "category": "support",
       "name": "Generate FAQ",
       "icon": "questionmark.circle",
-      "author": "ClipboardXAI",
+      "author": "ClipboxAI",
       "version": "1.0.0",
       "description": "Turn product notes into a clear FAQ.",
       "tags": [
@@ -1583,7 +1583,7 @@
       "category": "support",
       "name": "Reply to Ticket",
       "icon": "lifepreserver",
-      "author": "ClipboardXAI",
+      "author": "ClipboxAI",
       "version": "1.0.0",
       "description": "Write an empathetic support reply to a ticket.",
       "tags": [

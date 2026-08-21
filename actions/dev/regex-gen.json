@@ -1,7 +1,7 @@
 {
   "name": "Regex Generator",
   "icon": "chevron.left.forwardslash.chevron.right",
-  "author": "ClipboardXAI",
+  "author": "ClipboxAI",
   "version": "1.0.0",
   "description": "Generate a working regular expression from a natural-language description.",
   "tags": [

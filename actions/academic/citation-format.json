@@ -1,7 +1,7 @@
 {
   "name": "Format Citations",
   "icon": "text.quote",
-  "author": "ClipboardXAI",
+  "author": "ClipboxAI",
   "version": "1.0.0",
   "description": "Format a reference list into a chosen citation style.",
   "tags": [

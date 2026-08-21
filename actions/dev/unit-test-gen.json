@@ -1,7 +1,7 @@
 {
   "name": "Generate Unit Tests",
   "icon": "checkmark.seal",
-  "author": "ClipboardXAI",
+  "author": "ClipboxAI",
   "version": "1.0.0",
   "description": "Generate unit tests for the given code.",
   "tags": [

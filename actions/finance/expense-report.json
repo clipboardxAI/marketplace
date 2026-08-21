@@ -1,7 +1,7 @@
 {
   "name": "Expense Report",
   "icon": "receipt",
-  "author": "ClipboardXAI",
+  "author": "ClipboxAI",
   "version": "1.0.0",
   "description": "Turn raw expense notes into a clean report.",
   "tags": [

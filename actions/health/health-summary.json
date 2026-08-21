@@ -1,7 +1,7 @@
 {
   "name": "Health Summary",
   "icon": "heart.text.square",
-  "author": "ClipboardXAI",
+  "author": "ClipboxAI",
   "version": "1.0.0",
   "description": "Summarize a medical/health note into key points.",
   "tags": [

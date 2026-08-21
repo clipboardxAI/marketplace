@@ -1,7 +1,7 @@
 {
   "name": "Extract Key Points",
   "icon": "list.bullet",
-  "author": "ClipboardXAI",
+  "author": "ClipboxAI",
   "version": "1.0.0",
   "description": "Extract 3-5 core points from a long text as a list.",
   "tags": [

@@ -1,7 +1,7 @@
 {
   "name": "Generate README",
   "icon": "doc.richtext",
-  "author": "ClipboardXAI",
+  "author": "ClipboxAI",
   "version": "1.0.0",
   "description": "Generate a clear README from the code or notes.",
   "tags": [

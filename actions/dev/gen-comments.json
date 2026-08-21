@@ -1,7 +1,7 @@
 {
   "name": "Generate Comments",
   "icon": "text.bubble",
-  "author": "ClipboardXAI",
+  "author": "ClipboxAI",
   "version": "1.0.0",
   "description": "Add clear, necessary comments to the code without changing its logic.",
   "tags": [

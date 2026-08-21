@@ -1,7 +1,7 @@
 {
   "name": "Proofread",
   "icon": "checkmark.seal",
-  "author": "ClipboardXAI",
+  "author": "ClipboxAI",
   "version": "1.0.0",
   "description": "Proofread the text for spelling, grammar, and punctuation errors without changing the wording.",
   "tags": [

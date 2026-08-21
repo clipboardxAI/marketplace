@@ -1,7 +1,7 @@
 {
   "name": "Invoice Draft",
   "icon": "doc.text.fill",
-  "author": "ClipboardXAI",
+  "author": "ClipboxAI",
   "version": "1.0.0",
   "description": "Draft a professional invoice from order details.",
   "tags": [

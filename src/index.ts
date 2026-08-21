@@ -1,4 +1,4 @@
-// CLI entry point for the Clipboard x AI Action Marketplace build tool.
+// CLI entry point for the ClipboxAI Action Marketplace build tool.
 //
 //   npm run build     # aggregate actions/ + categories.json (+ i18n/) -> marketplace.json
 //   npm run validate  # validate source and confirm marketplace.json is up to date (CI)
@@ -19,7 +19,7 @@ const COMMANDS: Record<string, () => void> = {
 function printHelp(): void {
   process.stdout.write(
     [
-      "Clipboard x AI · Action Marketplace build tool",
+      "ClipboxAI · Action Marketplace build tool",
       "",
       "Usage: tsx src/index.ts <command>",
       "",

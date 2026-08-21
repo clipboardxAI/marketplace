@@ -1,7 +1,7 @@
 {
   "name": "SWOT Analysis",
   "icon": "chart.pie",
-  "author": "ClipboardXAI",
+  "author": "ClipboxAI",
   "version": "1.0.0",
   "description": "Produce a SWOT analysis from a business description.",
   "tags": [

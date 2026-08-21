@@ -1,7 +1,7 @@
 {
   "name": "Meeting Agenda",
   "icon": "calendar.badge.clock",
-  "author": "ClipboardXAI",
+  "author": "ClipboxAI",
   "version": "1.0.0",
   "description": "Build a focused meeting agenda from a topic list.",
   "tags": [

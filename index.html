@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Clipboard x AI · Action Marketplace</title>
+<title>ClipboxAI · Action Marketplace</title>
 <style>
   :root { --bg:#0f1115; --card:#1a1d24; --fg:#e8eaed; --muted:#9aa0a6; --accent:#5b8cff; --line:#2a2e37; }
   * { box-sizing: border-box; }
@@ -46,7 +46,7 @@
 </head>
 <body>
 <header>
-  <h1>Clipboard x AI · Action Marketplace</h1>
+  <h1>ClipboxAI · Action Marketplace</h1>
   <p>Community-curated AI actions for your clipboard. Click “Install” to open the app and add it.</p>
   <div class="langbar">
     <label for="lang">Language:</label>
@@ -56,10 +56,10 @@
 <div class="wrap">
   <div class="cats" id="cats"></div>
   <div class="grid" id="grid"></div>
-  <p class="hint">Nothing happens? Install <a href="https://github.com/w3cub/clipboardxai" target="_blank">Clipboard x AI</a> first.</p>
+  <p class="hint">Nothing happens? Install <a href="https://github.com/w3cub/clipboxai" target="_blank">ClipboxAI</a> first.</p>
 </div>
 <script>
-const SCHEME = "clipboardxai://install?action=";
+const SCHEME = "clipboxai://install?action=";
 let CATS = [], ACTIONS = [], active = null, lang = "en", LANGS = ["en"], BASE = null;
 
 function esc(s){ return (s==null?"":String(s)).replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c])); }

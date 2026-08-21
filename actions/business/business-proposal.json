@@ -1,7 +1,7 @@
 {
   "name": "Business Proposal",
   "icon": "doc.text.fill",
-  "author": "ClipboardXAI",
+  "author": "ClipboxAI",
   "version": "1.0.0",
   "description": "Draft a structured business proposal for a long brief.",
   "tags": [

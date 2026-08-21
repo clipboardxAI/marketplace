@@ -1,8 +1,8 @@
 {
-  "name": "clipboardxai-marketplace",
+  "name": "clipboxai-marketplace",
   "version": "1.0.0",
   "private": true,
-  "description": "Build & validate tooling for the Clipboard x AI Action Marketplace catalog.",
+  "description": "Build & validate tooling for the ClipboxAI Action Marketplace catalog.",
   "type": "module",
   "scripts": {
     "build": "tsx src/index.ts build",

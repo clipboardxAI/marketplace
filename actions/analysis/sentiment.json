@@ -1,7 +1,7 @@
 {
   "name": "Sentiment Analysis",
   "icon": "face.smiling",
-  "author": "ClipboardXAI",
+  "author": "ClipboxAI",
   "version": "1.0.0",
   "description": "Detect the sentiment of text and give a brief rationale.",
   "tags": [

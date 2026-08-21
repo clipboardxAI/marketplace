@@ -1,7 +1,7 @@
 {
   "name": "API Doc",
   "icon": "book.closed",
-  "author": "ClipboardXAI",
+  "author": "ClipboxAI",
   "version": "1.0.0",
   "description": "Generate API documentation from code or an endpoint description.",
   "tags": [

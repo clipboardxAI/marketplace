@@ -1,7 +1,7 @@
 {
   "name": "Expand",
   "icon": "text.append",
-  "author": "ClipboardXAI",
+  "author": "ClipboxAI",
   "version": "1.0.0",
   "description": "Expand the text with extra detail, background, and fitting examples to make it richer.",
   "tags": [

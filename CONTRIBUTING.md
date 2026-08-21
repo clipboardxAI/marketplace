@@ -1,6 +1,6 @@
 # Contributing
 
-Thanks for contributing actions to the Clipboard x AI Action Marketplace! A high-quality action helps every user.
+Thanks for contributing actions to the ClipboxAI Action Marketplace! A high-quality action helps every user.
 
 ## What you can contribute
 

@@ -1,7 +1,7 @@
 {
   "name": "Classify Text",
   "icon": "square.stack",
-  "author": "ClipboardXAI",
+  "author": "ClipboxAI",
   "version": "1.0.0",
   "description": "Classify the text by intent, topic, or sentiment.",
   "tags": [

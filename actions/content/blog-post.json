@@ -1,7 +1,7 @@
 {
   "name": "Blog Post",
   "icon": "doc.richtext",
-  "author": "ClipboardXAI",
+  "author": "ClipboxAI",
   "version": "1.0.0",
   "description": "Write a full blog post from an outline or notes.",
   "tags": [

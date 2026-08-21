@@ -1,6 +1,6 @@
-# Clipboard x AI · Action Marketplace
+# ClipboxAI · Action Marketplace
 
-This is the **action catalog repository** for [Clipboard x AI](https://github.com/w3cub/clipboardxai).
+This is the **action catalog repository** for [ClipboxAI](https://github.com/w3cub/clipboxai).
 
 The app's in-app **Action Marketplace** window pulls an installable catalog of actions from a public JSON file. Anyone can fork this repo, add an action, and open a PR — once merged, every user can install it in one click.
 
@@ -9,13 +9,13 @@ The app's in-app **Action Marketplace** window pulls an installable catalog of a
 - 🛠 Build tool: `src/` — a Node.js + TypeScript script (`npm run build`) that aggregates and validates into `marketplace.json`
 - 🚀 Artifact: `marketplace.json` (served at `https://clipboard.w3cub.com/marketplace/`)
 - 🔗 In-app install: the Action Marketplace window (Settings → My Actions → Action Marketplace)
-- ⚡ Web one-click install: `clipboardxai://install?action=<id>` (see `index.html`)
+- ⚡ Web one-click install: `clipboxai://install?action=<id>` (see `index.html`)
 
 ---
 
 ## What this repository is for
 
-Clipboard x AI lets you supercharge your clipboard with **custom actions** — a prompt template with `{{content}}` variables that you hand off to your cloud AI. The built-in actions are limited, but the community's imagination is not. This repo opens the action catalog up to community maintenance:
+ClipboxAI lets you supercharge your clipboard with **custom actions** — a prompt template with `{{content}}` variables that you hand off to your cloud AI. The built-in actions are limited, but the community's imagination is not. This repo opens the action catalog up to community maintenance:
 
 - Each action is a standalone `actions/<category>/<id>.json` file; the directory **is** the category.
 - The TypeScript build tool aggregates and validates all action files into `marketplace.json` — that is the artifact the app fetches.
@@ -27,7 +27,7 @@ Clipboard x AI lets you supercharge your clipboard with **custom actions** — a
 ## Repository structure
 
 ```
-clipboardxai-marketplace/
+clipboxai-marketplace/
 ├── actions/                       # Source: one JSON file per action, by category directory
 │   ├── writing/                   #   directory name = category id
 │   │   ├── polish-copy.json       #   file name = action id
@@ -146,7 +146,7 @@ The official site renders at **`https://clipboard.w3cub.com/marketplace/`** and 
 2. Repo **Settings → Pages → Build and deployment**:
    - Source: **Deploy from a branch**
    - Branch: **main** / **root** (root directory), then Save.
-3. After a few minutes, confirm `https://<your-user>.github.io/clipboardxai-marketplace/marketplace.json` downloads.
+3. After a few minutes, confirm `https://<your-user>.github.io/clipboxai-marketplace/marketplace.json` downloads.
 4. In the app settings, set the Marketplace URL to that URL.
 
 ### Option C: Cloudflare Pages
@@ -182,7 +182,7 @@ Example (`actions/writing/polish-copy.json`):
 {
   "name": "Polish Copy",
   "icon": "pencil.and.outline",
-  "author": "ClipboardXAI",
+  "author": "ClipboxAI",
   "version": "1.0.0",
   "description": "Polish the selected text to read smoother, more professional, and more polished—while keeping the original meaning.",
   "tags": ["polish", "rewrite", "writing"],
@@ -223,7 +223,7 @@ See [CONTRIBUTING.md](./CONTRIBUTING.md). In short:
 
 ## Web preview / one-click install
 
-`index.html` is a minimal showcase page: it loads `marketplace.json` from the same directory, renders the actions as cards, and each card has an **Install** button that triggers `clipboardxai://install?action=<id>` to open the app. A **Language** selector switches between the canonical English and any available locale overrides. Host it at `https://clipboard.w3cub.com/marketplace/` (same directory as the JSON) and share the link.
+`index.html` is a minimal showcase page: it loads `marketplace.json` from the same directory, renders the actions as cards, and each card has an **Install** button that triggers `clipboxai://install?action=<id>` to open the app. A **Language** selector switches between the canonical English and any available locale overrides. Host it at `https://clipboard.w3cub.com/marketplace/` (same directory as the JSON) and share the link.
 
 ---
 

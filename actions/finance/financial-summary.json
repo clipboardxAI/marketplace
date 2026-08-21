@@ -1,7 +1,7 @@
 {
   "name": "Financial Summary",
   "icon": "chart.line.uptrend.xyaxis",
-  "author": "ClipboardXAI",
+  "author": "ClipboxAI",
   "version": "1.0.0",
   "description": "Summarize a financial statement or long report.",
   "tags": [

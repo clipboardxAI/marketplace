@@ -1,7 +1,7 @@
 {
   "name": "NDA Draft",
   "icon": "signature",
-  "author": "ClipboardXAI",
+  "author": "ClipboxAI",
   "version": "1.0.0",
   "description": "Draft a simple mutual NDA from key terms.",
   "tags": [

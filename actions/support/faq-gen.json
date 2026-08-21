@@ -1,7 +1,7 @@
 {
   "name": "Generate FAQ",
   "icon": "questionmark.circle",
-  "author": "ClipboardXAI",
+  "author": "ClipboxAI",
   "version": "1.0.0",
   "description": "Turn product notes into a clear FAQ.",
   "tags": [

@@ -1,7 +1,7 @@
 {
   "name": "Retrospective",
   "icon": "arrow.counterclockwise",
-  "author": "ClipboardXAI",
+  "author": "ClipboxAI",
   "version": "1.0.0",
   "description": "Structure a sprint retrospective from team notes.",
   "tags": [
